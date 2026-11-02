@@ -1,0 +1,23 @@
+name: Request a game
+description: Ask for a recipe for a Ren'Py game
+labels: [request]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Game
+      placeholder: Title and version
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Official page
+      description: Where the game is downloaded (website, itch.io, Patreon, Steam, F95zone thread)
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: Did you try it in renplay?
+      description: What happened? Attach the install log from renplay's Activity page if it failed.

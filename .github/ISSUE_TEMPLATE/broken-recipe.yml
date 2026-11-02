@@ -1,0 +1,28 @@
+name: Recipe does not work
+description: A game from the catalog fails to install or play
+labels: [broken]
+body:
+  - type: input
+    id: recipe
+    attributes:
+      label: Recipe id
+      placeholder: pale-carnations
+    validations:
+      required: true
+  - type: input
+    id: archive
+    attributes:
+      label: Archive file name and size
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens
+      description: Install log (Activity → Log) or the browser console output from the game.
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: renplay version and browser

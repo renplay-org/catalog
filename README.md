@@ -1,22 +1,21 @@
 # renplay catalog
 
-Recipes for games known to work in [renplay](https://github.com/renplay-web/renplay), published to
-`https://renplay-web.github.io/catalog/index.json`. Every renplay instance reads this index.
+Recipes for Ren'Py games that work in [renplay](https://github.com/renplay-web/renplay), published
+to `https://renplay-web.github.io/catalog/index.json`. Every renplay instance reads this index.
 
-The catalog hosts **no game files**. A recipe says which archive works (name, size, sha256), where
-to get it, and how to build it for the browser. Players download the game from its official
-source and drop it into their renplay archives folder; renplay matches it to the recipe by checksum
-(or by file name) and builds it with the recipe's settings.
+The catalog hosts **no game files**. A recipe says which download of a game works (file name,
+size, sha256), where to get it, and how to build it for the browser. Players download the game from
+its official source; renplay recognizes the archive by checksum, name, or a `match` pattern, and
+builds it with the recipe's settings and engine version.
 
-## Adding a game
+renplay does most of the work by itself (unpacking archives, choosing what streams, detecting the
+save folder), so most recipes are short: identity, links, and the tested releases.
 
-1. Install the game in renplay from its PC download and play through enough of it to be confident.
-2. Copy an existing file in `recipes/` to `recipes/<id>.yaml` and fill it in:
-   - `saveDir`: the game's `config.save_directory` (shown on the game's Details tab in renplay).
-   - `releases[].archives`: exact name, size and `sha256` of the tested download (`shasum -a 256 file.zip`),
-     plus an optional `pattern` (e.g. `Game-*-pc.zip`) so later versions are suggested too.
-   - `status`: `verified` (plays start to finish), `playable` (works with known issues, say which in
-     `verified.notes`), `broken`, or `untested`.
-3. Web-only fixes go into `patches/<id>/` and are listed under `build.patches` with the destination
-   path inside the game (`game/...`). They are applied before the web build.
-4. `npm ci && npm run build` validates everything; CI does the same on pull requests.
+- Add or update a game: [CONTRIBUTING.md](CONTRIBUTING.md)
+- Every field explained: [recipes/_template.yaml](recipes/_template.yaml)
+- Request a game or report a broken one: [issues](https://github.com/renplay-web/catalog/issues/new/choose)
+
+## Index format
+
+`index.json` is `{ "schema": 2, "generated": "…", "games": [recipe, …] }`, the recipes as in this
+repository with patch files resolved to `{ path, url, sha256 }`.
