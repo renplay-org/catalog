@@ -24,6 +24,12 @@ try {
 } catch {}
 if (!engines) console.warn('warning: engine index unreachable, engine versions not checked')
 
+// The template must stay a valid example.
+{
+  const t = YAML.parse(readFileSync(join(root, 'recipes', '_template.yaml'), 'utf-8'))
+  if (!validate(t)) fail('_template.yaml', ajv.errorsText(validate.errors, { separator: '; ' }))
+}
+
 const games = []
 const shas = new Map()
 for (const file of readdirSync(join(root, 'recipes')).filter((f) => f.endsWith('.yaml') && !f.startsWith('_')).sort()) {
