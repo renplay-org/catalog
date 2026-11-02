@@ -49,7 +49,7 @@ releases:                        # newest first
     archives:
       - name: MyGame-1.0-pc.zip  # exact file name of the download
         size: 1234567890         # bytes
-        sha256: 0000000000000000000000000000000000000000000000000000000000000000
+        sha256: "0000000000000000000000000000000000000000000000000000000000000000"  # quote it: YAML reads all-digit values as numbers
         platform: pc
     verified:
       date: "2026-02-01"
