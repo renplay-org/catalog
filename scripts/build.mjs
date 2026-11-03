@@ -1,4 +1,4 @@
-// Validates recipes/*.yaml and writes dist/index.json (plus covers and patches)
+// Validates recipes/*.yaml and writes dist/index.json (plus the schema, covers and patches)
 // for GitHub Pages. Files starting with "_" (the template) are not recipes.
 import { createHash } from 'node:crypto'
 import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
@@ -12,7 +12,11 @@ const root = new URL('..', import.meta.url).pathname
 const dist = join(root, 'dist')
 const ajv = new Ajv({ allErrors: true, strict: false })
 addFormats(ajv)
-const validate = ajv.compile(JSON.parse(readFileSync(join(root, 'schema/recipe.schema.json'), 'utf-8')))
+const schema = JSON.parse(readFileSync(join(root, 'schema/recipe.schema.json'), 'utf-8'))
+const validate = ajv.compile(schema)
+// Every recipe names the schema on its first line, for editors (yaml-language-server).
+const SCHEMA_LINE = `# yaml-language-server: $schema=${schema.$id}`
+const namesSchema = (file, text) => text.split('\n', 1)[0] === SCHEMA_LINE || fail(file, `the first line must be: ${SCHEMA_LINE}`)
 
 const errors = []
 const fail = (file, msg) => errors.push(`${file}: ${msg}`)
@@ -27,7 +31,9 @@ if (!engines) console.warn('warning: engine index unreachable, engine versions n
 
 // The template must stay a valid example.
 {
-  const t = YAML.parse(readFileSync(join(root, 'recipes', '_template.yaml'), 'utf-8'))
+  const text = readFileSync(join(root, 'recipes', '_template.yaml'), 'utf-8')
+  namesSchema('_template.yaml', text)
+  const t = YAML.parse(text)
   if (!validate(t)) fail('_template.yaml', ajv.errorsText(validate.errors, { separator: '; ' }))
 }
 
@@ -78,7 +84,9 @@ const shas = new Map()
 for (const file of readdirSync(join(root, 'recipes')).filter((f) => f.endsWith('.yaml') && !f.startsWith('_')).sort()) {
   let recipe
   try {
-    recipe = YAML.parse(readFileSync(join(root, 'recipes', file), 'utf-8'))
+    const text = readFileSync(join(root, 'recipes', file), 'utf-8')
+    namesSchema(file, text)
+    recipe = YAML.parse(text)
   } catch (e) {
     fail(file, `not valid YAML: ${e.message}`)
     continue
@@ -126,5 +134,7 @@ rmSync(dist, { recursive: true, force: true })
 mkdirSync(dist, { recursive: true })
 for (const dir of ['covers', 'patches']) if (existsSync(join(root, dir))) cpSync(join(root, dir), join(dist, dir), { recursive: true })
 writeFileSync(join(dist, 'index.json'), JSON.stringify({ schema: 2, generated: new Date().toISOString(), games }, null, 1))
+// Published at the schema's $id, which recipes name on their first line.
+cpSync(join(root, 'schema/recipe.schema.json'), join(dist, 'recipe.schema.json'))
 writeFileSync(join(dist, '.nojekyll'), '')
 console.log(`Built ${games.length} recipes`)

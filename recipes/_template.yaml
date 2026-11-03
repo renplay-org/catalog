@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://renplay-web.github.io/catalog/recipe.schema.json
 # Recipe template. Copy to recipes/<id>.yaml; the id must match the file name.
 # Only id, title and releases are required. Everything renplay can detect
 # itself (save folder, Ren'Py version, what to stream) is optional.

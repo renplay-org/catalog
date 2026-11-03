@@ -18,7 +18,7 @@ players get both from the developer.
 | `recipes/_template.yaml` | Every field, explained. CI validates it too. |
 | `covers/<id>.webp` | Rare: a safe-for-work cover without an official copy to link to. |
 | `patches/<id>/*.rpy` | Small browser fixes, referenced from `build.patches`. Rare. |
-| `schema/recipe.schema.json` | JSON Schema for recipes. |
+| `schema/recipe.schema.json` | JSON Schema for recipes, published at its `$id`. Every recipe starts with `# yaml-language-server: $schema=<that URL>`, so editors check it as you type; the build refuses recipes without it. |
 | `scripts/build.mjs` | Validates everything and writes `dist/` (the published site). |
 | `scripts/cover.mjs` | `npm run cover -- <image> <id>` makes such a file (1260×1000 WebP). |
 | `.agents/skills/` | Procedures: add a game, add a release, find the cover. `.claude/skills` links here. |
