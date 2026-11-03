@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://renplay-web.github.io/catalog/recipe.schema.json
+id: college-daze
+title: College Daze
+developer: G28
+tags: [school, sandbox, real porn]
+nsfw: true
+# G28 publishes only on Patreon, whose image links expire, and its only official art there is a
+# wide banner. This title card uses the game's own title font and pink.
+cover: covers/college-daze.webp
+links:
+  patreon: https://www.patreon.com/G28
+  f95: https://f95zone.to/threads/41722/
+saveDir: college-daze
+match:
+  - College_Daze_-_*_-_All_Files.zip
+engine: html
+releases:
+  - version: ".510b"
+    madeWith: 2.36.1
+    status: verified
+    archives:
+      - name: College_Daze_-_.510b_-_All_Files.zip
+        size: 4026177744
+        sha256: "70e316c9ac5f67ca1c9069d46fd8697eced310edda450e6d96ed0901ae421e11"
+        platform: universal
+    verified:
+      date: "2026-11-03"
+      renplay: 2.7.1
+      browsers: [chromium, webkit]
+      notes: HTML (SugarCube 2.36.1). Plays in Renplay 2.6 and later; 40 passages with pictures and videos, and a save made on a desktop loaded on a phone.
