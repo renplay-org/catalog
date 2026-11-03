@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://renplay-web.github.io/catalog/recipe.schema.json
+id: heros-harem-guild
+title: Hero's Harem Guild
+developer: Komisari
+tags: [rpg, sandbox, management]
+nsfw: true
+cover: https://img.itch.zone/aW1nLzExOTU3NjE2LmdpZg==/original/3ai9P8.gif
+links:
+  itch: https://komisari.itch.io/heros-harem-guild
+  patreon: https://www.patreon.com/komisari
+  discord: https://discord.gg/33FnAjT
+saveDir: Org.HerosHaremGuild.013
+match:
+  - Heros_Harem_Guild_*_Windows-Linux.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.1.2.3b"
+    madeWith: 8.0.3
+    status: verified
+    archives:
+      - name: Heros_Harem_Guild_v0.1.2.3b_Windows-Linux.zip
+        size: 12826972018
+        sha256: "7cf789be8ca00e7355b9ded680d99afdd31aaaabc7981d41451eda20041bfccb"
+        platform: pc
+    verified:
+      date: "2026-11-03"
+      renplay: 2.7.0
+      browsers: [chromium]
+      notes: Needs Renplay 2.7.0, which loads the game's compiled scripts and stands in for its Python 2 numbers, old requests library and Discord status. Automated play from the splash into the tutorial without errors; save and resume tested. The interface art (390 MB) is part of the first download.
