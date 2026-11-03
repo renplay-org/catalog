@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://renplay-web.github.io/catalog/recipe.schema.json
+id: moonripple-lake
+title: Moonripple Lake
+developer: Banana Cream Games
+tags: [romance, comedy, free roam]
+nsfw: true
+cover: https://img.itch.zone/aW1nLzIxMjcxOTk0LnBuZw==/original/ef%2B7SC.png
+links:
+  itch: https://bananacreamgames.itch.io/moonripple-lake
+  patreon: https://www.patreon.com/bananacreamgames
+  steam: https://store.steampowered.com/app/2857910/Moonripple_Lake/
+  discord: https://discord.gg/9eepnkAN6F
+saveDir: Moonripple_Lake-69420
+match:
+  - Moonripple_Lake-*-pc.zip
+engine: 8.5.3
+releases:
+  - version: "Patreon(0.77)"
+    date: "2026-10-16"
+    renpy: 8.5.3
+    status: verified
+    archives:
+      - name: Moonripple_Lake-Patreon0.77-pc.zip
+        size: 2485756172
+        sha256: "afa55156bc074cbc75e61bfb360717e72f9c04b77d81699f00c4e207cf48a23b"
+        platform: pc
+    verified:
+      date: "2026-11-03"
+      renplay: 2.5.0
+      browsers: [chromium]
+      notes: Needs Renplay 2.5.0, whose builds stand in for Python's ssl module and for threads (the in-game news feed imports ssl and starts a thread). Automated play from the start into free roam without errors; save and resume tested.

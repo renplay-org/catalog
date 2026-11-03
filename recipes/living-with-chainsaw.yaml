@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://renplay-web.github.io/catalog/recipe.schema.json
+id: living-with-chainsaw
+title: Living With Chainsaw
+developer: Dr.Ergenecon
+tags: [romance, fan game, minigames]
+nsfw: true
+cover: https://img.itch.zone/aW1nLzI3MDkzODA0LnBuZw==/original/9M5csR.png
+links:
+  itch: https://drergenecon.itch.io/livingwithchainsaw
+  patreon: https://www.patreon.com/DrErgenecon
+  discord: https://discord.gg/2eSR3BJHRq
+saveDir: LivingWithChainsaw-1776168133
+match:
+  - LivingWithChainsaw-*-pc.zip
+engine: 8.5.3
+releases:
+  - version: "0.90"
+    date: "2026-10-05"
+    renpy: 8.5.2
+    status: verified
+    archives:
+      - name: LivingWithChainsaw-0.90-pc.zip
+        size: 916667065
+        sha256: "ea33ddba104517f7cdaf214ff3a8a38f40d47ca656d4e4a50decfd7ae47db6c8"
+        platform: pc
+    verified:
+      date: "2026-11-03"
+      renplay: 2.4.0
+      browsers: [chromium]
+      notes: Installs in 2 minutes (0.24 GB). Automated play through the story, the blackjack and chainsaw minigames without errors; save and resume tested. Starts in about 3 seconds.

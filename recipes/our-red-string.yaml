@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://renplay-web.github.io/catalog/recipe.schema.json
+id: our-red-string
+title: Our Red String
+developer: Eva Kiss
+tags: [romance, drama, two protagonists]
+nsfw: true
+cover: https://img.itch.zone/aW1nLzUzMDkxNDMuanBn/original/puAFWv.jpg
+links:
+  itch: https://eva-kiss.itch.io/our-red-string
+  patreon: https://www.patreon.com/Evakiss
+  steam: https://store.steampowered.com/app/3669040/Our_Red_String/
+  discord: https://discordapp.com/invite/QtRYCsA
+saveDir: RedString-1574621830
+match:
+  - OurRedString-*-pc.zip
+engine: 8.5.3
+releases:
+  - version: "v15.2.3"
+    date: "2026-10-10"
+    renpy: 8.0.3
+    status: verified
+    archives:
+      - name: OurRedString-v15.2.3-pc.zip
+        size: 1450028528
+        sha256: "7f0430f9901bfd0d66b936318b72be40fa052b5c62070e5376a8d10c23d98c99"
+        platform: pc
+    verified:
+      date: "2026-11-03"
+      renplay: 2.4.0
+      browsers: [chromium]
+      notes: Made with Ren'Py 8.0.3. Automated play into chapter 1 (28 choices) without errors; save and resume tested. Loading the script takes about 8 seconds on the first start.
