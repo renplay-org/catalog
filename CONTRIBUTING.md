@@ -12,7 +12,8 @@ the game from there.
 3. Play it: past the first chapter, check images, music and videos, save, load, and resume from the
    library (ideally also on a second device, such as a phone).
 4. In Renplay's **Settings › Catalog**, choose the game and press **Export recipe**. It fills in the
-   id, save folder, Ren'Py version, engine and the archive's size and sha256.
+   id, save folder, the engine version the game was made with (`madeWith`), the runtime and the
+   archive's size and sha256.
 5. Add the developer, `links` (at least the official page), `tags` and `nsfw`, and set `status`:
    - `verified`: plays through without problems
    - `playable`: works, with issues you describe in `verified.notes`
@@ -59,7 +60,7 @@ Renplay offers the update to everyone who has an older listed version installed.
 - **The download contains junk** (PSD sources, backups): `build.exclude`.
 - **The game needs a fix for the browser**: add a small `.rpy` under `patches/<id>/` and reference it
   under `build.patches`. Keep patches minimal and explain them in the PR.
-- **Needs another engine version**: set `engine` (published versions:
+- **Needs another runtime version**: set `runtime` (published versions:
   [renplay-web/engines](https://github.com/renplay-web/engines)).
 
 Renplay splits `.rpa` archives, decides what streams and finds the save folder by itself, so most

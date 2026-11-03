@@ -12,11 +12,12 @@ links:
 saveDir: LivingWithChainsaw-1776168133
 match:
   - LivingWithChainsaw-*-pc.zip
-engine: 8.5.3
+engine: renpy
+runtime: 8.5.3
 releases:
   - version: "0.90"
     date: "2026-10-05"
-    renpy: 8.5.2
+    madeWith: 8.5.2
     status: verified
     archives:
       - name: LivingWithChainsaw-0.90-pc.zip

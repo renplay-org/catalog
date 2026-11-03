@@ -14,11 +14,12 @@ links:
 saveDir: Eternum-1610153667
 match:
   - Eternum-*-pc.zip
-engine: 8.5.3
+engine: renpy
+runtime: 8.5.3
 releases:
   - version: "0.9.5"
     date: "2026-01-21"
-    renpy: 8.3.2
+    madeWith: 8.3.2
     status: verified
     archives:
       - name: Eternum-0.9.5-pc.zip

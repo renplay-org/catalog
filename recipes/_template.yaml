@@ -17,7 +17,7 @@ links:                           # https only; any of these keys
   f95: https://f95zone.to/threads/my-game.12345/
   walkthrough: https://example.com/my-game-guide   # shown as "Guide" in renplay
 
-saveDir: MyGame-1234567890       # config.save_directory (renplay shows it on the Details tab)
+saveDir: MyGame-1234567890       # Ren'Py's config.save_directory (Renplay shows it on the Details tab)
 
 # Games whose saves this one imports, e.g. season 2 continuing season 1.
 # Ren'Py finds those saves by itself; this only tells players about it.
@@ -28,9 +28,13 @@ continuesFrom: []
 match:
   - MyGame-*-pc.zip
 
-# Ren'Py web engine to build with. Leave out to use the newest engine of the
-# game's Ren'Py major version. Must be published in renplay-web/engines.
-engine: 8.5.3
+# What made the game: renpy (the default), html, godot or unity. Renplay is
+# for Ren'Py games; the others play with fewer features.
+engine: renpy
+
+# Web runtime to build with. Leave out to use the newest that fits the game.
+# Must be published in renplay-web/engines.
+runtime: 8.5.3
 
 build:                           # all optional
   imageQuality: 88               # WebP quality, 50-100
@@ -46,7 +50,7 @@ build:                           # all optional
 releases:                        # newest first
   - version: "1.0"               # the game's own version string
     date: "2026-01-31"
-    renpy: 8.3.4                 # Ren'Py version the game was made with
+    madeWith: 8.3.4              # version of the engine the game was made with
     status: verified             # verified | playable | broken | untested
     archives:
       - name: MyGame-1.0-pc.zip  # exact file name of the download

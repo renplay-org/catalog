@@ -12,10 +12,11 @@ links:
 saveDir: PaCaGame-1554919452
 match:
   - PaleCarnations-*-pc.zip
-engine: 8.5.3
+engine: renpy
+runtime: 8.5.3
 releases:
   - version: Ch4Up7Public
-    renpy: 8.3.4
+    madeWith: 8.3.4
     status: verified
     archives:
       - name: PaleCarnations-Ch4Up7Public-pc.zip

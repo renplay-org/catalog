@@ -1,7 +1,8 @@
 # Renplay catalog
 
-Recipes for Ren'Py games that work in [Renplay](https://github.com/renplay-web/renplay), published
-to `https://renplay-web.github.io/catalog/index.json`. Every Renplay instance reads this index.
+Recipes for games that work in [Renplay](https://github.com/renplay-web/renplay), published to
+`https://renplay-web.github.io/catalog/index.v3.json`. Every Renplay instance reads this index.
+Ren'Py games come first; HTML, Godot and Unity WebGL games are being added.
 
 The catalog hosts **no game files**. A recipe says which download of a game works (file name,
 size, sha256), where to get it, and how to build it for the browser. Players download the game from
@@ -21,9 +22,13 @@ linked from the developers' own pages, not copied, so no adult art is hosted her
 
 ## Index format
 
-`index.json` is `{ "schema": 2, "generated": "…", "games": [recipe, …] }`, the recipes as in this
+`index.v3.json` is `{ "schema": 3, "generated": "…", "games": [recipe, …] }`, the recipes as in this
 repository with patch files resolved to `{ path, url, sha256 }` and covers to
 `{ url, sha256, width, height }`.
+
+`index.json` (schema 2) is for Renplay 2.5 and older: only Ren'Py games, with the older field names
+(`engine` for the runtime version, `releases[].renpy` and `releases[].engine` for `madeWith` and
+`runtime`).
 
 Renplay is free and open source. If it is useful to you, you can support it on
 [Ko-fi](https://ko-fi.com/janpuc).

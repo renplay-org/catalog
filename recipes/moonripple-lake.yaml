@@ -13,11 +13,12 @@ links:
 saveDir: Moonripple_Lake-69420
 match:
   - Moonripple_Lake-*-pc.zip
-engine: 8.5.3
+engine: renpy
+runtime: 8.5.3
 releases:
   - version: "Patreon(0.77)"
     date: "2026-10-16"
-    renpy: 8.5.3
+    madeWith: 8.5.3
     status: verified
     archives:
       - name: Moonripple_Lake-Patreon0.77-pc.zip

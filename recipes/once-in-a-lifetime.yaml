@@ -15,11 +15,12 @@ saveDir: OnceinaLifetime-1565330950
 match:
   - Onceinalifetime-*-pc.zip
 # Made with Ren'Py 7.3.2 (Python 2.7); runs on the Ren'Py 8 web engine.
-engine: 8.5.3
+engine: renpy
+runtime: 8.5.3
 releases:
   - version: "1.0"
     date: "2021-06-28"
-    renpy: 7.3.2
+    madeWith: 7.3.2
     status: verified
     archives:
       - name: Onceinalifetime-1.0-pc.zip

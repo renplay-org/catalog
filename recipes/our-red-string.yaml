@@ -13,11 +13,12 @@ links:
 saveDir: RedString-1574621830
 match:
   - OurRedString-*-pc.zip
-engine: 8.5.3
+engine: renpy
+runtime: 8.5.3
 releases:
   - version: "v15.2.3"
     date: "2026-10-10"
-    renpy: 8.0.3
+    madeWith: 8.0.3
     status: verified
     archives:
       - name: OurRedString-v15.2.3-pc.zip
