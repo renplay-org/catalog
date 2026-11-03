@@ -1,0 +1,38 @@
+name: Check game requests
+on:
+  issues:
+    types: [opened, edited, labeled]
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: request-${{ github.event.issue.number }}
+jobs:
+  check:
+    if: contains(github.event.issue.labels.*.name, 'request')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - name: Check the request and comment
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          NUMBER: ${{ github.event.issue.number }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node scripts/check-request.mjs > out.txt
+          tail -n 1 out.txt > labels.json
+          head -n -1 out.txt > comment.md
+          # One comment per request, updated when the issue is edited.
+          id=$(gh api "repos/$GITHUB_REPOSITORY/issues/$NUMBER/comments" --jq '[.[] | select(.user.login == "github-actions[bot]" and (.body | startswith("Thanks for the request")))][0].id // empty')
+          if [ -n "$id" ]; then
+            gh api -X PATCH "repos/$GITHUB_REPOSITORY/issues/comments/$id" -F body=@comment.md > /dev/null
+          else
+            gh issue comment "$NUMBER" --repo "$GITHUB_REPOSITORY" --body-file comment.md
+          fi
+          node -e 'for (const l of JSON.parse(require("fs").readFileSync("labels.json", "utf8"))) console.log(l)' | while read -r label; do
+            gh issue edit "$NUMBER" --repo "$GITHUB_REPOSITORY" --add-label "$label"
+          done
