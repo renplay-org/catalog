@@ -32,7 +32,9 @@ unzip -p Game-1.0-pc.zip '*/game/cache/build_info.json' # build time, if present
 Record `version` exactly as the developer names it, the Ren'Py version as `major.minor.patch`
 (`8.2.1`), and the release date (the developer's announcement, or the build time).
 
-Ren'Py 7 games are not supported (the web engine for Ren'Py 7 is different). Stop and report it.
+Ren'Py 7 games run on the Ren'Py 8 engine: set `engine` to the newest 8.x engine explicitly and
+play well past the opening, because Python 2-only code in a game fails only when it runs. Ren'Py 6
+and older have not been tried; ask the maintainer first.
 
 ## 3. Verify it on Renplay
 
