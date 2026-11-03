@@ -1,0 +1,32 @@
+id: once-in-a-lifetime
+title: Once in a Lifetime
+developer: Caribdis
+tags: [romance, mystery, comedy]
+nsfw: true
+cover: https://img.itch.zone/aW1nLzUzNjg4ODEucG5n/original/FbZc6X.png
+links:
+  itch: https://caribdis.itch.io/once-in-a-lifetime
+  patreon: https://www.patreon.com/user?u=24799077
+  subscribestar: https://subscribestar.adult/caribdis
+  f95: https://f95zone.to/threads/37470/
+  discord: https://discord.gg/caribdisgames
+saveDir: OnceinaLifetime-1565330950
+match:
+  - Onceinalifetime-*-pc.zip
+# Made with Ren'Py 7.3.2 (Python 2.7); runs on the Ren'Py 8 web engine.
+engine: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2021-06-28"
+    renpy: 7.3.2
+    status: verified
+    archives:
+      - name: Onceinalifetime-1.0-pc.zip
+        size: 5079941766
+        sha256: "a68587faf22fbdf073dd8cca9f5dd0a0f5b89ba56e98c4a1e66d2577d878b265"
+        platform: pc
+    verified:
+      date: "2026-11-03"
+      renplay: 2.3.0
+      browsers: [chromium]
+      notes: Made with Ren'Py 7.3.2 and runs on the Ren'Py 8.5 engine. Automated play through the opening, the name prompts, the fight minigame and into the dream chapter (317 choices) without errors; save and resume tested. The menu art says "Version 0.10"; the game is 1.0.

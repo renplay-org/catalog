@@ -84,9 +84,12 @@ if (f95 && !/^https:\/\/f95zone\.to\/threads\//.test(f95)) notes.push('ℹ️ Th
 
 // 3. Is it Ren'Py 8?
 const major = renpyVersion.match(/^\s*(\d+)\./)?.[1]
-if (major && major !== '8') {
-  notes.push(`⚠️ **Ren'Py ${renpyVersion.trim()}**: Renplay plays Ren'Py 8 games only for now. The request stays open, labeled for later.`)
-  labels.add(`ren'py ${major}`)
+if (major === '7') {
+  notes.push(`ℹ️ **Ren'Py ${renpyVersion.trim()}**: Renplay runs Ren'Py 7 games on its Ren'Py 8 engine. Most work; games with Python 2-only code need testing beyond the opening.`)
+  labels.add(`ren'py 7`)
+} else if (major && major !== '8') {
+  notes.push(`⚠️ **Ren'Py ${renpyVersion.trim()}**: games this old have not been tried on Renplay's Ren'Py 8 engine yet.`)
+  labels.add('needs info')
 }
 let pageSaysRenpy = null
 if (pageUrl && /(^|\.)itch\.io$/.test(pageUrl.hostname)) {
