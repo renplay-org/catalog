@@ -40,9 +40,10 @@ works (newest release `verified` or `playable`) needs one.
   them; Renplay downloads each cover once and keeps it on the server.
 - **Shape:** like an itch.io cover, 63:50 (1.12:1 to 1.41:1; itch.io covers are 630×500), at
   least 600 pixels wide. Other shapes look scuffed in Renplay's cards.
-- **No official art?** Then, and only for safe-for-work images, add a file:
+- **No official copy to link to, or the wrong shape?** For safe-for-work art, add a file:
   `npm run cover -- <image> <id>` writes `covers/<id>.webp` (1260×1000) and you set
-  `cover: covers/<id>.webp`.
+  `cover: covers/<id>.webp`. Adult art never goes into this repository: say in the pull request
+  which official image to use, and a maintainer puts it on the catalog's cover host.
 
 The build downloads every cover, checks it, and publishes its sha256 and size. A weekly run notices
 covers that disappeared.

@@ -19,11 +19,12 @@ players get both from the developer.
 |---|---|
 | `recipes/<id>.yaml` | One game. The file name is the id. |
 | `recipes/_template.yaml` | Every field, explained. CI validates it too. |
-| `covers/<id>.webp` | Rare: a safe-for-work cover without an official copy to link to. |
+| `covers/<id>.webp` | Rare: a safe-for-work cover without an official copy to link to. Adult ones go to the cover host instead (`npm run cover:upload`, `https://covers.janpuc.com`, a Cloudflare R2 bucket; the maintainer has the token). |
 | `patches/<id>/*.rpy` | Small browser fixes, referenced from `build.patches`. Rare. |
 | `schema/recipe.schema.json` | JSON Schema for recipes, published at its `$id`. Every recipe starts with `# yaml-language-server: $schema=<that URL>`, so editors check it as you type; the build refuses recipes without it. |
 | `scripts/build.mjs` | Validates everything and writes `dist/` (the published site). |
 | `scripts/cover.mjs` | `npm run cover -- <image> <id>` makes such a file (1260×1000 WebP). |
+| `scripts/cover-upload.mjs` | `npm run cover:upload -- <image> <id>` makes the same WebP and uploads it to the cover host as `<id>-<hash>.webp`; needs `RENPLAY_COVERS_TOKEN`. |
 | `.agents/skills/` | Procedures: add a game, add a release, find the cover. `.claude/skills` links here. |
 
 ## Commands
@@ -31,7 +32,8 @@ players get both from the developer.
 ```sh
 npm ci              # once
 npm run build       # validate all recipes, download and check covers, write dist/index.v3.json and dist/index.json
-npm run cover -- <image> <id> [--focus attention|top|bottom|left|right]   # only for covers/ files
+npm run cover -- <image> <id> [--focus attention|top|bottom|left|right]   # safe-for-work cover file
+RENPLAY_COVERS_TOKEN=… npm run cover:upload -- <image> <id> [--focus …]  # adult cover, to the cover host
 shasum -a 256 <archive>          # macOS (Linux: sha256sum)
 stat -f %z <archive>             # size in bytes on macOS (Linux: stat -c %s)
 ```

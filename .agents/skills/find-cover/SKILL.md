@@ -35,9 +35,16 @@ cover: https://img.itch.zone/…/original/….png
 Do **not** download the image into this repository: many covers of adult games are not safe for
 work, and GitHub must not host them. Renplay downloads each cover once and keeps it on the server.
 
-Only when there is no official art at all, and the image you have is safe for work, add a file:
-`npm run cover -- <image> <id>` writes `covers/<id>.webp`, and the recipe says
-`cover: covers/<id>.webp`.
+When there is no official copy to link to (Patreon links expire) or it has the wrong shape:
+
+- **Safe for work:** add a file. `npm run cover -- <image> <id>` writes `covers/<id>.webp`, and the
+  recipe says `cover: covers/<id>.webp`.
+- **Not safe for work:** never into this repository. A maintainer puts it on the catalog's cover
+  host, `https://covers.janpuc.com` (a Cloudflare R2 bucket):
+  `RENPLAY_COVERS_TOKEN=… npm run cover:upload -- <image> <id> [--focus …]` makes the same
+  1260×1000 WebP, uploads it as `<id>-<hash>.webp` and prints the URL for `cover:`. A changed cover
+  gets a new name, so nothing serves a stale copy. Contributors without the token: say in the pull
+  request which official image to use, and a maintainer uploads it.
 
 ## Check it
 

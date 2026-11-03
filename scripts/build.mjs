@@ -42,7 +42,8 @@ if (!engines) console.warn('warning: engine index unreachable, engine versions n
  * Covers are the game's official art, the kind itch.io, Steam or F95zone show:
  * key art with the game's logo. Most are linked by URL on the developer's own
  * hosting, which keeps adult art off GitHub; files in covers/ are only for
- * safe-for-work art that has no official copy in the right shape. About 63:50
+ * safe-for-work art that has no official copy in the right shape, and adult
+ * art of that kind goes to the cover host (scripts/cover-upload.mjs). About 63:50
  * (1.12:1 to 1.41:1, the shape of itch.io covers and of Renplay's cards, which
  * show other shapes shrunk on a blur), at least 600 pixels wide. The published index
  * gives each cover's sha256 and size, so Renplay can check what it downloads.

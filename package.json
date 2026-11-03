@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "cover": "node scripts/cover.mjs"
+    "cover": "node scripts/cover.mjs",
+    "cover:upload": "node scripts/cover-upload.mjs"
   },
   "devDependencies": {
     "ajv": "^8.17.1",
