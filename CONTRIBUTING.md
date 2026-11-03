@@ -20,7 +20,8 @@ the game from there.
 6. Add the cover: the official art's URL (below).
 7. Save the recipe as `recipes/<id>.yaml`, run `npm ci && npm run build`, and open a pull request.
 
-`recipes/_template.yaml` explains every field.
+`recipes/_template.yaml` explains every field. Keep its first line, which points editors such as VS
+Code (with the YAML extension) at the schema, so they check the recipe as you type.
 
 ## Covers
 
