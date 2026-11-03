@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://renplay-web.github.io/catalog/recipe.schema.json
+id: harem-hotel
+title: Harem Hotel
+developer: RuneyGames
+tags: [dating sim, management, romance]
+nsfw: true
+# The official cover is only published at 315×250; this is the safe-for-work banner from the
+# itch.io page, whole, on a blurred copy of itself.
+cover: covers/harem-hotel.webp
+links:
+  itch: https://runeygames.itch.io/harem-hotel
+  patreon: https://www.patreon.com/Runey
+  discord: https://discord.gg/JdgnuTpJJE
+  walkthrough: https://haremhotel.miraheze.org/wiki/Harem_Hotel_Wiki
+saveDir: Harem Hotel-1520575859
+match:
+  - Harem_Hotel-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+build:
+  patches:
+    # Made with Ren'Py 7 (Python 2): sorting mixed numbers and text falls back to Python 2's order.
+    - path: game/zz_renplay_py2.rpy
+      file: zz_renplay_py2.rpy
+releases:
+  - version: "v0.20_Pre-Alpha"
+    madeWith: 7.4.11
+    status: playable
+    archives:
+      - name: Harem_Hotel-v0.20_Pre-Alpha-pc.zip
+        size: 13962750364
+        sha256: "f18a8e845f97aa8514980e2007462889f62ed6e976768e828ddddca6204ad12f"
+        platform: pc
+    verified:
+      date: "2026-11-03"
+      renplay: 2.7.0
+      browsers: [chromium]
+      notes: Made with Ren'Py 7.4.11 (Python 2) and runs on the Ren'Py 8.5 engine with Renplay 2.7.0 and this recipe's patch. Automated play from the start into the hotel lobby for 7 minutes without errors; other Python 2 behaviour may still show up later in the game.
