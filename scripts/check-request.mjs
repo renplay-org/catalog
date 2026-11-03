@@ -94,7 +94,7 @@ if (pageUrl && /(^|\.)itch\.io$/.test(pageUrl.hostname)) {
     const res = await fetch(pageUrl, { signal: AbortSignal.timeout(20000), headers: { 'user-agent': 'renplay-catalog request check' } })
     const html = await res.text()
     pageSaysRenpy = /ren'?py/i.test(html)
-    const coverMeta = html.match(/<meta content="([^"]+)" property="og:image"/)
+    const coverMeta = html.match(/<meta[^>]*property="og:image"[^>]*content="([^"]+)"/) ?? html.match(/<meta[^>]*content="([^"]+)"[^>]*property="og:image"/)
     if (pageSaysRenpy) notes.push('✅ The itch.io page mentions Ren’Py.')
     else notes.push('ℹ️ The itch.io page does not mention Ren’Py. That is common, but please confirm the download has the `renpy` and `game` folders.')
     if (coverMeta) notes.push(`✅ The itch.io page has a cover image to link: ${coverMeta[1]}`)

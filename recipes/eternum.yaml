@@ -1,0 +1,31 @@
+id: eternum
+title: Eternum
+developer: Caribdis
+tags: [romance, mystery, comedy, sci-fi]
+nsfw: true
+cover: https://img.itch.zone/aW1nLzE5ODE1MzAwLnBuZw==/original/uuPDAw.png
+links:
+  itch: https://caribdis.itch.io/eternum
+  patreon: https://www.patreon.com/user?u=24799077
+  subscribestar: https://subscribestar.adult/caribdis
+  f95: https://f95zone.to/threads/93340/
+  discord: https://discord.gg/caribdisgames
+saveDir: Eternum-1610153667
+match:
+  - Eternum-*-pc.zip
+engine: 8.5.3
+releases:
+  - version: "0.9.5"
+    date: "2026-01-21"
+    renpy: 8.3.2
+    status: verified
+    archives:
+      - name: Eternum-0.9.5-pc.zip
+        size: 11960320231
+        sha256: "41e6a7fbd73e1842fa6a44c3e311237e9c4f94e4a60b6d6511ce6aeac7e81f94"
+        platform: pc
+    verified:
+      date: "2026-11-03"
+      renplay: 2.2.0
+      browsers: [chromium, webkit]
+      notes: Installing converts 12,460 images to WebP, which takes about 45 minutes. New game, save and resume tested; later starts take about 5 seconds.
