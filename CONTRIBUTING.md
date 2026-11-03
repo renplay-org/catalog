@@ -38,7 +38,8 @@ works (newest release `verified` or `playable`) needs one.
   `curl -sL <itch page> | grep -o '<meta[^>]*og:image[^>]*>'`. Patreon image links expire, so do
   not use them. Many covers of adult games are not safe for work, and this repository must not host
   them; Renplay downloads each cover once and keeps it on the server.
-- **Shape:** landscape, 1.2:1 to 2.2:1 (itch.io covers are 630×500), at least 600 pixels wide.
+- **Shape:** like an itch.io cover, 63:50 (1.12:1 to 1.41:1; itch.io covers are 630×500), at
+  least 600 pixels wide. Other shapes look scuffed in Renplay's cards.
 - **No official art?** Then, and only for safe-for-work images, add a file:
   `npm run cover -- <image> <id>` writes `covers/<id>.webp` (1260×1000) and you set
   `cover: covers/<id>.webp`.

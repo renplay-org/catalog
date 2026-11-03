@@ -74,7 +74,9 @@ stat -f %z <archive>             # size in bytes on macOS (Linux: stat -c %s)
 A cover is the game's official cover art, with its logo, as the game's itch.io, Steam or F95zone
 thumbnail shows it: the first thing players recognize. Link it by its https URL on the developer's
 own hosting (the itch.io page's `og:image` first); never copy adult art into this repository.
-Landscape 1.2:1 to 2.2:1, at least 600 px wide. See `.agents/skills/find-cover`.
+Shaped like an itch.io cover (63:50, 1.12:1 to 1.41:1), at least 600 px wide; safe-for-work art of
+another shape becomes a cover file (cropped, or on a plain background, never blurred). See
+`.agents/skills/find-cover`.
 
 ## Workflow
 
