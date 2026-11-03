@@ -45,6 +45,10 @@ Only when there is no official art at all, and the image you have is safe for wo
 npm run build
 ```
 
-The build downloads the cover and checks that it is an image, landscape between 1.2:1 and 2.2:1,
-at least 600 pixels wide. Look at it at small size (a library card is about 250 pixels wide on a
+The build downloads the cover and checks that it is an image shaped like an itch.io cover (63:50,
+between 1.12:1 and 1.41:1), at least 600 pixels wide. Renplay shows other shapes shrunk on a blur,
+which looks scuffed. When the official art has another shape and is safe for work, make a cover
+file from it: crop it with `npm run cover -- <image> <id> --focus …` if the logo survives the
+crop, or put the whole art on a matching plain background first (Our Red String's logo on black).
+Never blur or stretch. Look at it at small size (a library card is about 250 pixels wide on a
 phone): the logo should still read.

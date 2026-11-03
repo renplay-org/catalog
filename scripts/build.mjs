@@ -42,8 +42,9 @@ if (!engines) console.warn('warning: engine index unreachable, engine versions n
  * Covers are the game's official art, the kind itch.io, Steam or F95zone show:
  * key art with the game's logo. Most are linked by URL on the developer's own
  * hosting, which keeps adult art off GitHub; files in covers/ are only for
- * safe-for-work art without an official source. Landscape, 1.2:1 to 2.2:1
- * (itch.io covers are 630x500), at least 600 pixels wide. The published index
+ * safe-for-work art that has no official copy in the right shape. About 63:50
+ * (1.12:1 to 1.41:1, the shape of itch.io covers and of Renplay's cards, which
+ * show other shapes shrunk on a blur), at least 600 pixels wide. The published index
  * gives each cover's sha256 and size, so Renplay can check what it downloads.
  */
 async function checkCover(file, recipe) {
@@ -76,7 +77,7 @@ async function checkCover(file, recipe) {
   }
   const { width: w, height: h, format } = meta
   if (!['webp', 'png', 'jpeg', 'gif'].includes(format)) return fail(file, `cover ${recipe.cover} is ${format}; use WebP, PNG or JPEG`)
-  if (w < 600 || w / h < 1.2 || w / h > 2.2) return fail(file, `cover ${recipe.cover} is ${w}×${h}; use landscape art 1.2:1 to 2.2:1, at least 600 pixels wide`)
+  if (w < 600 || w / h < 1.12 || w / h > 1.41) return fail(file, `cover ${recipe.cover} is ${w}×${h}; use art shaped like an itch.io cover (63:50, 1.12:1 to 1.41:1), at least 600 pixels wide, or make a cover file from it (npm run cover)`)
   recipe.cover = { url: recipe.cover, sha256: createHash('sha256').update(data).digest('hex'), width: w, height: h }
 }
 
