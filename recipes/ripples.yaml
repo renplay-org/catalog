@@ -1,0 +1,28 @@
+id: ripples
+title: Ripples
+developer: Jestur
+tags: [sci-fi, mystery, romance]
+nsfw: true
+links:
+  itch: https://jestur.itch.io/ripples
+  patreon: https://www.patreon.com/jestur
+  f95: https://f95zone.to/threads/56110/
+saveDir: Ripples-157914171433
+match:
+  - Ripples-*-pc.zip
+engine: 8.5.3
+releases:
+  - version: "0.9.23"
+    date: "2026-05-11"
+    renpy: 8.2.1
+    status: verified
+    archives:
+      - name: Ripples-0.9.23-pc.zip
+        size: 13364157048
+        sha256: "550ec4665ed5a4e3fb399b17a2352343549a5b47a02d6b7a74fcf238f8521dd1"
+        platform: pc
+    verified:
+      date: "2026-11-03"
+      renplay: 2.1.0
+      browsers: [chromium, webkit]
+      notes: Episode 9. 17k files stream (12.8 GB). The 8.5 engine recompiles the scripts on the first start (35 s); later starts take about 10 s.
