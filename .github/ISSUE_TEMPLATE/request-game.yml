@@ -1,23 +1,111 @@
 name: Request a game
-description: Ask for a recipe for a Ren'Py game
+description: Ask for a Ren'Py game, or a newer version of one, to be added to the catalog
+title: "Request: "
 labels: [request]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! A few things first:
+
+        - **Is it already there?** Search the [catalog](https://renplay-web.github.io/catalog.html) and the [open requests](https://github.com/renplay-web/catalog/issues?q=is%3Aissue+label%3Arequest). If the game is listed but your version is not, choose "A newer version" below.
+        - **Renplay plays Ren'Py 8 games** from their PC download (Windows, Linux or Mac). Ren'Py 7 games and other engines (RPG Maker, Unity, HTML) are not supported.
+        - **Only official sources.** Link the developer's own page (itch.io, Steam, Patreon, their website), never a download mirror. The catalog never hosts game files.
+
+        A bot checks your request against the catalog and the game's page and comments with what it found.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What are you asking for?
+      options:
+        - A game that is not in the catalog
+        - A newer version of a game in the catalog
+        - Another edition of a game in the catalog (a season, a DLC, a different download)
+    validations:
+      required: true
   - type: input
     id: title
     attributes:
       label: Game
-      placeholder: Title and version
+      description: The title as the developer writes it.
+      placeholder: Pale Carnations
     validations:
       required: true
   - type: input
-    id: link
+    id: version
     attributes:
-      label: Official page
-      description: Where the game is downloaded (website, itch.io, Patreon, Steam, F95zone thread)
+      label: Version
+      description: As the developer names it, from the download or the game's main menu.
+      placeholder: "0.9.23, Ch4Up7, Episode 9…"
     validations:
       required: true
-  - type: textarea
+  - type: input
+    id: developer
+    attributes:
+      label: Developer
+      placeholder: Studio or person
+  - type: input
+    id: page
+    attributes:
+      label: Official page
+      description: Where the developer publishes the game. itch.io pages are best, they also have the cover.
+      placeholder: https://developer.itch.io/game
+    validations:
+      required: true
+  - type: input
+    id: f95
+    attributes:
+      label: F95zone thread (if there is one)
+      placeholder: https://f95zone.to/threads/…
+  - type: dropdown
+    id: renpy
+    attributes:
+      label: How do you know it is a Ren'Py game?
+      description: A Ren'Py game's folder has a `renpy` folder next to a `game` folder, which holds `.rpa` or `.rpy` files.
+      options:
+        - The download has the renpy and game folders
+        - The developer or the store page says so
+        - Renplay installed it
+        - I am not sure
+    validations:
+      required: true
+  - type: input
+    id: renpy-version
+    attributes:
+      label: Ren'Py version, if you know it
+      description: "In the download, `renpy/vc_version.py` says `version = '8.2.1…'`. Renplay shows it on the game's Details tab."
+      placeholder: "8.2.1"
+  - type: input
+    id: archive
+    attributes:
+      label: Download file name
+      description: The exact name of the PC download, so Renplay can recognize it.
+      placeholder: Game-1.0-pc.zip
+  - type: dropdown
     id: tried
     attributes:
       label: Did you try it in Renplay?
-      description: What happened? Attach the install log from Renplay's Activity page if it failed.
+      options:
+        - "No"
+        - Yes, and it works
+        - Yes, but something is wrong
+        - Yes, and it does not install or start
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened?
+      description: If you tried it, what worked and what did not. For a failed install, paste the log from Renplay's Settings › Activity.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send it
+      options:
+        - label: I searched the catalog and the open requests for this game.
+          required: true
+        - label: The link is the developer's own page, not a download mirror.
+          required: true
+        - label: It is the PC release of a Ren'Py game.
+          required: true
