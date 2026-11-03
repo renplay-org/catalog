@@ -6,8 +6,9 @@ Ren'Py games in the browser with saves on the server. It holds recipes (YAML), c
 patches, and publishes them as one JSON index on GitHub Pages:
 `https://renplay-web.github.io/catalog/index.json`. Every Renplay instance reads that index.
 
-**Never commit game files** (archives, scripts, images from inside a game other than a cover). A
-recipe points to the official download; players get the game from the developer.
+**Never commit game files** (archives, scripts, images from a game) and never commit images that
+are not safe for work. A recipe points to the official download and links the official cover art;
+players get both from the developer.
 
 ## Layout
 
@@ -15,19 +16,19 @@ recipe points to the official download; players get the game from the developer.
 |---|---|
 | `recipes/<id>.yaml` | One game. The file name is the id. |
 | `recipes/_template.yaml` | Every field, explained. CI validates it too. |
-| `covers/<id>.webp` | The game's cover: 16:9, 1280–1920 px wide, WebP, < 400 KB, safe for work. |
+| `covers/<id>.webp` | Rare: a safe-for-work cover without an official copy to link to. |
 | `patches/<id>/*.rpy` | Small browser fixes, referenced from `build.patches`. Rare. |
 | `schema/recipe.schema.json` | JSON Schema for recipes. |
 | `scripts/build.mjs` | Validates everything and writes `dist/` (the published site). |
-| `scripts/cover.mjs` | `npm run cover -- <image> <id>` makes a cover. |
-| `.agents/skills/` | Procedures: add a game, add a release, make a cover. `.claude/skills` links here. |
+| `scripts/cover.mjs` | `npm run cover -- <image> <id>` makes such a file (1260×1000 WebP). |
+| `.agents/skills/` | Procedures: add a game, add a release, find the cover. `.claude/skills` links here. |
 
 ## Commands
 
 ```sh
 npm ci              # once
-npm run build       # validate all recipes and covers, write dist/index.json
-npm run cover -- <image> <id> [--focus attention|top|bottom|left|right]
+npm run build       # validate all recipes, download and check covers, write dist/index.json
+npm run cover -- <image> <id> [--focus attention|top|bottom|left|right]   # only for covers/ files
 shasum -a 256 <archive>          # macOS (Linux: sha256sum)
 stat -f %z <archive>             # size in bytes on macOS (Linux: stat -c %s)
 ```
@@ -47,7 +48,8 @@ stat -f %z <archive>             # size in bytes on macOS (Linux: stat -c %s)
   folder, screen size).
 - **Updates:** when a recipe lists a `verified` or `playable` release newer than the installed one,
   Renplay shows "Update".
-- **Covers:** Renplay downloads them on catalog refresh and caches them by content hash.
+- **Covers:** the index gives each cover's URL, sha256 and size. Renplay downloads it on catalog
+  refresh, refuses it if the checksum differs, and keeps a WebP thumbnail on the server.
 
 ## Rules for recipes
 
@@ -64,9 +66,10 @@ stat -f %z <archive>             # size in bytes on macOS (Linux: stat -c %s)
 
 ## Covers
 
-Curated, because Renplay shows nothing else: art from the game itself (the developer's store page
-screenshots or the game's menu art), safe for work (no nudity or sexual content), no text or logos,
-16:9. See `.agents/skills/make-cover`.
+A cover is the game's official cover art, with its logo, as the game's itch.io, Steam or F95zone
+thumbnail shows it: the first thing players recognize. Link it by its https URL on the developer's
+own hosting (the itch.io page's `og:image` first); never copy adult art into this repository.
+Landscape 1.2:1 to 2.2:1, at least 600 px wide. See `.agents/skills/find-cover`.
 
 ## Workflow
 

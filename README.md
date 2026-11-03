@@ -9,9 +9,9 @@ its official source; Renplay recognizes the archive by checksum, name, or a `mat
 builds it with the recipe's settings and engine version.
 
 Renplay does most of the work by itself (unpacking archives, choosing what streams, detecting the
-save folder), so most recipes are short: identity, links, a cover, and the tested releases. The
-title, developer, tags and cover a player sees in Renplay come from here, which is why every game
-that works gets a hand-picked cover.
+save folder), so most recipes are short: identity, links, the official cover, and the tested
+releases. The title, developer, tags and cover a player sees in Renplay come from here. Covers are
+linked from the developers' own pages, not copied, so no adult art is hosted here.
 
 - Add or update a game: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Every field explained: [recipes/_template.yaml](recipes/_template.yaml)
@@ -22,8 +22,8 @@ that works gets a hand-picked cover.
 ## Index format
 
 `index.json` is `{ "schema": 2, "generated": "…", "games": [recipe, …] }`, the recipes as in this
-repository with patch files resolved to `{ path, url, sha256 }`. Covers are published next to it
-under `covers/`.
+repository with patch files resolved to `{ path, url, sha256 }` and covers to
+`{ url, sha256, width, height }`.
 
 Renplay is free and open source. If it is useful to you, you can support it on
 [Ko-fi](https://ko-fi.com/janpuc).

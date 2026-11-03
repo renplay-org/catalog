@@ -17,8 +17,8 @@ description: Add a new version of a game that is already in the Renplay catalog.
    - check new content (images, audio, video) loads.
 4. Set `status` and `verified` (date, Renplay version, browsers, notes). If the developer's file
    names follow a pattern that `match` does not cover yet, add it.
-5. If the developer has new official key art and the old cover no longer fits, update the cover
-   with the `make-cover` skill. Otherwise leave it.
+5. If the developer has new official cover art, update the cover with the `find-cover` skill.
+   Otherwise leave it.
 6. `npm run build`, then a pull request titled `<Title>: add <version>`.
 
 Renplay shows "Update" to everyone who has an older listed version once this is merged, so only mark

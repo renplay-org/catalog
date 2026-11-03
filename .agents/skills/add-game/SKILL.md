@@ -1,11 +1,11 @@
 ---
 name: add-game
-description: Add a Ren'Py game to the Renplay catalog. Collects the archive's facts, verifies the game on a Renplay instance, makes the cover, writes recipes/<id>.yaml and opens a pull request. Use when asked to add, list, or write a recipe for a game.
+description: Add a Ren'Py game to the Renplay catalog. Collects the archive's facts, verifies the game on a Renplay instance, links the official cover, writes recipes/<id>.yaml and opens a pull request. Use when asked to add, list, or write a recipe for a game.
 ---
 
 # Add a game to the catalog
 
-The result is one pull request with `recipes/<id>.yaml` and `covers/<id>.webp`. Read `AGENTS.md`
+The result is one pull request with `recipes/<id>.yaml`. Read `AGENTS.md`
 first; `recipes/_template.yaml` explains every field.
 
 ## 1. Identify the game and its official sources
@@ -51,9 +51,9 @@ as a starting point.
 Status: `verified` if everything works, `playable` with notes if it works with issues, `broken`
 with the reason if it does not.
 
-## 4. Make the cover
+## 4. Link the cover
 
-Use the `make-cover` skill. The cover is required for `verified` and `playable` games.
+Use the `find-cover` skill: link the official cover art (the itch.io page’s cover first). It is required for `verified` and `playable` games.
 
 ## 5. Write the recipe
 
@@ -63,7 +63,7 @@ title: My Game
 developer: Studio Name
 tags: [sci-fi, romance]
 nsfw: true
-cover: covers/my-game.webp
+cover: https://img.itch.zone/…/original/….png
 links:
   itch: https://studio.itch.io/my-game
   patreon: https://www.patreon.com/studio
@@ -97,7 +97,7 @@ published engine of the game's Ren'Py major version unless the game needs anothe
 ```sh
 npm ci && npm run build
 git checkout -b add-<id>
-git add recipes/<id>.yaml covers/<id>.webp
+git add recipes/<id>.yaml
 git commit -m "Add <Title> (<version>, <status>)"
 ```
 

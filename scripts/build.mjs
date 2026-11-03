@@ -5,6 +5,7 @@ import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, write
 import { join } from 'node:path'
 import Ajv from 'ajv/dist/2020.js'
 import addFormats from 'ajv-formats'
+import sharp from 'sharp'
 import YAML from 'yaml'
 
 const root = new URL('..', import.meta.url).pathname
@@ -30,37 +31,46 @@ if (!engines) console.warn('warning: engine index unreachable, engine versions n
   if (!validate(t)) fail('_template.yaml', ajv.errorsText(validate.errors, { separator: '; ' }))
 }
 
-/** Width and height of a WebP image, or null. */
-function webpSize(b) {
-  if (b.length < 30 || b.toString('latin1', 0, 4) !== 'RIFF' || b.toString('latin1', 8, 12) !== 'WEBP') return null
-  const chunk = b.toString('latin1', 12, 16)
-  if (chunk === 'VP8 ') return { w: b.readUInt16LE(26) & 0x3fff, h: b.readUInt16LE(28) & 0x3fff }
-  if (chunk === 'VP8L') {
-    const bits = b.readUInt32LE(21)
-    return { w: (bits & 0x3fff) + 1, h: ((bits >> 14) & 0x3fff) + 1 }
-  }
-  if (chunk === 'VP8X') return { w: 1 + b.readUIntLE(24, 3), h: 1 + b.readUIntLE(27, 3) }
-  return null
-}
-
 /**
- * Covers are curated: covers/<id>.webp, 16:9, 1280 to 1920 pixels wide, under
- * 400 KB. Games that work (newest release verified or playable) need one.
+ * Covers are the game's official art, the kind itch.io, Steam or F95zone show:
+ * key art with the game's logo. Most are linked by URL on the developer's own
+ * hosting, which keeps adult art off GitHub; files in covers/ are only for
+ * safe-for-work art without an official source. Landscape, 1.2:1 to 2.2:1
+ * (itch.io covers are 630x500), at least 600 pixels wide. The published index
+ * gives each cover's sha256 and size, so Renplay can check what it downloads.
  */
-function checkCover(file, recipe) {
+async function checkCover(file, recipe) {
   const working = ['verified', 'playable'].includes(recipe.releases[0]?.status)
   if (!recipe.cover) {
-    if (working) fail(file, `needs a cover (covers/${recipe.id}.webp), see CONTRIBUTING.md`)
+    if (working) fail(file, 'needs a cover (the official art), see CONTRIBUTING.md')
     return
   }
-  if (recipe.cover !== `covers/${recipe.id}.webp`) return fail(file, `cover must be covers/${recipe.id}.webp`)
-  const path = join(root, recipe.cover)
-  if (!existsSync(path)) return fail(file, `missing cover ${recipe.cover}`)
-  const data = readFileSync(path)
-  const size = webpSize(data)
-  if (!size) return fail(file, `${recipe.cover} is not a WebP image`)
-  if (size.w < 1280 || size.w > 1920 || Math.abs(size.w * 9 - size.h * 16) > size.w * 0.01 * 9) fail(file, `${recipe.cover} is ${size.w}×${size.h}; use 16:9, 1280 to 1920 pixels wide`)
-  if (data.length > 400 * 1024) fail(file, `${recipe.cover} is ${Math.round(data.length / 1024)} KB; keep it under 400 KB`)
+  let data
+  if (recipe.cover.startsWith('https://')) {
+    if (/patreon(usercontent)?\.com/.test(recipe.cover)) return fail(file, 'Patreon image links expire; use the itch.io, Steam or website copy')
+    try {
+      const res = await fetch(recipe.cover, { signal: AbortSignal.timeout(30000), headers: { 'user-agent': 'renplay-catalog' } })
+      if (!res.ok) return fail(file, `cover ${recipe.cover}: HTTP ${res.status}`)
+      data = Buffer.from(await res.arrayBuffer())
+    } catch (e) {
+      return fail(file, `cover ${recipe.cover}: ${e.message}`)
+    }
+  } else {
+    if (recipe.cover !== `covers/${recipe.id}.webp`) return fail(file, `cover must be an https URL or covers/${recipe.id}.webp`)
+    if (!existsSync(join(root, recipe.cover))) return fail(file, `missing cover ${recipe.cover}`)
+    data = readFileSync(join(root, recipe.cover))
+    if (data.length > 400 * 1024) fail(file, `${recipe.cover} is ${Math.round(data.length / 1024)} KB; keep it under 400 KB`)
+  }
+  let meta
+  try {
+    meta = await sharp(data).metadata()
+  } catch {
+    return fail(file, `cover ${recipe.cover} is not an image`)
+  }
+  const { width: w, height: h, format } = meta
+  if (!['webp', 'png', 'jpeg', 'gif'].includes(format)) return fail(file, `cover ${recipe.cover} is ${format}; use WebP, PNG or JPEG`)
+  if (w < 600 || w / h < 1.2 || w / h > 2.2) return fail(file, `cover ${recipe.cover} is ${w}×${h}; use landscape art 1.2:1 to 2.2:1, at least 600 pixels wide`)
+  recipe.cover = { url: recipe.cover, sha256: createHash('sha256').update(data).digest('hex'), width: w, height: h }
 }
 
 const games = []
@@ -78,7 +88,7 @@ for (const file of readdirSync(join(root, 'recipes')).filter((f) => f.endsWith('
     continue
   }
   if (`${recipe.id}.yaml` !== file) fail(file, 'id must match the file name')
-  checkCover(file, recipe)
+  await checkCover(file, recipe)
   for (const v of [recipe.engine, ...recipe.releases.map((r) => r.engine)].filter(Boolean)) {
     if (engines && !engines.has(v)) fail(file, `engine ${v} is not published in renplay-web/engines`)
   }

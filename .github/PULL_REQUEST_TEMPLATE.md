@@ -16,6 +16,6 @@
 - [ ] Played past the first chapter (or ~30 minutes): images, music and videos work
 - [ ] Saving, loading and resuming from the library work
 - [ ] `status` matches what I saw (`verified` plays through, `playable` has issues described in `verified.notes`)
-- [ ] The cover is the game's own art, safe for work, without text (`covers/<id>.webp`, made with `npm run cover`)
+- [ ] `cover` links the official cover art (itch.io `og:image`, Steam or the developer's site), not a copy
 - [ ] `npm ci && npm run build` passes
 - [ ] No game files are added to this repository (only recipes, covers and small patches)

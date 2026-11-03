@@ -1,8 +1,9 @@
-// Makes covers/<id>.webp from a piece of the game's art: 16:9, 1280×720.
+// Makes covers/<id>.webp, for safe-for-work art that has no official copy to
+// link to: 1260×1000 (the shape of itch.io covers), WebP.
 //
 //   npm run cover -- <image> <id> [--focus centre|attention|top|bottom|left|right]
 //
-// The focus decides what a crop keeps when the source is not 16:9.
+// The focus decides what a crop keeps when the source has another shape.
 import { statSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -19,5 +20,5 @@ if (!src || !id || !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(id)) {
 const position = focus === 'attention' ? sharp.strategy.attention : focus
 const out = join(dirname(fileURLToPath(import.meta.url)), '..', 'covers', `${id}.webp`)
 const meta = await sharp(src).metadata()
-await sharp(src).resize(1280, 720, { fit: 'cover', position }).webp({ quality: 80, effort: 6 }).toFile(out)
+await sharp(src).resize(1260, 1000, { fit: 'cover', position }).webp({ quality: 80, effort: 6 }).toFile(out)
 console.log(`covers/${id}.webp from ${meta.width}×${meta.height}: ${Math.round(statSync(out).size / 1024)} KB`)

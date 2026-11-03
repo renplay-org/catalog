@@ -17,23 +17,32 @@ the game from there.
    - `verified`: plays through without problems
    - `playable`: works, with issues you describe in `verified.notes`
    - `broken`: does not work; say why in `verified.notes`, so nobody has to find out again
-6. Add a cover (below).
+6. Add the cover: the official art's URL (below).
 7. Save the recipe as `recipes/<id>.yaml`, run `npm ci && npm run build`, and open a pull request.
 
 `recipes/_template.yaml` explains every field.
 
 ## Covers
 
-Renplay shows the catalog's cover for a game and nothing else, so covers are curated. Every game
-that works (newest release `verified` or `playable`) needs one.
+Renplay shows the catalog's cover for a game and nothing else, so a cover must make the game
+recognizable at a glance, the way its itch.io, Steam or F95zone thumbnail does. Every game that
+works (newest release `verified` or `playable`) needs one.
 
-- **Source:** the game's own art: the developer's store page screenshots, or the game's menu art.
-- **Safe for work:** no nudity or sexual content. A library is often on a shared screen.
-- **No text or logos:** Renplay prints the title over the cover.
-- **Shape:** 16:9, 1280 to 1920 pixels wide, WebP, under 400 KB, at `covers/<id>.webp`.
+- **The official cover art**, with the game's logo: the cover image of the game's itch.io page is
+  the first choice, then a Steam capsule or the developer's own banner. Not screenshots, fan art,
+  or images from download sites.
+- **Linked, not copied.** Put the image's https URL in `cover`, on the developer's own hosting. On
+  an itch.io page it is the `og:image`:
+  `curl -sL <itch page> | grep -o '<meta[^>]*og:image[^>]*>'`. Patreon image links expire, so do
+  not use them. Many covers of adult games are not safe for work, and this repository must not host
+  them; Renplay downloads each cover once and keeps it on the server.
+- **Shape:** landscape, 1.2:1 to 2.2:1 (itch.io covers are 630×500), at least 600 pixels wide.
+- **No official art?** Then, and only for safe-for-work images, add a file:
+  `npm run cover -- <image> <id>` writes `covers/<id>.webp` (1260×1000) and you set
+  `cover: covers/<id>.webp`.
 
-`npm run cover -- <image> <id>` makes one from any image (1280×720, cropped to 16:9). Add
-`--focus attention` (or `top`, `bottom`, `left`, `right`) when the crop cuts off what matters.
+The build downloads every cover, checks it, and publishes its sha256 and size. A weekly run notices
+covers that disappeared.
 
 ## New version of a listed game
 
