@@ -17,10 +17,11 @@
       "propertyNames": { "enum": ["website", "patreon", "itch", "f95", "steam", "subscribestar", "discord", "walkthrough"] },
       "additionalProperties": { "type": "string", "pattern": "^https://" }
     },
-    "saveDir": { "type": "string", "minLength": 1, "description": "config.save_directory of the game" },
+    "engine": { "enum": ["renpy", "html", "godot", "unity"], "default": "renpy", "description": "What made the game. Renplay is for Ren'Py games; the others play with fewer features (docs/engines.md in renplay-web/renplay)" },
+    "saveDir": { "type": "string", "minLength": 1, "description": "Where the game keeps its saves: config.save_directory for Ren'Py" },
     "continuesFrom": { "type": "array", "items": { "type": "string" }, "description": "Recipe ids of games whose saves this one imports" },
     "match": { "type": "array", "items": { "type": "string" }, "description": "Archive name patterns (*) for releases not listed yet" },
-    "engine": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$", "description": "Ren'Py web engine to build with (default: newest of the game's major version)" },
+    "runtime": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$", "description": "Web runtime to build every release with, from renplay-web/engines (default: the newest that fits the game)" },
     "notes": { "type": "string" },
     "build": {
       "type": "object",
@@ -51,8 +52,8 @@
         "properties": {
           "version": { "type": "string" },
           "date": { "type": "string", "format": "date" },
-          "renpy": { "type": "string" },
-          "engine": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+          "madeWith": { "type": "string", "description": "Version of the engine the game was made with: 8.2.1 (Ren'Py), 4.6.2 (Godot), 2.36.1 (SugarCube)" },
+          "runtime": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$", "description": "Web runtime for this release, instead of the recipe's" },
           "status": { "enum": ["verified", "playable", "broken", "untested"] },
           "archives": {
             "type": "array",
@@ -64,7 +65,7 @@
                 "name": { "type": "string" },
                 "size": { "type": "integer", "minimum": 1 },
                 "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
-                "platform": { "enum": ["pc", "linux", "mac", "android", "universal"] }
+                "platform": { "enum": ["pc", "linux", "mac", "android", "universal", "web"] }
               }
             }
           },

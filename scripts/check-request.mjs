@@ -27,8 +27,20 @@ const title = f['Game'] ?? ''
 const version = f['Version'] ?? ''
 const page = f['Official page'] ?? ''
 const f95 = f['F95zone thread (if there is one)'] ?? ''
-const renpyHow = f["How do you know it is a Ren'Py game?"] ?? ''
-const renpyVersion = f["Ren'Py version, if you know it"] ?? ''
+// Older issues asked "How do you know it is a Ren'Py game?" and for the Ren'Py version.
+const engineAnswer = f['Which engine made it?'] ?? (f["How do you know it is a Ren'Py game?"] ? "Ren'Py" : '')
+const engineVersion = f['Engine version, if you know it'] ?? f["Ren'Py version, if you know it"] ?? ''
+const engine = /^Ren'Py/.test(engineAnswer)
+  ? 'renpy'
+  : /^(Twine|RPG Maker)/.test(engineAnswer)
+    ? 'html'
+    : /^Godot/.test(engineAnswer)
+      ? 'godot'
+      : /^Unity/.test(engineAnswer)
+        ? 'unity'
+        : /^Something else/.test(engineAnswer)
+          ? 'other'
+          : 'unknown'
 const archive = f['Download file name'] ?? ''
 
 const norm = (s) => s.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]/g, '')
@@ -82,13 +94,23 @@ if (!pageUrl || pageUrl.protocol !== 'https:') {
 }
 if (f95 && !/^https:\/\/f95zone\.to\/threads\//.test(f95)) notes.push('ℹ️ The F95zone link does not look like a thread link (`https://f95zone.to/threads/…`).')
 
-// 3. Is it Ren'Py 8?
-const major = renpyVersion.match(/^\s*(\d+)\./)?.[1]
+// 3. The engine. Ren'Py comes first; some others are being added (docs/engines.md in renplay-web/renplay).
+const OTHER = {
+  html: 'ℹ️ **An HTML game** (Twine, RPG Maker MV or MZ). Renplay is adding HTML games after Ren\'Py; this request waits for that.',
+  godot: 'ℹ️ **A Godot game.** Renplay is adding Godot games after HTML games; this request waits for that. Games with native plugins or written in C# may not work.',
+  unity: 'ℹ️ **A Unity game.** Only a WebGL build can run in a browser (itch.io often has one, playable on the page); a PC build cannot. WebGL builds wait for Unity support.',
+  other: '⚠️ **Another engine.** Renplay plays Ren\'Py games, and later HTML, Godot and Unity WebGL games. Please say which engine made it.',
+}
+if (OTHER[engine]) {
+  notes.push(OTHER[engine])
+  labels.add(engine === 'other' ? 'needs info' : `engine: ${engine}`)
+}
+const major = engine === 'renpy' || engine === 'unknown' ? engineVersion.match(/^\s*(\d+)\./)?.[1] : undefined
 if (major === '7') {
-  notes.push(`ℹ️ **Ren'Py ${renpyVersion.trim()}**: Renplay runs Ren'Py 7 games on its Ren'Py 8 engine. Most work; games with Python 2-only code need testing beyond the opening.`)
+  notes.push(`ℹ️ **Ren'Py ${engineVersion.trim()}**: Renplay runs Ren'Py 7 games on its Ren'Py 8 engine. Most work; games with Python 2-only code need testing beyond the opening.`)
   labels.add(`ren'py 7`)
 } else if (major && major !== '8') {
-  notes.push(`⚠️ **Ren'Py ${renpyVersion.trim()}**: games this old have not been tried on Renplay's Ren'Py 8 engine yet.`)
+  notes.push(`⚠️ **Ren'Py ${engineVersion.trim()}**: games this old have not been tried on Renplay's Ren'Py 8 engine yet.`)
   labels.add('needs info')
 }
 let pageSaysRenpy = null
@@ -98,14 +120,18 @@ if (pageUrl && /(^|\.)itch\.io$/.test(pageUrl.hostname)) {
     const html = await res.text()
     pageSaysRenpy = /ren'?py/i.test(html)
     const coverMeta = html.match(/<meta[^>]*property="og:image"[^>]*content="([^"]+)"/) ?? html.match(/<meta[^>]*content="([^"]+)"[^>]*property="og:image"/)
-    if (pageSaysRenpy) notes.push('✅ The itch.io page mentions Ren’Py.')
-    else notes.push('ℹ️ The itch.io page does not mention Ren’Py. That is common, but please confirm the download has the `renpy` and `game` folders.')
+    const madeWith = html.match(/<td>Made with<\/td><td>(.*?)<\/td>/)?.[1]?.replace(/<[^>]+>/g, '').replace(/&#0?39;/g, "'").trim()
+    if (madeWith) notes.push(`✅ The itch.io page says it is made with ${madeWith}.`)
+    else if (engine === 'renpy' || engine === 'unknown') {
+      if (pageSaysRenpy) notes.push('✅ The itch.io page mentions Ren’Py.')
+      else notes.push('ℹ️ The itch.io page does not mention Ren’Py. That is common, but please confirm the download has the `renpy` and `game` folders.')
+    }
     if (coverMeta) notes.push(`✅ The itch.io page has a cover image to link: ${coverMeta[1]}`)
   } catch (e) {
     notes.push(`ℹ️ Could not open the itch.io page (${e.message}).`)
   }
 }
-if (renpyHow.startsWith('I am not sure') && !pageSaysRenpy) {
+if (engine === 'unknown' && !pageSaysRenpy) {
   notes.push('ℹ️ To check: a Ren’Py game’s folder has a `renpy` folder next to a `game` folder with `.rpa` or `.rpy` files.')
   labels.add('needs info')
 }

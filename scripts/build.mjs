@@ -1,4 +1,5 @@
-// Validates recipes/*.yaml and writes dist/index.json (plus the schema, covers and patches)
+// Validates recipes/*.yaml and writes dist/index.v3.json and the older dist/index.json
+// (plus the schema, covers and patches)
 // for GitHub Pages. Files starting with "_" (the template) are not recipes.
 import { createHash } from 'node:crypto'
 import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
@@ -97,8 +98,11 @@ for (const file of readdirSync(join(root, 'recipes')).filter((f) => f.endsWith('
   }
   if (`${recipe.id}.yaml` !== file) fail(file, 'id must match the file name')
   await checkCover(file, recipe)
-  for (const v of [recipe.engine, ...recipe.releases.map((r) => r.engine)].filter(Boolean)) {
-    if (engines && !engines.has(v)) fail(file, `engine ${v} is not published in renplay-web/engines`)
+  // Only Ren'Py runtimes are published so far; other engines' arrive with their support.
+  if ((recipe.engine ?? 'renpy') === 'renpy') {
+    for (const v of [recipe.runtime, ...recipe.releases.map((r) => r.runtime)].filter(Boolean)) {
+      if (engines && !engines.has(v)) fail(file, `runtime ${v} is not published in renplay-web/engines`)
+    }
   }
   const versions = new Set()
   for (const r of recipe.releases) {
@@ -133,7 +137,18 @@ if (errors.length) {
 rmSync(dist, { recursive: true, force: true })
 mkdirSync(dist, { recursive: true })
 for (const dir of ['covers', 'patches']) if (existsSync(join(root, dir))) cpSync(join(root, dir), join(dist, dir), { recursive: true })
-writeFileSync(join(dist, 'index.json'), JSON.stringify({ schema: 2, generated: new Date().toISOString(), games }, null, 1))
+const generated = new Date().toISOString()
+// Schema 3 (Renplay 2.6 and later): every engine, with engine/runtime/madeWith.
+writeFileSync(join(dist, 'index.v3.json'), JSON.stringify({ schema: 3, generated, games }, null, 1))
+// Schema 2 for Renplay 2.5 and older: Ren'Py games only, under the names those versions read.
+const schema2 = games
+  .filter((g) => (g.engine ?? 'renpy') === 'renpy')
+  .map(({ engine, runtime, releases, ...g }) => ({
+    ...g,
+    engine: runtime,
+    releases: releases.map(({ madeWith, runtime, ...r }) => ({ ...r, renpy: madeWith, engine: runtime })),
+  }))
+writeFileSync(join(dist, 'index.json'), JSON.stringify({ schema: 2, generated, games: schema2 }, null, 1))
 // Published at the schema's $id, which recipes name on their first line.
 cpSync(join(root, 'schema/recipe.schema.json'), join(dist, 'recipe.schema.json'))
 writeFileSync(join(dist, '.nojekyll'), '')

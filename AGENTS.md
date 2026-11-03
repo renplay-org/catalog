@@ -1,10 +1,13 @@
 # Renplay catalog: notes for agents
 
-This repository is the curated list of Ren'Py games that work in
+This repository is the curated list of games that work in
 [Renplay](https://github.com/renplay-web/renplay), a self-hosted web app that plays PC releases of
-Ren'Py games in the browser with saves on the server. It holds recipes (YAML), covers and small
-patches, and publishes them as one JSON index on GitHub Pages:
-`https://renplay-web.github.io/catalog/index.json`. Every Renplay instance reads that index.
+Ren'Py games in the browser with saves on the server. Ren'Py comes first; HTML, Godot and Unity
+WebGL games are being added as second-class citizens (`engine` in a recipe). It holds recipes
+(YAML), covers and small patches, and publishes them on GitHub Pages as
+`https://renplay-web.github.io/catalog/index.v3.json` (schema 3, every engine; Renplay 2.6 and
+later) and `index.json` (schema 2, Ren'Py games under the older field names, for Renplay 2.5 and
+older).
 
 **Never commit game files** (archives, scripts, images from a game) and never commit images that
 are not safe for work. A recipe points to the official download and links the official cover art;
@@ -27,7 +30,7 @@ players get both from the developer.
 
 ```sh
 npm ci              # once
-npm run build       # validate all recipes, download and check covers, write dist/index.json
+npm run build       # validate all recipes, download and check covers, write dist/index.v3.json and dist/index.json
 npm run cover -- <image> <id> [--focus attention|top|bottom|left|right]   # only for covers/ files
 shasum -a 256 <archive>          # macOS (Linux: sha256sum)
 stat -f %z <archive>             # size in bytes on macOS (Linux: stat -c %s)
@@ -42,8 +45,10 @@ stat -f %z <archive>             # size in bytes on macOS (Linux: stat -c %s)
   added after an install applies without reinstalling.
 - **Library metadata:** title, developer, tags, links and cover come only from the recipe. Users
   cannot edit them in Renplay, so a recipe's metadata is what everyone sees.
-- **Building:** `engine` picks the Ren'Py web engine (from
-  [renplay-web/engines](https://github.com/renplay-web/engines)); `build.keep`, `build.exclude` and
+- **Building:** `engine` says what made the game (`renpy` by default, `html`, `godot`, `unity`);
+  `runtime` picks the web runtime to build with (from
+  [renplay-web/engines](https://github.com/renplay-web/engines)), per recipe or per release, and
+  `madeWith` records the engine version the game was made with. `build.keep`, `build.exclude` and
   `build.patches` adjust the build. Renplay detects everything else (archives, streaming, save
   folder, screen size).
 - **Updates:** when a recipe lists a `verified` or `playable` release newer than the installed one,

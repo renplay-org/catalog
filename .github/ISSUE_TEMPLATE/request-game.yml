@@ -1,5 +1,5 @@
 name: Request a game
-description: Ask for a Ren'Py game, or a newer version of one, to be added to the catalog
+description: Ask for a game, or a newer version of one, to be added to the catalog
 title: "Request: "
 labels: [request]
 body:
@@ -9,7 +9,7 @@ body:
         Thanks! A few things first:
 
         - **Is it already there?** Search the [catalog](https://renplay-web.github.io/catalog.html) and the [open requests](https://github.com/renplay-web/catalog/issues?q=is%3Aissue+label%3Arequest). If the game is listed but your version is not, choose "A newer version" below.
-        - **Renplay plays Ren'Py games** from their PC download (Windows, Linux or Mac): Ren'Py 8, and most Ren'Py 7 games. Other engines (RPG Maker, Unity, HTML) are not supported.
+        - **Renplay plays Ren'Py games** from their PC download (Windows, Linux or Mac): Ren'Py 8, and most Ren'Py 7 games. Support for some other engines is coming: HTML games (Twine, RPG Maker MV and MZ), Godot, and Unity WebGL builds. You can request those already. Unity PC builds, RPG Maker VX Ace and older, Wolf RPG and Kirikiri games cannot run in a browser.
         - **Only official sources.** Link the developer's own page (itch.io, Steam, Patreon, their website), never a download mirror. The catalog never hosts game files.
 
         A bot checks your request against the catalog and the game's page and comments with what it found.
@@ -58,22 +58,25 @@ body:
       label: F95zone thread (if there is one)
       placeholder: https://f95zone.to/threads/…
   - type: dropdown
-    id: renpy
+    id: engine
     attributes:
-      label: How do you know it is a Ren'Py game?
-      description: A Ren'Py game's folder has a `renpy` folder next to a `game` folder, which holds `.rpa` or `.rpy` files.
+      label: Which engine made it?
+      description: Renplay's Add games page shows it once you add the download. itch.io pages say it under "Made with".
       options:
-        - The download has the renpy and game folders
-        - The developer or the store page says so
-        - Renplay installed it
+        - Ren'Py (a renpy folder next to a game folder)
+        - Twine or another HTML game (it opens as a web page)
+        - RPG Maker MV or MZ (a www or js folder with an index.html)
+        - Godot (a .pck file next to the program)
+        - Unity (a folder whose name ends in _Data, or a WebGL build)
+        - Something else
         - I am not sure
     validations:
       required: true
   - type: input
-    id: renpy-version
+    id: engine-version
     attributes:
-      label: Ren'Py version, if you know it
-      description: "Renplay shows it on the game's Details tab. In the download, `renpy/vc_version.py` says `version = '8.2.1…'` (Ren'Py 8), or only `vc_version = 320` (Ren'Py 7)."
+      label: Engine version, if you know it
+      description: "Renplay shows it on Add games and on the game's Details tab. For Ren'Py, `renpy/vc_version.py` in the download says `version = '8.2.1…'` (Ren'Py 8), or only `vc_version = 320` (Ren'Py 7)."
       placeholder: "8.2.1"
   - type: input
     id: archive

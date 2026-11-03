@@ -12,11 +12,12 @@ links:
 saveDir: Ripples-157914171433
 match:
   - Ripples-*-pc.zip
-engine: 8.5.3
+engine: renpy
+runtime: 8.5.3
 releases:
   - version: "0.9.23"
     date: "2026-05-11"
-    renpy: 8.2.1
+    madeWith: 8.2.1
     status: verified
     archives:
       - name: Ripples-0.9.23-pc.zip

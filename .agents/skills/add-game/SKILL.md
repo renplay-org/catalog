@@ -29,10 +29,10 @@ unzip -p Game-1.0-pc.zip '*/renpy/vc_version.py'        # Ren'Py version: versio
 unzip -p Game-1.0-pc.zip '*/game/cache/build_info.json' # build time, if present
 ```
 
-Record `version` exactly as the developer names it, the Ren'Py version as `major.minor.patch`
+Record `version` exactly as the developer names it, the Ren'Py version (`madeWith`) as `major.minor.patch`
 (`8.2.1`), and the release date (the developer's announcement, or the build time).
 
-Ren'Py 7 games run on the Ren'Py 8 engine: set `engine` to the newest 8.x engine explicitly and
+Ren'Py 7 games run on the Ren'Py 8 engine: set `runtime` to the newest 8.x engine explicitly and
 play well past the opening, because Python 2-only code in a game fails only when it runs. Ren'Py 6
 and older have not been tried; ask the maintainer first.
 
@@ -73,11 +73,12 @@ links:
 saveDir: MyGame-1234567890
 match:
   - MyGame-*-pc.zip
-engine: 8.5.3
+engine: renpy
+runtime: 8.5.3
 releases:
   - version: "1.0"
     date: "2026-01-31"
-    renpy: 8.2.1
+    madeWith: 8.2.1
     status: verified
     archives:
       - name: MyGame-1.0-pc.zip
@@ -91,8 +92,9 @@ releases:
       notes: Played the first two chapters; saves load across devices.
 ```
 
-Quote versions and sha256 values (YAML would read some as numbers). `engine` is the newest
-published engine of the game's Ren'Py major version unless the game needs another.
+Quote versions and sha256 values (YAML would read some as numbers). `runtime` is the newest
+published engine of the game's Ren'Py major version unless the game needs another; `madeWith` is
+the Ren'Py version from `vc_version.py`.
 
 ## 6. Check and open the pull request
 
