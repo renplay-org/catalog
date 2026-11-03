@@ -25,4 +25,4 @@ body:
   - type: input
     id: env
     attributes:
-      label: renplay version and browser
+      label: Renplay version and browser

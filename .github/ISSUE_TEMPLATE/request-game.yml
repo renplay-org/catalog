@@ -19,5 +19,5 @@ body:
   - type: textarea
     id: tried
     attributes:
-      label: Did you try it in renplay?
-      description: What happened? Attach the install log from renplay's Activity page if it failed.
+      label: Did you try it in Renplay?
+      description: What happened? Attach the install log from Renplay's Activity page if it failed.

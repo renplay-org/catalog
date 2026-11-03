@@ -10,7 +10,7 @@
     "developer": { "type": "string" },
     "tags": { "type": "array", "items": { "type": "string", "maxLength": 40 }, "maxItems": 20 },
     "nsfw": { "type": "boolean" },
-    "cover": { "type": "string", "description": "Path under covers/ or an https URL" },
+    "cover": { "type": "string", "pattern": "^covers/[a-z0-9]+(-[a-z0-9]+)*\\.webp$", "description": "covers/<id>.webp: 16:9 WebP, 1280 to 1920 pixels wide, under 400 KB" },
     "links": {
       "type": "object",
       "propertyNames": { "enum": ["website", "patreon", "itch", "f95", "steam", "subscribestar", "discord", "walkthrough"] },

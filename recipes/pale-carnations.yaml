@@ -3,6 +3,10 @@ title: Pale Carnations
 developer: Team Mutt and Jeff
 tags: [mystery, drama]
 nsfw: true
+cover: covers/pale-carnations.webp
+links:
+  itch: https://muttandjeff.itch.io/palecarnations
+  patreon: https://www.patreon.com/cw/GIL3D
 saveDir: PaCaGame-1554919452
 match:
   - PaleCarnations-*-pc.zip

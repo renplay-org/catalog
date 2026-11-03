@@ -30,6 +30,39 @@ if (!engines) console.warn('warning: engine index unreachable, engine versions n
   if (!validate(t)) fail('_template.yaml', ajv.errorsText(validate.errors, { separator: '; ' }))
 }
 
+/** Width and height of a WebP image, or null. */
+function webpSize(b) {
+  if (b.length < 30 || b.toString('latin1', 0, 4) !== 'RIFF' || b.toString('latin1', 8, 12) !== 'WEBP') return null
+  const chunk = b.toString('latin1', 12, 16)
+  if (chunk === 'VP8 ') return { w: b.readUInt16LE(26) & 0x3fff, h: b.readUInt16LE(28) & 0x3fff }
+  if (chunk === 'VP8L') {
+    const bits = b.readUInt32LE(21)
+    return { w: (bits & 0x3fff) + 1, h: ((bits >> 14) & 0x3fff) + 1 }
+  }
+  if (chunk === 'VP8X') return { w: 1 + b.readUIntLE(24, 3), h: 1 + b.readUIntLE(27, 3) }
+  return null
+}
+
+/**
+ * Covers are curated: covers/<id>.webp, 16:9, 1280 to 1920 pixels wide, under
+ * 400 KB. Games that work (newest release verified or playable) need one.
+ */
+function checkCover(file, recipe) {
+  const working = ['verified', 'playable'].includes(recipe.releases[0]?.status)
+  if (!recipe.cover) {
+    if (working) fail(file, `needs a cover (covers/${recipe.id}.webp), see CONTRIBUTING.md`)
+    return
+  }
+  if (recipe.cover !== `covers/${recipe.id}.webp`) return fail(file, `cover must be covers/${recipe.id}.webp`)
+  const path = join(root, recipe.cover)
+  if (!existsSync(path)) return fail(file, `missing cover ${recipe.cover}`)
+  const data = readFileSync(path)
+  const size = webpSize(data)
+  if (!size) return fail(file, `${recipe.cover} is not a WebP image`)
+  if (size.w < 1280 || size.w > 1920 || Math.abs(size.w * 9 - size.h * 16) > size.w * 0.01 * 9) fail(file, `${recipe.cover} is ${size.w}×${size.h}; use 16:9, 1280 to 1920 pixels wide`)
+  if (data.length > 400 * 1024) fail(file, `${recipe.cover} is ${Math.round(data.length / 1024)} KB; keep it under 400 KB`)
+}
+
 const games = []
 const shas = new Map()
 for (const file of readdirSync(join(root, 'recipes')).filter((f) => f.endsWith('.yaml') && !f.startsWith('_')).sort()) {
@@ -45,7 +78,7 @@ for (const file of readdirSync(join(root, 'recipes')).filter((f) => f.endsWith('
     continue
   }
   if (`${recipe.id}.yaml` !== file) fail(file, 'id must match the file name')
-  if (recipe.cover && !/^https:/.test(recipe.cover) && !existsSync(join(root, recipe.cover))) fail(file, `missing cover ${recipe.cover}`)
+  checkCover(file, recipe)
   for (const v of [recipe.engine, ...recipe.releases.map((r) => r.engine)].filter(Boolean)) {
     if (engines && !engines.has(v)) fail(file, `engine ${v} is not published in renplay-web/engines`)
   }
