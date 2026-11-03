@@ -2,6 +2,14 @@
   "name": "renplay-catalog",
   "private": true,
   "type": "module",
-  "scripts": { "build": "node scripts/build.mjs" },
-  "devDependencies": { "ajv": "^8.17.1", "ajv-formats": "^3.0.1", "yaml": "^2.8.0" }
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "cover": "node scripts/cover.mjs"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "yaml": "^2.8.0",
+    "sharp": "^0.34.4"
+  }
 }

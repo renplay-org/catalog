@@ -10,7 +10,7 @@
     "developer": { "type": "string" },
     "tags": { "type": "array", "items": { "type": "string", "maxLength": 40 }, "maxItems": 20 },
     "nsfw": { "type": "boolean" },
-    "cover": { "type": "string", "description": "Path under covers/ or an https URL" },
+    "cover": { "type": "string", "pattern": "^(https://.+|covers/[a-z0-9]+(-[a-z0-9]+)*\\.webp)$", "description": "The official cover art: its https URL on the developer's own hosting (itch.io, Steam, the developer's site), or covers/<id>.webp for safe-for-work art without an official source" },
     "links": {
       "type": "object",
       "propertyNames": { "enum": ["website", "patreon", "itch", "f95", "steam", "subscribestar", "discord", "walkthrough"] },

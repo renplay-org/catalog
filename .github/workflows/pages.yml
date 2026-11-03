@@ -3,6 +3,9 @@ on:
   push:
     branches: [main]
   pull_request:
+  # Weekly, to notice cover links that stopped working.
+  schedule:
+    - cron: '17 6 * * 1'
 permissions:
   contents: read
   pages: write
@@ -20,12 +23,12 @@ jobs:
           node-version: 22
       - run: npm ci
       - run: npm run build
-      - if: github.event_name == 'push'
+      - if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
   deploy:
-    if: github.event_name == 'push'
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     environment:
