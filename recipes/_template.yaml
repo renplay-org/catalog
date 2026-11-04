@@ -13,6 +13,11 @@ summary: A student discovers a mystery that changes the course of their studies.
 # Summary: optional SFW premise from the F95 overview, 1–3 sentences, <=600 characters, no markup.
 # Omit without an F95 thread; remove explicit sentences/clauses, keep developer wording.
 nsfw: false
+# free: true                    # optional boolean: this release is free from its developer,
+                                # with no payment or subscription; omit when unknown
+# coverSfw: true                # optional boolean: an adult game's cover is itself safe for work
+# The index sets cover.sfw: true for this flag, non-adult games, or covers/ files; otherwise absent.
+# https://renplay-web.github.io/catalog/index.v3.sfw.json excludes adult games and content tags.
 cover: https://img.itch.zone/…/original/….png   # the official cover art (see CONTRIBUTING.md)
 
 links:                           # https only; any of these keys

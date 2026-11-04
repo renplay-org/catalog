@@ -9,7 +9,9 @@ so they are not added. It holds recipes
 (YAML), covers and small patches, and publishes them on GitHub Pages as
 `https://renplay-web.github.io/catalog/index.v3.json` (schema 3, every engine; Renplay 2.6 and
 later) and `index.json` (schema 2, Ren'Py games under the older field names, for Renplay 2.5 and
-older).
+older). Adult-blocking instances use `https://renplay-web.github.io/catalog/index.v3.sfw.json`:
+schema 3 with only games whose `nsfw` is not true, no game `content` fields and no `content`
+vocabulary group. Never make those clients fetch the full index first.
 
 **Never commit game files** (archives, scripts, images from a game) and never commit images that
 are not safe for work. A recipe points to the official download and links the official cover art;
@@ -33,14 +35,15 @@ players get both from the developer.
 
 ```sh
 npm ci              # once
-npm run build       # validate all recipes, download and check covers, write dist/index.v3.json and dist/index.json
+npm run build       # validate recipes and covers; write dist/index.v3.json, dist/index.v3.sfw.json and dist/index.json
+node --test scripts/*.test.mjs  # validation, content safety and index compatibility
 npm run cover -- <image> <id> [--focus attention|top|bottom|left|right]   # safe-for-work cover file
 RENPLAY_COVERS_TOKEN=… npm run cover:upload -- <image> <id> [--focus …]  # adult cover, to the cover host
 shasum -a 256 <archive>          # macOS (Linux: sha256sum)
 stat -f %z <archive>             # size in bytes on macOS (Linux: stat -c %s)
 ```
 
-`npm run build` is the test. It must pass before a pull request.
+`npm run build` and `node --test scripts/*.test.mjs` must pass before a pull request.
 
 ## How Renplay uses a recipe
 
@@ -79,6 +82,13 @@ stat -f %z <archive>             # size in bytes on macOS (Linux: stat -c %s)
 - Vocabulary changes: update `schema/tags.json`, then `node scripts/tags-schema.mjs`. The build
   checks enum drift and unknown/wrong-group tags. Schema 3 publishes `vocabulary`, label `tags`
   and `tagIds`; schema 2 must not gain `tagIds`, `content`, `summary` or `state`.
+- `free`: optional boolean, true only when the release in this recipe is free from its developer
+  with no payment or subscription. Omit when unknown, including games with only older free releases.
+- `coverSfw`: optional boolean for an adult game whose cover is itself safe for work. Do not
+  infer it from the game's availability or tags. The build consumes it as `cover.sfw: true`,
+  also set automatically when `nsfw` is not true or the cover is a repository `covers/` file.
+  Otherwise `cover.sfw` is absent. Both full indexes carry `free` and `cover.sfw`; a safe cover
+  never admits an adult game to the safe-for-work index.
 - `saveDir`: Ren'Py's `config.save_directory`, exactly. Renplay reports it on install.
 - Text in `verified.notes`: full sentences, plain English, what was tested and any problem.
 

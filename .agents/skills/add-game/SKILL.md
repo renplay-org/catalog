@@ -26,7 +26,12 @@ first; `recipes/_template.yaml` explains every field.
 - Do not invent vocabulary ids. Comedy maps to `humor`, free roam to `sandbox`, school to
   `school-setting`, fan game to `parody`, two protagonists to `multiple-protagonist`. The pinned
   F95 source has no drama, mystery or minigames; omit them. See README for source and updates.
-- `nsfw: true` for adult games.
+- `nsfw: true` for adult games. They are excluded from
+  `https://renplay-web.github.io/catalog/index.v3.sfw.json`, even with a safe cover. This schema 3
+  index also omits game `content` fields and the `content` vocabulary group; adult-blocking clients
+  must fetch it instead of the full index.
+- `free`: optional boolean, true only if this recipe's release is free to download from the
+  developer with no payment or subscription. Omit when unknown; an older free release is not enough.
 
 ## 2. Collect the archive's facts
 
@@ -66,6 +71,11 @@ with the reason if it does not.
 ## 4. Link the cover
 
 Use the `find-cover` skill: link the official cover art (the itch.io page’s cover first). It is required for `verified` and `playable` games.
+
+Set optional `coverSfw: true` only for an adult game whose cover is itself safe for work.
+The built cover gains `sfw: true` for that flag, for games whose `nsfw` is not true, or for
+repository `covers/` files (always safe for work by policy); otherwise `sfw` is absent.
+`coverSfw` itself is not published. Both full indexes include optional `free` and `cover.sfw`.
 
 ## 5. Write the recipe
 
@@ -113,6 +123,7 @@ the Ren'Py version from `vc_version.py`.
 
 ```sh
 npm ci && npm run build
+node --test scripts/*.test.mjs
 git checkout -b add-<id>
 git add recipes/<id>.yaml
 git commit -m "Add <Title> (<version>, <status>)"
