@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://renplay-web.github.io/catalog/recipe.schema.json
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
 id: college-daze
 title: College Daze
 developer: G28

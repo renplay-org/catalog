@@ -63,7 +63,7 @@ Renplay offers the update to everyone who has an older listed version installed.
 - **The game needs a fix for the browser**: add a small `.rpy` under `patches/<id>/` and reference it
   under `build.patches`. Keep patches minimal and explain them in the PR.
 - **Needs another runtime version**: set `runtime` (published versions:
-  [renplay-web/engines](https://github.com/renplay-web/engines)).
+  [renplay-org/engines](https://github.com/renplay-org/engines)).
 
 Renplay splits `.rpa` archives, decides what streams and finds the save folder by itself, so most
 recipes need none of this.

@@ -33,7 +33,7 @@ const fail = (file, msg) => errors.push(`${file}: ${msg}`)
 // Engine versions recipes may name.
 let engines = null
 try {
-  const res = await fetch('https://renplay-org.github.io/engines/index.json', { signal: AbortSignal.timeout(15000) })
+  const res = await fetch('https://engines.renplay.org/index.json', { signal: AbortSignal.timeout(15000) })
   if (res.ok) engines = new Set((await res.json()).engines.map((e) => e.version))
 } catch {}
 if (!engines) console.warn('warning: engine index unreachable, engine versions not checked')
@@ -114,7 +114,7 @@ for (const file of readdirSync(join(root, 'recipes')).filter((f) => f.endsWith('
   // Only Ren'Py runtimes are published so far; other engines' arrive with their support.
   if ((recipe.engine ?? 'renpy') === 'renpy') {
     for (const v of [recipe.runtime, ...recipe.releases.map((r) => r.runtime)].filter(Boolean)) {
-      if (engines && !engines.has(v)) fail(file, `runtime ${v} is not published in renplay-web/engines`)
+      if (engines && !engines.has(v)) fail(file, `runtime ${v} is not published in renplay-org/engines`)
     }
   }
   const versions = new Set()

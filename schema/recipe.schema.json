@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://renplay-web.github.io/catalog/recipe.schema.json",
+  "$id": "https://catalog.renplay.org/recipe.schema.json",
   "title": "renplay recipe",
-  "description": "Recipes build into schema 3 indexes. https://renplay-web.github.io/catalog/index.v3.sfw.json excludes adult games, game content fields and the content vocabulary group.",
+  "description": "Recipes build into schema 3 indexes. https://catalog.renplay.org/index.v3.sfw.json excludes adult games, game content fields and the content vocabulary group.",
   "type": "object",
   "required": ["id", "title", "releases"],
   "additionalProperties": false,
@@ -23,11 +23,11 @@
       "propertyNames": { "enum": ["website", "patreon", "itch", "f95", "steam", "subscribestar", "discord", "walkthrough"] },
       "additionalProperties": { "type": "string", "pattern": "^https://" }
     },
-    "engine": { "enum": ["renpy", "html", "godot", "unity"], "default": "renpy", "description": "What made the game. Renplay is for Ren'Py games; the others play with fewer features (docs/engines.md in renplay-web/renplay)" },
+    "engine": { "enum": ["renpy", "html", "godot", "unity"], "default": "renpy", "description": "What made the game. Renplay is for Ren'Py games; the others play with fewer features (docs/engines.md in renplay-org/renplay)" },
     "saveDir": { "type": "string", "minLength": 1, "description": "Where the game keeps its saves: config.save_directory for Ren'Py" },
     "continuesFrom": { "type": "array", "items": { "type": "string" }, "description": "Recipe ids of games whose saves this one imports" },
     "match": { "type": "array", "items": { "type": "string" }, "description": "Archive name patterns (*) for releases not listed yet" },
-    "runtime": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$", "description": "Web runtime to build every release with, from renplay-web/engines (default: the newest that fits the game)" },
+    "runtime": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$", "description": "Web runtime to build every release with, from renplay-org/engines (default: the newest that fits the game)" },
     "notes": { "type": "string" },
     "build": {
       "type": "object",

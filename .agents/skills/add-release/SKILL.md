@@ -9,7 +9,7 @@ description: Add a new version of a game that is already in the Renplay catalog.
    release: people may still have those archives.
 2. Collect the new archive's facts as in the `add-game` skill (sha256, size, version, Ren'Py version,
    date). If the developer changed the Ren'Py major version, check the engine
-   ([renplay-web/engines](https://github.com/renplay-web/engines)).
+   ([renplay-org/engines](https://github.com/renplay-org/engines)).
 3. Verify on Renplay. Install the new archive over the old one (Renplay offers "Update" for a game
    that is installed), then:
    - load a save made with the previous version and continue playing;

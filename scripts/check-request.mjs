@@ -60,7 +60,7 @@ if (found) {
   const versions = found.releases.map((r) => r.version)
   const listed = versions.some((v) => norm(String(v)) === norm(version))
   if (listed) {
-    notes.push(`⚠️ **${found.title} ${version} is already in the catalog** ([recipes/${found.id}.yaml](https://github.com/renplay-web/catalog/blob/main/recipes/${found.id}.yaml)). If it does not work for you, please open a "Recipe does not work" issue instead.`)
+    notes.push(`⚠️ **${found.title} ${version} is already in the catalog** ([recipes/${found.id}.yaml](https://github.com/renplay-org/catalog/blob/main/recipes/${found.id}.yaml)). If it does not work for you, please open a "Recipe does not work" issue instead.`)
     ok = false
   } else if (newGame) {
     notes.push(`ℹ️ **${found.title} is already in the catalog** (listed: ${versions.join(', ')}). This looks like a request for version ${version || 'another version'}, so it is treated as one.`)
@@ -144,7 +144,7 @@ const comment = [
   '',
   ...notes.map((n) => `- ${n}`),
   '',
-  'A maintainer or contributor will pick it up. Anyone can add a game: see [CONTRIBUTING.md](https://github.com/renplay-web/catalog/blob/main/CONTRIBUTING.md).',
+  'A maintainer or contributor will pick it up. Anyone can add a game: see [CONTRIBUTING.md](https://github.com/renplay-org/catalog/blob/main/CONTRIBUTING.md).',
 ].join('\n')
 console.log(comment)
 console.log(JSON.stringify([...labels]))
