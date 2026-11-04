@@ -1,0 +1,926 @@
+[
+  {
+    "id": "2d-game",
+    "label": "2D game",
+    "group": "play",
+    "f95": 1
+  },
+  {
+    "id": "2dcg",
+    "label": "2DCG",
+    "group": "art",
+    "f95": 2
+  },
+  {
+    "id": "3d-game",
+    "label": "3D game",
+    "group": "play",
+    "f95": 3
+  },
+  {
+    "id": "3dcg",
+    "label": "3DCG",
+    "group": "art",
+    "f95": 4
+  },
+  {
+    "id": "adventure",
+    "label": "Adventure",
+    "group": "play",
+    "f95": 5
+  },
+  {
+    "id": "ahegao",
+    "label": "Ahegao",
+    "group": "content",
+    "f95": 6
+  },
+  {
+    "id": "ai-cg",
+    "label": "AI CG",
+    "group": "art",
+    "f95": 140
+  },
+  {
+    "id": "anal-sex",
+    "label": "Anal sex",
+    "group": "content",
+    "f95": 7
+  },
+  {
+    "id": "animated",
+    "label": "Animated",
+    "group": "art",
+    "f95": 8
+  },
+  {
+    "id": "asset-addon",
+    "label": "Asset-addon",
+    "group": "content",
+    "f95": 9
+  },
+  {
+    "id": "asset-ai-shoujo",
+    "label": "Asset-AI-shoujo",
+    "group": "content",
+    "f95": 10
+  },
+  {
+    "id": "asset-animal",
+    "label": "Asset-animal",
+    "group": "content",
+    "f95": 11
+  },
+  {
+    "id": "asset-animation",
+    "label": "Asset-animation",
+    "group": "content",
+    "f95": 12
+  },
+  {
+    "id": "asset-audio",
+    "label": "Asset-audio",
+    "group": "content",
+    "f95": 13
+  },
+  {
+    "id": "asset-bundle",
+    "label": "Asset-bundle",
+    "group": "content",
+    "f95": 14
+  },
+  {
+    "id": "asset-character",
+    "label": "Asset-character",
+    "group": "content",
+    "f95": 15
+  },
+  {
+    "id": "asset-clothing",
+    "label": "Asset-clothing",
+    "group": "content",
+    "f95": 16
+  },
+  {
+    "id": "asset-daz-gen1",
+    "label": "Asset-DAZ-gen1",
+    "group": "content",
+    "f95": 151
+  },
+  {
+    "id": "asset-daz-gen2",
+    "label": "Asset-DAZ-gen2",
+    "group": "content",
+    "f95": 141
+  },
+  {
+    "id": "asset-daz-gen3",
+    "label": "Asset-DAZ-gen3",
+    "group": "content",
+    "f95": 142
+  },
+  {
+    "id": "asset-daz-gen8",
+    "label": "Asset-DAZ-gen8",
+    "group": "content",
+    "f95": 143
+  },
+  {
+    "id": "asset-daz-gen81",
+    "label": "Asset-DAZ-gen81",
+    "group": "content",
+    "f95": 144
+  },
+  {
+    "id": "asset-daz-gen9",
+    "label": "Asset-DAZ-gen9",
+    "group": "content",
+    "f95": 145
+  },
+  {
+    "id": "asset-daz-m4",
+    "label": "Asset-DAZ-M4",
+    "group": "content",
+    "f95": 152
+  },
+  {
+    "id": "asset-daz-v4",
+    "label": "Asset-DAZ-V4",
+    "group": "content",
+    "f95": 153
+  },
+  {
+    "id": "asset-environment",
+    "label": "Asset-environment",
+    "group": "content",
+    "f95": 17
+  },
+  {
+    "id": "asset-expression",
+    "label": "Asset-expression",
+    "group": "content",
+    "f95": 18
+  },
+  {
+    "id": "asset-female",
+    "label": "Asset-female",
+    "group": "content",
+    "f95": 146
+  },
+  {
+    "id": "asset-hair",
+    "label": "Asset-hair",
+    "group": "content",
+    "f95": 19
+  },
+  {
+    "id": "asset-hdri",
+    "label": "Asset-HDRI",
+    "group": "content",
+    "f95": 20
+  },
+  {
+    "id": "asset-honey-select",
+    "label": "Asset-honey-select",
+    "group": "content",
+    "f95": 21
+  },
+  {
+    "id": "asset-honey-select2",
+    "label": "Asset-honey-select2",
+    "group": "content",
+    "f95": 22
+  },
+  {
+    "id": "asset-koikatu",
+    "label": "Asset-koikatu",
+    "group": "content",
+    "f95": 23
+  },
+  {
+    "id": "asset-light",
+    "label": "Asset-light",
+    "group": "content",
+    "f95": 24
+  },
+  {
+    "id": "asset-male",
+    "label": "Asset-male",
+    "group": "content",
+    "f95": 147
+  },
+  {
+    "id": "asset-morph",
+    "label": "Asset-morph",
+    "group": "content",
+    "f95": 25
+  },
+  {
+    "id": "asset-nonbinary",
+    "label": "Asset-nonbinary",
+    "group": "content",
+    "f95": 148
+  },
+  {
+    "id": "asset-playhome",
+    "label": "Asset-playhome",
+    "group": "content",
+    "f95": 150
+  },
+  {
+    "id": "asset-plugin",
+    "label": "Asset-plugin",
+    "group": "content",
+    "f95": 26
+  },
+  {
+    "id": "asset-pose",
+    "label": "Asset-pose",
+    "group": "content",
+    "f95": 27
+  },
+  {
+    "id": "asset-prop",
+    "label": "Asset-prop",
+    "group": "content",
+    "f95": 28
+  },
+  {
+    "id": "asset-scene",
+    "label": "Asset-scene",
+    "group": "content",
+    "f95": 149
+  },
+  {
+    "id": "asset-script",
+    "label": "Asset-script",
+    "group": "content",
+    "f95": 29
+  },
+  {
+    "id": "asset-shader",
+    "label": "Asset-shader",
+    "group": "content",
+    "f95": 30
+  },
+  {
+    "id": "asset-texture",
+    "label": "Asset-texture",
+    "group": "content",
+    "f95": 31
+  },
+  {
+    "id": "asset-utility",
+    "label": "Asset-utility",
+    "group": "content",
+    "f95": 32
+  },
+  {
+    "id": "asset-vehicle",
+    "label": "Asset-vehicle",
+    "group": "content",
+    "f95": 33
+  },
+  {
+    "id": "bdsm",
+    "label": "BDSM",
+    "group": "content",
+    "f95": 34
+  },
+  {
+    "id": "bestiality",
+    "label": "Bestiality",
+    "group": "content",
+    "f95": 35
+  },
+  {
+    "id": "big-ass",
+    "label": "Big ass",
+    "group": "content",
+    "f95": 36
+  },
+  {
+    "id": "big-tits",
+    "label": "Big tits",
+    "group": "content",
+    "f95": 37
+  },
+  {
+    "id": "blackmail",
+    "label": "Blackmail",
+    "group": "content",
+    "f95": 38
+  },
+  {
+    "id": "bukkake",
+    "label": "Bukkake",
+    "group": "content",
+    "f95": 39
+  },
+  {
+    "id": "censored",
+    "label": "Censored",
+    "group": "content",
+    "f95": 40
+  },
+  {
+    "id": "character-creation",
+    "label": "Character creation",
+    "group": "play",
+    "f95": 41
+  },
+  {
+    "id": "cheating",
+    "label": "Cheating",
+    "group": "content",
+    "f95": 42
+  },
+  {
+    "id": "combat",
+    "label": "Combat",
+    "group": "play",
+    "f95": 43
+  },
+  {
+    "id": "corruption",
+    "label": "Corruption",
+    "group": "content",
+    "f95": 44
+  },
+  {
+    "id": "cosplay",
+    "label": "Cosplay",
+    "group": "content",
+    "f95": 45
+  },
+  {
+    "id": "creampie",
+    "label": "Creampie",
+    "group": "content",
+    "f95": 46
+  },
+  {
+    "id": "dating-sim",
+    "label": "Dating sim",
+    "group": "play",
+    "f95": 47
+  },
+  {
+    "id": "dilf",
+    "label": "DILF",
+    "group": "content",
+    "f95": 48
+  },
+  {
+    "id": "drugs",
+    "label": "Drugs",
+    "group": "content",
+    "f95": 49
+  },
+  {
+    "id": "dystopian-setting",
+    "label": "Dystopian setting",
+    "group": "story",
+    "f95": 50
+  },
+  {
+    "id": "exhibitionism",
+    "label": "Exhibitionism",
+    "group": "content",
+    "f95": 51
+  },
+  {
+    "id": "fantasy",
+    "label": "Fantasy",
+    "group": "story",
+    "f95": 52
+  },
+  {
+    "id": "female-protagonist",
+    "label": "Female protagonist",
+    "group": "protagonist",
+    "f95": 54
+  },
+  {
+    "id": "femaledomination",
+    "label": "Female domination",
+    "group": "content",
+    "f95": 53
+  },
+  {
+    "id": "footjob",
+    "label": "Footjob",
+    "group": "content",
+    "f95": 55
+  },
+  {
+    "id": "furry",
+    "label": "Furry",
+    "group": "content",
+    "f95": 56
+  },
+  {
+    "id": "futa-trans",
+    "label": "Futa/trans",
+    "group": "content",
+    "f95": 57
+  },
+  {
+    "id": "futa-trans-protagonist",
+    "label": "Futa/trans protagonist",
+    "group": "content",
+    "f95": 58
+  },
+  {
+    "id": "gay",
+    "label": "Gay",
+    "group": "content",
+    "f95": 59
+  },
+  {
+    "id": "graphic-violence",
+    "label": "Graphic violence",
+    "group": "content",
+    "f95": 60
+  },
+  {
+    "id": "groping",
+    "label": "Groping",
+    "group": "content",
+    "f95": 61
+  },
+  {
+    "id": "group-sex",
+    "label": "Group sex",
+    "group": "content",
+    "f95": 62
+  },
+  {
+    "id": "handjob",
+    "label": "Handjob",
+    "group": "content",
+    "f95": 63
+  },
+  {
+    "id": "harem",
+    "label": "Harem",
+    "group": "content",
+    "f95": 64
+  },
+  {
+    "id": "horror",
+    "label": "Horror",
+    "group": "story",
+    "f95": 65
+  },
+  {
+    "id": "humiliation",
+    "label": "Humiliation",
+    "group": "content",
+    "f95": 66
+  },
+  {
+    "id": "humor",
+    "label": "Humor",
+    "group": "story",
+    "f95": 67
+  },
+  {
+    "id": "incest",
+    "label": "Incest",
+    "group": "content",
+    "f95": 68
+  },
+  {
+    "id": "internal-view",
+    "label": "Internal view",
+    "group": "content",
+    "f95": 69
+  },
+  {
+    "id": "interracial",
+    "label": "Interracial",
+    "group": "content",
+    "f95": 70
+  },
+  {
+    "id": "japanese-game",
+    "label": "Japanese game",
+    "group": "content",
+    "f95": 71
+  },
+  {
+    "id": "kinetic-novel",
+    "label": "Kinetic novel",
+    "group": "play",
+    "f95": 72
+  },
+  {
+    "id": "lactation",
+    "label": "Lactation",
+    "group": "content",
+    "f95": 73
+  },
+  {
+    "id": "lesbian",
+    "label": "Lesbian",
+    "group": "content",
+    "f95": 74
+  },
+  {
+    "id": "loli",
+    "label": "Loli",
+    "group": "content",
+    "f95": 75
+  },
+  {
+    "id": "male-protagonist",
+    "label": "Male protagonist",
+    "group": "protagonist",
+    "f95": 77
+  },
+  {
+    "id": "maledomination",
+    "label": "Male domination",
+    "group": "content",
+    "f95": 76
+  },
+  {
+    "id": "management",
+    "label": "Management",
+    "group": "play",
+    "f95": 78
+  },
+  {
+    "id": "masturbation",
+    "label": "Masturbation",
+    "group": "content",
+    "f95": 79
+  },
+  {
+    "id": "milf",
+    "label": "MILF",
+    "group": "content",
+    "f95": 80
+  },
+  {
+    "id": "mind-control",
+    "label": "Mind control",
+    "group": "content",
+    "f95": 81
+  },
+  {
+    "id": "mobile-game",
+    "label": "Mobile game",
+    "group": "content",
+    "f95": 82
+  },
+  {
+    "id": "monster",
+    "label": "Monster",
+    "group": "content",
+    "f95": 83
+  },
+  {
+    "id": "monster-girl",
+    "label": "Monster girl",
+    "group": "content",
+    "f95": 84
+  },
+  {
+    "id": "multiple-endings",
+    "label": "Multiple endings",
+    "group": "play",
+    "f95": 85
+  },
+  {
+    "id": "multiple-penetration",
+    "label": "Multiple penetration",
+    "group": "content",
+    "f95": 86
+  },
+  {
+    "id": "multiple-protagonist",
+    "label": "Multiple protagonist",
+    "group": "protagonist",
+    "f95": 87
+  },
+  {
+    "id": "necrophilia",
+    "label": "Necrophilia",
+    "group": "content",
+    "f95": 88
+  },
+  {
+    "id": "no-sexual-content",
+    "label": "No sexual content",
+    "group": "content",
+    "f95": 89
+  },
+  {
+    "id": "ntr",
+    "label": "Netorare",
+    "group": "content",
+    "f95": 90
+  },
+  {
+    "id": "oral-sex",
+    "label": "Oral sex",
+    "group": "content",
+    "f95": 91
+  },
+  {
+    "id": "paranormal",
+    "label": "Paranormal",
+    "group": "story",
+    "f95": 92
+  },
+  {
+    "id": "parody",
+    "label": "Parody",
+    "group": "story",
+    "f95": 93
+  },
+  {
+    "id": "platformer",
+    "label": "Platformer",
+    "group": "play",
+    "f95": 94
+  },
+  {
+    "id": "point-click",
+    "label": "Point & click",
+    "group": "play",
+    "f95": 95
+  },
+  {
+    "id": "possession",
+    "label": "Possession",
+    "group": "content",
+    "f95": 96
+  },
+  {
+    "id": "pov",
+    "label": "POV",
+    "group": "content",
+    "f95": 97
+  },
+  {
+    "id": "pregnancy",
+    "label": "Pregnancy",
+    "group": "content",
+    "f95": 98
+  },
+  {
+    "id": "prostitution",
+    "label": "Prostitution",
+    "group": "content",
+    "f95": 99
+  },
+  {
+    "id": "puzzle",
+    "label": "Puzzle",
+    "group": "play",
+    "f95": 100
+  },
+  {
+    "id": "rape",
+    "label": "Rape",
+    "group": "content",
+    "f95": 101
+  },
+  {
+    "id": "real-porn",
+    "label": "Real porn",
+    "group": "art",
+    "f95": 102
+  },
+  {
+    "id": "religion",
+    "label": "Religion",
+    "group": "story",
+    "f95": 103
+  },
+  {
+    "id": "romance",
+    "label": "Romance",
+    "group": "story",
+    "f95": 104
+  },
+  {
+    "id": "rpg",
+    "label": "RPG",
+    "group": "play",
+    "f95": 105
+  },
+  {
+    "id": "sandbox",
+    "label": "Sandbox",
+    "group": "play",
+    "f95": 106
+  },
+  {
+    "id": "scat",
+    "label": "Scat",
+    "group": "content",
+    "f95": 107
+  },
+  {
+    "id": "school-setting",
+    "label": "School setting",
+    "group": "story",
+    "f95": 108
+  },
+  {
+    "id": "sci-fi",
+    "label": "Sci-fi",
+    "group": "story",
+    "f95": 109
+  },
+  {
+    "id": "sex-toys",
+    "label": "Sex toys",
+    "group": "content",
+    "f95": 110
+  },
+  {
+    "id": "sexual-harassment",
+    "label": "Sexual harassment",
+    "group": "content",
+    "f95": 111
+  },
+  {
+    "id": "shooter",
+    "label": "Shooter",
+    "group": "play",
+    "f95": 112
+  },
+  {
+    "id": "shota",
+    "label": "Shota",
+    "group": "content",
+    "f95": 113
+  },
+  {
+    "id": "side-scroller",
+    "label": "Side-scroller",
+    "group": "play",
+    "f95": 114
+  },
+  {
+    "id": "simulator",
+    "label": "Simulator",
+    "group": "play",
+    "f95": 115
+  },
+  {
+    "id": "sissification",
+    "label": "Sissification",
+    "group": "content",
+    "f95": 116
+  },
+  {
+    "id": "slave",
+    "label": "Slave",
+    "group": "content",
+    "f95": 117
+  },
+  {
+    "id": "sleep-sex",
+    "label": "Sleep sex",
+    "group": "content",
+    "f95": 118
+  },
+  {
+    "id": "spanking",
+    "label": "Spanking",
+    "group": "content",
+    "f95": 119
+  },
+  {
+    "id": "strategy",
+    "label": "Strategy",
+    "group": "play",
+    "f95": 120
+  },
+  {
+    "id": "stripping",
+    "label": "Stripping",
+    "group": "content",
+    "f95": 121
+  },
+  {
+    "id": "superpowers",
+    "label": "Superpowers",
+    "group": "story",
+    "f95": 122
+  },
+  {
+    "id": "swinging",
+    "label": "Swinging",
+    "group": "content",
+    "f95": 123
+  },
+  {
+    "id": "teasing",
+    "label": "Teasing",
+    "group": "content",
+    "f95": 124
+  },
+  {
+    "id": "tentacles",
+    "label": "Tentacles",
+    "group": "content",
+    "f95": 125
+  },
+  {
+    "id": "text-based",
+    "label": "Text based",
+    "group": "play",
+    "f95": 126
+  },
+  {
+    "id": "titfuck",
+    "label": "Titfuck",
+    "group": "content",
+    "f95": 127
+  },
+  {
+    "id": "trainer",
+    "label": "Trainer",
+    "group": "content",
+    "f95": 128
+  },
+  {
+    "id": "transformation",
+    "label": "Transformation",
+    "group": "content",
+    "f95": 129
+  },
+  {
+    "id": "trap",
+    "label": "Trap",
+    "group": "content",
+    "f95": 130
+  },
+  {
+    "id": "turn-based-combat",
+    "label": "Turn based combat",
+    "group": "play",
+    "f95": 131
+  },
+  {
+    "id": "twins",
+    "label": "Twins",
+    "group": "content",
+    "f95": 132
+  },
+  {
+    "id": "urination",
+    "label": "Urination",
+    "group": "content",
+    "f95": 133
+  },
+  {
+    "id": "vaginal-sex",
+    "label": "Vaginal sex",
+    "group": "content",
+    "f95": 134
+  },
+  {
+    "id": "virgin",
+    "label": "Virgin",
+    "group": "content",
+    "f95": 135
+  },
+  {
+    "id": "virtual-reality",
+    "label": "Virtual reality",
+    "group": "story",
+    "f95": 136
+  },
+  {
+    "id": "voiced",
+    "label": "Voiced",
+    "group": "art",
+    "f95": 137
+  },
+  {
+    "id": "vore",
+    "label": "Vore",
+    "group": "content",
+    "f95": 138
+  },
+  {
+    "id": "voyeurism",
+    "label": "Voyeurism",
+    "group": "content",
+    "f95": 139
+  },
+  {
+    "id": "unknown",
+    "label": "Unknown",
+    "group": "content",
+    "f95": 154
+  }
+]

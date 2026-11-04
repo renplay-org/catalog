@@ -2,7 +2,9 @@
 id: harem-hotel
 title: Harem Hotel
 developer: RuneyGames
-tags: [dating sim, management, romance]
+tags: [dating-sim, management, romance]
+content: []
+state: ongoing
 nsfw: true
 # The official cover is only published at 315×250; this is the game's key art from its wiki
 # (linked from the itch.io page), cropped to 63:50.
