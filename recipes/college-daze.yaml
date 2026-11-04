@@ -18,7 +18,7 @@ match:
   - College_Daze_-_*_-_All_Files.zip
 engine: html
 releases:
-  - version: ".510b"
+  - version: "0.510b"
     madeWith: 2.36.1
     status: verified
     archives:

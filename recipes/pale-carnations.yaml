@@ -18,7 +18,7 @@ match:
 engine: renpy
 runtime: 8.5.3
 releases:
-  - version: Ch4Up7Public
+  - version: "Ch.4 Up.7"
     madeWith: 8.3.4
     status: verified
     archives:
