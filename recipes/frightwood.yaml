@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://renplay-web.github.io/catalog/recipe.schema.json
+id: frightwood
+title: Frightwood
+developer: LadyIcepaw
+tags: [fantasy, horror]
+content: []
+state: completed
+summary: "Join a group of fairy teens in their attempt to discover a grand treasure - one that can only be earned during the night of Halloween. Explore the mystical forest, and find out if the claims are true, or merely a mischievous trap."
+nsfw: false
+cover: https://img.itch.zone/aW1nLzcwOTE3MDEucG5n/original/y3UOpn.png
+links:
+  itch: https://ladyicepaw.itch.io/frightwood
+saveDir: Frightwood-19970815
+match:
+  - Frightwood-*-win.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2021-09-24"
+    madeWith: 7.3.5
+    status: verified
+    archives:
+      - name: Frightwood-1.0-win.zip
+        size: 72017112
+        sha256: "8e64cf7542d807f6f194c79c9a191851e3d77fd39c90b169faba319e74d9cf9f"
+        platform: pc
+    verified:
+      date: "2026-11-04"
+      renplay: 2.9.1
+      browsers: [chromium, webkit]
+      notes: Played for ten minutes with a save, a reload and the save loaded again; touch works on a phone. Two short sound effects stay silent in browsers (they are MPEG files named .ogg). A free, safe-for-work game, good for trying Renplay out.

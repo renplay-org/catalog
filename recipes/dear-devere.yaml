@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=https://renplay-web.github.io/catalog/recipe.schema.json
+id: dear-devere
+title: Dear Devere
+developer: Katy133
+tags: [romance, paranormal, voiced]
+content: []
+state: completed
+summary: "The year is 1935. It all started with a single letter. But from that point on, nothing would remain the same for Angela Bard--a quiet, solitary woman living in the Scottish isles."
+nsfw: false
+cover: https://img.itch.zone/aW1nLzMwOTE2MTAuanBn/original/QrCiGk.jpg
+links:
+  itch: https://katy133.itch.io/dear-devere
+  steam: https://store.steampowered.com/app/1301220/Dear_Devere/
+  website: https://katy133.weebly.com/dear-devere.html
+  patreon: https://www.patreon.com/Katy133
+saveDir: DearDevere-1581812927
+match:
+  - DearDevere-*-win.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.5"
+    madeWith: 7.4.11
+    status: verified
+    archives:
+      - name: DearDevere-1.5-win.zip
+        size: 286408601
+        sha256: "95bb195fe964df6f39a42ddec51e6c8192e272fb42346dca7dcdf517012c0be6"
+        platform: pc
+    verified:
+      date: "2026-11-04"
+      renplay: 2.9.1
+      browsers: [chromium, webkit]
+      notes: Played one route to its end, with a save, a reload and the save loaded again. Music and voice play; touch works on a phone. A free, safe-for-work game, good for trying Renplay out.
