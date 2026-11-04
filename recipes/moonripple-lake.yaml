@@ -20,7 +20,7 @@ match:
 engine: renpy
 runtime: 8.5.3
 releases:
-  - version: "Patreon(0.77)"
+  - version: "0.77"
     date: "2026-10-16"
     madeWith: 8.5.3
     status: verified

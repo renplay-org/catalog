@@ -27,7 +27,7 @@ build:
     - path: game/zz_renplay_py2.rpy
       file: zz_renplay_py2.rpy
 releases:
-  - version: "v0.20_Pre-Alpha"
+  - version: "0.20 pre alpha"
     madeWith: 7.4.11
     status: playable
     archives:
