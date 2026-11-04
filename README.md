@@ -1,7 +1,8 @@
 # Renplay catalog
 
 Recipes for games that work in [Renplay](https://github.com/renplay-web/renplay), published to
-`https://renplay-web.github.io/catalog/index.v3.json`. Every Renplay instance reads this index.
+`https://renplay-web.github.io/catalog/index.v3.json`. Instances that block adult games use
+`https://renplay-web.github.io/catalog/index.v3.sfw.json` instead.
 Ren'Py games come first; HTML games (Twine and similar) are in too, and other engines only when
 their normal download plays as easily.
 
@@ -24,14 +25,30 @@ linked from the developers' own pages, not copied, so no adult art is hosted her
 ## Index format
 
 `index.v3.json` is `{ "schema": 3, "generated": "…", "vocabulary": { id: { label, group } }, "games": [recipe, …] }`,
-with patch files resolved to `{ path, url, sha256 }` and covers to `{ url, sha256, width, height }`.
+with patch files resolved to `{ path, url, sha256 }` and covers to `{ url, sha256, width, height }`
+plus optional `sfw: true`.
 Recipe `tags` contain vocabulary ids; the index instead keeps `tags` as lowercase display labels
 for Renplay 2.9 and earlier, and adds the original ids as `tagIds`. `content` always contains ids
 and must never be displayed as library chips. Optional `summary` and `state` are included unchanged.
 
+`index.v3.sfw.json` has the same schema 3 shape, but includes only games whose `nsfw` is not
+`true`, omits each game's `content` field, and excludes the `content` vocabulary group. It contains
+no adult recipes, adult cover URLs or content-tag labels. Blocking adult games must select this
+index before fetching the catalog, not filter the full index after downloading it.
+
+- `free`: optional boolean. The release in the recipe is free to download from its developer,
+  with no payment or subscription. Omit when unknown; free older releases do not qualify a paid
+  current release.
+- `coverSfw`: optional recipe boolean for an adult game whose cover is itself safe for work.
+  The build consumes this field and publishes `cover.sfw: true` when it is true, when `nsfw`
+  is not true, or when the cover is a repository `covers/` file (safe for work by policy).
+  Otherwise `cover.sfw` is absent. A safe cover does not make an adult game eligible for the
+  safe-for-work index.
+
 `index.json` (schema 2) is for Renplay 2.5 and older: only Ren'Py games, with the older field names
 (`engine` for the runtime version, `releases[].renpy` and `releases[].engine` for `madeWith` and
 `runtime`). It omits the new vocabulary, `tagIds`, `content`, `summary` and `state` fields.
+Both full indexes carry optional `free` and `cover.sfw` metadata.
 
 ## Tags, summaries and game state
 
@@ -66,7 +83,7 @@ When updating the upstream vocabulary, edit `schema/tags.json`, then run
 `node scripts/tags-schema.mjs` to regenerate the schema enums. The build rejects unknown ids,
 wrong-group ids, duplicates, more than ten chip tags, and stale schema enums. Both the schema
 and `tags.json` are published alongside the index. Run `npm run build` followed by
-`node --test scripts/tags.test.mjs` to check validation and index compatibility.
+`node --test scripts/*.test.mjs` to check validation and index compatibility.
 
 Renplay is free and open source. If it is useful to you, you can support it on
 [Ko-fi](https://ko-fi.com/janpuc).

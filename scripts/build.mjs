@@ -1,4 +1,4 @@
-// Validates recipes/*.yaml and writes dist/index.v3.json and the older dist/index.json
+// Validates recipes/*.yaml and writes dist/index.v3.json, dist/index.v3.sfw.json and the older dist/index.json
 // (plus the schema, covers and patches)
 // for GitHub Pages. Files starting with "_" (the template) are not recipes.
 import { createHash } from 'node:crypto'
@@ -9,6 +9,7 @@ import addFormats from 'ajv-formats'
 import sharp from 'sharp'
 import YAML from 'yaml'
 import { tags, tagEnums } from './tags-schema.mjs'
+import { coverIsSfw } from './content-modes.mjs'
 
 const root = new URL('..', import.meta.url).pathname
 const dist = join(root, 'dist')
@@ -86,7 +87,10 @@ async function checkCover(file, recipe) {
   const { width: w, height: h, format } = meta
   if (!['webp', 'png', 'jpeg', 'gif'].includes(format)) return fail(file, `cover ${recipe.cover} is ${format}; use WebP, PNG or JPEG`)
   if (w < 600 || w / h < 1.12 || w / h > 1.41) return fail(file, `cover ${recipe.cover} is ${w}×${h}; use art shaped like an itch.io cover (63:50, 1.12:1 to 1.41:1), at least 600 pixels wide, or make a cover file from it (npm run cover)`)
-  recipe.cover = { url: recipe.cover, sha256: createHash('sha256').update(data).digest('hex'), width: w, height: h }
+  recipe.cover = {
+    url: recipe.cover, sha256: createHash('sha256').update(data).digest('hex'), width: w, height: h,
+    ...(coverIsSfw(recipe) ? { sfw: true } : {}),
+  }
 }
 
 const games = []
@@ -151,7 +155,7 @@ const generated = new Date().toISOString()
 // of each one, so they get only the play and story groups. Art, protagonist and content tags
 // reach them through tagIds and content.
 const CHIP_GROUPS = new Set(['play', 'story'])
-const displayGames = games.map((g) => ({
+const displayGames = games.map(({ coverSfw, ...g }) => ({
   ...g,
   ...(g.tags
     ? {
@@ -162,6 +166,10 @@ const displayGames = games.map((g) => ({
 }))
 // Schema 3 (Renplay 2.6 and later): every engine, with engine/runtime/madeWith.
 writeFileSync(join(dist, 'index.v3.json'), JSON.stringify({ schema: 3, generated, vocabulary, games: displayGames }, null, 1))
+// Safe-for-work clients must not fetch adult recipes, covers or content vocabulary.
+const sfwVocabulary = Object.fromEntries(Object.entries(vocabulary).filter(([, tag]) => tag.group !== 'content'))
+const sfwGames = displayGames.filter((g) => g.nsfw !== true).map(({ content, ...g }) => g)
+writeFileSync(join(dist, 'index.v3.sfw.json'), JSON.stringify({ schema: 3, generated, vocabulary: sfwVocabulary, games: sfwGames }, null, 1))
 // Schema 2 for Renplay 2.5 and older: Ren'Py games only, under the names those versions read.
 const schema2 = displayGames
   .filter((g) => (g.engine ?? 'renpy') === 'renpy')
