@@ -6,7 +6,12 @@
 id: my-game                      # lowercase letters, digits and dashes
 title: My Game
 developer: Studio Name
-tags: [romance, sandbox]         # a few, lowercase
+tags: [romance, sandbox]         # at most 10 non-content ids from schema/tags.json
+content: []                     # content-group ids; searchable, never library chips
+state: ongoing                  # ongoing | completed | on-hold | abandoned; not release status
+summary: A student discovers a mystery that changes the course of their studies.
+# Summary: optional SFW premise from the F95 overview, 1–3 sentences, <=600 characters, no markup.
+# Omit without an F95 thread; remove explicit sentences/clauses, keep developer wording.
 nsfw: false
 cover: https://img.itch.zone/…/original/….png   # the official cover art (see CONTRIBUTING.md)
 

@@ -69,7 +69,16 @@ stat -f %z <archive>             # size in bytes on macOS (Linux: stat -c %s)
   `verified.notes`), `broken` (say why), `untested`.
 - `links`: only official pages (developer site, itch.io, Patreon, SubscribeStar, Steam, Discord) and
   the F95zone thread; `walkthrough` for a guide. https only.
-- `tags`: a few, lowercase in the file (Renplay capitalizes them).
+- `tags`: at most ten non-content ids from `schema/tags.json`, never free-form labels. `content`
+  holds the vocabulary's content-group ids; searchable, never library chips. Use the linked
+  F95zone thread's tag list, or map existing tags by hand without inventing ids (see README).
+- `summary`: optional safe-for-work premise, developer wording with explicit sentences/clauses
+  removed, one to three sentences, plain text, at most 600 characters. Omit without an F95 thread.
+- `state`: ongoing/completed/on-hold/abandoned from F95 prefixes, ongoing without a prefix or
+  thread (unverified default). Not the release's `status`.
+- Vocabulary changes: update `schema/tags.json`, then `node scripts/tags-schema.mjs`. The build
+  checks enum drift and unknown/wrong-group tags. Schema 3 publishes `vocabulary`, label `tags`
+  and `tagIds`; schema 2 must not gain `tagIds`, `content`, `summary` or `state`.
 - `saveDir`: Ren'Py's `config.save_directory`, exactly. Renplay reports it on install.
 - Text in `verified.notes`: full sentences, plain English, what was tested and any problem.
 

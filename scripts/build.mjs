@@ -8,12 +8,19 @@ import Ajv from 'ajv/dist/2020.js'
 import addFormats from 'ajv-formats'
 import sharp from 'sharp'
 import YAML from 'yaml'
+import { tags, tagEnums } from './tags-schema.mjs'
 
 const root = new URL('..', import.meta.url).pathname
 const dist = join(root, 'dist')
 const ajv = new Ajv({ allErrors: true, strict: false })
 addFormats(ajv)
 const schema = JSON.parse(readFileSync(join(root, 'schema/recipe.schema.json'), 'utf-8'))
+for (const [field, values] of Object.entries(tagEnums)) {
+  if (JSON.stringify(schema.properties[field].items.enum) !== JSON.stringify(values)) {
+    throw new Error(`Stale ${field} enum: run node scripts/tags-schema.mjs`)
+  }
+}
+const vocabulary = Object.fromEntries(tags.map(({ id, label, group }) => [id, { label, group }]))
 const validate = ajv.compile(schema)
 // Every recipe names the schema on its first line, for editors (yaml-language-server).
 const SCHEMA_LINE = `# yaml-language-server: $schema=${schema.$id}`
@@ -140,12 +147,25 @@ rmSync(dist, { recursive: true, force: true })
 mkdirSync(dist, { recursive: true })
 for (const dir of ['covers', 'patches']) if (existsSync(join(root, dir))) cpSync(join(root, dir), join(dist, dir), { recursive: true })
 const generated = new Date().toISOString()
+// Old clients (Renplay 2.9 and older) render tags as labels, never ids, and make a library chip
+// of each one, so they get only the play and story groups. Art, protagonist and content tags
+// reach them through tagIds and content.
+const CHIP_GROUPS = new Set(['play', 'story'])
+const displayGames = games.map((g) => ({
+  ...g,
+  ...(g.tags
+    ? {
+        tags: g.tags.filter((id) => CHIP_GROUPS.has(vocabulary[id].group)).map((id) => vocabulary[id].label.toLowerCase()),
+        tagIds: g.tags,
+      }
+    : {}),
+}))
 // Schema 3 (Renplay 2.6 and later): every engine, with engine/runtime/madeWith.
-writeFileSync(join(dist, 'index.v3.json'), JSON.stringify({ schema: 3, generated, games }, null, 1))
+writeFileSync(join(dist, 'index.v3.json'), JSON.stringify({ schema: 3, generated, vocabulary, games: displayGames }, null, 1))
 // Schema 2 for Renplay 2.5 and older: Ren'Py games only, under the names those versions read.
-const schema2 = games
+const schema2 = displayGames
   .filter((g) => (g.engine ?? 'renpy') === 'renpy')
-  .map(({ engine, runtime, releases, ...g }) => ({
+  .map(({ engine, runtime, releases, tagIds, content, summary, state, ...g }) => ({
     ...g,
     engine: runtime,
     releases: releases.map(({ madeWith, runtime, ...r }) => ({ ...r, renpy: madeWith, engine: runtime })),
@@ -153,5 +173,6 @@ const schema2 = games
 writeFileSync(join(dist, 'index.json'), JSON.stringify({ schema: 2, generated, games: schema2 }, null, 1))
 // Published at the schema's $id, which recipes name on their first line.
 cpSync(join(root, 'schema/recipe.schema.json'), join(dist, 'recipe.schema.json'))
+cpSync(join(root, 'schema/tags.json'), join(dist, 'tags.json'))
 writeFileSync(join(dist, '.nojekyll'), '')
 console.log(`Built ${games.length} recipes`)

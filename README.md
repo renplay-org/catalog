@@ -23,13 +23,50 @@ linked from the developers' own pages, not copied, so no adult art is hosted her
 
 ## Index format
 
-`index.v3.json` is `{ "schema": 3, "generated": "…", "games": [recipe, …] }`, the recipes as in this
-repository with patch files resolved to `{ path, url, sha256 }` and covers to
-`{ url, sha256, width, height }`.
+`index.v3.json` is `{ "schema": 3, "generated": "…", "vocabulary": { id: { label, group } }, "games": [recipe, …] }`,
+with patch files resolved to `{ path, url, sha256 }` and covers to `{ url, sha256, width, height }`.
+Recipe `tags` contain vocabulary ids; the index instead keeps `tags` as lowercase display labels
+for Renplay 2.9 and earlier, and adds the original ids as `tagIds`. `content` always contains ids
+and must never be displayed as library chips. Optional `summary` and `state` are included unchanged.
 
 `index.json` (schema 2) is for Renplay 2.5 and older: only Ren'Py games, with the older field names
 (`engine` for the runtime version, `releases[].renpy` and `releases[].engine` for `madeWith` and
-`runtime`).
+`runtime`). It omits the new vocabulary, `tagIds`, `content`, `summary` and `state` fields.
+
+## Tags, summaries and game state
+
+[`schema/tags.json`](schema/tags.json) is the fixed vocabulary. Each entry has a lowercase
+kebab-case `id`, sentence-case `label`, `group`, and numeric `f95` id. The source is F95Checker's
+[tag mapping](https://github.com/WillyJL/F95Checker/blob/46a5e42154c8291e40fbcd88b389af70010788a8/common/structs.py#L399-L554)
+at commit `46a5e42154c8291e40fbcd88b389af70010788a8`; state prefixes follow its
+[parser](https://github.com/WillyJL/F95Checker/blob/46a5e42154c8291e40fbcd88b389af70010788a8/common/parser.py#L324-L331).
+The numbers are from that mapping, not guessed from tag names or thread ids.
+
+- `tags`: at most ten ids from `play` (gameplay), `story` (non-explicit genres and settings),
+  `art` (visual/audio presentation), or `protagonist` (male, female or multiple protagonist).
+- `content`: every other vocabulary id, searchable but never a library chip. This fallback
+  deliberately includes technical/asset tags as well as adult themes; it does not imply that
+  every such tag is explicit. Empty means no content tags were recorded, not a content guarantee.
+- `summary`: optional safe-for-work plain text, one to three sentences, at most 600 characters.
+  Keep the developer's premise wording and remove explicit sentences or clauses. No markup.
+- `state`: `ongoing`, `completed`, `on-hold`, or `abandoned`. Use the F95zone thread's Completed,
+  Onhold or Abandoned prefix; no prefix means ongoing. Without a thread, ongoing is the default,
+  not a verified claim. This is separate from each release's playability `status`.
+
+Copy the tags, state (from the thread's prefixes) and overview from the game's F95zone thread
+(normal browser user agent, no login; at most one request every three seconds). Every recipe
+links its thread as `links.f95`; find it with F95zone's search if the request lacks it. Keep
+summaries safe for work: the developer's wording for the premise, without explicit sentences.
+Without a thread, map existing metadata by hand and omit the summary; do not invent content tags. Map free roam to `sandbox`, two protagonists to
+`multiple-protagonist`, fan game to `parody`, school to `school-setting`, and comedy to `humor`.
+The pinned source has no drama, mystery, slice-of-life or minigames tag: omit these rather than
+invent ids or numeric mappings. Do not substitute a different game's thread.
+
+When updating the upstream vocabulary, edit `schema/tags.json`, then run
+`node scripts/tags-schema.mjs` to regenerate the schema enums. The build rejects unknown ids,
+wrong-group ids, duplicates, more than ten chip tags, and stale schema enums. Both the schema
+and `tags.json` are published alongside the index. Run `npm run build` followed by
+`node --test scripts/tags.test.mjs` to check validation and index compatibility.
 
 Renplay is free and open source. If it is useful to you, you can support it on
 [Ko-fi](https://ko-fi.com/janpuc).

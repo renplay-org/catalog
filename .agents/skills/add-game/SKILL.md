@@ -15,7 +15,17 @@ first; `recipes/_template.yaml` explains every field.
   thread). Never link download mirrors.
 - The id is the title in lowercase words joined by dashes (`pale-carnations`). Check that
   `recipes/<id>.yaml` does not exist yet; if it does, use the `add-release` skill instead.
-- Pick a few lowercase tags that describe the genre (`sci-fi`, `mystery`, `romance`, `drama`).
+- Use only ids in `schema/tags.json`: at most ten non-content ids in `tags`, content-group ids
+  in `content` (searchable, never library chips). From the linked F95zone thread, take its tag
+  list and map by id, not by guessed labels. Fetch with a normal browser user agent, at most one
+  request every three seconds. Without a thread, map existing tags by hand and omit summary.
+- `summary`: the thread overview's safe-for-work premise, one to three sentences under 600
+  characters, plain text. Keep developer wording, removing explicit sentences or clauses.
+- `state`: Completed → `completed`, Onhold → `on-hold`, Abandoned → `abandoned`; no prefix or
+  no thread → `ongoing` (unverified default). This is not a release's playability `status`.
+- Do not invent vocabulary ids. Comedy maps to `humor`, free roam to `sandbox`, school to
+  `school-setting`, fan game to `parody`, two protagonists to `multiple-protagonist`. The pinned
+  F95 source has no drama, mystery or minigames; omit them. See README for source and updates.
 - `nsfw: true` for adult games.
 
 ## 2. Collect the archive's facts
@@ -64,6 +74,9 @@ id: my-game
 title: My Game
 developer: Studio Name
 tags: [sci-fi, romance]
+content: []
+state: ongoing
+summary: A student discovers a mystery that changes the course of their studies.
 nsfw: true
 cover: https://img.itch.zone/…/original/….png
 links:
