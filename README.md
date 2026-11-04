@@ -2,7 +2,8 @@
 
 Recipes for games that work in [Renplay](https://github.com/renplay-web/renplay), published to
 `https://renplay-web.github.io/catalog/index.v3.json`. Every Renplay instance reads this index.
-Ren'Py games come first; HTML, Godot and Unity WebGL games are being added.
+Ren'Py games come first; HTML games (Twine and similar) are in too, and other engines only when
+their normal download plays as easily.
 
 The catalog hosts **no game files**. A recipe says which download of a game works (file name,
 size, sha256), where to get it, and how to build it for the browser. Players download the game from
