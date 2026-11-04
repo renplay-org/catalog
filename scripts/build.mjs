@@ -1,6 +1,6 @@
 // Validates recipes/*.yaml and writes dist/index.v3.json, dist/index.v3.sfw.json and the older dist/index.json
 // (plus the schema, covers and patches)
-// for GitHub Pages. Files starting with "_" (the template) are not recipes.
+// for catalog.renplay.org. Files starting with "_" (the template) are not recipes.
 import { createHash } from 'node:crypto'
 import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
@@ -182,9 +182,8 @@ writeFileSync(join(dist, 'index.json'), JSON.stringify({ schema: 2, generated, g
 // Published at the schema's $id, which recipes name on their first line.
 cpSync(join(root, 'schema/recipe.schema.json'), join(dist, 'recipe.schema.json'))
 cpSync(join(root, 'schema/tags.json'), join(dist, 'tags.json'))
-writeFileSync(join(dist, '.nojekyll'), '')
 
-// Cloudflare (catalog.renplay.org) reads these; GitHub Pages ignores them. Renplay fetches the
+// Cloudflare (catalog.renplay.org) reads these. Renplay fetches the
 // indexes from other origins, so everything is open to CORS.
 writeFileSync(
   join(dist, '_headers'),

@@ -6,7 +6,7 @@ Ren'Py games in the browser with saves on the server. Ren'Py comes first; HTML g
 as second-class citizens (`engine` in a recipe), and other engines only when their normal download
 plays as easily. Unity WebGL and Godot web builds work in Renplay but rarely come as a download,
 so they are not added. It holds recipes
-(YAML), covers and small patches, and publishes them on GitHub Pages as
+(YAML), covers and small patches, and publishes them through Cloudflare as
 `https://catalog.renplay.org/index.v3.json` (schema 3, every engine; Renplay 2.6 and
 later) and `index.json` (schema 2, Ren'Py games under the older field names, for Renplay 2.5 and
 older). Adult-blocking instances use `https://catalog.renplay.org/index.v3.sfw.json`:
@@ -106,7 +106,7 @@ another shape becomes a cover file (cropped, or on a plain background, never blu
 1. Branch from `main`, one game (or one change) per pull request.
 2. `npm run build` passes; the PR template's checklist is filled in.
 3. CI (`.github/workflows/pages.yml`) validates on every PR. Merging to `main` publishes the index
-   to GitHub Pages within minutes.
+   to catalog.renplay.org (Cloudflare) within minutes.
 4. Commit messages: `Add <Game> (<version>, <status>)`, `<Game>: add <version>`, `<Game>: <fix>`.
 
 Agents prepare branches and pull requests; a maintainer merges.
