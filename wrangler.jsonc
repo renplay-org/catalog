@@ -1,0 +1,10 @@
+// Publishes dist/ (built by `npm run build`) at https://catalog.renplay.org. CI deploys it on every
+// push to main; see .github/workflows/pages.yml.
+{
+  "name": "renplay-catalog",
+  "compatibility_date": "2026-11-01",
+  "assets": { "directory": "./dist", "not_found_handling": "404-page" },
+  "routes": [{ "pattern": "catalog.renplay.org", "custom_domain": true }],
+  "workers_dev": false,
+  "preview_urls": false
+}

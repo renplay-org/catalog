@@ -33,7 +33,7 @@ const fail = (file, msg) => errors.push(`${file}: ${msg}`)
 // Engine versions recipes may name.
 let engines = null
 try {
-  const res = await fetch('https://renplay-web.github.io/engines/index.json', { signal: AbortSignal.timeout(15000) })
+  const res = await fetch('https://renplay-org.github.io/engines/index.json', { signal: AbortSignal.timeout(15000) })
   if (res.ok) engines = new Set((await res.json()).engines.map((e) => e.version))
 } catch {}
 if (!engines) console.warn('warning: engine index unreachable, engine versions not checked')
@@ -183,4 +183,38 @@ writeFileSync(join(dist, 'index.json'), JSON.stringify({ schema: 2, generated, g
 cpSync(join(root, 'schema/recipe.schema.json'), join(dist, 'recipe.schema.json'))
 cpSync(join(root, 'schema/tags.json'), join(dist, 'tags.json'))
 writeFileSync(join(dist, '.nojekyll'), '')
+
+// Cloudflare (catalog.renplay.org) reads these; GitHub Pages ignores them. Renplay fetches the
+// indexes from other origins, so everything is open to CORS.
+writeFileSync(
+  join(dist, '_headers'),
+  `/*
+  Access-Control-Allow-Origin: *
+  X-Content-Type-Options: nosniff
+/index.v3.json
+  Cache-Control: public, max-age=300
+/index.v3.sfw.json
+  Cache-Control: public, max-age=300
+/index.json
+  Cache-Control: public, max-age=300
+/recipe.schema.json
+  Cache-Control: public, max-age=3600
+/tags.json
+  Cache-Control: public, max-age=3600
+/covers/*
+  Cache-Control: public, max-age=86400
+/patches/*
+  Cache-Control: public, max-age=86400
+`,
+)
+writeFileSync(
+  join(dist, 'index.html'),
+  `<!doctype html>
+<meta charset="utf-8">
+<title>Renplay catalog</title>
+<meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="0; url=https://renplay.org/catalog">
+<p>This is where Renplay reads its catalog. The games are listed at <a href="https://renplay.org/catalog">renplay.org/catalog</a>.</p>
+`,
+)
 console.log(`Built ${games.length} recipes`)
