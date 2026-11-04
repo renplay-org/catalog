@@ -11,7 +11,7 @@ import { createHash, createHmac } from 'node:crypto'
 import sharp from 'sharp'
 
 const BUCKET = process.env.RENPLAY_COVERS_BUCKET ?? 'renplay-covers'
-const PUBLIC = process.env.RENPLAY_COVERS_URL ?? 'https://covers.janpuc.com'
+const PUBLIC = process.env.RENPLAY_COVERS_URL ?? 'https://covers.renplay.org'
 
 const args = process.argv.slice(2)
 const focusAt = args.indexOf('--focus')
