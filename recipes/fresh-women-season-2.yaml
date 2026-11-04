@@ -45,6 +45,9 @@ summary: >-
   having an accident that erased some of your memories. Now, with a clean slate, you moved to
   another town to start college.
 nsfw: true
+# Official developer capsule; wider crop keeps the face and title within the allowed cover ratio.
+# Source: https://cdn-uploads.oppaiman.com/65b23941148a09bf66c2346d/68967f862b2a0fd58b865a5a/game-page/capsule/2dedc6071e03ca30d71c91994fbe98d661325d076fb0a215fe7e34b602d99830.jpg
+cover: covers/fresh-women-season-2.webp
 links:
   website: https://www.oppaiman.com/
   patreon: https://www.patreon.com/oppaiman

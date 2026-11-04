@@ -28,6 +28,8 @@ summary: >-
   every move is a gamble. Build hype, manage risk, and decide when to push your luck — play it too
   safe and nothing happens, push too far and the stream crashes.
 nsfw: true
+# Official itch.io promotional cover already has the right shape and size; link it directly.
+cover: https://img.itch.zone/aW1nLzI5NzI1OTUyLnBuZw==/original/vO1X3b.png
 links:
   itch: https://pedantus.itch.io/risky-stream-demo
   steam: https://store.steampowered.com/app/4704940/Risky_Stream/

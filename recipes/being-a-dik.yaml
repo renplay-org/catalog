@@ -51,6 +51,9 @@ summary: >-
   A young man from a low-income family moves away from his widowed father and his summer love to
   attend college at Burgmeister & Royce.
 nsfw: true
+# Official Steam capsule; wider crop keeps the face and title within the allowed cover ratio.
+# Source: https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1126320/capsule_616x353.jpg
+cover: covers/being-a-dik.webp
 links:
   website: https://being-a-dik.com/
   patreon: https://www.patreon.com/DrPinkCake
