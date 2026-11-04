@@ -110,5 +110,5 @@ body:
           required: true
         - label: The link is the developer's own page, not a download mirror.
           required: true
-        - label: It is the PC release of a Ren'Py game.
+        - label: It is the PC release of a Ren'Py game, or an HTML game.
           required: true
