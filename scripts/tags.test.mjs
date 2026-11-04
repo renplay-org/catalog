@@ -49,7 +49,9 @@ test('built indexes preserve labels for old clients and isolate new metadata', (
     const source = YAML.parse(readFileSync(new URL(`../recipes/${file}`, import.meta.url), 'utf8'))
     const game = index.games.find((g) => g.id === source.id)
     assert.deepEqual(game.tagIds, source.tags)
-    assert.deepEqual(game.tags, source.tags.map((id) => index.vocabulary[id].label.toLowerCase()))
+    // Old clients make a chip of each label, so they get only the play and story groups.
+    const chips = source.tags.filter((id) => ['play', 'story'].includes(index.vocabulary[id].group))
+    assert.deepEqual(game.tags, chips.map((id) => index.vocabulary[id].label.toLowerCase()))
     for (const field of ['content', 'summary', 'state']) assert.deepEqual(game[field], source[field])
     const old = legacy.games.find((g) => g.id === source.id)
     if ((source.engine ?? 'renpy') !== 'renpy') { assert.equal(old, undefined); continue }

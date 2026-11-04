@@ -53,9 +53,11 @@ The numbers are from that mapping, not guessed from tag names or thread ids.
   Onhold or Abandoned prefix; no prefix means ongoing. Without a thread, ongoing is the default,
   not a verified claim. This is separate from each release's playability `status`.
 
-Use the linked F95zone thread's tags and overview where available (normal browser user agent,
-no login; at most one request every three seconds). Otherwise map existing metadata by hand and
-omit the summary; do not invent content tags. Map free roam to `sandbox`, two protagonists to
+Copy the tags, state (from the thread's prefixes) and overview from the game's F95zone thread
+(normal browser user agent, no login; at most one request every three seconds). Every recipe
+links its thread as `links.f95`; find it with F95zone's search if the request lacks it. Keep
+summaries safe for work: the developer's wording for the premise, without explicit sentences.
+Without a thread, map existing metadata by hand and omit the summary; do not invent content tags. Map free roam to `sandbox`, two protagonists to
 `multiple-protagonist`, fan game to `parody`, school to `school-setting`, and comedy to `humor`.
 The pinned source has no drama, mystery, slice-of-life or minigames tag: omit these rather than
 invent ids or numeric mappings. Do not substitute a different game's thread.
@@ -65,9 +67,6 @@ When updating the upstream vocabulary, edit `schema/tags.json`, then run
 wrong-group ids, duplicates, more than ten chip tags, and stale schema enums. Both the schema
 and `tags.json` are published alongside the index. Run `npm run build` followed by
 `node --test scripts/tags.test.mjs` to check validation and index compatibility.
-
-The initial migration's per-game metadata, used tag groups, fetch results, and line-by-line
-schema 2 comparison are recorded in [TAGS-MIGRATION.md](TAGS-MIGRATION.md).
 
 Renplay is free and open source. If it is useful to you, you can support it on
 [Ko-fi](https://ko-fi.com/janpuc).

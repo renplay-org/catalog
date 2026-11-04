@@ -147,10 +147,18 @@ rmSync(dist, { recursive: true, force: true })
 mkdirSync(dist, { recursive: true })
 for (const dir of ['covers', 'patches']) if (existsSync(join(root, dir))) cpSync(join(root, dir), join(dist, dir), { recursive: true })
 const generated = new Date().toISOString()
-// Old clients render tags as labels, never ids. Content stays separate from library chips.
+// Old clients (Renplay 2.9 and older) render tags as labels, never ids, and make a library chip
+// of each one, so they get only the play and story groups. Art, protagonist and content tags
+// reach them through tagIds and content.
+const CHIP_GROUPS = new Set(['play', 'story'])
 const displayGames = games.map((g) => ({
   ...g,
-  ...(g.tags ? { tags: g.tags.map((id) => vocabulary[id].label.toLowerCase()), tagIds: g.tags } : {}),
+  ...(g.tags
+    ? {
+        tags: g.tags.filter((id) => CHIP_GROUPS.has(vocabulary[id].group)).map((id) => vocabulary[id].label.toLowerCase()),
+        tagIds: g.tags,
+      }
+    : {}),
 }))
 // Schema 3 (Renplay 2.6 and later): every engine, with engine/runtime/madeWith.
 writeFileSync(join(dist, 'index.v3.json'), JSON.stringify({ schema: 3, generated, vocabulary, games: displayGames }, null, 1))
