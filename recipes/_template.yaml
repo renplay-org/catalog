@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://renplay-web.github.io/catalog/recipe.schema.json
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
 # Recipe template. Copy to recipes/<id>.yaml; the id must match the file name.
 # Only id, title and releases are required. Everything renplay can detect
 # itself (save folder, Ren'Py version, what to stream) is optional.
@@ -17,7 +17,7 @@ nsfw: false
                                 # with no payment or subscription; omit when unknown
 # coverSfw: true                # optional boolean: an adult game's cover is itself safe for work
 # The index sets cover.sfw: true for this flag, non-adult games, or covers/ files; otherwise absent.
-# https://renplay-web.github.io/catalog/index.v3.sfw.json excludes adult games and content tags.
+# https://catalog.renplay.org/index.v3.sfw.json excludes adult games and content tags.
 cover: https://img.itch.zone/…/original/….png   # the official cover art (see CONTRIBUTING.md)
 
 links:                           # https only; any of these keys
@@ -43,7 +43,7 @@ match:
 engine: renpy
 
 # Web runtime to build with. Leave out to use the newest that fits the game.
-# Must be published in renplay-web/engines.
+# Must be published in renplay-org/engines.
 runtime: 8.5.3
 
 build:                           # all optional

@@ -1,8 +1,8 @@
 # Renplay catalog
 
-Recipes for games that work in [Renplay](https://github.com/renplay-web/renplay), published to
-`https://renplay-web.github.io/catalog/index.v3.json`. Instances that block adult games use
-`https://renplay-web.github.io/catalog/index.v3.sfw.json` instead.
+Recipes for games that work in [Renplay](https://github.com/renplay-org/renplay), published to
+`https://catalog.renplay.org/index.v3.json`. Instances that block adult games use
+`https://catalog.renplay.org/index.v3.sfw.json` instead.
 Ren'Py games come first; HTML games (Twine and similar) are in too, and other engines only when
 their normal download plays as easily.
 
@@ -18,7 +18,7 @@ linked from the developers' own pages, not copied, so no adult art is hosted her
 
 - Add or update a game: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Every field explained: [recipes/_template.yaml](recipes/_template.yaml)
-- Request a game or report a broken one: [issues](https://github.com/renplay-web/catalog/issues/new/choose)
+- Request a game or report a broken one: [issues](https://github.com/renplay-org/catalog/issues/new/choose)
 - Working on this repository with an AI agent: [AGENTS.md](AGENTS.md) and the skills in
   [.agents/skills](.agents/skills)
 

@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: Renplay itself (install, saves, player)
-    url: https://github.com/renplay-web/renplay/issues
+    url: https://github.com/renplay-org/renplay/issues
     about: Problems with Renplay that are not about one game's recipe.

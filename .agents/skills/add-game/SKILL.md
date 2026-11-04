@@ -27,7 +27,7 @@ first; `recipes/_template.yaml` explains every field.
   `school-setting`, fan game to `parody`, two protagonists to `multiple-protagonist`. The pinned
   F95 source has no drama, mystery or minigames; omit them. See README for source and updates.
 - `nsfw: true` for adult games. They are excluded from
-  `https://renplay-web.github.io/catalog/index.v3.sfw.json`, even with a safe cover. This schema 3
+  `https://catalog.renplay.org/index.v3.sfw.json`, even with a safe cover. This schema 3
   index also omits game `content` fields and the `content` vocabulary group; adult-blocking clients
   must fetch it instead of the full index.
 - `free`: optional boolean, true only if this recipe's release is free to download from the

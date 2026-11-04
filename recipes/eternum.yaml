@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://renplay-web.github.io/catalog/recipe.schema.json
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
 id: eternum
 title: Eternum
 developer: Caribdis
