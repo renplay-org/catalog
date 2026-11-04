@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: path-of-desire
+title: Path of Desire
+developer: AnbuAfterDark
+tags:
+  [
+    2dcg,
+    ai-cg,
+    animated,
+    fantasy,
+    male-protagonist,
+    parody,
+    rpg,
+    sandbox,
+    superpowers,
+    turn-based-combat
+  ]
+content:
+  [
+    anal-sex,
+    big-ass,
+    big-tits,
+    cheating,
+    corruption,
+    creampie,
+    femaledomination,
+    futa-trans,
+    gay,
+    groping,
+    harem,
+    humiliation,
+    incest,
+    interracial,
+    maledomination,
+    masturbation,
+    milf,
+    mobile-game,
+    monster-girl,
+    ntr,
+    oral-sex,
+    sexual-harassment,
+    spanking,
+    trap,
+    vaginal-sex
+  ]
+state: ongoing
+summary: >-
+  A late night encounter with a mysterious stranger sets everything in motion. What follows next is
+  a story driven less by heroics and more by pressure, consequences, and the choices you make when
+  there's no clean option left.
+nsfw: true
+cover: https://img.itch.zone/aW1nLzI5NjE3MTAyLnBuZw==/original/PaXCZp.png
+links:
+  itch: https://anbuafterdark.itch.io/path-of-desire-cursed-chakra
+  patreon: https://www.patreon.com/c/AnbuAfterDark
+  f95: https://f95zone.to/threads/281328/
+engine: renpy
+runtime: 8.5.3
+notes: "Save folder is not confirmed: options.rpy is not exposed as a loose text file; game scripts
+  are packed in scripts.rpa."
+releases:
+  - version: "0.9.0"
+    madeWith: 8.5.2
+    status: playable
+    archives:
+      - name: Path_of_Desire_CC_v0.9.0-pc.zip
+        size: 1326137825
+        sha256: "a09eed7bf3e51739183f62f4b7360bc0bd5e0cfae123ea6cd48e933c50caa303"
+        platform: pc
+    verified:
+      date: "2026-11-04"
+      notes: Not played in Renplay yet. Playability, save and load, and cross-device resume have not been
+        verified.

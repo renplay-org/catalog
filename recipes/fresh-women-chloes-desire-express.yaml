@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: fresh-women-chloes-desire-express
+title: "FreshWomen - Chloe’s: Desire Express"
+developer: OppaiMan
+tags:
+  [
+    3dcg,
+    animated,
+    dating-sim,
+    female-protagonist,
+    humor,
+    male-protagonist,
+    point-click,
+    romance,
+    sandbox,
+    school-setting
+  ]
+content:
+  [
+    anal-sex,
+    big-ass,
+    big-tits,
+    cheating,
+    creampie,
+    exhibitionism,
+    groping,
+    group-sex,
+    handjob,
+    harem,
+    lesbian,
+    masturbation,
+    milf,
+    mobile-game,
+    oral-sex,
+    prostitution,
+    stripping,
+    teasing,
+    titfuck,
+    vaginal-sex,
+    voyeurism
+  ]
+state: ongoing
+summary: >-
+  DLC for FreshWomen - Season 2. You are a detective on a train, and you have a mission. Find out
+  who stole a valuable jewel that has just been auctioned.
+nsfw: true
+cover:
+  # Official art: https://cdn-uploads.oppaiman.com/67e2e5bc4f6bb78eb78666b6_05-03-2026-12-27-09-005_CC_Release_trailer.mp4
+  # Promotional end card at 36.5 seconds, on a plain background; adult art hosted off GitHub.
+  https://covers.renplay.org/fresh-women-chloes-desire-express-6886aaff8d.webp
+links:
+  website: https://www.oppaiman.com/
+  patreon: https://www.patreon.com/oppaiman
+  itch: https://oppaiman.itch.io/freshwomen
+  steam: https://store.steampowered.com/app/3478650/FreshWomen__Season_2/
+  f95: https://f95zone.to/threads/79740/
+saveDir: ChloeDLC-284623487
+engine: renpy
+runtime: 8.5.3
+notes: "Standalone DLC listed with Season 1 and 2 in the shared F95 thread; tags and state follow
+  that combined thread. The DLC premise is the developer’s Steam announcement wording because F95
+  hides the DLC details behind login. Save folder comes from game/options.rpy. No cross-game save
+  importer was confirmed: the other game scripts are packed in archive.rpa, so continuesFrom is
+  intentionally omitted."
+releases:
+  - version: "Completed"
+    madeWith: 8.5.2
+    status: playable
+    archives:
+      - name: Chloes-Desire-Express-Completed-market.zip
+        size: 4545670138
+        sha256: "3bcbccdb2c695a48cc28521fa089f23ae18950c28b56c92b21c106eb81751d95"
+        platform: pc
+    verified:
+      date: "2026-11-04"
+      notes: Not played in Renplay yet. Playability, save and load, and cross-device resume have not been
+        verified.

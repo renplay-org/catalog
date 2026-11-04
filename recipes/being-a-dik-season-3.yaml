@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: being-a-dik-season-3
+title: Being a DIK - Season 3
+developer: DrPinkCake
+tags:
+  [
+    3dcg,
+    animated,
+    dating-sim,
+    humor,
+    male-protagonist,
+    multiple-protagonist,
+    point-click,
+    puzzle,
+    romance,
+    school-setting
+  ]
+content:
+  [
+    anal-sex,
+    big-ass,
+    big-tits,
+    cheating,
+    creampie,
+    drugs,
+    exhibitionism,
+    femaledomination,
+    footjob,
+    graphic-violence,
+    groping,
+    group-sex,
+    handjob,
+    humiliation,
+    interracial,
+    lesbian,
+    masturbation,
+    milf,
+    oral-sex,
+    prostitution,
+    sex-toys,
+    spanking,
+    stripping,
+    teasing,
+    titfuck,
+    vaginal-sex,
+    virgin,
+    voyeurism
+  ]
+state: ongoing
+summary: >-
+  A young man from a low-income family moves away from his widowed father and his summer love to
+  attend college at Burgmeister & Royce.
+nsfw: true
+cover:
+  # Official art: https://cdn.cloudflare.steamstatic.com/steam/apps/1807120/capsule_616x353.jpg
+  # Whole official art on a plain background, without blur or stretching.
+  covers/being-a-dik-season-3.webp
+links:
+  website: https://being-a-dik.com/
+  patreon: https://www.patreon.com/DrPinkCake
+  steam: https://store.steampowered.com/app/1807120/Being_a_DIK__Season_3/
+  f95: https://f95zone.to/threads/25332/
+continuesFrom:
+  - being-a-dik
+engine: renpy
+runtime: 8.5.3
+notes: Imports Season 2 transfer saves. The F95 overview links “Transferring save files to Season 3”
+  (post 7714830); the developer’s Steam Season 3 announcement confirms the Episode 8 transfer-save
+  screen and Import menu. The PC archive is no longer local; save folder and original Ren’Py version
+  are not confirmed.
+releases:
+  - version: "0.12.1"
+    status: playable
+    archives:
+      - name: BeingADIK-0.12.1-pc.zip
+        size: 25478926164
+        sha256: "08a994748c45ce22fedca69465a10523bb8ccb55e64e0c18fe120585ccf0c634"
+        platform: pc
+    verified:
+      date: "2026-11-04"
+      notes: Not played in Renplay yet. Playability, save and load, and cross-device resume have not been
+        verified.

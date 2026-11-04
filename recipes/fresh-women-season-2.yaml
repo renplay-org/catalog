@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: fresh-women-season-2
+title: FreshWomen - Season 2
+developer: OppaiMan
+tags:
+  [
+    3dcg,
+    animated,
+    dating-sim,
+    female-protagonist,
+    humor,
+    male-protagonist,
+    point-click,
+    romance,
+    sandbox,
+    school-setting
+  ]
+content:
+  [
+    anal-sex,
+    big-ass,
+    big-tits,
+    cheating,
+    creampie,
+    exhibitionism,
+    groping,
+    group-sex,
+    handjob,
+    harem,
+    lesbian,
+    masturbation,
+    milf,
+    mobile-game,
+    oral-sex,
+    prostitution,
+    stripping,
+    teasing,
+    titfuck,
+    vaginal-sex,
+    voyeurism
+  ]
+state: ongoing
+summary: >-
+  You’re a young man trying to find out what happened to your father. But in doing so, you ended up
+  having an accident that erased some of your memories. Now, with a clean slate, you moved to
+  another town to start college.
+nsfw: true
+cover:
+  # Official art: https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3478650/5bed50d35cdf65b5a11cbc1e5bf428cddfa74d45/capsule_616x353.jpg?t=1793297821
+  # Whole official art on a plain background, without blur or stretching.
+  covers/fresh-women-season-2.webp
+links:
+  website: https://www.oppaiman.com/
+  patreon: https://www.patreon.com/oppaiman
+  itch: https://oppaiman.itch.io/freshwomen
+  steam: https://store.steampowered.com/app/3478650/FreshWomen__Season_2/
+  f95: https://f95zone.to/threads/79740/
+continuesFrom:
+  - fresh-women
+engine: renpy
+runtime: 8.5.3
+notes: Loads Season 1 saves to retain choices, as the developer confirms in the Steam announcements
+  “Help us with the FreshWomen - Season 2 Save System!” and “In 3 days, Julia and Chloe will be very
+  close to you in FreshWomen Season 2.” The combined F95 thread now lists Season 3; this archive’s
+  numeric version, save folder and original Ren’Py version could not be confirmed because it is no
+  longer local.
+releases:
+  - version: "Season 2"
+    status: playable
+    archives:
+      - name: FreshWomen_-_Season_2_-_Updated.zip
+        size: 24188882563
+        sha256: "b1f6ce5767d90b0aad07c5574de4739ae6804286ed2f269ea7440e3ab0fd278f"
+        platform: pc
+    verified:
+      date: "2026-11-04"
+      notes: Not played in Renplay yet. Playability, save and load, and cross-device resume have not been
+        verified.

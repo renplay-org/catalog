@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: fresh-women
+title: FreshWomen - Season 1
+developer: OppaiMan
+tags:
+  [
+    3dcg,
+    animated,
+    dating-sim,
+    female-protagonist,
+    humor,
+    male-protagonist,
+    point-click,
+    romance,
+    sandbox,
+    school-setting
+  ]
+content:
+  [
+    anal-sex,
+    big-ass,
+    big-tits,
+    cheating,
+    creampie,
+    exhibitionism,
+    groping,
+    group-sex,
+    handjob,
+    harem,
+    lesbian,
+    masturbation,
+    milf,
+    mobile-game,
+    oral-sex,
+    prostitution,
+    stripping,
+    teasing,
+    titfuck,
+    vaginal-sex,
+    voyeurism
+  ]
+state: ongoing
+summary: >-
+  You’re a young man trying to find out what happened to your father. But in doing so, you ended up
+  having an accident that erased some of your memories. Now, with a clean slate, you moved to
+  another town to start college.
+nsfw: true
+cover:
+  # Official art: https://img.itch.zone/aW1nLzYwMDI2NjYucG5n/original/pgTj6K.png
+  # Whole official art on a plain background, without blur or stretching.
+  covers/fresh-women.webp
+links:
+  website: https://www.oppaiman.com/
+  patreon: https://www.patreon.com/oppaiman
+  itch: https://oppaiman.itch.io/freshwomen
+  steam: https://store.steampowered.com/app/1350650/FreshWomen__Season_1/
+  f95: https://f95zone.to/threads/79740/
+saveDir: FreshWomen-1593632962
+engine: renpy
+runtime: 8.5.3
+notes: The archive has an empty config.version; “Season 1” identifies the complete season, not a
+  confirmed numeric version. Save folder comes from game/scripts/game_data.rpy; Ren’Py version comes
+  from game/script_version.txt.
+releases:
+  - version: "Season 1"
+    madeWith: 7.5.3
+    status: playable
+    archives:
+      - name: freshwomen-season-1-pc-1080p.zip
+        size: 3605993985
+        sha256: "4ca39d29d381d96560e8159d82bd62477a0c4b457e5c41d2a3bd071ab4b03a64"
+        platform: pc
+    verified:
+      date: "2026-11-04"
+      notes: Not played in Renplay yet. Playability, save and load, and cross-device resume have not been
+        verified.

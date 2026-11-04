@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: into-your-heart
+title: Into Your Heart Revamped
+developer: Mereszhka
+tags: [ 3dcg, humor, male-protagonist, multiple-endings, romance, school-setting ]
+content:
+  [
+    anal-sex,
+    cheating,
+    corruption,
+    creampie,
+    drugs,
+    femaledomination,
+    futa-trans,
+    gay,
+    graphic-violence,
+    groping,
+    harem,
+    incest,
+    maledomination,
+    milf,
+    mobile-game,
+    ntr,
+    oral-sex,
+    rape,
+    sexual-harassment,
+    swinging,
+    titfuck,
+    vaginal-sex,
+    virgin,
+    voyeurism
+  ]
+state: ongoing
+summary: >-
+  Into Your Heart is a visual novel with dating sim elements and a slow burn narrative, where you
+  play as a young man navigating his everyday life, forming bonds, breaking others, and questioning
+  everything in between. The story explores the freedom of the mind and the weight of morality in a
+  world unraveling into chaos.
+nsfw: true
+cover:
+  # Official art: https://img.itch.zone/aW1nLzI3MjE4NDAwLnBuZw==/original/jzgohh.png
+  # Whole official art on a plain background, without blur or stretching.
+  covers/into-your-heart.webp
+links:
+  itch: https://mereszhka.itch.io/into-your-heart-revamped
+  patreon: https://www.patreon.com/cw/Mereszhka
+  f95: https://f95zone.to/threads/225505/
+engine: renpy
+runtime: 8.5.3
+notes: "Save folder is not confirmed: options.rpy is not exposed as a loose text file; game scripts
+  are packed in scripts.rpa. The official itch.io cover currently has no title logo; it is retained
+  without adding unofficial lettering."
+releases:
+  - version: "Revamped - 0.2.2"
+    madeWith: 8.5.0
+    status: playable
+    archives:
+      - name: IYH-0.2.2-pc.zip
+        size: 2809307987
+        sha256: "7f0c941627f2283b345ccdcb1d5c9b13918be8e100a20b02924c6d8c89b2a6ed"
+        platform: pc
+    verified:
+      date: "2026-11-04"
+      notes: Not played in Renplay yet. Playability, save and load, and cross-device resume have not been
+        verified.
