@@ -40,7 +40,7 @@ When there is no official copy to link to (Patreon links expire) or it has the w
 - **Safe for work:** add a file. `npm run cover -- <image> <id>` writes `covers/<id>.webp`, and the
   recipe says `cover: covers/<id>.webp`.
 - **Not safe for work:** never into this repository. A maintainer puts it on the catalog's cover
-  host, `https://covers.janpuc.com` (a Cloudflare R2 bucket):
+  host, `https://covers.renplay.org` (a Cloudflare R2 bucket):
   `RENPLAY_COVERS_TOKEN=… npm run cover:upload -- <image> <id> [--focus …]` makes the same
   1260×1000 WebP, uploads it as `<id>-<hash>.webp` and prints the URL for `cover:`. A changed cover
   gets a new name, so nothing serves a stale copy. Contributors without the token: say in the pull

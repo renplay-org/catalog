@@ -21,7 +21,7 @@ players get both from the developer.
 |---|---|
 | `recipes/<id>.yaml` | One game. The file name is the id. |
 | `recipes/_template.yaml` | Every field, explained. CI validates it too. |
-| `covers/<id>.webp` | Rare: a safe-for-work cover without an official copy to link to. Adult ones go to the cover host instead (`npm run cover:upload`, `https://covers.janpuc.com`, a Cloudflare R2 bucket; the maintainer has the token). |
+| `covers/<id>.webp` | Rare: a safe-for-work cover without an official copy to link to. Adult ones go to the cover host instead (`npm run cover:upload`, `https://covers.renplay.org`, a Cloudflare R2 bucket; the maintainer has the token). |
 | `patches/<id>/*.rpy` | Small browser fixes, referenced from `build.patches`. Rare. |
 | `schema/recipe.schema.json` | JSON Schema for recipes, published at its `$id`. Every recipe starts with `# yaml-language-server: $schema=<that URL>`, so editors check it as you type; the build refuses recipes without it. |
 | `scripts/build.mjs` | Validates everything and writes `dist/` (the published site). |
