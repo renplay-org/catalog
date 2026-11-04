@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: risky-stream
+title: Risky Stream
+developer: Pedantus
+tags: [ 2dcg, ai-cg, animated, dating-sim, male-protagonist, simulator ]
+content:
+  [
+    anal-sex,
+    big-ass,
+    big-tits,
+    creampie,
+    exhibitionism,
+    handjob,
+    harem,
+    interracial,
+    masturbation,
+    milf,
+    oral-sex,
+    sex-toys,
+    teasing,
+    titfuck,
+    vaginal-sex
+  ]
+state: ongoing
+summary: >-
+  You start out as a no-name beginner streamer flirting with girls in public places, streaming every
+  interaction live to an audience hungry for drama. The game plays as a card-based system where
+  every move is a gamble. Build hype, manage risk, and decide when to push your luck — play it too
+  safe and nothing happens, push too far and the stream crashes.
+nsfw: true
+# Official itch.io promotional cover already has the right shape and size; link it directly.
+cover: https://img.itch.zone/aW1nLzI5NzI1OTUyLnBuZw==/original/vO1X3b.png
+links:
+  itch: https://pedantus.itch.io/risky-stream-demo
+  steam: https://store.steampowered.com/app/4704940/Risky_Stream/
+  f95: https://f95zone.to/threads/286946/
+engine: html
+releases:
+  - version: "0.5.4"
+    status: playable
+    archives:
+      - name: RiskyStream_v0.5.4-big.zip
+        size: 2427595878
+        sha256: "0193007566c7d97dccccd3a8385097c0bc147b9a863bb84642f4628a79484d3e"
+        platform: pc
+    verified:
+      date: "2026-11-04"
+      notes: Not played in Renplay yet. Playability, save and load, and cross-device resume have not been
+        verified.

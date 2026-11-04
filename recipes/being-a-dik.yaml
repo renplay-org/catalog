@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: being-a-dik
+title: Being a DIK
+developer: DrPinkCake
+tags:
+  [
+    3dcg,
+    animated,
+    dating-sim,
+    humor,
+    male-protagonist,
+    multiple-protagonist,
+    point-click,
+    puzzle,
+    romance,
+    school-setting
+  ]
+content:
+  [
+    anal-sex,
+    big-ass,
+    big-tits,
+    cheating,
+    creampie,
+    drugs,
+    exhibitionism,
+    femaledomination,
+    footjob,
+    graphic-violence,
+    groping,
+    group-sex,
+    handjob,
+    humiliation,
+    interracial,
+    lesbian,
+    masturbation,
+    milf,
+    oral-sex,
+    prostitution,
+    sex-toys,
+    spanking,
+    stripping,
+    teasing,
+    titfuck,
+    vaginal-sex,
+    virgin,
+    voyeurism
+  ]
+state: ongoing
+summary: >-
+  A young man from a low-income family moves away from his widowed father and his summer love to
+  attend college at Burgmeister & Royce.
+nsfw: true
+# Official Steam capsule; wider crop keeps the face and title within the allowed cover ratio.
+# Source: https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1126320/capsule_616x353.jpg
+cover: covers/being-a-dik.webp
+links:
+  website: https://being-a-dik.com/
+  patreon: https://www.patreon.com/DrPinkCake
+  steam: https://store.steampowered.com/app/1126320/Being_a_DIK/
+  f95: https://f95zone.to/threads/25332/
+saveDir: BeingaDIK-1535311494
+engine: renpy
+runtime: 8.5.3
+notes: Seasons 1 and 2. Save folder and Ren’Py version reported by the installed game’s read-only
+  API details.
+releases:
+  - version: "0.8.3"
+    madeWith: 7.4.10
+    status: playable
+    archives:
+      - name: BeingADIK-0.8.3-pc-lin.zip
+        size: 19991458695
+        sha256: "45d4ce128b3759c886dcf6c1dbcb74e676775653da176befc773714ca9726dc7"
+        platform: pc
+    verified:
+      date: "2026-11-04"
+      notes: Not played in Renplay yet. Playability, save and load, and cross-device resume have not been
+        verified.

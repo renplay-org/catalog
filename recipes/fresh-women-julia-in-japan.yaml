@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: fresh-women-julia-in-japan
+title: FreshWomen - Julia in Japan
+developer: OppaiMan
+tags:
+  [
+    3dcg,
+    animated,
+    dating-sim,
+    female-protagonist,
+    humor,
+    male-protagonist,
+    point-click,
+    romance,
+    sandbox,
+    school-setting
+  ]
+content:
+  [
+    anal-sex,
+    big-ass,
+    big-tits,
+    cheating,
+    creampie,
+    exhibitionism,
+    groping,
+    group-sex,
+    handjob,
+    harem,
+    lesbian,
+    masturbation,
+    milf,
+    mobile-game,
+    oral-sex,
+    prostitution,
+    stripping,
+    teasing,
+    titfuck,
+    vaginal-sex,
+    voyeurism
+  ]
+state: ongoing
+summary: >-
+  DLC for FreshWomen - Season 2. In this exciting prequel, you’ll play as Julia, explore Tokyo, and
+  make new friends.
+nsfw: true
+# Official landing-page title art, cropped to 63:50; suggestive art stays off GitHub.
+# Source: https://d335luupugsy2.cloudfront.net/cms/files/1086962/1762797320/$77eafpvpk4a
+cover: https://covers.renplay.org/fresh-women-julia-in-japan-c106e16a69.webp
+links:
+  website: https://www.oppaiman.com/
+  patreon: https://www.patreon.com/oppaiman
+  itch: https://oppaiman.itch.io/freshwomen
+  steam: https://store.steampowered.com/app/3478650/FreshWomen__Season_2/
+  f95: https://f95zone.to/threads/79740/
+saveDir: JuliaInJapan-284623487
+engine: renpy
+runtime: 8.5.3
+notes: Standalone prequel DLC listed with Season 1 and 2 in the shared F95 thread; tags and state
+  follow that combined thread. The DLC premise is the developer’s Steam announcement wording because
+  F95 hides the DLC details behind login. Save folder comes from game/options.rpy. Readable game
+  scripts contain local persistent awards, gallery and gacha data but no MultiPersistent or
+  cross-game save importer; continuesFrom is omitted.
+releases:
+  - version: "Gacha Update"
+    madeWith: 8.4.1
+    status: playable
+    archives:
+      - name: FreshWomen2-Julia-In-Japan-Gacha-Update-DLC-WLM.zip
+        size: 4293739804
+        sha256: "2fe169e4d669022bfea85b2a42d1cef05c935ae2cb45ab8a3169f5ba159e9318"
+        platform: pc
+    verified:
+      date: "2026-11-04"
+      notes: Not played in Renplay yet. Playability, save and load, and cross-device resume have not been
+        verified.

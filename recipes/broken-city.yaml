@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: broken-city
+title: Broken City
+developer: Fullchill
+tags: [ 3dcg, adventure, animated, male-protagonist, romance ]
+content:
+  [
+    big-ass,
+    big-tits,
+    corruption,
+    creampie,
+    groping,
+    handjob,
+    oral-sex,
+    prostitution,
+    sex-toys,
+    teasing,
+    vaginal-sex,
+    voyeurism
+  ]
+state: ongoing
+summary: >-
+  Take control of a man who once tried to do the right thing — and got crushed by the system for it.
+  Navigate a corrupted city and decide who he becomes: a ruthless player like the ones he once
+  despised, or someone still holding onto ideals that already cost him everything.
+nsfw: true
+# Official itch.io logo art, cropped to 63:50 without cutting the logo.
+# Source: https://img.itch.zone/aW1nLzI4OTg0MTQxLmpwZw==/original/85reqO.jpg
+cover: covers/broken-city.webp
+links:
+  itch: https://fullchil.itch.io/broken-city
+  patreon: https://www.patreon.com/cw/fullchill
+  f95: https://f95zone.to/threads/291509/
+engine: renpy
+runtime: 8.5.3
+notes: "Save folder is not confirmed: options.rpy is not exposed as a loose text file; game scripts
+  are packed in archive.rpa."
+releases:
+  - version: "0.20"
+    madeWith: 8.4.1
+    status: playable
+    archives:
+      - name: BrokenCity-0.20-pc.zip
+        size: 828960486
+        sha256: "d22ce4b92f0ddab031b77339ca110fdfdef8526841f937eb60b22ee8c7c856bc"
+        platform: pc
+    verified:
+      date: "2026-11-04"
+      notes: Not played in Renplay yet. Playability, save and load, and cross-device resume have not been
+        verified.

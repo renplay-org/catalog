@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: two-weeks-on
+title: Two Weeks On
+developer: LiquidGames
+tags: [ 2dcg, ai-cg, animated, male-protagonist, romance ]
+content: [ big-tits, cheating, mobile-game, ntr, vaginal-sex, voyeurism ]
+state: ongoing
+summary: >-
+  Nate works an offshore oil rig: two weeks on the platform, two weeks home. When his college best
+  friend Cole gets divorced and needs a place to stay "for a few weeks", Nate says yes. Then he
+  flies back out to sea, and everything that happens at home reaches him through his phone: his
+  wife's texts, Cole's social media, a nosy neighbor, the front-door lock log and a living-room
+  camera he swore he'd never check.
+nsfw: true
+cover: https://img.itch.zone/aW1nLzMxNzA0MDY1LmpwZw==/original/Sa%2BiRf.jpg
+links:
+  itch: https://games-liquid.itch.io/two-weeks-on
+  patreon: https://www.patreon.com/c/LiquidGames
+  f95: https://f95zone.to/threads/321218/
+engine: renpy
+runtime: 8.5.3
+notes: "Save folder is not confirmed: options.rpy is not exposed as a loose text file; game scripts
+  are packed in scripts.rpa."
+releases:
+  - version: "0.1"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: TwoWeeksOn-0.1-pc.zip
+        size: 118950727
+        sha256: "5ac483f5bc8d0854fe59b875dc45f48c4aaa3ab1e41713248cfd0bd5d415ef3e"
+        platform: pc
+    verified:
+      date: "2026-11-04"
+      notes: Not played in Renplay yet. Playability, save and load, and cross-device resume have not been
+        verified.
