@@ -94,12 +94,12 @@ if (!pageUrl || pageUrl.protocol !== 'https:') {
 }
 if (f95 && !/^https:\/\/f95zone\.to\/threads\//.test(f95)) notes.push('ℹ️ The F95zone link does not look like a thread link (`https://f95zone.to/threads/…`).')
 
-// 3. The engine. Ren'Py comes first; some others are being added (docs/engines.md in renplay-web/renplay).
+// 3. The engine. Ren'Py comes first, HTML games too; others only when their download plays easily.
 const OTHER = {
-  html: 'ℹ️ **An HTML game** (Twine, RPG Maker MV or MZ). Renplay is adding HTML games after Ren\'Py; this request waits for that.',
-  godot: 'ℹ️ **A Godot game.** Renplay is adding Godot games after HTML games; this request waits for that. Games with native plugins or written in C# may not work.',
-  unity: 'ℹ️ **A Unity game.** Only a WebGL build can run in a browser (itch.io often has one, playable on the page); a PC build cannot. WebGL builds wait for Unity support.',
-  other: '⚠️ **Another engine.** Renplay plays Ren\'Py games, and later HTML, Godot and Unity WebGL games. Please say which engine made it.',
+  html: 'ℹ️ **An HTML game** (Twine, RPG Maker MV or MZ). Renplay plays these too, as a beta with fewer features than Ren\'Py games.',
+  godot: '⚠️ **A Godot game.** Its PC download does not run in a browser, and the catalog only adds games whose download plays as it is. It stays open, labeled, in case that changes.',
+  unity: '⚠️ **A Unity game.** Its PC download does not run in a browser, and the catalog only adds games whose download plays as it is. It stays open, labeled, in case that changes.',
+  other: '⚠️ **Another engine.** Renplay plays Ren\'Py and HTML games. Please say which engine made it.',
 }
 if (OTHER[engine]) {
   notes.push(OTHER[engine])

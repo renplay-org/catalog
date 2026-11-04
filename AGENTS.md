@@ -2,8 +2,10 @@
 
 This repository is the curated list of games that work in
 [Renplay](https://github.com/renplay-web/renplay), a self-hosted web app that plays PC releases of
-Ren'Py games in the browser with saves on the server. Ren'Py comes first; HTML, Godot and Unity
-WebGL games are being added as second-class citizens (`engine` in a recipe). It holds recipes
+Ren'Py games in the browser with saves on the server. Ren'Py comes first; HTML games are in too,
+as second-class citizens (`engine` in a recipe), and other engines only when their normal download
+plays as easily. Unity WebGL and Godot web builds work in Renplay but rarely come as a download,
+so they are not added. It holds recipes
 (YAML), covers and small patches, and publishes them on GitHub Pages as
 `https://renplay-web.github.io/catalog/index.v3.json` (schema 3, every engine; Renplay 2.6 and
 later) and `index.json` (schema 2, Ren'Py games under the older field names, for Renplay 2.5 and

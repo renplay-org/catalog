@@ -9,7 +9,7 @@ body:
         Thanks! A few things first:
 
         - **Is it already there?** Search the [catalog](https://renplay-web.github.io/catalog.html) and the [open requests](https://github.com/renplay-web/catalog/issues?q=is%3Aissue+label%3Arequest). If the game is listed but your version is not, choose "A newer version" below.
-        - **Renplay plays Ren'Py games** from their PC download (Windows, Linux or Mac): Ren'Py 8, and most Ren'Py 7 games. Support for some other engines is coming: HTML games (Twine, RPG Maker MV and MZ), Godot, and Unity WebGL builds. You can request those already. Unity PC builds, RPG Maker VX Ace and older, Wolf RPG and Kirikiri games cannot run in a browser.
+        - **Renplay plays Ren'Py games** from their PC download (Windows, Linux or Mac): Ren'Py 8, and most Ren'Py 7 games. HTML games (Twine, and RPG Maker MV and MZ) play too. Unity and Godot PC builds, RPG Maker VX Ace and older, Wolf RPG and Kirikiri games cannot run in a browser.
         - **Only official sources.** Link the developer's own page (itch.io, Steam, Patreon, their website), never a download mirror. The catalog never hosts game files.
 
         A bot checks your request against the catalog and the game's page and comments with what it found.
