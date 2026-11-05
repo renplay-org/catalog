@@ -56,6 +56,8 @@ links:
   f95: https://f95zone.to/threads/79740/
 continuesFrom:
   - fresh-women
+# Shares Season 1's save folder: that is how it loads Season 1 saves.
+saveDir: FreshWomen-1593632962
 engine: renpy
 runtime: 8.5.3
 notes: Loads Season 1 saves to retain choices, as the developer confirms in the Steam announcements
