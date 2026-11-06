@@ -39,8 +39,8 @@ SteamGridDB:
 | `icon` | square, 512 and up | Rows: History, Activity, Add games |
 
 An exact 2x of a format is the same shape, and Steam's half-size `header.jpg` (460×215) counts as
-a wide. The first image of a kind is the default. Add more of a kind as alternatives and mark one
-`default: true` to choose it. A `focal: [x, y]` (0 to 1) says where the picture matters and forces
+a wide. The first image of a kind in its format's shape is the default, else the first image. Add
+more of a kind as alternatives and mark one `default: true` to choose it. A `focal: [x, y]` (0 to 1) says where the picture matters and forces
 a crop into missing formats.
 
 **Sources, in order:**

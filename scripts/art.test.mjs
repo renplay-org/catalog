@@ -145,6 +145,22 @@ test('the first image of a kind is the default unless one says default: true', a
   assert.equal(art[0].default, undefined)
 })
 
+test('without default: true, the first image in the shape beats an earlier one of another shape', async () => {
+  const files = { 'covers/test-game.webp': await webp(630, 500), 'covers/test-game-2.webp': await webp(600, 900) }
+  const items = () => [
+    { kind: 'grid', url: 'covers/test-game.webp', source: 'developer' },
+    { kind: 'grid', url: 'covers/test-game-2.webp', source: 'developer' },
+  ]
+  let { art, errors } = await run({ ...recipe, id: 'test-game', art: items() }, { files })
+  assert.deepEqual(errors, [])
+  assert.equal(art[1].default, true, 'the 600x900 grid')
+  assert.equal(art[0].default, undefined)
+  const picked = items()
+  picked[0].default = true
+  ;({ art } = await run({ ...recipe, id: 'test-game', art: picked }, { files }))
+  assert.equal(art[0].default, true, 'a curator can still choose the other shape')
+})
+
 test('a recipe with neither a grid nor a hero earns a warning, not an error', async () => {
   const logo = await sharp({ create: { width: 640, height: 360, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } } }).png().toBuffer()
   const { errors, warnings } = await run({ ...recipe, art: [{ kind: 'logo', url: 'https://example.com/logo.png', source: 'steam' }] }, { remote: { 'https://example.com/logo.png': logo } })

@@ -35,8 +35,8 @@ art:                             # the game's pictures, in SteamGridDB's formats
     url: https://cdn.cloudflare.steamstatic.com/steam/apps/1234560/logo.png
     source: steam
     dark: true                   # a dark logo, inverted on ink
-  - kind: grid                   # a second image of a kind is an alternative. The first of a
-    url: https://img.itch.zone/…/original/….jpg   # kind is the default unless one says default: true
+  - kind: grid                   # a second image of a kind is an alternative. The first in the
+    url: https://img.itch.zone/…/original/….jpg   # format's shape is the default unless one says default: true
     source: itch                 # the itch.io page's cover (its og:image)
 #  - kind: grid                  # SteamGridDB art is referenced by id, never copied, and always
 #    source: sgdb                # credits its author (npm run sgdb -- "Game Name" prints candidates)
