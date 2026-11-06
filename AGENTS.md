@@ -27,7 +27,7 @@ live in `covers/`.
 | `recipes/_template.yaml` | Every field, explained. CI validates it too. |
 | `covers/<id>.webp` | Rare: safe-for-work art without an official copy to link to. Adult art goes to the cover host instead (`npm run cover:upload`, `https://covers.renplay.org`, a Cloudflare R2 bucket; the maintainer has the token). |
 | `patches/<id>/*.rpy` | Small browser fixes, referenced from `build.patches`. Rare. |
-| `legacy/v3-covers.json` | The `cover` of every game main's build published, so Renplay 3.x keeps its covers until it is retired. The seven files that left `covers/` point at covers.renplay.org here. |
+| `legacy/v3-covers.json` | The `cover` of every game the last schema 3 build published, so Renplay 3.x keeps its covers until it is retired. The seven files that left `covers/` point at covers.renplay.org here. |
 | `schema/recipe.schema.json` | JSON Schema for recipes, published at its `$id`. Every recipe starts with `# yaml-language-server: $schema=<that URL>`, so editors check it as you type; the build refuses recipes without it. |
 | `scripts/build.mjs` | Validates everything and writes `dist/` (the published site). |
 | `scripts/art.mjs` | The art pipeline the build and the validate command share: fetch once, measure, sha256, ThumbHash, tint, shape checks, defaults, the derived v3 cover. |

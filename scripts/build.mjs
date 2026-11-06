@@ -135,7 +135,7 @@ const sfwGames = displayGames.filter((g) => g.nsfw !== true).map(({ content, ...
 writeFileSync(join(dist, 'index.v4.sfw.json'), JSON.stringify({ schema: 4, generated, vocabulary: sfwVocabulary, games: sfwGames }, null, 1))
 // Schema 3 (Renplay 2.6 to 3.x, kept until 3.x is retired): the same games, but
 // with a single cover instead of the art list. Renplay 3.2 crops the cover it has
-// today, so that cover is frozen at what main's build published
+// today, so that cover is frozen at what the last schema 3 build published
 // (legacy/v3-covers.json, with the seven repository files at their covers.renplay.org
 // address). Only games the frozen map does not know (added later) get a cover
 // derived from the art.
