@@ -13,6 +13,48 @@ art:
   - kind: grid
     url: https://img.itch.zone/aW1nLzUzNjg4ODEucG5n/original/FbZc6X.png
     source: itch
+  - kind: grid
+    source: sgdb
+    sgdb: 650222
+    url: https://cdn2.steamgriddb.com/grid/2f79d22a5c2dbf5297de45bd61dd9cc1.png
+    by: AwefulWaffle
+    byUrl: https://www.steamgriddb.com/profile/76561198038440131
+  - kind: grid
+    source: sgdb
+    sgdb: 469390
+    url: https://cdn2.steamgriddb.com/grid/03082342a2030500d572db52c3e4d39c.png
+    by: Elter
+    byUrl: https://www.steamgriddb.com/profile/76561199034639145
+  - kind: wide
+    source: sgdb
+    sgdb: 673140
+    url: https://cdn2.steamgriddb.com/grid/4a305b04d02d91fe793900002244dab4.png
+    by: Sebanisu
+    byUrl: https://www.steamgriddb.com/profile/76561198027029474
+  - kind: wide
+    source: sgdb
+    sgdb: 673153
+    url: https://cdn2.steamgriddb.com/grid/40bbc53d3268e138cb367d7cf11c20cb.png
+    by: Sebanisu
+    byUrl: https://www.steamgriddb.com/profile/76561198027029474
+  - kind: hero
+    source: sgdb
+    sgdb: 121775
+    url: https://cdn2.steamgriddb.com/hero/92a91dfc5f9525b0d8e0279fae7938d1.png
+    by: Mr.freeze
+    byUrl: https://www.steamgriddb.com/profile/76561198169146143
+  - kind: hero
+    source: sgdb
+    sgdb: 152902
+    url: https://cdn2.steamgriddb.com/hero/8ddfdfb18f81e441848af50c049325d9.png
+    by: Sebanisu
+    byUrl: https://www.steamgriddb.com/profile/76561198027029474
+  - kind: logo
+    source: sgdb
+    sgdb: 133015
+    url: https://cdn2.steamgriddb.com/logo/7a1ff7d313aac054b58cd980b534ef5c.png
+    by: TheSkyNinja
+    byUrl: https://www.steamgriddb.com/profile/76561198117593528
 links:
   itch: https://caribdis.itch.io/once-in-a-lifetime
   patreon: https://www.patreon.com/user?u=24799077

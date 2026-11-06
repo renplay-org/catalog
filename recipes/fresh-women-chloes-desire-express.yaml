@@ -50,6 +50,12 @@ art:
   - kind: grid
     url: https://covers.renplay.org/fresh-women-chloes-desire-express-8dedd704a0.webp
     source: developer
+  - kind: logo
+    source: sgdb
+    sgdb: 161698
+    url: https://cdn2.steamgriddb.com/logo/23ef45ca4bcdfd1c853f50dd23f218ee.png
+    by: VvVitekVvV
+    byUrl: https://www.steamgriddb.com/profile/76561198140023305
 links:
   website: https://www.oppaiman.com/
   patreon: https://www.patreon.com/oppaiman

@@ -11,6 +11,30 @@ art:
   - kind: grid
     url: https://img.itch.zone/aW1nLzExOTU3NjE2LmdpZg==/original/3ai9P8.gif
     source: itch
+  - kind: grid
+    source: sgdb
+    sgdb: 122959
+    url: https://cdn2.steamgriddb.com/grid/12cd4e274bbe847f6b9e96d592684c87.png
+    by: theEMA
+    byUrl: https://www.steamgriddb.com/profile/76561198165563784
+  - kind: grid
+    source: sgdb
+    sgdb: 146241
+    url: https://cdn2.steamgriddb.com/grid/241b3e4f09570806c9c4f6f262d2585c.png
+    by: Shorono
+    byUrl: https://www.steamgriddb.com/profile/76561197998976121
+  - kind: hero
+    source: sgdb
+    sgdb: 20317
+    url: https://cdn2.steamgriddb.com/hero/53e1e04df729350fbab77ed1d2d16df3.png
+    by: "Kurikuo 青汁"
+    byUrl: https://www.steamgriddb.com/profile/76561198962781384
+  - kind: logo
+    source: sgdb
+    sgdb: 23140
+    url: https://cdn2.steamgriddb.com/logo/3893f9f84823afc5f68339ed89374d81.png
+    by: "Kurikuo 青汁"
+    byUrl: https://www.steamgriddb.com/profile/76561198962781384
 links:
   itch: https://komisari.itch.io/heros-harem-guild
   patreon: https://www.patreon.com/komisari

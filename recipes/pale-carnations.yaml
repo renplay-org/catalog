@@ -11,6 +11,36 @@ art:
   - kind: grid
     url: https://img.itch.zone/aW1nLzEyNTEyMTc2LnBuZw==/original/sQQtQg.png
     source: itch
+  - kind: grid
+    source: sgdb
+    sgdb: 385297
+    url: https://cdn2.steamgriddb.com/grid/48838c209f8e25b815287387b2d9d68d.png
+    by: Deskrit2k
+    byUrl: https://www.steamgriddb.com/profile/76561197995537442
+  - kind: grid
+    source: sgdb
+    sgdb: 385299
+    url: https://cdn2.steamgriddb.com/grid/b4d0d0f675c9ed99aef9cc472ae19587.png
+    by: Deskrit2k
+    byUrl: https://www.steamgriddb.com/profile/76561197995537442
+  - kind: hero
+    source: sgdb
+    sgdb: 92847
+    url: https://cdn2.steamgriddb.com/hero/b9d2778edea727f6719583033e1c5687.png
+    by: Deskrit2k
+    byUrl: https://www.steamgriddb.com/profile/76561197995537442
+  - kind: hero
+    source: sgdb
+    sgdb: 89118
+    url: https://cdn2.steamgriddb.com/hero/dfaf5c7e7dcea4cc0a11e5961b2d6de6.png
+    by: LonelyGiraffe420
+    byUrl: https://www.steamgriddb.com/profile/76561199391005803
+  - kind: logo
+    source: sgdb
+    sgdb: 98049
+    url: https://cdn2.steamgriddb.com/logo/6b08cb11fb528ea9a29c488857b93c36.png
+    by: Deskrit2k
+    byUrl: https://www.steamgriddb.com/profile/76561197995537442
 links:
   itch: https://muttandjeff.itch.io/palecarnations
   patreon: https://www.patreon.com/cw/GIL3D

@@ -13,6 +13,48 @@ art:
   - kind: grid
     url: https://img.itch.zone/aW1nLzE5ODE1MzAwLnBuZw==/original/uuPDAw.png
     source: itch
+  - kind: grid
+    source: sgdb
+    sgdb: 458460
+    url: https://cdn2.steamgriddb.com/grid/c75a8f96157ff9c4972da83500a94976.jpg
+    by: Javyxs
+    byUrl: https://www.steamgriddb.com/profile/76561199728927413
+  - kind: grid
+    source: sgdb
+    sgdb: 803331
+    url: https://cdn2.steamgriddb.com/grid/b28207bb62896fe9aadcf89b02cacd71.jpg
+    by: "k'k"
+    byUrl: https://www.steamgriddb.com/profile/76561197996267829
+  - kind: wide
+    source: sgdb
+    sgdb: 458464
+    url: https://cdn2.steamgriddb.com/grid/20c285227f9ece9376d27443f0bf7e9a.jpg
+    by: Javyxs
+    byUrl: https://www.steamgriddb.com/profile/76561199728927413
+  - kind: wide
+    source: sgdb
+    sgdb: 598739
+    url: https://cdn2.steamgriddb.com/grid/5c8d1a4854cfa234c5e9777cadef4a15.png
+    by: Deathcat
+    byUrl: https://www.steamgriddb.com/profile/76561197986909714
+  - kind: hero
+    source: sgdb
+    sgdb: 180202
+    url: https://cdn2.steamgriddb.com/hero/5fba32fd9811688d76c67e67df719ec8.jpg
+    by: LUTHXR
+    byUrl: https://www.steamgriddb.com/profile/76561199132311430
+  - kind: hero
+    source: sgdb
+    sgdb: 173094
+    url: https://cdn2.steamgriddb.com/hero/3b987c07fa5bb4e01c316cbeb718cb3e.jpg
+    by: Unknown person
+    byUrl: https://www.steamgriddb.com/profile/76561199447214567
+  - kind: logo
+    source: sgdb
+    sgdb: 115824
+    url: https://cdn2.steamgriddb.com/logo/9b85742910e006ddb3e6377151a5a1a5.png
+    by: Javyxs
+    byUrl: https://www.steamgriddb.com/profile/76561199728927413
 links:
   itch: https://caribdis.itch.io/eternum
   patreon: https://www.patreon.com/user?u=24799077

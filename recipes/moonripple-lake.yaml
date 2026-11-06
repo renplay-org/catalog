@@ -14,15 +14,33 @@ art:
   - kind: grid
     url: https://img.itch.zone/aW1nLzIxMjcxOTk0LnBuZw==/original/ef%2B7SC.png
     source: itch
+  - kind: grid
+    source: sgdb
+    sgdb: 693336
+    url: https://cdn2.steamgriddb.com/grid/dd6df8be8762cc46b28e063e9ca9033b.jpg
+    by: LoneWalker59
+    byUrl: https://www.steamgriddb.com/profile/76561198117870743
   - kind: wide
     url: https://cdn.cloudflare.steamstatic.com/steam/apps/2857910/header.jpg
     source: steam
+  - kind: wide
+    source: sgdb
+    sgdb: 705494
+    url: https://cdn2.steamgriddb.com/grid/c7079555f1382b902f56d9bcfd51dd6d.png
+    by: bi orc peon
+    byUrl: https://www.steamgriddb.com/profile/76561198028164531
   - kind: hero
     url: https://cdn.cloudflare.steamstatic.com/steam/apps/2857910/library_hero_2x.jpg
     source: steam
   - kind: logo
     url: https://cdn.cloudflare.steamstatic.com/steam/apps/2857910/logo.png
     source: steam
+  - kind: icon
+    source: sgdb
+    sgdb: 97797
+    url: https://cdn2.steamgriddb.com/icon/66f5a391917cbf5f83db48a91687e23c.png
+    by: bi orc peon
+    byUrl: https://www.steamgriddb.com/profile/76561198028164531
 links:
   itch: https://bananacreamgames.itch.io/moonripple-lake
   patreon: https://www.patreon.com/bananacreamgames

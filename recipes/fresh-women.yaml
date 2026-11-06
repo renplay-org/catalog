@@ -52,15 +52,63 @@ art:
   - kind: wide
     url: https://cdn.cloudflare.steamstatic.com/steam/apps/1350650/header.jpg
     source: steam
+  - kind: wide
+    source: sgdb
+    sgdb: 409445
+    url: https://cdn2.steamgriddb.com/grid/c49607b7fa02c9a028961c65daf81d7d.png
+    by: Windoki
+    byUrl: https://www.steamgriddb.com/profile/76561198004504216
+  - kind: wide
+    source: sgdb
+    sgdb: 510603
+    url: https://cdn2.steamgriddb.com/grid/7e459abd65bda9308fbd261e43b2edee.png
+    by: antihero17
+    byUrl: https://www.steamgriddb.com/profile/76561198278137082
   - kind: hero
     url: https://cdn.cloudflare.steamstatic.com/steam/apps/1350650/library_hero_2x.jpg
     source: steam
+  - kind: hero
+    source: sgdb
+    sgdb: 98959
+    url: https://cdn2.steamgriddb.com/hero/4420c18902b88efbe45014d21e059957.png
+    by: Windoki
+    byUrl: https://www.steamgriddb.com/profile/76561198004504216
+  - kind: hero
+    source: sgdb
+    sgdb: 87377
+    url: https://cdn2.steamgriddb.com/hero/7459ab086416eadecbf74c13463bdc60.jpg
+    by: sevenpastzeero
+    byUrl: https://www.steamgriddb.com/profile/76561198146230262
   - kind: logo
     url: https://cdn.cloudflare.steamstatic.com/steam/apps/1350650/logo.png
     source: steam
+  - kind: logo
+    source: sgdb
+    sgdb: 104731
+    url: https://cdn2.steamgriddb.com/logo/a0f7c1cfa96808f66fe13ccf2ef53e8f.png
+    by: Windoki
+    byUrl: https://www.steamgriddb.com/profile/76561198004504216
+  - kind: logo
+    source: sgdb
+    sgdb: 104729
+    url: https://cdn2.steamgriddb.com/logo/c6755a65a1ff02e9db3a44fd2459df3e.png
+    by: Windoki
+    byUrl: https://www.steamgriddb.com/profile/76561198004504216
   - kind: grid
     url: https://cdn-uploads.oppaiman.com/65b23941148a09bf66c2346d/65849bfeab8a923c86bc0e53/game-page/capsule/ceabb266f6bd0ad729b33d46580c8267da19e989dfd0aa4f2513c4506f1b4bdc.png
     source: developer
+  - kind: grid
+    source: sgdb
+    sgdb: 409446
+    url: https://cdn2.steamgriddb.com/grid/28214768ea7fe9e1a7eecb594628521d.png
+    by: Windoki
+    byUrl: https://www.steamgriddb.com/profile/76561198004504216
+  - kind: grid
+    source: sgdb
+    sgdb: 362349
+    url: https://cdn2.steamgriddb.com/grid/e60068b12f1a8a65dc945b944edbc269.jpg
+    by: sevenpastzeero
+    byUrl: https://www.steamgriddb.com/profile/76561198146230262
 links:
   website: https://www.oppaiman.com/
   patreon: https://www.patreon.com/oppaiman
