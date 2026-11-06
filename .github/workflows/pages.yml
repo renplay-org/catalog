@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # Full history: the index compatibility test builds main in a worktree.
+          # Full history: the index compatibility test builds the last schema 3 commit in a worktree.
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
