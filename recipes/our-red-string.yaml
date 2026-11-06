@@ -7,8 +7,13 @@ content: [anal-sex, bdsm, big-ass, big-tits, cheating, corruption, creampie, dru
 state: ongoing
 summary: "Lena and Ian are two very different people who find themselves in a very similar moment in their lives. Both struggling to achieve their dreams, both hurting because of love. Their lives will become intertwined, with each other and with several characters that will impact who they are and who they will become."
 nsfw: true
-# The official art is the logo at 2.19:1; this is that art, whole, on black at 63:50.
-cover: covers/our-red-string.webp
+art:
+  - kind: grid
+    url: https://img.itch.zone/aW1nLzUzMDkxNDMuanBn/original/puAFWv.jpg
+    source: itch
+  - kind: hero
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3669040/library_hero_2x.jpg
+    source: steam
 links:
   itch: https://eva-kiss.itch.io/our-red-string
   patreon: https://www.patreon.com/Evakiss

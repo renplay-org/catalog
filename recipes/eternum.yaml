@@ -9,7 +9,10 @@ summary: >-
   You’re moving with your best friend to the city of Kredon, home to some of the best schools and universities in the country, to continue your studies.
   However, in Kredon, there’s only one thing everyone talks about: ETERNUM—the virtual, hyper-reality MMORPG game released a few years ago that revolutionized the world of technology.
 nsfw: true
-cover: https://img.itch.zone/aW1nLzE5ODE1MzAwLnBuZw==/original/uuPDAw.png
+art:
+  - kind: grid
+    url: https://img.itch.zone/aW1nLzE5ODE1MzAwLnBuZw==/original/uuPDAw.png
+    source: itch
 links:
   itch: https://caribdis.itch.io/eternum
   patreon: https://www.patreon.com/user?u=24799077

@@ -45,9 +45,22 @@ summary: >-
   having an accident that erased some of your memories. Now, with a clean slate, you moved to
   another town to start college.
 nsfw: true
-# Official developer capsule; wider crop keeps the face and title within the allowed cover ratio.
-# Source: https://cdn-uploads.oppaiman.com/65b23941148a09bf66c2346d/65849bfeab8a923c86bc0e53/game-page/capsule/ceabb266f6bd0ad729b33d46580c8267da19e989dfd0aa4f2513c4506f1b4bdc.png
-cover: covers/fresh-women.webp
+art:
+  - kind: grid
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1350650/library_600x900_2x.jpg
+    source: steam
+  - kind: wide
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1350650/header.jpg
+    source: steam
+  - kind: hero
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1350650/library_hero_2x.jpg
+    source: steam
+  - kind: logo
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1350650/logo.png
+    source: steam
+  - kind: grid
+    url: https://cdn-uploads.oppaiman.com/65b23941148a09bf66c2346d/65849bfeab8a923c86bc0e53/game-page/capsule/ceabb266f6bd0ad729b33d46580c8267da19e989dfd0aa4f2513c4506f1b4bdc.png
+    source: developer
 links:
   website: https://www.oppaiman.com/
   patreon: https://www.patreon.com/oppaiman

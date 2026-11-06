@@ -1,18 +1,20 @@
-// Validates recipes/*.yaml and writes dist/index.v3.json, dist/index.v3.sfw.json and the older dist/index.json
-// (plus the schema, covers and patches)
-// for catalog.renplay.org. Files starting with "_" (the template) are not recipes.
+// Validates recipes/*.yaml and writes dist/index.v4.json, dist/index.v4.sfw.json,
+// the schema 3 and 2 indexes Renplay 3.x reads (dist/index.v3.json,
+// dist/index.v3.sfw.json, dist/index.json; their cover is derived from the art),
+// plus the schema, covers and patches, for catalog.renplay.org.
+// Files starting with "_" (the template) are not recipes.
 import { createHash } from 'node:crypto'
 import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import Ajv from 'ajv/dist/2020.js'
 import addFormats from 'ajv-formats'
-import sharp from 'sharp'
 import YAML from 'yaml'
 import { tags, tagEnums } from './tags-schema.mjs'
-import { coverIsSfw } from './content-modes.mjs'
+import { checkArt, deriveCover } from './art.mjs'
 
 const root = new URL('..', import.meta.url).pathname
 const dist = join(root, 'dist')
+const cacheDir = join(root, '.art-cache')
 const ajv = new Ajv({ allErrors: true, strict: false })
 addFormats(ajv)
 const schema = JSON.parse(readFileSync(join(root, 'schema/recipe.schema.json'), 'utf-8'))
@@ -28,7 +30,9 @@ const SCHEMA_LINE = `# yaml-language-server: $schema=${schema.$id}`
 const namesSchema = (file, text) => text.split('\n', 1)[0] === SCHEMA_LINE || fail(file, `the first line must be: ${SCHEMA_LINE}`)
 
 const errors = []
+const warnings = []
 const fail = (file, msg) => errors.push(`${file}: ${msg}`)
+const warn = (file, msg) => warnings.push(`${file}: ${msg}`)
 
 // Engine versions recipes may name.
 let engines = null
@@ -44,53 +48,6 @@ if (!engines) console.warn('warning: engine index unreachable, engine versions n
   namesSchema('_template.yaml', text)
   const t = YAML.parse(text)
   if (!validate(t)) fail('_template.yaml', ajv.errorsText(validate.errors, { separator: '; ' }))
-}
-
-/**
- * Covers are the game's official art, the kind itch.io, Steam or F95zone show:
- * key art with the game's logo. Most are linked by URL on the developer's own
- * hosting, which keeps adult art off GitHub; files in covers/ are only for
- * safe-for-work art that has no official copy in the right shape, and adult
- * art of that kind goes to the cover host (scripts/cover-upload.mjs). About 63:50
- * (1.12:1 to 1.41:1, the shape of itch.io covers and of Renplay's cards, which
- * show other shapes shrunk on a blur), at least 600 pixels wide. The published index
- * gives each cover's sha256 and size, so Renplay can check what it downloads.
- */
-async function checkCover(file, recipe) {
-  const working = ['verified', 'playable'].includes(recipe.releases[0]?.status)
-  if (!recipe.cover) {
-    if (working) fail(file, 'needs a cover (the official art), see CONTRIBUTING.md')
-    return
-  }
-  let data
-  if (recipe.cover.startsWith('https://')) {
-    if (/patreon(usercontent)?\.com/.test(recipe.cover)) return fail(file, 'Patreon image links expire; use the itch.io, Steam or website copy')
-    try {
-      const res = await fetch(recipe.cover, { signal: AbortSignal.timeout(30000), headers: { 'user-agent': 'renplay-catalog' } })
-      if (!res.ok) return fail(file, `cover ${recipe.cover}: HTTP ${res.status}`)
-      data = Buffer.from(await res.arrayBuffer())
-    } catch (e) {
-      return fail(file, `cover ${recipe.cover}: ${e.message}`)
-    }
-  } else {
-    if (recipe.cover !== `covers/${recipe.id}.webp`) return fail(file, `cover must be an https URL or covers/${recipe.id}.webp`)
-    if (!existsSync(join(root, recipe.cover))) return fail(file, `missing cover ${recipe.cover}`)
-    data = readFileSync(join(root, recipe.cover))
-    if (data.length > 400 * 1024) fail(file, `${recipe.cover} is ${Math.round(data.length / 1024)} KB; keep it under 400 KB`)
-  }
-  let meta
-  try {
-    meta = await sharp(data).metadata()
-  } catch {
-    return fail(file, `cover ${recipe.cover} is not an image`)
-  }
-  const { width: w, height: h, format } = meta
-  if (!['webp', 'png', 'jpeg', 'gif'].includes(format)) return fail(file, `cover ${recipe.cover} is ${format}; use WebP, PNG or JPEG`)
-  if (w < 600 || w / h < 1.12 || w / h > 1.41) return fail(file, `cover ${recipe.cover} is ${w}×${h}; use art shaped like an itch.io cover (63:50, 1.12:1 to 1.41:1), at least 600 pixels wide, or make a cover file from it (npm run cover)`)
-  recipe.cover = {
-    url: recipe.cover, sha256: createHash('sha256').update(data).digest('hex'), width: w, height: h,
-    ...(coverIsSfw(recipe) ? { sfw: true } : {}),
-  }
 }
 
 const games = []
@@ -110,7 +67,7 @@ for (const file of readdirSync(join(root, 'recipes')).filter((f) => f.endsWith('
     continue
   }
   if (`${recipe.id}.yaml` !== file) fail(file, 'id must match the file name')
-  await checkCover(file, recipe)
+  await checkArt(file, recipe, { root, cacheDir, fail, warn })
   // Only Ren'Py runtimes are published so far; other engines' arrive with their support.
   if ((recipe.engine ?? 'renpy') === 'renpy') {
     for (const v of [recipe.runtime, ...recipe.releases.map((r) => r.runtime)].filter(Boolean)) {
@@ -147,6 +104,7 @@ if (errors.length) {
   console.error(errors.join('\n'))
   process.exit(1)
 }
+for (const w of warnings) console.warn(`warning: ${w}`)
 rmSync(dist, { recursive: true, force: true })
 mkdirSync(dist, { recursive: true })
 for (const dir of ['covers', 'patches']) if (existsSync(join(root, dir))) cpSync(join(root, dir), join(dist, dir), { recursive: true })
@@ -155,7 +113,7 @@ const generated = new Date().toISOString()
 // of each one, so they get only the play and story groups. Art, protagonist and content tags
 // reach them through tagIds and content.
 const CHIP_GROUPS = new Set(['play', 'story'])
-const displayGames = games.map(({ coverSfw, ...g }) => ({
+const displayGames = games.map((g) => ({
   ...g,
   ...(g.tags
     ? {
@@ -164,14 +122,23 @@ const displayGames = games.map(({ coverSfw, ...g }) => ({
       }
     : {}),
 }))
-// Schema 3 (Renplay 2.6 and later): every engine, with engine/runtime/madeWith.
-writeFileSync(join(dist, 'index.v3.json'), JSON.stringify({ schema: 3, generated, vocabulary, games: displayGames }, null, 1))
-// Safe-for-work clients must not fetch adult recipes, covers or content vocabulary.
+// Schema 4 (Renplay 4.0 and later): the art list with hashes, sizes, tints and credits.
+writeFileSync(join(dist, 'index.v4.json'), JSON.stringify({ schema: 4, generated, vocabulary, games: displayGames }, null, 1))
+// Safe-for-work clients must not fetch adult recipes, art or content vocabulary.
 const sfwVocabulary = Object.fromEntries(Object.entries(vocabulary).filter(([, tag]) => tag.group !== 'content'))
 const sfwGames = displayGames.filter((g) => g.nsfw !== true).map(({ content, ...g }) => g)
-writeFileSync(join(dist, 'index.v3.sfw.json'), JSON.stringify({ schema: 3, generated, vocabulary: sfwVocabulary, games: sfwGames }, null, 1))
+writeFileSync(join(dist, 'index.v4.sfw.json'), JSON.stringify({ schema: 4, generated, vocabulary: sfwVocabulary, games: sfwGames }, null, 1))
+// Schema 3 (Renplay 2.6 to 3.x, kept until 3.x is retired): the same games, but
+// with a single cover derived from the art instead of the art list.
+const v3Games = displayGames.map(({ art, phone, ...g }) => {
+  const cover = deriveCover({ art, nsfw: g.nsfw })
+  return cover ? { ...g, cover } : g
+})
+writeFileSync(join(dist, 'index.v3.json'), JSON.stringify({ schema: 3, generated, vocabulary, games: v3Games }, null, 1))
+const v3SfwGames = v3Games.filter((g) => g.nsfw !== true).map(({ content, ...g }) => g)
+writeFileSync(join(dist, 'index.v3.sfw.json'), JSON.stringify({ schema: 3, generated, vocabulary: sfwVocabulary, games: v3SfwGames }, null, 1))
 // Schema 2 for Renplay 2.5 and older: Ren'Py games only, under the names those versions read.
-const schema2 = displayGames
+const schema2 = v3Games
   .filter((g) => (g.engine ?? 'renpy') === 'renpy')
   .map(({ engine, runtime, releases, tagIds, content, summary, state, ...g }) => ({
     ...g,
@@ -190,6 +157,10 @@ writeFileSync(
   `/*
   Access-Control-Allow-Origin: *
   X-Content-Type-Options: nosniff
+/index.v4.json
+  Cache-Control: public, max-age=300
+/index.v4.sfw.json
+  Cache-Control: public, max-age=300
 /index.v3.json
   Cache-Control: public, max-age=300
 /index.v3.sfw.json

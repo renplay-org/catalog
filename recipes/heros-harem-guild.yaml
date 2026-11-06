@@ -7,7 +7,10 @@ content: [ahegao, anal-sex, big-ass, big-tits, creampie, handjob, harem, incest,
 state: abandoned
 summary: "In Hero's Harem Guild you're a simple poor guy who becomes a community hero for surviving a powerful demon attack. You'll lead a Guild full of beautiful adventurers willing to work, train and fight for you. Upgrade the Guild, repair the town, seek new members, build relationships, and complete quests in this RPG-themed world."
 nsfw: true
-cover: https://img.itch.zone/aW1nLzExOTU3NjE2LmdpZg==/original/3ai9P8.gif
+art:
+  - kind: grid
+    url: https://img.itch.zone/aW1nLzExOTU3NjE2LmdpZg==/original/3ai9P8.gif
+    source: itch
 links:
   itch: https://komisari.itch.io/heros-harem-guild
   patreon: https://www.patreon.com/komisari

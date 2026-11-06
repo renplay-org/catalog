@@ -5,12 +5,15 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "cover": "node scripts/cover.mjs",
-    "cover:upload": "node scripts/cover-upload.mjs"
+    "cover:upload": "node scripts/cover-upload.mjs",
+    "validate": "node scripts/validate.mjs",
+    "sgdb": "node scripts/sgdb.mjs"
   },
   "devDependencies": {
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
-    "yaml": "^2.8.0",
-    "sharp": "^0.34.4"
+    "sharp": "^0.34.4",
+    "thumbhash": "^0.1.1",
+    "yaml": "^2.8.0"
   }
 }

@@ -1,8 +1,8 @@
 # Renplay catalog
 
 Recipes for games that work in [Renplay](https://github.com/renplay-org/renplay), published to
-`https://catalog.renplay.org/index.v3.json`. Instances that block adult games use
-`https://catalog.renplay.org/index.v3.sfw.json` instead.
+`https://catalog.renplay.org/index.v4.json`. Instances that block adult games use
+`https://catalog.renplay.org/index.v4.sfw.json` instead.
 Ren'Py games come first; HTML games (Twine and similar) are in too, and other engines only when
 their normal download plays as easily.
 
@@ -12,9 +12,10 @@ its official source; Renplay recognizes the archive by checksum, name, or a `mat
 builds it with the recipe's settings and engine version.
 
 Renplay does most of the work by itself (unpacking archives, choosing what streams, detecting the
-save folder), so most recipes are short: identity, links, the official cover, and the tested
-releases. The title, developer, tags and cover a player sees in Renplay come from here. Covers are
-linked from the developers' own pages, not copied, so no adult art is hosted here.
+save folder), so most recipes are short: identity, links, the art, and the tested releases. The
+title, developer, tags and art a player sees in Renplay come from here. Art is linked from the
+developers' and stores' own pages and from SteamGridDB (by id, never copied), so no adult art is
+hosted here.
 
 - Add or update a game: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Every field explained: [recipes/_template.yaml](recipes/_template.yaml)
@@ -24,31 +25,36 @@ linked from the developers' own pages, not copied, so no adult art is hosted her
 
 ## Index format
 
-`index.v3.json` is `{ "schema": 3, "generated": "…", "vocabulary": { id: { label, group } }, "games": [recipe, …] }`,
-with patch files resolved to `{ path, url, sha256 }` and covers to `{ url, sha256, width, height }`
-plus optional `sfw: true`.
+`index.v4.json` is `{ "schema": 4, "generated": "…", "vocabulary": { id: { label, group } }, "games": [recipe, …] }`,
+with patch files resolved to `{ path, url, sha256 }` and each `art` image resolved to
+`{ kind, url, source, sha256, width, height, thumbhash, tint, avg }` plus optional `focal`,
+`dark` and `default`. SteamGridDB art also carries `sgdb`, `asset` (the asset's page), `by`,
+`byUrl` and, when SteamGridDB tags it, `adult`. An animated twin is `animated: { url, sha256, mime }`.
+The `thumbhash` (about 28 bytes) draws the picture before it loads, `avg` is its average colour
+and `tint` its most vivid one, so a blurred adult game keeps its colours without a single picture.
 Recipe `tags` contain vocabulary ids; the index instead keeps `tags` as lowercase display labels
 for Renplay 2.9 and earlier, and adds the original ids as `tagIds`. `content` always contains ids
 and must never be displayed as library chips. Optional `summary` and `state` are included unchanged.
 
-`index.v3.sfw.json` has the same schema 3 shape, but includes only games whose `nsfw` is not
+`index.v4.sfw.json` has the same schema 4 shape, but includes only games whose `nsfw` is not
 `true`, omits each game's `content` field, and excludes the `content` vocabulary group. It contains
-no adult recipes, adult cover URLs or content-tag labels. Blocking adult games must select this
+no adult recipes, adult art URLs or content-tag labels. Blocking adult games must select this
 index before fetching the catalog, not filter the full index after downloading it.
 
 - `free`: optional boolean. The release in the recipe is free to download from its developer,
   with no payment or subscription. Omit when unknown; free older releases do not qualify a paid
   current release.
-- `coverSfw`: optional recipe boolean for an adult game whose cover is itself safe for work.
-  The build consumes this field and publishes `cover.sfw: true` when it is true, when `nsfw`
-  is not true, or when the cover is a repository `covers/` file (safe for work by policy).
-  Otherwise `cover.sfw` is absent. A safe cover does not make an adult game eligible for the
-  safe-for-work index.
+- `phone`: optional curated phone rating: `great` (Great on phones), `playable` (Playable on
+  phones) or `desktop` (Needs a bigger screen). Set only by a maintainer who tried the game on a
+  phone. Never guessed.
 
-`index.json` (schema 2) is for Renplay 2.5 and older: only Ren'Py games, with the older field names
-(`engine` for the runtime version, `releases[].renpy` and `releases[].engine` for `madeWith` and
-`runtime`). It omits the new vocabulary, `tagIds`, `content`, `summary` and `state` fields.
-Both full indexes carry optional `free` and `cover.sfw` metadata.
+**Renplay 3.x reads `index.v3.json`, `index.v3.sfw.json` and `index.json` (schema 2, Renplay 2.5
+and older) until it is retired.** They carry the same games under the older fields: the art list
+becomes a single `cover` derived from it (an itch.io source first, else the wide grid, else a
+grid) as `{ url, sha256, width, height }` plus `sfw: true` for non-adult games and repository
+files, and `phone` is dropped. Schema 2 keeps only Ren'Py games under the older names (`engine`
+for the runtime version, `releases[].renpy` and `releases[].engine` for `madeWith` and `runtime`)
+and omits the vocabulary, `tagIds`, `content`, `summary` and `state`.
 
 ## Tags, summaries and game state
 

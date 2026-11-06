@@ -7,9 +7,11 @@ content: [ahegao, anal-sex, bdsm, big-tits, corruption, cosplay, creampie, drugs
 state: abandoned
 summary: "You've inherited your grandfather's hotel on a foreign continent where everything seems fine on the surface, but rarely is. Develop relationships, skills and your hotel, with 18 beautiful and fleshed out characters."
 nsfw: true
-# The official cover is only published at 315×250; this is the game's key art from its wiki
-# (linked from the itch.io page), cropped to 63:50.
-cover: covers/harem-hotel.webp
+# Key art from the game's wiki (linked from the itch.io page); the official cover is only published at 315x250.
+art:
+  - kind: grid
+    url: https://static.wikitide.net/haremhotelwiki/3/3b/HH_HEADER.webp
+    source: developer
 links:
   itch: https://runeygames.itch.io/harem-hotel
   patreon: https://www.patreon.com/Runey

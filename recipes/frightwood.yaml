@@ -8,7 +8,10 @@ state: completed
 summary: "Join a group of fairy teens in their attempt to discover a grand treasure - one that can only be earned during the night of Halloween. Explore the mystical forest, and find out if the claims are true, or merely a mischievous trap."
 nsfw: false
 free: true
-cover: https://img.itch.zone/aW1nLzcwOTE3MDEucG5n/original/y3UOpn.png
+art:
+  - kind: grid
+    url: https://img.itch.zone/aW1nLzcwOTE3MDEucG5n/original/y3UOpn.png
+    source: itch
 links:
   itch: https://ladyicepaw.itch.io/frightwood
 saveDir: Frightwood-19970815

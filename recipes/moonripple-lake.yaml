@@ -7,7 +7,22 @@ content: [ahegao, anal-sex, big-ass, big-tits, cheating, corruption, creampie, e
 state: ongoing
 summary: "Anon and Suzie are moving to Moonripple Lake. In the wake of his cratering crypto-gained net worth, Anon is selling their apartment and moving to Moonripple Lake to rent a house, so he might stave off the inevitable: having to get a job. In Moonripple Lake, Suzie and Anon will make new friends, bring in old ones, stumble onto mysteries, and go on adventures."
 nsfw: true
-cover: https://img.itch.zone/aW1nLzIxMjcxOTk0LnBuZw==/original/ef%2B7SC.png
+art:
+  - kind: grid
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2857910/library_600x900_2x.jpg
+    source: steam
+  - kind: grid
+    url: https://img.itch.zone/aW1nLzIxMjcxOTk0LnBuZw==/original/ef%2B7SC.png
+    source: itch
+  - kind: wide
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2857910/header.jpg
+    source: steam
+  - kind: hero
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2857910/library_hero_2x.jpg
+    source: steam
+  - kind: logo
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2857910/logo.png
+    source: steam
 links:
   itch: https://bananacreamgames.itch.io/moonripple-lake
   patreon: https://www.patreon.com/bananacreamgames

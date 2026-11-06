@@ -12,7 +12,10 @@ summary: >-
   wife's texts, Cole's social media, a nosy neighbor, the front-door lock log and a living-room
   camera he swore he'd never check.
 nsfw: true
-cover: https://img.itch.zone/aW1nLzMxNzA0MDY1LmpwZw==/original/Sa%2BiRf.jpg
+art:
+  - kind: grid
+    url: https://img.itch.zone/aW1nLzMxNzA0MDY1LmpwZw==/original/Sa%2BiRf.jpg
+    source: itch
 links:
   itch: https://games-liquid.itch.io/two-weeks-on
   patreon: https://www.patreon.com/c/LiquidGames

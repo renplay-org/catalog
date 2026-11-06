@@ -9,7 +9,10 @@ summary: >-
   Ripples is a sci-fi visual novel that centers around an 18-year-old in his last year of high school.
   He reunites with his good friend Darci and sets off to school like any other day, but as the day goes on, he learns new information about his deceased father that has him questioning the truth about his death.
 nsfw: true
-cover: https://img.itch.zone/aW1nLzI2OTE1MDk4LnBuZw==/original/cerYb7.png
+art:
+  - kind: grid
+    url: https://img.itch.zone/aW1nLzI2OTE1MDk4LnBuZw==/original/cerYb7.png
+    source: itch
 links:
   itch: https://jestur.itch.io/ripples
   patreon: https://www.patreon.com/jestur
