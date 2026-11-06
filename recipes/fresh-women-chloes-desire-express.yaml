@@ -44,24 +44,12 @@ summary: >-
   DLC for FreshWomen - Season 2. You are a detective on a train, and you have a mission. Find out
   who stole a valuable jewel that has just been auctioned.
 nsfw: true
-# Default grid: the official promotional trailer end card (source: https://cdn-uploads.oppaiman.com/67e2e5bc4f6bb78eb78666b6_05-03-2026-12-27-09-005_CC_Release_trailer.mp4),
-# hosted on covers.renplay.org; adult art stays off GitHub. The Steam art is Season 2's.
+# Grid: the official promotional trailer end card (source: https://cdn-uploads.oppaiman.com/67e2e5bc4f6bb78eb78666b6_05-03-2026-12-27-09-005_CC_Release_trailer.mp4),
+# hosted on covers.renplay.org because adult art stays off GitHub. The DLC has no Steam page of its own.
 art:
   - kind: grid
     url: https://covers.renplay.org/fresh-women-chloes-desire-express-8dedd704a0.webp
     source: developer
-  - kind: grid
-    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3478650/library_600x900_2x.jpg
-    source: steam
-  - kind: wide
-    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3478650/header.jpg
-    source: steam
-  - kind: hero
-    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3478650/library_hero_2x.jpg
-    source: steam
-  - kind: logo
-    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3478650/logo.png
-    source: steam
 links:
   website: https://www.oppaiman.com/
   patreon: https://www.patreon.com/oppaiman

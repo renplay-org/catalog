@@ -37,7 +37,8 @@ test('cover safety: repository art is safe, remote art of an adult game is never
   assert.equal(coverIsSfw({}, 'https://example.com/art.webp'), true)
 })
 
-test('every index publishes free; the art list stays in schema 4, the derived cover in 3 and 2', () => {
+test('every index publishes free; the art list stays in schema 4, the cover in 3 and 2', () => {
+  const frozen = readJSON('../legacy/v3-covers.json')
   assert.deepEqual(sources.filter((g) => g.free === true).map((g) => g.id).sort(), ['dear-devere', 'frightwood'])
   for (const source of sources) {
     const game4 = v4.games.find((g) => g.id === source.id)
@@ -53,9 +54,14 @@ test('every index publishes free; the art list stays in schema 4, the derived co
       assert.equal('phone' in game, false)
       assert.equal(game.free, source.free)
       if (game.cover) {
-        const urls = (source.art ?? []).map((a) => a.url)
-        assert.ok(urls.includes(game.cover.url), `${source.id}: the v3 cover comes from the art`)
-        assert.equal('sfw' in game.cover, coverIsSfw(source, game.cover.url))
+        if (frozen[source.id]) {
+          // Renplay 3.x keeps the cover main published, whatever the art list now holds.
+          assert.deepEqual(game.cover, frozen[source.id], `${source.id}: the v3 cover is the frozen one`)
+        } else {
+          const urls = (source.art ?? []).map((a) => a.url)
+          assert.ok(urls.includes(game.cover.url), `${source.id}: the v3 cover comes from the art`)
+          assert.equal('sfw' in game.cover, coverIsSfw(source, game.cover.url))
+        }
       }
     }
   }

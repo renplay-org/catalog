@@ -11,7 +11,8 @@ so they are not added. It holds recipes
 `index.v4.sfw.json` (schema 4 without adult games, game `content` fields and the `content`
 vocabulary group), and the files Renplay 3.x reads until it is retired: `index.v3.json`,
 `index.v3.sfw.json` (schema 3) and `index.json` (schema 2, Renplay 2.5 and older), their `cover`
-derived from the art. Never make blocking clients fetch a full index first.
+frozen at what Renplay 3.x shows today (`legacy/v3-covers.json`) and derived from the art only
+for games added later. Never make blocking clients fetch a full index first.
 
 **Never commit game files** (archives, scripts, images from a game) and **never commit art of an
 adult game**: adult art is linked from SteamGridDB, Steam, itch.io or `covers.renplay.org`, and
@@ -26,6 +27,7 @@ live in `covers/`.
 | `recipes/_template.yaml` | Every field, explained. CI validates it too. |
 | `covers/<id>.webp` | Rare: safe-for-work art without an official copy to link to. Adult art goes to the cover host instead (`npm run cover:upload`, `https://covers.renplay.org`, a Cloudflare R2 bucket; the maintainer has the token). |
 | `patches/<id>/*.rpy` | Small browser fixes, referenced from `build.patches`. Rare. |
+| `legacy/v3-covers.json` | The `cover` of every game main's build published, so Renplay 3.x keeps its covers until it is retired. The seven files that left `covers/` point at covers.renplay.org here. |
 | `schema/recipe.schema.json` | JSON Schema for recipes, published at its `$id`. Every recipe starts with `# yaml-language-server: $schema=<that URL>`, so editors check it as you type; the build refuses recipes without it. |
 | `scripts/build.mjs` | Validates everything and writes `dist/` (the published site). |
 | `scripts/art.mjs` | The art pipeline the build and the validate command share: fetch once, measure, sha256, ThumbHash, tint, shape checks, defaults, the derived v3 cover. |
@@ -75,9 +77,10 @@ folder between runs), so rebuilds are cheap and what ships is what was measured.
   folder, screen size).
 - **Updates:** when a recipe lists a `verified` or `playable` release newer than the installed one,
   Renplay shows "Update".
-- **Old clients:** Renplay 3.x reads the schema 3 indexes, where each game's art is reduced to one
-  derived `cover` (an itch.io source first, else the wide grid, else a grid) with its sha256 and
-  size. Renplay downloads it on catalog refresh and refuses it if the checksum differs.
+- **Old clients:** Renplay 3.x reads the schema 3 indexes, where each game keeps the `cover`
+  frozen in `legacy/v3-covers.json`. A game added later gets one derived from the art (an itch.io
+  source first, else the wide grid, else a grid) with its sha256 and size. Renplay downloads the
+  cover on catalog refresh and refuses it if the checksum differs.
 
 ## Rules for recipes
 

@@ -1,6 +1,7 @@
 // Validates recipes/*.yaml and writes dist/index.v4.json, dist/index.v4.sfw.json,
 // the schema 3 and 2 indexes Renplay 3.x reads (dist/index.v3.json,
-// dist/index.v3.sfw.json, dist/index.json; their cover is derived from the art),
+// dist/index.v3.sfw.json, dist/index.json, whose cover is frozen from
+// legacy/v3-covers.json when the map knows the game, else derived from the art),
 // plus the schema, covers and patches, for catalog.renplay.org.
 // Files starting with "_" (the template) are not recipes.
 import { createHash } from 'node:crypto'
@@ -107,7 +108,11 @@ if (errors.length) {
 for (const w of warnings) console.warn(`warning: ${w}`)
 rmSync(dist, { recursive: true, force: true })
 mkdirSync(dist, { recursive: true })
-for (const dir of ['covers', 'patches']) if (existsSync(join(root, dir))) cpSync(join(root, dir), join(dist, dir), { recursive: true })
+// covers/ goes away once every file has moved to the cover host. Publish it only while it holds files.
+for (const dir of ['covers', 'patches']) {
+  const src = join(root, dir)
+  if (existsSync(src) && readdirSync(src).length > 0) cpSync(src, join(dist, dir), { recursive: true })
+}
 const generated = new Date().toISOString()
 // Old clients (Renplay 2.9 and older) render tags as labels, never ids, and make a library chip
 // of each one, so they get only the play and story groups. Art, protagonist and content tags
@@ -129,9 +134,14 @@ const sfwVocabulary = Object.fromEntries(Object.entries(vocabulary).filter(([, t
 const sfwGames = displayGames.filter((g) => g.nsfw !== true).map(({ content, ...g }) => g)
 writeFileSync(join(dist, 'index.v4.sfw.json'), JSON.stringify({ schema: 4, generated, vocabulary: sfwVocabulary, games: sfwGames }, null, 1))
 // Schema 3 (Renplay 2.6 to 3.x, kept until 3.x is retired): the same games, but
-// with a single cover derived from the art instead of the art list.
+// with a single cover instead of the art list. Renplay 3.2 crops the cover it has
+// today, so that cover is frozen at what main's build published
+// (legacy/v3-covers.json, with the seven repository files at their covers.renplay.org
+// address). Only games the frozen map does not know (added later) get a cover
+// derived from the art.
+const frozenCovers = JSON.parse(readFileSync(join(root, 'legacy/v3-covers.json'), 'utf-8'))
 const v3Games = displayGames.map(({ art, phone, ...g }) => {
-  const cover = deriveCover({ art, nsfw: g.nsfw })
+  const cover = frozenCovers[g.id] ?? deriveCover({ art, nsfw: g.nsfw })
   return cover ? { ...g, cover } : g
 })
 writeFileSync(join(dist, 'index.v3.json'), JSON.stringify({ schema: 3, generated, vocabulary, games: v3Games }, null, 1))

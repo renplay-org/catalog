@@ -44,24 +44,12 @@ summary: >-
   DLC for FreshWomen - Season 2. In this exciting prequel, you’ll play as Julia, explore Tokyo, and
   make new friends.
 nsfw: true
-# Default grid: the official landing-page title art (source: https://d335luupugsy2.cloudfront.net/cms/files/1086962/1762797320/$77eafpvpk4a),
-# hosted on covers.renplay.org; suggestive art stays off GitHub. The Steam art is Season 2's.
+# Grid: the official landing-page title art (source: https://d335luupugsy2.cloudfront.net/cms/files/1086962/1762797320/$77eafpvpk4a),
+# hosted on covers.renplay.org because suggestive art stays off GitHub. The DLC has no Steam page of its own.
 art:
   - kind: grid
     url: https://covers.renplay.org/fresh-women-julia-in-japan-c106e16a69.webp
     source: developer
-  - kind: grid
-    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3478650/library_600x900_2x.jpg
-    source: steam
-  - kind: wide
-    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3478650/header.jpg
-    source: steam
-  - kind: hero
-    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3478650/library_hero_2x.jpg
-    source: steam
-  - kind: logo
-    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3478650/logo.png
-    source: steam
 links:
   website: https://www.oppaiman.com/
   patreon: https://www.patreon.com/oppaiman

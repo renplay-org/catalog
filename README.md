@@ -50,9 +50,11 @@ index before fetching the catalog, not filter the full index after downloading i
 
 **Renplay 3.x reads `index.v3.json`, `index.v3.sfw.json` and `index.json` (schema 2, Renplay 2.5
 and older) until it is retired.** They carry the same games under the older fields: the art list
-becomes a single `cover` derived from it (an itch.io source first, else the wide grid, else a
-grid) as `{ url, sha256, width, height }` plus `sfw: true` for non-adult games and repository
-files, and `phone` is dropped. Schema 2 keeps only Ren'Py games under the older names (`engine`
+becomes a single `cover` as `{ url, sha256, width, height }` plus `sfw: true` for non-adult games
+and repository files, and `phone` is dropped. The cover is frozen at what main published
+(`legacy/v3-covers.json`), so Renplay 3.x keeps the covers it has until it is retired. Games
+added later get one derived from the art (an itch.io source first, else the wide grid, else a
+grid). Schema 2 keeps only Ren'Py games under the older names (`engine`
 for the runtime version, `releases[].renpy` and `releases[].engine` for `madeWith` and `runtime`)
 and omits the vocabulary, `tagIds`, `content`, `summary` and `state`.
 
