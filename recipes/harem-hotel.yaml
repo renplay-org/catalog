@@ -7,9 +7,47 @@ content: [ahegao, anal-sex, bdsm, big-tits, corruption, cosplay, creampie, drugs
 state: abandoned
 summary: "You've inherited your grandfather's hotel on a foreign continent where everything seems fine on the surface, but rarely is. Develop relationships, skills and your hotel, with 18 beautiful and fleshed out characters."
 nsfw: true
-# The official cover is only published at 315×250; this is the game's key art from its wiki
-# (linked from the itch.io page), cropped to 63:50.
-cover: covers/harem-hotel.webp
+# Key art from the game's wiki (linked from the itch.io page); the official cover is only published at 315x250.
+art:
+  - kind: grid
+    url: https://static.wikitide.net/haremhotelwiki/3/3b/HH_HEADER.webp
+    source: developer
+  - kind: grid
+    source: sgdb
+    sgdb: 344774
+    url: https://cdn2.steamgriddb.com/grid/cf0dee60da7e50102368aa4002a85720.jpg
+    by: Deskrit2k
+    byUrl: https://www.steamgriddb.com/profile/76561197995537442
+  - kind: grid
+    source: sgdb
+    sgdb: 241947
+    url: https://cdn2.steamgriddb.com/grid/6eb36a8b97d4908fdcb9fdb10517324b.jpg
+    by: RaikoKitame
+    byUrl: https://www.steamgriddb.com/profile/76561198074496592
+  - kind: wide
+    source: sgdb
+    sgdb: 254981
+    url: https://cdn2.steamgriddb.com/grid/0cd6193539760f331b9e14997b502011.png
+    by: Deathcat
+    byUrl: https://www.steamgriddb.com/profile/76561197986909714
+  - kind: hero
+    source: sgdb
+    sgdb: 24940
+    url: https://cdn2.steamgriddb.com/hero/9424d06c850d9892f170a9a9d0039c7a.png
+    by: kwindu
+    byUrl: https://www.steamgriddb.com/profile/76561197985866868
+  - kind: hero
+    source: sgdb
+    sgdb: 61873
+    url: https://cdn2.steamgriddb.com/hero/385c0958cf6fad65d5fc7ff75ec94890.png
+    by: Deathcat
+    byUrl: https://www.steamgriddb.com/profile/76561197986909714
+  - kind: logo
+    source: sgdb
+    sgdb: 62440
+    url: https://cdn2.steamgriddb.com/logo/bab1bc8b250ad088d6d044e138354076.png
+    by: RaikoKitame
+    byUrl: https://www.steamgriddb.com/profile/76561198074496592
 links:
   itch: https://runeygames.itch.io/harem-hotel
   patreon: https://www.patreon.com/Runey

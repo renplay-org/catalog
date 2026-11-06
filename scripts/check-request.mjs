@@ -126,7 +126,7 @@ if (pageUrl && /(^|\.)itch\.io$/.test(pageUrl.hostname)) {
       if (pageSaysRenpy) notes.push('✅ The itch.io page mentions Ren’Py.')
       else notes.push('ℹ️ The itch.io page does not mention Ren’Py. That is common, but please confirm the download has the `renpy` and `game` folders.')
     }
-    if (coverMeta) notes.push(`✅ The itch.io page has a cover image to link: ${coverMeta[1]}`)
+    if (coverMeta) notes.push(`✅ The itch.io page has art to link (a grid source): ${coverMeta[1]}`)
   } catch (e) {
     notes.push(`ℹ️ Could not open the itch.io page (${e.message}).`)
   }

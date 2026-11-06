@@ -1,8 +1,8 @@
-// Puts a cover on the catalog's cover host, for adult art that has no official
-// copy to link to in the right shape (GitHub must not host adult art). Makes
-// the same 1260×1000 WebP as `npm run cover`, uploads it as <id>-<hash>.webp
-// (a changed cover gets a new address, so no cache serves the old one) and
-// prints the URL for the recipe's `cover`.
+// Puts art on the catalog's cover host, for adult art that has no official
+// copy to link to (art of an adult game is never committed to this repository).
+// Makes the same 1260×1000 WebP as `npm run cover`, uploads it as <id>-<hash>.webp
+// (a changed picture gets a new address, so no cache serves the old one) and
+// prints the URL for the recipe's art list.
 //
 //   RENPLAY_COVERS_TOKEN=… npm run cover:upload -- <image> <id> [--focus centre|attention|top|bottom|left|right]
 //

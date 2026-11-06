@@ -7,7 +7,10 @@ content: [ahegao, groping, handjob, harem, masturbation, mobile-game, monster-gi
 state: ongoing
 summary: "After Aki's death, Denji finds himself living alone with Power. As the two devil hunters share the same apartment and daily life, he tries to get closer to her and build a real connection. While trying to get closer to Power, Denji's life takes a drastic turn when Reze and Makima get involved, pushing him onto a path with no return."
 nsfw: true
-cover: https://img.itch.zone/aW1nLzI3MDkzODA0LnBuZw==/original/9M5csR.png
+art:
+  - kind: grid
+    url: https://img.itch.zone/aW1nLzI3MDkzODA0LnBuZw==/original/9M5csR.png
+    source: itch
 links:
   itch: https://drergenecon.itch.io/livingwithchainsaw
   patreon: https://www.patreon.com/DrErgenecon

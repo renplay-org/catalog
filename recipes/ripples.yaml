@@ -9,7 +9,64 @@ summary: >-
   Ripples is a sci-fi visual novel that centers around an 18-year-old in his last year of high school.
   He reunites with his good friend Darci and sets off to school like any other day, but as the day goes on, he learns new information about his deceased father that has him questioning the truth about his death.
 nsfw: true
-cover: https://img.itch.zone/aW1nLzI2OTE1MDk4LnBuZw==/original/cerYb7.png
+art:
+  - kind: grid
+    url: https://img.itch.zone/aW1nLzI2OTE1MDk4LnBuZw==/original/cerYb7.png
+    source: itch
+  - kind: grid
+    source: sgdb
+    sgdb: 803479
+    url: https://cdn2.steamgriddb.com/grid/38155c1ed357b9fe86b2900c08264de5.png
+    by: "k'k"
+    byUrl: https://www.steamgriddb.com/profile/76561197996267829
+  - kind: grid
+    source: sgdb
+    sgdb: 271485
+    url: https://cdn2.steamgriddb.com/grid/60888b06d6c531dd8a597627c4922973.png
+    by: flyovercurtain28
+    byUrl: https://www.steamgriddb.com/profile/76561199432988029
+  - kind: wide
+    source: sgdb
+    sgdb: 803487
+    url: https://cdn2.steamgriddb.com/grid/7ace37f249d302533f0d7d80a7baac81.png
+    by: "k'k"
+    byUrl: https://www.steamgriddb.com/profile/76561197996267829
+  - kind: wide
+    source: sgdb
+    sgdb: 803484
+    url: https://cdn2.steamgriddb.com/grid/287338fe26585338cc226faaa3ac7054.png
+    by: "k'k"
+    byUrl: https://www.steamgriddb.com/profile/76561197996267829
+  - kind: hero
+    source: sgdb
+    sgdb: 174581
+    url: https://cdn2.steamgriddb.com/hero/b0134f7f08aa472e3b539510f63f90fc.png
+    by: "k'k"
+    byUrl: https://www.steamgriddb.com/profile/76561197996267829
+  - kind: hero
+    source: sgdb
+    sgdb: 174582
+    url: https://cdn2.steamgriddb.com/hero/d5a4f417c69e14ba64c492034c2c2374.png
+    by: "k'k"
+    byUrl: https://www.steamgriddb.com/profile/76561197996267829
+  - kind: logo
+    source: sgdb
+    sgdb: 69110
+    url: https://cdn2.steamgriddb.com/logo/fb97fe66af9b3284b34c31a8c77fd2f2.png
+    by: flyovercurtain28
+    byUrl: https://www.steamgriddb.com/profile/76561199432988029
+  - kind: logo
+    source: sgdb
+    sgdb: 173811
+    url: https://cdn2.steamgriddb.com/logo/45d5c26cf369d90572e41f5bfb0896ae.png
+    by: "k'k"
+    byUrl: https://www.steamgriddb.com/profile/76561197996267829
+  - kind: icon
+    source: sgdb
+    sgdb: 25065
+    url: https://cdn2.steamgriddb.com/icon/d45e74902b530325e95724b12df237c4.png
+    by: flyovercurtain28
+    byUrl: https://www.steamgriddb.com/profile/76561199432988029
 links:
   itch: https://jestur.itch.io/ripples
   patreon: https://www.patreon.com/jestur

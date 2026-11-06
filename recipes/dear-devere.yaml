@@ -8,7 +8,22 @@ state: completed
 summary: "The year is 1935. It all started with a single letter. But from that point on, nothing would remain the same for Angela Bard--a quiet, solitary woman living in the Scottish isles."
 nsfw: false
 free: true
-cover: https://img.itch.zone/aW1nLzMwOTE2MTAuanBn/original/QrCiGk.jpg
+art:
+  - kind: grid
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1301220/library_600x900_2x.jpg
+    source: steam
+  - kind: grid
+    url: https://img.itch.zone/aW1nLzMwOTE2MTAuanBn/original/QrCiGk.jpg
+    source: itch
+  - kind: wide
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1301220/header.jpg
+    source: steam
+  - kind: hero
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1301220/library_hero.jpg
+    source: steam
+  - kind: logo
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1301220/logo.png
+    source: steam
 links:
   itch: https://katy133.itch.io/dear-devere
   steam: https://store.steampowered.com/app/1301220/Dear_Devere/

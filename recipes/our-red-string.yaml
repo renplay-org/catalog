@@ -7,8 +7,49 @@ content: [anal-sex, bdsm, big-ass, big-tits, cheating, corruption, creampie, dru
 state: ongoing
 summary: "Lena and Ian are two very different people who find themselves in a very similar moment in their lives. Both struggling to achieve their dreams, both hurting because of love. Their lives will become intertwined, with each other and with several characters that will impact who they are and who they will become."
 nsfw: true
-# The official art is the logo at 2.19:1; this is that art, whole, on black at 63:50.
-cover: covers/our-red-string.webp
+art:
+  - kind: grid
+    url: https://img.itch.zone/aW1nLzUzMDkxNDMuanBn/original/puAFWv.jpg
+    source: itch
+  - kind: grid
+    source: sgdb
+    sgdb: 148252
+    url: https://cdn2.steamgriddb.com/grid/9ed457d47b539a7d6b15527cad252d4b.png
+    by: Shorono
+    byUrl: https://www.steamgriddb.com/profile/76561197998976121
+  - kind: grid
+    source: sgdb
+    sgdb: 562507
+    url: https://cdn2.steamgriddb.com/grid/f58877bccb146e2e6e73e443b8c33e61.png
+    by: kyotocafe
+    byUrl: https://www.steamgriddb.com/profile/76561198095456907
+  - kind: hero
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3669040/library_hero_2x.jpg
+    source: steam
+  - kind: hero
+    source: sgdb
+    sgdb: 104739
+    url: https://cdn2.steamgriddb.com/hero/aacf0fa778261650a0cdb6009796fa8c.png
+    by: Starmanelia
+    byUrl: https://www.steamgriddb.com/profile/76561198055139252
+  - kind: wide
+    source: sgdb
+    sgdb: 483054
+    url: https://cdn2.steamgriddb.com/grid/2dbb90af416feb48a24c872804b029af.png
+    by: Starmanelia
+    byUrl: https://www.steamgriddb.com/profile/76561198055139252
+  - kind: wide
+    source: sgdb
+    sgdb: 434994
+    url: https://cdn2.steamgriddb.com/grid/aaeb8386501bbbd31a2fb0258eb4c499.png
+    by: Starmanelia
+    byUrl: https://www.steamgriddb.com/profile/76561198055139252
+  - kind: logo
+    source: sgdb
+    sgdb: 110512
+    url: https://cdn2.steamgriddb.com/logo/316a6f4ced05edfc00f35e2699f0b762.png
+    by: Starmanelia
+    byUrl: https://www.steamgriddb.com/profile/76561198055139252
 links:
   itch: https://eva-kiss.itch.io/our-red-string
   patreon: https://www.patreon.com/Evakiss

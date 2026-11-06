@@ -3,7 +3,7 @@ on:
   push:
     branches: [main]
   pull_request:
-  # Weekly, to notice cover links that stopped working.
+  # Weekly, to notice art links that stopped working.
   schedule:
     - cron: '17 6 * * 1'
 permissions:
@@ -16,11 +16,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history: the index compatibility test builds main in a worktree.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - run: npm ci
+      # Every image is fetched once and kept in .art-cache between runs.
+      - uses: actions/cache@v4
+        with:
+          path: .art-cache
+          key: art-cache-${{ hashFiles('recipes/*.yaml') }}
+          restore-keys: art-cache-
       - run: npm run build
+      - run: node --test scripts/*.test.mjs
 
   cloudflare:
     if: github.event_name != 'pull_request'
@@ -32,6 +42,11 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
+      - uses: actions/cache@v4
+        with:
+          path: .art-cache
+          key: art-cache-${{ hashFiles('recipes/*.yaml') }}
+          restore-keys: art-cache-
       - run: npm run build
       - run: npx --yes wrangler@4 deploy
         env:

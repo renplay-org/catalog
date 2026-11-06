@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://catalog.renplay.org/recipe.schema.json",
   "title": "renplay recipe",
-  "description": "Recipes build into schema 3 indexes. https://catalog.renplay.org/index.v3.sfw.json excludes adult games, game content fields and the content vocabulary group.",
+  "description": "Recipes build into schema 4 indexes. https://catalog.renplay.org/index.v4.sfw.json excludes adult games, game content fields and the content vocabulary group.",
   "type": "object",
   "required": ["id", "title", "releases"],
   "additionalProperties": false,
@@ -16,8 +16,36 @@
     "state": { "enum": ["ongoing", "completed", "on-hold", "abandoned"], "default": "ongoing", "description": "Game development state, not per-release playability; F95 Completed/Onhold/Abandoned prefixes, otherwise ongoing" },
     "nsfw": { "type": "boolean" },
     "free": { "type": "boolean", "description": "The release in this recipe is free to download from its developer, with no payment or subscription; omit when unknown" },
-    "coverSfw": { "type": "boolean", "description": "An adult game's cover is itself safe for work; built as cover.sfw, also true automatically for non-adult games and repository covers" },
-    "cover": { "type": "string", "pattern": "^(https://.+|covers/[a-z0-9]+(-[a-z0-9]+)*\\.webp)$", "description": "The official cover art: its https URL on the developer's own hosting (itch.io, Steam, the developer's site), or covers/<id>.webp for safe-for-work art without an official source" },
+    "phone": { "enum": ["great", "playable", "desktop"], "description": "Curated phone rating, set only by a maintainer who tried the game on a phone: great (Great on phones), playable (Playable on phones), desktop (Needs a bigger screen). Never guessed; omit when untried" },
+    "art": {
+      "type": "array",
+      "description": "The game's pictures in SteamGridDB's formats. The first image of a kind is the default unless one says default: true. Adult games may link SteamGridDB, Steam, itch.io or covers.renplay.org, never a repository file.",
+      "items": {
+        "type": "object",
+        "required": ["kind", "url", "source"],
+        "additionalProperties": false,
+        "properties": {
+          "kind": { "enum": ["grid", "wide", "hero", "logo", "icon"], "description": "grid 600x900, wide 920x430, hero 1920x620 (an exact 2x of each is the same shape), logo a transparent PNG of any size, icon a square of 512 and up" },
+          "url": { "type": "string", "pattern": "^(https://.+|covers/[a-z0-9]+(-[a-z0-9]+)*\\.webp)$", "description": "The image's https URL on the developer's or store's hosting, or covers/<id>.webp (safe-for-work games only)" },
+          "source": { "enum": ["steam", "itch", "sgdb", "renplay", "developer"], "description": "Who published the art: a store (steam, itch), SteamGridDB (sgdb), Renplay-made art (renplay), or the developer" },
+          "focal": { "type": "array", "items": { "type": "number", "minimum": 0, "maximum": 1 }, "minItems": 2, "maxItems": 2, "description": "Where the picture matters, [x, y] from 0 to 1; forces a crop into missing formats" },
+          "dark": { "type": "boolean", "description": "A dark logo, inverted on ink" },
+          "default": { "type": "boolean", "description": "The chosen image of its kind; at most one per kind" },
+          "sgdb": { "type": "integer", "minimum": 1, "description": "SteamGridDB asset id; referenced by id, never copied" },
+          "by": { "type": "string", "minLength": 1, "description": "The SteamGridDB author, credited everywhere the art shows" },
+          "byUrl": { "type": "string", "pattern": "^https://", "description": "The SteamGridDB author's profile page" },
+          "animated": { "type": "string", "pattern": "^https://", "description": "SteamGridDB animated twin (WebP or APNG) of this image" },
+          "adult": { "type": "boolean", "description": "SteamGridDB tags this asset adult" }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "source": { "const": "sgdb" } }, "required": ["source"] },
+            "then": { "required": ["sgdb", "by", "byUrl"] },
+            "else": { "not": { "anyOf": [{ "required": ["sgdb"] }, { "required": ["by"] }, { "required": ["byUrl"] }, { "required": ["animated"] }, { "required": ["adult"] }] } }
+          }
+        ]
+      }
+    },
     "links": {
       "type": "object",
       "propertyNames": { "enum": ["website", "patreon", "itch", "f95", "steam", "subscribestar", "discord", "walkthrough"] },

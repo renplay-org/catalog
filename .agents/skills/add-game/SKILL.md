@@ -27,9 +27,9 @@ first; `recipes/_template.yaml` explains every field.
   `school-setting`, fan game to `parody`, two protagonists to `multiple-protagonist`. The pinned
   F95 source has no drama, mystery or minigames; omit them. See README for source and updates.
 - `nsfw: true` for adult games. They are excluded from
-  `https://catalog.renplay.org/index.v3.sfw.json`, even with a safe cover. This schema 3
-  index also omits game `content` fields and the `content` vocabulary group; adult-blocking clients
-  must fetch it instead of the full index.
+  `https://catalog.renplay.org/index.v4.sfw.json`. The safe-for-work index also omits game
+  `content` fields and the `content` vocabulary group; adult-blocking clients must fetch it
+  instead of the full index.
 - `free`: optional boolean, true only if this recipe's release is free to download from the
   developer with no payment or subscription. Omit when unknown; an older free release is not enough.
 
@@ -68,14 +68,12 @@ as a starting point.
 Status: `verified` if everything works, `playable` with notes if it works with issues, `broken`
 with the reason if it does not.
 
-## 4. Link the cover
+## 4. Link the art
 
-Use the `find-cover` skill: link the official cover art (the itch.io page’s cover first). It is required for `verified` and `playable` games.
-
-Set optional `coverSfw: true` only for an adult game whose cover is itself safe for work.
-The built cover gains `sfw: true` for that flag, for games whose `nsfw` is not true, or for
-repository `covers/` files (always safe for work by policy); otherwise `sfw` is absent.
-`coverSfw` itself is not published. Both full indexes include optional `free` and `cover.sfw`.
+Use the `find-art` skill: link the game's pictures in the five SteamGridDB formats (grid, wide,
+hero, logo, icon), from Steam, SteamGridDB, itch.io or the developer, with credits for
+SteamGridDB art. A game needs at least one grid or one hero. Art of an adult game is never
+committed to this repository.
 
 ## 5. Write the recipe
 
@@ -88,7 +86,10 @@ content: []
 state: ongoing
 summary: A student discovers a mystery that changes the course of their studies.
 nsfw: true
-cover: https://img.itch.zone/…/original/….png
+art:
+  - kind: grid
+    url: https://img.itch.zone/…/original/….png
+    source: itch
 links:
   itch: https://studio.itch.io/my-game
   patreon: https://www.patreon.com/studio

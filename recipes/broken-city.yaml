@@ -24,9 +24,10 @@ summary: >-
   Navigate a corrupted city and decide who he becomes: a ruthless player like the ones he once
   despised, or someone still holding onto ideals that already cost him everything.
 nsfw: true
-# Official itch.io logo art, cropped to 63:50 without cutting the logo.
-# Source: https://img.itch.zone/aW1nLzI4OTg0MTQxLmpwZw==/original/85reqO.jpg
-cover: covers/broken-city.webp
+art:
+  - kind: grid
+    url: https://img.itch.zone/aW1nLzI4OTg0MTQxLmpwZw==/original/85reqO.jpg
+    source: itch
 links:
   itch: https://fullchil.itch.io/broken-city
   patreon: https://www.patreon.com/cw/fullchill

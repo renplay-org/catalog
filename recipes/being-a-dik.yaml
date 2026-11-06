@@ -51,9 +51,79 @@ summary: >-
   A young man from a low-income family moves away from his widowed father and his summer love to
   attend college at Burgmeister & Royce.
 nsfw: true
-# Official Steam capsule; wider crop keeps the face and title within the allowed cover ratio.
-# Source: https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1126320/capsule_616x353.jpg
-cover: covers/being-a-dik.webp
+art:
+  - kind: grid
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1126320/library_600x900_2x.jpg
+    source: steam
+  - kind: grid
+    source: sgdb
+    sgdb: 121180
+    url: https://cdn2.steamgriddb.com/grid/775aa995466b95cf3fc4ad55ec755198.png
+    by: theEMA
+    byUrl: https://www.steamgriddb.com/profile/76561198165563784
+  - kind: grid
+    source: sgdb
+    sgdb: 604790
+    url: https://cdn2.steamgriddb.com/grid/ffe6daafc05bbfbe63825f29780ce6c1.jpg
+    by: RAZELIGHT
+    byUrl: https://www.steamgriddb.com/profile/76561198322976564
+  - kind: wide
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1126320/header.jpg
+    source: steam
+  - kind: wide
+    source: sgdb
+    sgdb: 546871
+    url: https://cdn2.steamgriddb.com/grid/368d8c431c040b6de5ea2df1eda64f41.png
+    by: "Afny💕"
+    byUrl: https://www.steamgriddb.com/profile/76561198123755068
+  - kind: wide
+    source: sgdb
+    sgdb: 415454
+    url: https://cdn2.steamgriddb.com/grid/9b27667c2151ca3cba982cc6c68aef82.png
+    by: Cosmic_Sentinel
+    byUrl: https://www.steamgriddb.com/profile/76561198056827074
+  - kind: hero
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1126320/library_hero_2x.jpg
+    source: steam
+  - kind: hero
+    source: sgdb
+    sgdb: 31103
+    url: https://cdn2.steamgriddb.com/hero/cef65a145c54dbe0f1ea8ad16a331421.jpg
+    by: Differ
+    byUrl: https://www.steamgriddb.com/profile/76561199837420504
+  - kind: hero
+    source: sgdb
+    sgdb: 157944
+    url: https://cdn2.steamgriddb.com/hero/46ccbe298f59d0c1c30c43086df654a1.png
+    by: Grebooss
+    byUrl: https://www.steamgriddb.com/profile/76561198121133868
+  - kind: logo
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1126320/logo.png
+    source: steam
+  - kind: logo
+    source: sgdb
+    sgdb: 20215
+    url: https://cdn2.steamgriddb.com/logo/883163b9c71c2b2576534baf44a5d0fe.png
+    by: theEMA
+    byUrl: https://www.steamgriddb.com/profile/76561198165563784
+  - kind: logo
+    source: sgdb
+    sgdb: 16788
+    url: https://cdn2.steamgriddb.com/logo/948ba1dc8cc4cc26e5d9d4f358660c2d.png
+    by: theEMA
+    byUrl: https://www.steamgriddb.com/profile/76561198165563784
+  - kind: icon
+    source: sgdb
+    sgdb: 85412
+    url: https://cdn2.steamgriddb.com/icon/5ce74e34a0fc705da2c3263840d3b123.png
+    by: LutzPS
+    byUrl: https://www.steamgriddb.com/profile/76561197978629721
+  - kind: icon
+    source: sgdb
+    sgdb: 85386
+    url: https://cdn2.steamgriddb.com/icon/9139b1db586a2f7827dd2d5bcbdea2b5.png
+    by: RAZELIGHT
+    byUrl: https://www.steamgriddb.com/profile/76561198322976564
 links:
   website: https://being-a-dik.com/
   patreon: https://www.patreon.com/DrPinkCake
