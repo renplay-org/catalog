@@ -188,7 +188,8 @@ export async function checkArt(file, recipe, { root, cacheDir, fetchImpl, fail, 
     }
     published.push({ requested: item, image })
   }
-  // The first image of a kind is the default unless one says default: true.
+  // The default of a kind: the image that says default: true, else the first one in the format's
+  // own shape (real art in the shape beats one the app has to crop or frame), else the first.
   const byKind = new Map()
   for (const entry of published) {
     const list = byKind.get(entry.image.kind) ?? []
@@ -198,7 +199,8 @@ export async function checkArt(file, recipe, { root, cacheDir, fetchImpl, fail, 
   for (const [kind, list] of byKind) {
     const marked = list.filter((e) => e.requested.default === true)
     if (marked.length > 1) fail(file, `two images of kind ${kind} say default: true`)
-    const chosen = marked[0] ?? list[0]
+    const inShape = (e) => kind === 'logo' || !shapeProblem(kind, e.image)
+    const chosen = marked[0] ?? list.find(inShape) ?? list[0]
     chosen.image.default = true
   }
   recipe.art = published.map((e) => e.image)

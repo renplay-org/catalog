@@ -19,7 +19,7 @@
     "phone": { "enum": ["great", "playable", "desktop"], "description": "Curated phone rating, set only by a maintainer who tried the game on a phone: great (Great on phones), playable (Playable on phones), desktop (Needs a bigger screen). Never guessed; omit when untried" },
     "art": {
       "type": "array",
-      "description": "The game's pictures in SteamGridDB's formats. The first image of a kind is the default unless one says default: true. Adult games may link SteamGridDB, Steam, itch.io or covers.renplay.org, never a repository file.",
+      "description": "The game's pictures in SteamGridDB's formats. The default of a kind is the image that says default: true, else the first one in the format's shape, else the first. Adult games may link SteamGridDB, Steam, itch.io or covers.renplay.org, never a repository file.",
       "items": {
         "type": "object",
         "required": ["kind", "url", "source"],
