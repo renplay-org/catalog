@@ -30,6 +30,15 @@ summary: >-
 nsfw: true
 art:
   - kind: grid
+    url: https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4704940/47bd1b5fd4f644166fab70800dbd0e3753296a95/library_capsule_2x.jpg
+    source: steam
+  - kind: hero
+    url: https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4704940/4e1c80253c244200427001a15d8cf6ca9662129e/library_hero_2x.jpg
+    source: steam
+  - kind: wide
+    url: https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4704940/0bf1fb1def2779d640f790d5da16728592e399c6/header_2x.jpg
+    source: steam
+  - kind: grid
     url: https://img.itch.zone/aW1nLzI5NzI1OTUyLnBuZw==/original/vO1X3b.png
     source: itch
 links:

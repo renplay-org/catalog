@@ -55,11 +55,19 @@ nsfw: true
 # hosted on covers.renplay.org; suggestive art stays off GitHub. The app has no Steam library art yet.
 art:
   - kind: grid
+    url: https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1807120/3c58c7ec226b4145daf9f316cea566aacfa1a3e6/hero_capsule_2x.jpg
+    source: developer
+    focal: [0.55, 0.5]
+  - kind: wide
+    url: https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1807120/b4b05f2b0d8a7157a1470cf2f73a558feb9d2d99/capsule_616x353_2x.jpg
+    source: developer
+  - kind: hero
+    url: https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1807120/b4b05f2b0d8a7157a1470cf2f73a558feb9d2d99/capsule_616x353_2x.jpg
+    source: developer
+    focal: [0.5, 0.4]
+  - kind: grid
     url: https://covers.renplay.org/being-a-dik-season-3-d2cf182ed1.webp
     source: developer
-  - kind: wide
-    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1807120/header.jpg
-    source: steam
 links:
   website: https://being-a-dik.com/
   patreon: https://www.patreon.com/DrPinkCake

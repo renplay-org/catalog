@@ -16,6 +16,14 @@ art:
   - kind: grid
     url: https://img.itch.zone/aW1nLzMxNzA0MDY1LmpwZw==/original/Sa%2BiRf.jpg
     source: itch
+  - kind: hero
+    url: https://img.itch.zone/aW1nLzMxNzA0NjUzLmpwZw==/original/ED1CNL.jpg
+    source: itch
+    focal: [0.5, 0.35]
+  - kind: wide
+    url: https://img.itch.zone/aW1nLzMxNzA0NjUzLmpwZw==/original/ED1CNL.jpg
+    source: itch
+    focal: [0.5, 0.4]
 links:
   itch: https://games-liquid.itch.io/two-weeks-on
   patreon: https://www.patreon.com/c/LiquidGames
