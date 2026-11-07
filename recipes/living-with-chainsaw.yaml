@@ -11,6 +11,13 @@ art:
   - kind: grid
     url: https://img.itch.zone/aW1nLzI3MDkzODA0LnBuZw==/original/9M5csR.png
     source: itch
+  - kind: hero
+    url: https://img.itch.zone/aW1nLzI5NTAyNzEzLnBuZw==/original/W%2BExx4.png
+    source: itch
+  - kind: wide
+    url: https://img.itch.zone/aW1nLzI5NTAyNzEzLnBuZw==/original/W%2BExx4.png
+    source: itch
+    focal: [0.45, 0.5]
 links:
   itch: https://drergenecon.itch.io/livingwithchainsaw
   patreon: https://www.patreon.com/DrErgenecon

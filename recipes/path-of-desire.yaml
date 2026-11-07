@@ -53,6 +53,13 @@ art:
   - kind: grid
     url: https://img.itch.zone/aW1nLzI5NjE3MTAyLnBuZw==/original/PaXCZp.png
     source: itch
+  - kind: hero
+    url: https://img.itch.zone/aW1nLzI5NjE3MDQyLnBuZw==/original/ILdbsi.png
+    source: itch
+    focal: [0.5, 0.6]
+  - kind: wide
+    url: https://img.itch.zone/aW1nLzI5NjE3MDQyLnBuZw==/original/ILdbsi.png
+    source: itch
 links:
   itch: https://anbuafterdark.itch.io/path-of-desire-cursed-chakra
   patreon: https://www.patreon.com/c/AnbuAfterDark
