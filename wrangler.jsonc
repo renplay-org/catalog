@@ -1,5 +1,5 @@
-// Publishes dist/ (built by `npm run build`) at https://catalog.renplay.org. CI deploys it on every
-// push to main; see .github/workflows/pages.yml.
+// Publishes dist/ (built by `npm run build`) at https://catalog.renplay.org. CI deploys the build it
+// tested on every push to main, and weekly; see .github/workflows/pages.yml.
 {
   "name": "renplay-catalog",
   "compatibility_date": "2026-11-01",
