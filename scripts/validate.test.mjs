@@ -44,14 +44,14 @@ test('validate accepts a good folder and rejects schema, tag and art problems', 
     assert.ok(r.out.includes('1 recipes valid'))
 
     // An unknown tag id fails, with the file named.
-    writeFileSync(join(folder, 'bad-tag.yaml'), RECIPE.replace('id: good-game', 'id: bad-tag').replace('[romance]', '[not-a-tag]').replaceAll('good-game.webp', 'good-game.webp'))
+    writeFileSync(join(folder, 'bad-tag.yaml'), RECIPE.replace('id: good-game', 'id: bad-tag').replace('[romance]', '[not-a-tag]'))
     r = run(folder)
     assert.equal(r.code, 1)
     assert.ok(r.out.includes('bad-tag.yaml'), r.out)
     rmSync(join(folder, 'bad-tag.yaml'))
 
     // Art of an adult game is never a repository file.
-    writeFileSync(join(folder, 'bad-adult.yaml'), RECIPE.replace('id: good-game', 'id: bad-adult').replace('tags: [romance]', 'nsfw: true').replace('good-game.webp', 'good-game.webp'))
+    writeFileSync(join(folder, 'bad-adult.yaml'), RECIPE.replace('id: good-game', 'id: bad-adult').replace('tags: [romance]', 'nsfw: true'))
     r = run(folder)
     assert.equal(r.code, 1)
     assert.ok(r.out.includes('adult'), r.out)

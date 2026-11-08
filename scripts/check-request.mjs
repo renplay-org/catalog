@@ -6,6 +6,7 @@ import { readFileSync, readdirSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import YAML from 'yaml'
+import { httpsUrl, plainText } from './plain-text.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const body = process.env.ISSUE_BODY ?? ''
@@ -120,13 +121,15 @@ if (pageUrl && /(^|\.)itch\.io$/.test(pageUrl.hostname)) {
     const html = await res.text()
     pageSaysRenpy = /ren'?py/i.test(html)
     const coverMeta = html.match(/<meta[^>]*property="og:image"[^>]*content="([^"]+)"/) ?? html.match(/<meta[^>]*content="([^"]+)"[^>]*property="og:image"/)
-    const madeWith = html.match(/<td>Made with<\/td><td>(.*?)<\/td>/)?.[1]?.replace(/<[^>]+>/g, '').replace(/&#0?39;/g, "'").trim()
+    const madeWithCell = html.match(/<td>Made with<\/td><td>(.*?)<\/td>/)?.[1]
+    const madeWith = madeWithCell ? plainText(madeWithCell) : ''
+    const cover = coverMeta ? httpsUrl(coverMeta[1]) : null
     if (madeWith) notes.push(`✅ The itch.io page says it is made with ${madeWith}.`)
     else if (engine === 'renpy' || engine === 'unknown') {
       if (pageSaysRenpy) notes.push('✅ The itch.io page mentions Ren’Py.')
       else notes.push('ℹ️ The itch.io page does not mention Ren’Py. That is common, but please confirm the download has the `renpy` and `game` folders.')
     }
-    if (coverMeta) notes.push(`✅ The itch.io page has art to link (a grid source): ${coverMeta[1]}`)
+    if (cover) notes.push(`✅ The itch.io page has art to link (a grid source): ${cover}`)
   } catch (e) {
     notes.push(`ℹ️ Could not open the itch.io page (${e.message}).`)
   }
