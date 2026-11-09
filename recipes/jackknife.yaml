@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: jackknife
+title: JACKKNIFE
+developer: llonelly
+tags:
+  - horror
+content:
+  - lesbian
+state: ongoing
+summary: Butch trucker takes you for a ride
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIzNTY3MTI4LnBuZw==/original/HMRr5S.png
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3725490/library_hero.jpg
+links:
+  itch: https://llonelly.itch.io/jackknife
+  steam: https://store.steampowered.com/app/3725490/
+saveDir: Jackknife-1758380291
+match:
+  - Jackknife-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2025-10-14"
+    status: playable
+    archives:
+      - name: Jackknife-1.0-pc.zip
+        size: 124889113
+        sha256: "36acf462ec7d7025c6e738f83d3bbdfed3b23f6c43e63f89b2831dafdc7b39d1"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet."
