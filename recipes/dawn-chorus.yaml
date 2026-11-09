@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: dawn-chorus
+title: Dawn Chorus
+developer: Dawn Chorus
+tags:
+  - dating-sim
+  - romance
+content:
+  - gay
+  - furry
+state: ongoing
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 279525
+    url: https://cdn2.steamgriddb.com/grid/2cb580d6ec10bb0dc28c8f67634751a0.png
+    by: discolepsy
+    byUrl: https://www.steamgriddb.com/profile/76561198945082230
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIyNjc4MTgxLnBuZw==/original/lH%2FAOV.png
+  - kind: wide
+    source: sgdb
+    sgdb: 279526
+    url: https://cdn2.steamgriddb.com/grid/9eec9f1cecb20083871ad738a7034509.png
+    by: discolepsy
+    byUrl: https://www.steamgriddb.com/profile/76561198945082230
+  - kind: hero
+    source: sgdb
+    sgdb: 80547
+    url: https://cdn2.steamgriddb.com/hero/f2a53f3c65dc4b66b0e487112ee98d36.png
+    by: V--R
+    byUrl: https://www.steamgriddb.com/profile/76561198046891527
+  - kind: logo
+    source: sgdb
+    sgdb: 71145
+    url: https://cdn2.steamgriddb.com/logo/71fdce558c57446aa67f6d9317dbd01b.png
+    by: discolepsy
+    byUrl: https://www.steamgriddb.com/profile/76561198945082230
+links:
+  itch: https://dawn-chorus.itch.io/dawn-chorus
+saveDir: DemoTest1-1585236210
+match:
+  - Dawn_Chorus-*-pc-public.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.58.2"
+    date: "2026-09-24"
+    madeWith: 8.2.0
+    status: playable
+    archives:
+      - name: Dawn_Chorus-0.58.2-pc-public.zip
+        size: 454078695
+        sha256: "cb8b2a526eb0a991bafd863f6cbbb1f6e30a23659fc5be4d89365f23ee819e3a"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.2
+      browsers:
+        - chromium
+      notes: "An automated test on a local Renplay: the main menu, a new game, about 2 minutes of play
+        without an error, and a save that loads again in a fresh page. No person has played it
+        through yet."
