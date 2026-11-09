@@ -83,7 +83,7 @@ links:
 match:
   - Innocent_Witches-*-pc.zip
 engine: renpy
-runtime: 8.5.3
+runtime: 8.6.0
 releases:
   - version: "0.11.7-beta-fix1"
     madeWith: 8.6.0
