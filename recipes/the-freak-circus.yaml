@@ -2,7 +2,9 @@
 id: the-freak-circus
 title: The Freak Circus
 developer: Garula
-tags: []
+tags:
+  - horror
+  - romance
 content: []
 state: ongoing
 nsfw: false
