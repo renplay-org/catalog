@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: charm-studies
+title: Charm Studies
+developer: NomnomNami
+tags:
+  - fantasy
+  - puzzle
+  - female-protagonist
+content: []
+state: completed
+nsfw: false
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 453658
+    url: https://cdn2.steamgriddb.com/grid/d2db382752d93903e813c1b5e4784226.png
+    by: wagn
+    byUrl: https://www.steamgriddb.com/profile/76561198025132428
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzExNzE4NzA1LnBuZw==/original/cosZ9S.png
+  - kind: wide
+    source: sgdb
+    sgdb: 869778
+    url: https://cdn2.steamgriddb.com/grid/052ec64974106194b94acb15d14496dd.jpg
+    by: badblokebob
+    byUrl: https://www.steamgriddb.com/profile/76561198166165740
+  - kind: logo
+    source: sgdb
+    sgdb: 85862
+    url: https://cdn2.steamgriddb.com/logo/e9763bf846350b8cc89def81ba228aa8.png
+    by: riefu24
+    byUrl: https://www.steamgriddb.com/profile/76561198274324627
+  - kind: icon
+    source: sgdb
+    sgdb: 51537
+    url: https://cdn2.steamgriddb.com/icon/0059872d8926933c13bda07eca8409ad.png
+    by: Tesie
+    byUrl: https://www.steamgriddb.com/profile/76561199168982102
+links:
+  itch: https://nomnomnami.itch.io/charm-studies
+saveDir: CharmStudies-1677960051
+match:
+  - CharmStudies-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.5.5"
+    date: "2026-11-03"
+    madeWith: 8.5.2
+    status: playable
+    archives:
+      - name: CharmStudies-1.5.5-pc.zip
+        size: 79380755
+        sha256: "21623c24bf9ff7683e42d708f32a7568b77d1d2a5616b87d63f5dd598c3af50b"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.2
+      browsers:
+        - chromium
+      notes: "An automated test on a local Renplay: the main menu, a new game, about 2 minutes of play
+        without an error, and a save that loads again in a fresh page. No person has played it
+        through yet."
