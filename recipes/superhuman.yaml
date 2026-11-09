@@ -1,0 +1,112 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: superhuman
+title: Superhuman
+developer: WeirdWorld
+tags:
+  - male-protagonist
+  - horror
+  - humor
+  - romance
+  - superpowers
+  - 2dcg
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - bukkake
+  - creampie
+  - dilf
+  - exhibitionism
+  - futa-trans
+  - gay
+  - graphic-violence
+  - group-sex
+  - handjob
+  - harem
+  - interracial
+  - lactation
+  - lesbian
+  - maledomination
+  - masturbation
+  - mind-control
+  - monster
+  - multiple-penetration
+  - necrophilia
+  - oral-sex
+  - sex-toys
+  - tentacles
+  - titfuck
+  - transformation
+  - trap
+  - twins
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: You are an 18-year-old boy with the power to shapeshift and alter your body in any way you
+  see fit, a power forced upon you by monsters of unknown origin. Protect your secret from the
+  humans around you, uncover the secrets of other superhumans and grow strong enough to face the
+  monsters that made you.
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 461085
+    url: https://cdn2.steamgriddb.com/grid/2fad215e66de7491bafeb3cceaec0756.png
+    by: BruhItsMe
+    byUrl: https://www.steamgriddb.com/profile/76561198354414872
+    adult: true
+  - kind: wide
+    source: sgdb
+    sgdb: 424995
+    url: https://cdn2.steamgriddb.com/grid/eeeb15ec82a90d75d22092942cb24037.png
+    by: greyluked
+    byUrl: https://www.steamgriddb.com/profile/76561198163179641
+  - kind: hero
+    source: sgdb
+    sgdb: 99452
+    url: https://cdn2.steamgriddb.com/hero/b78501aaad511cb25326896139533cb9.jpg
+    by: Nutjob
+    byUrl: https://www.steamgriddb.com/profile/76561197980643222
+  - kind: logo
+    source: sgdb
+    sgdb: 116507
+    url: https://cdn2.steamgriddb.com/logo/f4ceea1af8db85c8629f0079b6b22bc6.png
+    by: BruhItsMe
+    byUrl: https://www.steamgriddb.com/profile/76561198354414872
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzEyMzI3ODQ2LmpwZw==/original/9YaWzZ.jpg
+links:
+  itch: https://weirdworld.itch.io/superhuman
+  f95: https://f95zone.to/threads/74436/
+saveDir: Superhuman-1599737552
+match:
+  - superhuman-win.zip
+  - Superhuman-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.999999 P2"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (v0.999999 P2). Not tested here, and no
+        archive yet: 0.999999(part1)b from itch.io is the one that was tested."
+  - version: "0.999999(part1)b"
+    date: "2026-09-16"
+    madeWith: 8.0.3
+    status: playable
+    archives:
+      - name: superhuman-win.zip
+        size: 5988266525
+        sha256: "334a69f20405806f107528439c1f29536c79e407f76875f10dc6e125226bc426"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 3 minutes of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet. The free download is 0.999999(part1)b, F95zone lists v0.999999 P2."
