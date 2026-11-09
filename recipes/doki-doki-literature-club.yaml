@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: doki-doki-literature-club
+title: Doki Doki Literature Club!
+developer: Team Salvato
+tags:
+  - horror
+  - romance
+  - school-setting
+content: []
+state: completed
+nsfw: false
+free: true
+art:
+  - kind: grid
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/698780/library_600x900_2x.jpg
+    source: steam
+  - kind: wide
+    source: sgdb
+    sgdb: 155927
+    url: https://cdn2.steamgriddb.com/grid/8735706021f377f5fa972c0016c12db5.png
+    by: Peipara :)
+    byUrl: https://www.steamgriddb.com/profile/76561198444267961
+  - kind: hero
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/698780/library_hero.jpg
+    source: steam
+  - kind: logo
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/698780/logo.png
+    source: steam
+links:
+  itch: https://teamsalvato.itch.io/ddlc
+  steam: https://store.steampowered.com/app/698780/Doki_Doki_Literature_Club/
+saveDir: DDLC-1454445547
+match:
+  - ddlc-win.zip
+  - DDLC-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.1.1"
+    madeWith: 6.99.12
+    status: broken
+    archives:
+      - name: ddlc-win.zip
+        size: 231593427
+        sha256: "2a3dd7969a06729a32ace0a6ece5f2327e29bdf460b8b39e6a8b0875e545632e"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Does not start. It is Python 2 code from Ren'Py 6.99.12 and fails before the main menu at
+        game/script-poemgame.rpy, line 27, with TypeError: a bytes-like object is required, not
+        'str'. Renplay runs it on Python 3."
