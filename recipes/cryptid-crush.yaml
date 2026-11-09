@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: cryptid-crush
+title: Cryptid Crush
+developer: Drowsy Drake
+tags:
+  - dating-sim
+  - rpg
+content:
+  - furry
+  - monster
+state: ongoing
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 305260
+    url: https://cdn2.steamgriddb.com/grid/81d7767d4f2e3cd3fb9d9af59aaddacb.png
+    by: Alexuty
+    byUrl: https://www.steamgriddb.com/profile/76561198202430233
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzc3ODE1ODcucG5n/original/SQWndt.png
+  - kind: wide
+    source: sgdb
+    sgdb: 305259
+    url: https://cdn2.steamgriddb.com/grid/12ef1b6c2f39f8cd469997a31951d45b.png
+    by: Alexuty
+    byUrl: https://www.steamgriddb.com/profile/76561198202430233
+  - kind: hero
+    source: sgdb
+    sgdb: 73542
+    url: https://cdn2.steamgriddb.com/hero/3e6567f29e8ec206f69f76f9eaf588f5.png
+    by: Alexuty
+    byUrl: https://www.steamgriddb.com/profile/76561198202430233
+  - kind: logo
+    source: sgdb
+    sgdb: 77744
+    url: https://cdn2.steamgriddb.com/logo/dd28de39a8303fb5242dc9a0333fcee9.png
+    by: Alexuty
+    byUrl: https://www.steamgriddb.com/profile/76561198202430233
+links:
+  itch: https://drowsy-drake-studios.itch.io/cryptid-crush
+saveDir: CryptidCrushDemo-1596056886
+match:
+  - Cryptid_Crush_Public-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.2.0"
+    madeWith: 8.0.3
+    status: broken
+    archives:
+      - name: Cryptid_Crush_Public-pc.zip
+        size: 539625037
+        sha256: "800702f509861a91eb71e8aa6d6a5b614797fc59495dd13500ce38486d5995de"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Fails in chapter 0. After the character creator, the radio scene stops with Ren'Py's error
+        \"Exception: Possible infinite loop\" at game/Game Code/Script/Chapter 0/2.
+        ElkhornRadio.rpyc, line 176. It happened at the same line in 3 of 4 automated runs. The
+        fourth run never left the character creator. The test skips text fast, which may be what
+        trips the check, so a person should play the radio scene at normal speed."
