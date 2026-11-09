@@ -39,7 +39,8 @@ test('cover safety: repository art is safe, remote art of an adult game is never
 
 test('every index publishes free; the art list stays in schema 4, the cover in 3 and 2', () => {
   const frozen = readJSON('../legacy/v3-covers.json')
-  assert.deepEqual(sources.filter((g) => g.free === true).map((g) => g.id).sort(), ['dear-devere', 'frightwood'])
+  // A free recipe, so the checks below see the field published, not only left out.
+  assert.ok(sources.some((g) => g.free === true), 'no recipe is free')
   for (const source of sources) {
     const game4 = v4.games.find((g) => g.id === source.id)
     assert.ok(game4, source.id)
