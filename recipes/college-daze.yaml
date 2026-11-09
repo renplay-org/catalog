@@ -1,11 +1,55 @@
 # yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
 id: college-daze
 title: College Daze
 developer: G28
 tags: [male-protagonist, paranormal, real-porn, romance, school-setting, superpowers, text-based]
-content: [anal-sex, big-ass, big-tits, blackmail, cheating, corruption, creampie, drugs, exhibitionism, femaledomination, footjob, groping, group-sex, handjob, harem, humiliation, incest, interracial, lactation, lesbian, maledomination, masturbation, milf, mind-control, monster-girl, multiple-penetration, oral-sex, possession, pregnancy, prostitution, rape, slave, sleep-sex, spanking, stripping, titfuck, transformation, vaginal-sex, virgin, voyeurism]
+content:
+  [
+    anal-sex,
+    big-ass,
+    big-tits,
+    blackmail,
+    cheating,
+    corruption,
+    creampie,
+    drugs,
+    exhibitionism,
+    femaledomination,
+    footjob,
+    groping,
+    group-sex,
+    handjob,
+    harem,
+    humiliation,
+    incest,
+    interracial,
+    lactation,
+    lesbian,
+    maledomination,
+    masturbation,
+    milf,
+    mind-control,
+    monster-girl,
+    multiple-penetration,
+    oral-sex,
+    possession,
+    pregnancy,
+    prostitution,
+    rape,
+    slave,
+    sleep-sex,
+    spanking,
+    stripping,
+    titfuck,
+    transformation,
+    vaginal-sex,
+    virgin,
+    voyeurism
+  ]
 state: ongoing
-summary: Being a freshman in college is rough, but things are about to get a lot easier once you discover wandering lights with the strange ability to alter reality.
+summary: Being a freshman in college is rough, but things are about to get a lot easier once you
+  discover wandering lights with the strange ability to alter reality.
 nsfw: true
 # Grid: the game's own title card (its title font and pink). G28 publishes only on Patreon,
 # whose image links expire, so Renplay hosts the file.
@@ -21,6 +65,12 @@ match:
   - College_Daze_-_*_-_All_Files.zip
 engine: html
 releases:
+  - version: "0.540b Bugfix"
+    status: untested
+    archives: []
+    verified:
+      notes: The developer's newest release as F95zone lists it (v0.540b Bugfix), found by the lab's
+        version watcher. Not tested here, and no archive yet.
   - version: "0.510b"
     madeWith: 2.36.1
     status: verified
@@ -33,4 +83,5 @@ releases:
       date: "2026-11-03"
       renplay: 2.7.1
       browsers: [chromium, webkit]
-      notes: HTML (SugarCube 2.36.1). Plays in Renplay 2.6 and later; 40 passages with pictures and videos, and a save made on a desktop loaded on a phone.
+      notes: HTML (SugarCube 2.36.1). Plays in Renplay 2.6 and later; 40 passages with pictures and
+        videos, and a save made on a desktop loaded on a phone.
