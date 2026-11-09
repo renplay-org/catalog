@@ -2,41 +2,14 @@
 id: charm-studies
 title: Charm Studies
 developer: NomnomNami
-tags:
-  - fantasy
-  - puzzle
-  - female-protagonist
+tags: []
 content: []
-state: completed
+state: ongoing
 nsfw: false
 art:
   - kind: grid
-    source: sgdb
-    sgdb: 453658
-    url: https://cdn2.steamgriddb.com/grid/d2db382752d93903e813c1b5e4784226.png
-    by: wagn
-    byUrl: https://www.steamgriddb.com/profile/76561198025132428
-  - kind: grid
     source: itch
     url: https://img.itch.zone/aW1nLzExNzE4NzA1LnBuZw==/original/cosZ9S.png
-  - kind: wide
-    source: sgdb
-    sgdb: 869778
-    url: https://cdn2.steamgriddb.com/grid/052ec64974106194b94acb15d14496dd.jpg
-    by: badblokebob
-    byUrl: https://www.steamgriddb.com/profile/76561198166165740
-  - kind: logo
-    source: sgdb
-    sgdb: 85862
-    url: https://cdn2.steamgriddb.com/logo/e9763bf846350b8cc89def81ba228aa8.png
-    by: riefu24
-    byUrl: https://www.steamgriddb.com/profile/76561198274324627
-  - kind: icon
-    source: sgdb
-    sgdb: 51537
-    url: https://cdn2.steamgriddb.com/icon/0059872d8926933c13bda07eca8409ad.png
-    by: Tesie
-    byUrl: https://www.steamgriddb.com/profile/76561199168982102
 links:
   itch: https://nomnomnami.itch.io/charm-studies
 saveDir: CharmStudies-1677960051
@@ -56,9 +29,9 @@ releases:
         platform: pc
     verified:
       date: "2026-11-09"
-      renplay: 4.6.2
+      renplay: 4.6.3
       browsers:
         - chromium
-      notes: "An automated test on a local Renplay: the main menu, a new game, about 2 minutes of play
-        without an error, and a save that loads again in a fresh page. No person has played it
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. No person has played it
         through yet."
