@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: bigbaddogs
+title: Big Bad Dogs
+developer: spar0w
+tags: []
+content: []
+state: ongoing
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIyMTY5MDQxLmdpZg==/original/FqFEf8.gif
+links:
+  itch: https://spar0w.itch.io/bigbaddogs
+saveDir: we-1739386725
+match:
+  - Big_Bad_Dogs(CHINESE_VER)-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2025-08-26"
+    madeWith: 8.3.7
+    status: playable
+    archives:
+      - name: Big_Bad_Dogs(CHINESE_VER)-1.0-pc.zip
+        size: 804407801
+        sha256: "46c942246602e8a1b9d40868413719f0523c72bc2c17d52e6794baf63d645186"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet."
