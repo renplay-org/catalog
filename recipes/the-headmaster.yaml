@@ -1,0 +1,108 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: the-headmaster
+title: The Headmaster
+developer: Altos and Herdone
+tags:
+  - male-protagonist
+  - management
+  - sandbox
+  - humor
+  - romance
+  - school-setting
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - bdsm
+  - big-ass
+  - big-tits
+  - blackmail
+  - corruption
+  - creampie
+  - drugs
+  - exhibitionism
+  - groping
+  - group-sex
+  - handjob
+  - harem
+  - humiliation
+  - interracial
+  - lesbian
+  - maledomination
+  - masturbation
+  - mobile-game
+  - oral-sex
+  - pov
+  - sex-toys
+  - spanking
+  - stripping
+  - teasing
+  - titfuck
+  - trainer
+  - twins
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: In the not too distant future, on a small island nation, falling graduation numbers and
+  empty university places push the government to introduce emergency measures. All students over
+  eighteen who failed or were expelled from school are forced back into education at a number of
+  special facilities.
+nsfw: true
+free: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 498383
+    url: https://cdn2.steamgriddb.com/grid/43c26542c51e3cf060a5817e46b5bec3.png
+    by: kurosettopon
+    byUrl: https://www.steamgriddb.com/profile/76561198011759642
+  - kind: wide
+    source: sgdb
+    sgdb: 634181
+    url: https://cdn2.steamgriddb.com/grid/b0e70dd9f5a27a3bc3fae224d404a22d.jpg
+    by: Ruthbit
+    byUrl: https://www.steamgriddb.com/profile/76561199081834194
+  - kind: hero
+    source: sgdb
+    sgdb: 120096
+    url: https://cdn2.steamgriddb.com/hero/918b125ddf1d5a3cb59506ab88f181c9.png
+    by: kurosettopon
+    byUrl: https://www.steamgriddb.com/profile/76561198011759642
+  - kind: logo
+    source: sgdb
+    sgdb: 124937
+    url: https://cdn2.steamgriddb.com/logo/2a1ae8f05fb95c222a844affc8f4a389.png
+    by: kurosettopon
+    byUrl: https://www.steamgriddb.com/profile/76561198011759642
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI4NTY3MDEucG5n/original/PFHaS3.png
+links:
+  itch: https://altosandherdone.itch.io/the-headmaster
+  f95: https://f95zone.to/threads/23470/
+saveDir: HeadmasterDemo-1544382765
+match:
+  - the-headmaster-win.zip
+  - TheHeadmaster-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.17.3.6.public"
+    madeWith: 8.5.2
+    status: broken
+    archives:
+      - name: the-headmaster-win.zip
+        size: 7755579560
+        sha256: "cef801199c4d9490b3eaf98d21a90dc1d0080faf787237a918b0605351c06a2b"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: Fails after Start. The main menu loads, then the browser engine stops with Ren'Py's error
+        MemoryError at renpy/persistent.py, line 200 (find_changes), before any story text. It
+        happened in 3 of 3 automated runs. The game is 7.75 GB installed, and a probe that only
+        opened the game and did not click did not crash. A person should try it in a real browser
+        with more memory.
