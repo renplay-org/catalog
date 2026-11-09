@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: fnaf-daybreak
+title: "FNaF: DAYBREAK"
+developer: Snowyrey
+tags: []
+content: []
+state: ongoing
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI4NTQwNzY5LnBuZw==/original/S4U2qW.png
+links:
+  itch: https://snowyrey.itch.io/fnaf-daybreak
+saveDir: DAYBREAK-1740278207
+match:
+  - DAYBREAK-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "b1.0"
+    date: "2026-09-28"
+    madeWith: 8.2.1
+    status: playable
+    archives:
+      - name: DAYBREAK-b1.0-pc.zip
+        size: 430830065
+        sha256: "e36442e05a392a82322616354be201da4ceeac3e1c76bbd3660e514df1a498dd"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet."
