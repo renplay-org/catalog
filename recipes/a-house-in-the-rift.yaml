@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: a-house-in-the-rift
+title: A House in the Rift
+developer: ZanithOne
+tags:
+  - male-protagonist
+  - sandbox
+  - fantasy
+  - romance
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - bdsm
+  - big-tits
+  - creampie
+  - femaledomination
+  - footjob
+  - groping
+  - group-sex
+  - handjob
+  - harem
+  - lesbian
+  - maledomination
+  - mobile-game
+  - monster-girl
+  - multiple-penetration
+  - oral-sex
+  - pov
+  - sex-toys
+  - spanking
+  - teasing
+  - titfuck
+  - vaginal-sex
+  - virgin
+state: ongoing
+summary: You were thrown into a dimensional rift and have no idea what to do. Other castaways from
+  different realities join you one by one to form a bond of trust and friendship. Girls from various
+  fantasy dimensions take care of you during the day, and at night you go off exploring rift
+  oddities. You can bake cakes with a succubus, wrestle with a giant pirate captain and study magic
+  with a young acolyte.
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 458450
+    url: https://cdn2.steamgriddb.com/grid/b5696d4650958e67fe190ecdabd32f2c.jpg
+    by: Javyxs
+    byUrl: https://www.steamgriddb.com/profile/76561199728927413
+  - kind: wide
+    source: sgdb
+    sgdb: 458451
+    url: https://cdn2.steamgriddb.com/grid/bc35d8bfc870b92def01b4cf7b74ea0d.jpg
+    by: Javyxs
+    byUrl: https://www.steamgriddb.com/profile/76561199728927413
+  - kind: hero
+    source: sgdb
+    sgdb: 91582
+    url: https://cdn2.steamgriddb.com/hero/9faddc753dc477e17c8b4b9a8bfb42b1.png
+    by: Deathcat
+    byUrl: https://www.steamgriddb.com/profile/76561197986909714
+  - kind: logo
+    source: sgdb
+    sgdb: 96681
+    url: https://cdn2.steamgriddb.com/logo/f68ff6fd880469442fab0d2544c9dd21.png
+    by: Deathcat
+    byUrl: https://www.steamgriddb.com/profile/76561197986909714
+links:
+  itch: https://zanithone.itch.io/a-house-in-the-rift
+  f95: https://f95zone.to/threads/29627/
+saveDir: AHouseintheRift-1545999373
+match:
+  - a-house-in-the-rift-pc_hi-res.zip
+  - AHouseInTheRift-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.8.13r2"
+    status: broken
+    archives:
+      - name: a-house-in-the-rift-pc_hi-res.zip
+        size: 12088004431
+        sha256: "9667695a81e0d61ed9c009ec30b4b46d120bfc36a9288870bc335e37bfaa8355"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Does not start. The game fails before the main menu at game/utils/debug/logger.rpy, line 69,
+        with ModuleNotFoundError: No module named '__builtin__'. It is Python 2 code (a Ren'Py 7 or
+        older game) and Renplay's engine runs Python 3. F95zone lists a newer version, 0.8.15b2,
+        that was not tested."
