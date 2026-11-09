@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: trapped-with-jester
+title: Trapped with Jester
+developer: Anta
+tags:
+  - dating-sim
+  - romance
+  - horror
+  - fantasy
+  - humor
+content: []
+state: completed
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 855166
+    url: https://cdn2.steamgriddb.com/grid/a0d23e0c2bfcee65adb607f7c1faf137.jpg
+    by: BlueLikes
+    byUrl: https://www.steamgriddb.com/profile/76561198252071600
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIwMzUyNDQ4LmpwZw==/original/VSdpMh.jpg
+  - kind: wide
+    source: sgdb
+    sgdb: 855167
+    url: https://cdn2.steamgriddb.com/grid/543d80a0b2716363f7bfc4905c995c61.jpg
+    by: BlueLikes
+    byUrl: https://www.steamgriddb.com/profile/76561198252071600
+  - kind: hero
+    source: sgdb
+    sgdb: 187106
+    url: https://cdn2.steamgriddb.com/hero/076ed674c58605a3ad3a3b1de734bbb3.jpg
+    by: BlueLikes
+    byUrl: https://www.steamgriddb.com/profile/76561198252071600
+  - kind: logo
+    source: sgdb
+    sgdb: 183481
+    url: https://cdn2.steamgriddb.com/logo/58884b9ba6039bdf15b52dbc510a14ae.png
+    by: BlueLikes
+    byUrl: https://www.steamgriddb.com/profile/76561198252071600
+  - kind: icon
+    source: sgdb
+    sgdb: 69429
+    url: https://cdn2.steamgriddb.com/icon/3890f5be1bd7f5f38f5581ac72a882b9.png
+    by: F-Puertas
+    byUrl: https://www.steamgriddb.com/profile/76561198851010643
+links:
+  itch: https://ant-san.itch.io/jester
+saveDir: TrappedwithJester-1658635311
+match:
+  - TrappedwithJester-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    madeWith: 7.5.1
+    status: broken
+    archives:
+      - name: TrappedwithJester-1.0-pc.zip
+        size: 96931520
+        sha256: "5018f21b721c8bc9f9a68092deeb04f46b4a6cfc1d6849d62010a5dfb014e41c"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Fails a few seconds into play, at game/script.rpy line 547 (a pause), in game/camera.rpy
+        line 548 (_camera_trans), with TypeError: '>=' not supported between instances of 'tuple'
+        and 'float'. It is Python 2 code from Ren'Py 7.5.1: Python 2 allowed that comparison and the
+        Python 3 in Renplay's engine does not. It failed the same way in 2 of 2 runs."
