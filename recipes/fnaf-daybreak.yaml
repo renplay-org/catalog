@@ -2,8 +2,10 @@
 id: fnaf-daybreak
 title: "FNaF: DAYBREAK"
 developer: Snowyrey
-tags: []
+tags:
+  - multiple-endings
 content: []
+summary: "We're back in the Pizzaplex. What could POSSIBLY go wrong?"
 state: ongoing
 nsfw: false
 free: true
