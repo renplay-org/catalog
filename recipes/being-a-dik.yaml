@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
 id: being-a-dik
 title: Being a DIK
 developer: DrPinkCake
@@ -135,6 +136,12 @@ runtime: 8.5.3
 notes: Seasons 1 and 2. Save folder and Ren’Py version reported by the installed game’s read-only
   API details.
 releases:
+  - version: "0.12.2.9"
+    status: untested
+    archives: []
+    verified:
+      notes: The developer's newest release as F95zone lists it (v0.12.2.9), found by the lab's version
+        watcher. Not tested here, and no archive yet.
   - version: "0.8.3"
     madeWith: 7.4.10
     status: playable
