@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: the-devils-in-the-details
+title: The Devil's in the Details
+developer: It'sBumbleBear
+tags:
+  - dating-sim
+  - romance
+  - humor
+content: []
+summary: "Forced to work in corporate hell? Might as well romance your devil coworkers in the meantime."
+state: ongoing
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzMwMzgzODM1LnBuZw==/original/XvoWGK.png
+links:
+  itch: https://itsbumblebear.itch.io/the-devils-in-the-details
+saveDir: TDITD-1788289067
+match:
+  - TDITD-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2026-10-03"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: TDITD-1.0-pc.zip
+        size: 175294983
+        sha256: "cb72b4c03026f380efb0cc631f7be2364c920d807ee5eca33fb1cb0fa683a001"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet."
