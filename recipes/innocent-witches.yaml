@@ -1,0 +1,105 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: innocent-witches
+title: Innocent Witches
+developer: Sad Crab Company
+tags:
+  - male-protagonist
+  - adventure
+  - point-click
+  - puzzle
+  - fantasy
+  - humor
+  - parody
+  - romance
+  - school-setting
+  - 2dcg
+content:
+  - ahegao
+  - anal-sex
+  - bdsm
+  - big-tits
+  - corruption
+  - cosplay
+  - creampie
+  - exhibitionism
+  - femaledomination
+  - footjob
+  - handjob
+  - humiliation
+  - interracial
+  - lesbian
+  - maledomination
+  - masturbation
+  - milf
+  - mobile-game
+  - monster-girl
+  - oral-sex
+  - sex-toys
+  - spanking
+  - stripping
+  - teasing
+  - tentacles
+  - titfuck
+  - trainer
+  - vaginal-sex
+  - voyeurism
+state: ongoing
+summary: A man tells the tale of the students who changed his life and of the women he met, who
+  changed his fate. It leads into a magical world and an old school of magic that valued purity
+  above all.
+nsfw: true
+free: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 312446
+    url: https://cdn2.steamgriddb.com/grid/970cdb3ca0e05a0798bfc74a7ec33e61.png
+    by: TiraRemy
+    byUrl: https://www.steamgriddb.com/profile/76561198064777978
+  - kind: wide
+    source: sgdb
+    sgdb: 312445
+    url: https://cdn2.steamgriddb.com/grid/fba353f4f26429ed370c9c5f88bc5b57.png
+    by: TiraRemy
+    byUrl: https://www.steamgriddb.com/profile/76561198064777978
+  - kind: hero
+    source: sgdb
+    sgdb: 74918
+    url: https://cdn2.steamgriddb.com/hero/b7c611a5fcc53a15e47001db592a205e.png
+    by: TiraRemy
+    byUrl: https://www.steamgriddb.com/profile/76561198064777978
+  - kind: logo
+    source: sgdb
+    sgdb: 14786
+    url: https://cdn2.steamgriddb.com/logo/b27a5a543f55bda3adeda94a76790bdb.png
+    by: Bloodhammer
+    byUrl: https://www.steamgriddb.com/profile/76561198003469940
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE4ODIxMjEucG5n/original/Mo9jPP.png
+links:
+  itch: https://sad-crab.itch.io/innocent-witches
+  f95: https://f95zone.to/threads/330/
+match:
+  - Innocent_Witches-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.11.7-beta-fix1"
+    madeWith: 8.6.0
+    status: broken
+    archives:
+      - name: Innocent_Witches-0-11-7-beta-fix1-pc.zip
+        size: 2451978020
+        sha256: "705d367b716967ad6895f5dd8dbca710d68fbae31819a008e794106d0a8344cc"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Does not start. Loading the script fails at game/modules/shared_code_ren.py, line 636, with
+        Ren'Py's error: In shader SadCrab.border_gradient: Unknown shader variable line 'in vec2
+        a_tex_coord;'. The game was built with Ren'Py 8.6.0 and its shader uses syntax that
+        Renplay's Ren'Py 8.5.3 engine does not know. F95zone lists a newer version, 0.12.2B Fix1,
+        that was not tested and probably has the same problem."
