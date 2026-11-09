@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
 id: a-house-in-the-rift
 title: A House in the Rift
 developer: ZanithOne
@@ -75,6 +76,12 @@ match:
 engine: renpy
 runtime: 8.5.3
 releases:
+  - version: "0.8.15b2"
+    status: untested
+    archives: []
+    verified:
+      notes: The developer's newest release as F95zone lists it (v0.8.15b2), found by the lab's version
+        watcher. Not tested here, and no archive yet.
   - version: "0.8.13r2"
     status: broken
     archives:
