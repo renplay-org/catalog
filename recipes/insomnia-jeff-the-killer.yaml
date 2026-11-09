@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: insomnia-jeff-the-killer
+title: Insomnia
+developer: Mcryx
+tags: []
+content: []
+state: ongoing
+summary: "Jeff the Killer: Every nightmare has an origin."
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2148240/library_600x900_2x.jpg
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI5MjY1Mjc3LnBuZw==/original/u45w0B.png
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2148240/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2148240/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2148240/logo.png
+links:
+  itch: https://mcryxstudios.itch.io/insomnia-jeff-the-killer
+  steam: https://store.steampowered.com/app/2148240/
+saveDir: insomnia-1775121121
+match:
+  - insomnia-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.1"
+    date: "2026-09-03"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: insomnia-1.1-pc.zip
+        size: 344192692
+        sha256: "e63f1df0e997a28cc57ae25b3203de8f55e8ad19ea0a889f433f501e8bcf4dc1"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet."
