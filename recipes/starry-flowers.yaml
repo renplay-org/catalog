@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: starry-flowers
+title: Starry Flowers
+developer: NomnomNami
+tags:
+  - romance
+  - fantasy
+content:
+  - gay
+state: completed
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 414880
+    url: https://cdn2.steamgriddb.com/grid/c17c0cf65c8b4b63e6f2a6bb002658a0.png
+    by: Alexandra IDV
+    byUrl: https://www.steamgriddb.com/profile/76561198006423206
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzUzMTExMjQucG5n/original/gNKRjB.png
+  - kind: wide
+    source: sgdb
+    sgdb: 414879
+    url: https://cdn2.steamgriddb.com/grid/e61a0c1344408d286c4e0f253c2b4149.png
+    by: Alexandra IDV
+    byUrl: https://www.steamgriddb.com/profile/76561198006423206
+  - kind: hero
+    source: sgdb
+    sgdb: 52648
+    url: https://cdn2.steamgriddb.com/hero/2b65214e96f46fdbda9864079de008fc.png
+    by: Nyamiou
+    byUrl: https://www.steamgriddb.com/profile/76561197965079901
+  - kind: logo
+    source: sgdb
+    sgdb: 113628
+    url: https://cdn2.steamgriddb.com/logo/dd8edf4a5413b7b70fdad591e034ad58.png
+    by: ReturnOfTheMari
+    byUrl: https://www.steamgriddb.com/profile/76561198799298995
+links:
+  itch: https://nomnomnami.itch.io/starry-flowers
+  steam: https://store.steampowered.com/app/4710390/Starry_Flowers/
+saveDir: starryflowers-1608345794
+match:
+  - StarryFlowers-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.7.4"
+    date: "2025-06-03"
+    madeWith: 8.3.7
+    status: playable
+    archives:
+      - name: StarryFlowers-1.7.4-pc.zip
+        size: 103189122
+        sha256: "b36095e8982780d164d425d4b79d52e016cdd606ba4b6e5a662135fc6548ca44"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.2
+      browsers:
+        - chromium
+      notes: "An automated test on a local Renplay: the main menu, a new game, about 2 minutes of play
+        without an error, and a save that loads again in a fresh page. No person has played it
+        through yet."
