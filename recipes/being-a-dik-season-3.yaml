@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
 id: being-a-dik-season-3
 title: Being a DIK - Season 3
 developer: DrPinkCake
@@ -82,6 +83,12 @@ notes: Imports Season 2 transfer saves. The F95 overview links “Transferring s
   screen and Import menu. The PC archive is no longer local; save folder and original Ren’Py version
   are not confirmed.
 releases:
+  - version: "0.12.2.9"
+    status: untested
+    archives: []
+    verified:
+      notes: The developer's newest release as F95zone lists it (v0.12.2.9), found by the lab's version
+        watcher. Not tested here, and no archive yet.
   - version: "0.12.1"
     status: playable
     archives:
