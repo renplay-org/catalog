@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: automated-love-obsession
+title: Automated Love Obsession
+developer: Laurs/Levi
+tags:
+  - horror
+content: []
+state: ongoing
+summary: We hope you enjoy your visit at the Celestial Funtime Center!
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzMwNzE2NzcyLnBuZw==/original/%2BanOVe.png
+links:
+  itch: https://laurzzz.itch.io/automated-love-obsession
+saveDir: AutomatedLoveObsession-1779772959
+match:
+  - AutomatedLoveObsession-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2026-10-30"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: AutomatedLoveObsession-1.0-pc.zip
+        size: 245848055
+        sha256: "dba64f5e441ea7bd10d0380d88cdd87ebbce7e6ca9be3fbef57e745a2d880065"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 95.6% of it (762 of 797 statements) in 5.98
+        minutes. A whole script file was not reached: code add-ons/glitch_tag.rpyc, code
+        add-ons/kinetic_text_tags.rpyc. No person has played it through yet."
