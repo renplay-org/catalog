@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: one-night-hot-springs
+title: one night, hot springs
+developer: npckc
+tags:
+  - romance
+  - female-protagonist
+  - 2d-game
+  - multiple-endings
+content:
+  - lesbian
+state: completed
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 53163
+    url: https://cdn2.steamgriddb.com/grid/a914cde9ecbca8e05dff0e3c664f6aeb.png
+    by: TalkyPup
+    byUrl: https://www.steamgriddb.com/profile/76561198025210011
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE1OTQ5OTkucG5n/original/VIkRbO.png
+  - kind: wide
+    source: sgdb
+    sgdb: 144729
+    url: https://cdn2.steamgriddb.com/grid/e10c32b7489dbfd327bfd2edeb358cb6.png
+    by: Moofy
+    byUrl: https://www.steamgriddb.com/profile/76561198079610188
+  - kind: hero
+    source: sgdb
+    sgdb: 7242
+    url: https://cdn2.steamgriddb.com/hero/a09b68ada5e8b2060f380a53c02cf3d8.png
+    by: Hexprian
+    byUrl: https://www.steamgriddb.com/profile/76561198162594656
+  - kind: logo
+    source: sgdb
+    sgdb: 9362
+    url: https://cdn2.steamgriddb.com/logo/7296d81c3d5e425bc1785994bea8a0d2.png
+    by: Hexprian
+    byUrl: https://www.steamgriddb.com/profile/76561198162594656
+links:
+  itch: https://npckc.itch.io/one-night-hot-springs
+saveDir: onsengame-1517489131
+match:
+  - one-night-hot-springs-win-linux.zip
+  - onsengame-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.55"
+    date: "2026-02-13"
+    madeWith: 8.3.4
+    status: playable
+    archives:
+      - name: one-night-hot-springs-win-linux.zip
+        size: 75910032
+        sha256: "2181c4c1c4de4d356e7612295acac9e18c4e003aa4b3688cb37d5c39ce82c049"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet."
