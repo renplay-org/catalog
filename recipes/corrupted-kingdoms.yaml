@@ -1,0 +1,103 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: corrupted-kingdoms
+title: Corrupted Kingdoms
+developer: ArcGames
+tags:
+  - male-protagonist
+  - adventure
+  - rpg
+  - sandbox
+  - fantasy
+  - religion
+  - romance
+  - 3dcg
+  - animated
+content:
+  - ahegao
+  - anal-sex
+  - bdsm
+  - big-tits
+  - cheating
+  - corruption
+  - cosplay
+  - creampie
+  - exhibitionism
+  - handjob
+  - harem
+  - lactation
+  - lesbian
+  - maledomination
+  - masturbation
+  - milf
+  - mind-control
+  - mobile-game
+  - monster
+  - monster-girl
+  - oral-sex
+  - pregnancy
+  - prostitution
+  - slave
+  - spanking
+  - swinging
+  - teasing
+  - twins
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: You are the hero, or possibly the villain, of this tale. You set out to discover why your
+  family was driven out of your home town, but are quickly thrust into events beyond anything you
+  imagined. As tensions rise between humans and the mythical creatures that lurk just outside of
+  sight, will you stand as a beacon of hope or use your newfound power to bring the world under your
+  control?
+nsfw: true
+free: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 235353
+    url: https://cdn2.steamgriddb.com/grid/87168eca21c1b819b0dd6a81573f752a.jpg
+    by: bedbug1226
+    byUrl: https://www.steamgriddb.com/profile/76561197991065542
+  - kind: wide
+    source: sgdb
+    sgdb: 235354
+    url: https://cdn2.steamgriddb.com/grid/285ad46376a5131628ffda54f9f305c8.png
+    by: bedbug1226
+    byUrl: https://www.steamgriddb.com/profile/76561197991065542
+  - kind: logo
+    source: sgdb
+    sgdb: 62187
+    url: https://cdn2.steamgriddb.com/logo/620205d5e98c182f2a737ba97c9b4dab.png
+    by: NobodyElse69
+    byUrl: https://www.steamgriddb.com/profile/76561198356088947
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzYxMTU2NDguanBn/original/XK8AV1.jpg
+links:
+  itch: https://thearcadean.itch.io/corrupted-kingdoms
+  f95: https://f95zone.to/threads/31912/
+saveDir: CorruptedKingdoms
+match:
+  - corrupted-kingdoms-win-linux.zip
+  - CorruptedKingdoms-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.2.2"
+    date: "2026-04-28"
+    madeWith: 8.5.2
+    status: playable
+    archives:
+      - name: corrupted-kingdoms-win-linux.zip
+        size: 407531958
+        sha256: "2a37f5f7f7b2e47c40520b5a80902c114ba29df9003224cb44fcd0bcf7f447e9"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.2
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet."
