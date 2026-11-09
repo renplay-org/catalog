@@ -35,11 +35,14 @@ const warnings = []
 const fail = (file, msg) => errors.push(`${file}: ${msg}`)
 const warn = (file, msg) => warnings.push(`${file}: ${msg}`)
 
-// Engine versions recipes may name.
+// Engine versions recipes may name: the stable ones and the pre-releases, which the index lists apart.
 let engines = null
 try {
   const res = await fetch('https://engines.renplay.org/index.json', { signal: AbortSignal.timeout(15000) })
-  if (res.ok) engines = new Set((await res.json()).engines.map((e) => e.version))
+  if (res.ok) {
+    const index = await res.json()
+    engines = new Set([...index.engines, ...(index.prereleases ?? [])].map((e) => e.version))
+  }
 } catch {}
 if (!engines) console.warn('warning: engine index unreachable, engine versions not checked')
 
