@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: how-to-date-an-entity
+title: How to Date an Entity (and stay alive)
+developer: SFour
+tags:
+  - dating-sim
+  - horror
+  - multiple-endings
+content: []
+state: ongoing
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 570391
+    url: https://cdn2.steamgriddb.com/grid/61c7c0a3f6117666817f3e7d632358b8.png
+    by: 【=◈︿◈=】
+    byUrl: https://www.steamgriddb.com/profile/76561198118365000
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE5Mzk2MTczLnBuZw==/original/vyKmkE.png
+  - kind: wide
+    source: sgdb
+    sgdb: 604743
+    url: https://cdn2.steamgriddb.com/grid/657db821abb0a225ed92589aea44f272.png
+    by: VoiDMaiD
+    byUrl: https://www.steamgriddb.com/profile/76561198120405480
+  - kind: hero
+    source: sgdb
+    sgdb: 132709
+    url: https://cdn2.steamgriddb.com/hero/1c49f1d1d4183ea46e4b878db5e9ce88.png
+    by: 【=◈︿◈=】
+    byUrl: https://www.steamgriddb.com/profile/76561198118365000
+  - kind: logo
+    source: sgdb
+    sgdb: 145862
+    url: https://cdn2.steamgriddb.com/logo/bd3f3a79ae59421f9683af4e38123c3c.png
+    by: VoiDMaiD
+    byUrl: https://www.steamgriddb.com/profile/76561198120405480
+links:
+  itch: https://sfour-s4.itch.io/how-to-date-an-entity
+saveDir: HowtoDateanEntityandStayAlive-1732263558
+match:
+  - HowtoDateanEntityandStayAlive-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2026-04-30"
+    madeWith: 8.4.1
+    status: playable
+    archives:
+      - name: HowtoDateanEntityandStayAlive-1.0-pc.zip
+        size: 329688434
+        sha256: "c02f9c5c4465480b5de72a47b68c01a2572db53d3746b05e1db5decf9fba3abc"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.2
+      browsers:
+        - chromium
+      notes: "An automated test on a local Renplay: the main menu, a new game, about 2 minutes of play
+        without an error, and a save that loads again in a fresh page. No person has played it
+        through yet."
