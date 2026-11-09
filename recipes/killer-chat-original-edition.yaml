@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: killer-chat-original-edition
+title: Killer Chat! Original Edition
+developer: rosesrot
+tags:
+  - dating-sim
+  - romance
+  - humor
+  - character-creation
+  - rpg
+content: []
+state: ongoing
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 855178
+    url: https://cdn2.steamgriddb.com/grid/31402010b08af7909859926f32320fac.jpg
+    by: BlueLikes
+    byUrl: https://www.steamgriddb.com/profile/76561198252071600
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE4MDAyMzYzLnBuZw==/original/t%2FS%2BWm.png
+  - kind: wide
+    source: sgdb
+    sgdb: 855177
+    url: https://cdn2.steamgriddb.com/grid/b8a02683bac6da671cb9398c948711f7.jpg
+    by: BlueLikes
+    byUrl: https://www.steamgriddb.com/profile/76561198252071600
+  - kind: hero
+    source: sgdb
+    sgdb: 169797
+    url: https://cdn2.steamgriddb.com/hero/f1ec366d1bb1b7f7c5c989f4f4c94e8d.png
+    by: D.Grey
+    byUrl: https://www.steamgriddb.com/profile/76561198274654081
+  - kind: logo
+    source: sgdb
+    sgdb: 171240
+    url: https://cdn2.steamgriddb.com/logo/c17ad82f46254c3c84b86b0bed61c339.png
+    by: D.Grey
+    byUrl: https://www.steamgriddb.com/profile/76561198274654081
+links:
+  itch: https://rosesrot.itch.io/killer-chat
+saveDir: KillerChat-172516395847
+match:
+  - killer-chat-win-linux.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.4.3"
+    date: "2026-03-29"
+    madeWith: 8.4.2
+    status: playable
+    archives:
+      - name: killer-chat-win-linux.zip
+        size: 349365856
+        sha256: "0eaae866d0d25735b639814c4c5f7c641c1659c1af5ff89d01021031f8c8bb92"
+        platform: pc
+    verified:
+      date: "2026-11-09"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 3 minutes of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet."
