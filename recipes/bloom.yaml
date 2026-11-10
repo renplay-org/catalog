@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
 id: bloom
-title: Bloom [ALL ROUTES]
+title: Bloom
 developer: NightLight
 tags:
   - dating-sim
