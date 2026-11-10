@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: freepass
+title: Free Pass
+developer: After Choices
+tags:
+  - female-protagonist
+  - adventure
+  - multiple-endings
+  - humor
+  - romance
+  - 3dcg
+  - animated
+  - voiced
+content:
+  - anal-sex
+  - big-tits
+  - cheating
+  - corruption
+  - creampie
+  - femaledomination
+  - futa-trans
+  - groping
+  - group-sex
+  - incest
+  - interracial
+  - lesbian
+  - masturbation
+  - milf
+  - mobile-game
+  - multiple-penetration
+  - oral-sex
+  - prostitution
+  - stripping
+  - swinging
+  - teasing
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: completed
+summary: A happily married Asian woman, born and raised in a culturally strict country, is tempted
+  to risk her marriage after being a faithful wife for many years. What will happen if you give this
+  woman a "Free Pass"? Will she take this opportunity, or will it improve her marriage?
+nsfw: true
+art:
+  - kind: grid
+    source: renplay
+    url: https://covers.renplay.org/freepass-47cdeb6a52.webp
+  - kind: wide
+    source: renplay
+    url: https://covers.renplay.org/freepass-ce5133f418.webp
+links:
+  f95: https://f95zone.to/threads/77485/
+saveDir: FreePass-1656604096
+match:
+  - FreePass-*-compressed-patched-pc.zip
+  - FreePass-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.8"
+    date: "2025-04-27"
+    madeWith: 8.3.7
+    status: playable
+    archives:
+      - name: FreePass-1.8-compressed-patched-pc.zip
+        size: 952287092
+        sha256: "458572192b4212186ad768ee40c0a4edc7872760d15175cef8f0543f78917175"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet."
