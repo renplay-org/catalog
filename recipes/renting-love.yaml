@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: renting-love
+title: Renting Love for Christmas
+developer: Honey Bunny
+tags:
+  - female-protagonist
+  - dating-sim
+  - multiple-endings
+  - humor
+  - romance
+content: []
+state: ongoing
+summary: Save your Christmas and spend your holiday with 4 cute boys!
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzkxNDAwMzkuanBn/original/rXcXYg.jpg
+links:
+  itch: https://honeybunny-of.itch.io/renting-love
+saveDir: Renting-Love-Deluxe
+match:
+  - RentingLoveDeluxe (PC).zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2025-11-13"
+    date: "2025-11-13"
+    madeWith: 8.4.1
+    status: broken
+    archives:
+      - name: RentingLoveDeluxe (PC).zip
+        size: 522480353
+        sha256: "35b4f64edfe7adfbcdaa7a42690891b02b800eeee8ffec07fc5c1e8ea76d623c"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: KeyError: 'audio/music/Extra_01.ogg'"
