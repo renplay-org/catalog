@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
 id: fresh-women-chloes-desire-express
 title: "FreshWomen - Chloe’s: Desire Express"
 developer: OppaiMan
@@ -71,6 +72,12 @@ notes: "Standalone DLC listed with Season 1 and 2 in the shared F95 thread; tags
   importer was confirmed: the other game scripts are packed in archive.rpa, so continuesFrom is
   intentionally omitted."
 releases:
+  - version: "S3 100%"
+    status: untested
+    archives: []
+    verified:
+      notes: The developer's newest release as F95zone lists it (S3 100%), found by the lab's version
+        watcher. Not tested here, and no archive yet.
   - version: "Completed"
     madeWith: 8.5.2
     status: playable
