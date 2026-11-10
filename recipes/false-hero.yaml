@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: false-hero
+title: False Hero
+developer: enyo_1
+tags:
+  - female-protagonist
+  - male-protagonist
+  - multiple-protagonist
+  - adventure
+  - sandbox
+  - romance
+  - 3dcg
+content:
+  - blackmail
+  - cheating
+  - corruption
+  - groping
+  - handjob
+  - humiliation
+  - maledomination
+  - milf
+  - oral-sex
+  - sexual-harassment
+  - spanking
+  - stripping
+  - teasing
+  - twins
+  - vaginal-sex
+state: abandoned
+summary: Explore the lives of a high school girl, her caring mother, an aspiring actress, and a pair
+  of twins. Each has their own in-depth story arc and unique developments. It's for you to decide.
+nsfw: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2538870/library_600x900_2x.jpg
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI4MTQxMTYucG5n/original/BSYYGb.png
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2538870/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2538870/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2538870/logo.png
+links:
+  itch: https://enyo-1.itch.io/false-hero
+  f95: https://f95zone.to/threads/14204/
+  steam: https://store.steampowered.com/app/2538870/
+saveDir: False_Hero
+match:
+  - FalseHero-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.39.1 Beta"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (v0.39.1 Beta). Not tested here, and no
+        archive yet: False_Hero_v0.20.1 from itch.io is the one that was tested."
+  - version: "False_Hero_v0.20.1"
+    date: "2020-04-02"
+    madeWith: 7.3.5
+    status: playable
+    archives:
+      - name: FalseHero-False_Hero_v0.20.1-pc.zip
+        size: 1038872866
+        sha256: "c882f859b3909884f5a644c7623c94c3c113b2bc3468d3a7ebb2cdd38828c682"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 8.8% of it (878 of 9984 statements) in 2.08
+        minutes. Coverage is 8.8%, under 90%; the walk hit the time cap; a whole script file was not
+        reached: ev_jane.rpyc, ev_lucy.rpyc, ev_mark.rpyc. No person has played it through yet. Made
+        with Ren'Py 7, which runs on the Ren'Py 8 engine: Python 2 code in the game can fail later,
+        so a person should play well past the opening. The free download is False_Hero_v0.20.1,
+        F95zone lists v0.39.1 Beta."
