@@ -1,0 +1,89 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: seeds-of-chaos
+title: Seeds of Chaos
+developer: Venus Noire
+tags:
+  - female-protagonist
+  - male-protagonist
+  - multiple-protagonist
+  - management
+  - fantasy
+  - 2dcg
+  - animated
+content:
+  - anal-sex
+  - cheating
+  - corruption
+  - femaledomination
+  - futa-trans
+  - gay
+  - group-sex
+  - lesbian
+  - mobile-game
+  - monster
+  - monster-girl
+  - ntr
+  - oral-sex
+  - spanking
+  - vaginal-sex
+state: ongoing
+summary: The game is set in The Six Realms, the westernmost continent in the world of Solanse. Seven
+  years have passed since the last Demon War, and the defeat of Lord Karnas at the hands of the
+  forces of Light ushered in a new era of peace and prosperity for all the races of the six
+  kingdoms. Evil never lies dormant for long, however, and in the shadows new threats to the tenuous
+  peace begin to stir.
+nsfw: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1205950/library_600x900_2x.jpg
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI5MTgwMTQucG5n/original/MOpMOe.png
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1205950/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1205950/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1205950/logo.png
+  - kind: icon
+    source: sgdb
+    sgdb: 97874
+    url: https://cdn2.steamgriddb.com/icon/82df49e0507afeca8104118c927b7ae0.png
+    by: bi orc peon
+    byUrl: https://www.steamgriddb.com/profile/76561198028164531
+links:
+  itch: https://venusnoiregames.itch.io/seeds-of-chaos
+  f95: https://f95zone.to/threads/26/
+  steam: https://store.steampowered.com/app/1205950/
+saveDir: seeds_of_chaos-1446566129
+match:
+  - seeds-of-chaos-0.2.47-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2019-07-28"
+    date: "2019-07-28"
+    madeWith: 7.1.3
+    status: playable
+    archives:
+      - name: seeds-of-chaos-0.2.47-pc.zip
+        size: 360101056
+        sha256: "1dec4b5e4d07516b9736f5ca5d4ccb3508c8c9070b0398400e031313116231dc"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 2.7% of it (812 of 29791 statements) in 2.17
+        minutes. Coverage is 2.7%, under 90%; 8 Ren'Py errors with a traceback; the walk hit the
+        time cap; a whole script file was not reached: core/event_manager.rpyc, events/abbey.rpyc,
+        events/abbey2.rpyc. No person has played it through yet. Made with Ren'Py 7, which runs on
+        the Ren'Py 8 engine: Python 2 code in the game can fail later, so a person should play well
+        past the opening. The free download is 2019-07-28, F95zone lists v0.9.1."
