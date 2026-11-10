@@ -1,0 +1,103 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: mist
+title: MIST
+developer: 395games
+tags:
+  - male-protagonist
+  - adventure
+  - combat
+  - point-click
+  - rpg
+  - sandbox
+  - turn-based-combat
+  - dystopian-setting
+  - fantasy
+  - horror
+content:
+  - anal-sex
+  - creampie
+  - drugs
+  - exhibitionism
+  - femaledomination
+  - footjob
+  - groping
+  - group-sex
+  - handjob
+  - harem
+  - incest
+  - lactation
+  - lesbian
+  - maledomination
+  - masturbation
+  - mind-control
+  - mobile-game
+  - monster
+  - monster-girl
+  - oral-sex
+  - pov
+  - pregnancy
+  - sex-toys
+  - teasing
+  - titfuck
+  - urination
+  - vaginal-sex
+  - virgin
+state: completed
+summary: You want nothing more than to relax at your late grandfather's old mountain hut, when you
+  are suddenly surrounded by a thick unnatural fog. To make it worse, dangerous shadowy monsters
+  lurk in the woods and attack you. But there is a glimmer of hope.
+nsfw: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1752700/library_600x900_2x.jpg
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzg0NTk1MzcucG5n/original/lAG6uZ.png
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1752700/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1752700/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1752700/logo.png
+  - kind: icon
+    source: sgdb
+    sgdb: 30175
+    url: https://cdn2.steamgriddb.com/icon/4bbb3813dbe1e3a0e8466202046e5420.png
+    by: billyjoe
+    byUrl: https://www.steamgriddb.com/profile/76561197985615124
+    adult: true
+links:
+  itch: https://395games.itch.io/mist
+  f95: https://f95zone.to/threads/42509/
+  steam: https://store.steampowered.com/app/1752700/
+saveDir: ProjectMist-1572520246
+match:
+  - MIST-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0.3"
+    date: "2022-09-21"
+    madeWith: 7.4.5
+    status: playable
+    archives:
+      - name: MIST-1.0.3-pc.zip
+        size: 3491127178
+        sha256: "22c7aaf2cd5677409e14f5baf393c12d430be30d54395b1ac42d69819beb23bc"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0.6% of it (257 of 41154 statements) in 2.41
+        minutes. Coverage is 0.6%, under 90%; the walk hit the time cap; a whole script file was not
+        reached: basedefense.rpyc, bathhouse.rpyc, cavecontrols.rpyc. No person has played it
+        through yet. Made with Ren'Py 7, which runs on the Ren'Py 8 engine: Python 2 code in the
+        game can fail later, so a person should play well past the opening."
