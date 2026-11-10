@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: just-kiss-her-already
+title: Just Kiss Her Already!
+developer: Ekkoberry
+tags:
+  - romance
+content:
+  - gay
+  - lesbian
+state: ongoing
+summary: Help two cute girls get together!
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzExNDYxMjM3LnBuZw==/original/0Shxiv.png
+links:
+  itch: https://ekkoberry.itch.io/just-kiss-her-already
+saveDir: JustKissHerAlready-1677652719
+match:
+  - JustKissHerAlready-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.1"
+    date: "2024-09-23"
+    madeWith: 8.2.3
+    status: verified
+    archives:
+      - name: JustKissHerAlready-1.1-pc.zip
+        size: 101149613
+        sha256: "df1edd608ec674fba923956bd224bed9430971771f43a9ace26c5866f45bf45e"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated deep test on the lab's own Renplay: a walk through the script saw 99.5% of it
+        (441 of 443 statements) in 1.65 minutes, with no Ren'Py error. The main menu, a new game and
+        a save that loads again passed first. No person has played it through yet."
