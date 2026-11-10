@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: what-remains
+title: What Remains of Us
+developer: Siyokoy
+tags:
+  - dating-sim
+  - fantasy
+  - romance
+content: []
+state: ongoing
+summary: Take care of a sopping wet cat of a man
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 435948
+    url: https://cdn2.steamgriddb.com/grid/998d9f9c579873b1d738668122a52170.png
+    by: Xandie
+    byUrl: https://www.steamgriddb.com/profile/76561198129027445
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzEyNTc4MzE0LnBuZw==/original/NGlHyU.png
+  - kind: hero
+    source: sgdb
+    sgdb: 104899
+    url: https://cdn2.steamgriddb.com/hero/23430c5c1aef345407294b986c387844.png
+    by: Xandie
+    byUrl: https://www.steamgriddb.com/profile/76561198129027445
+  - kind: logo
+    source: sgdb
+    sgdb: 110690
+    url: https://cdn2.steamgriddb.com/logo/b4b8132bb979e45c9ce8b350550fb334.png
+    by: Xandie
+    byUrl: https://www.steamgriddb.com/profile/76561198129027445
+links:
+  itch: https://siyokoy.itch.io/what-remains
+saveDir: WhatRemains-1683266074
+match:
+  - WhatRemains-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2025-07-09"
+    madeWith: 8.3.7
+    status: playable
+    archives:
+      - name: WhatRemains-1.0-pc.zip
+        size: 115108494
+        sha256: "14629dc108054ef0d8f0cdbde596d01fcf4fcfa4610075c2ef40c18606bb3ed2"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 82% of it (721 of 879 statements) in 2.07 minutes.
+        Coverage is 82%, under 90%; the walk hit the time cap; a whole script file was not reached:
+        short stories/ss1.rpyc. No person has played it through yet."
