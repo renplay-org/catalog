@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: divine-heel
+title: Divine Heel 1.0
+developer: Eroniverse
+tags:
+  - male-protagonist
+  - sandbox
+  - romance
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - cheating
+  - creampie
+  - femaledomination
+  - groping
+  - handjob
+  - harem
+  - incest
+  - interracial
+  - maledomination
+  - milf
+  - mobile-game
+  - oral-sex
+  - teasing
+  - titfuck
+  - vaginal-sex
+  - virgin
+state: completed
+summary: In Divine Heel, you play a young man who is looking for love but struggling with a
+  mysterious problem. His life takes a turn when he gets a job as a domestic helper for residents
+  with various needs. However, the mystery deepens when our hero finds himself "blessed".
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzMwNTkwMjA3LmpwZw==/original/1OiEQT.jpg
+links:
+  itch: https://eroniverse.itch.io/divine-heel
+  f95: https://f95zone.to/threads/179675/
+saveDir: DivineHeel-1696827916
+match:
+  - DivineHeel-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0.0DEMO"
+    date: "2026-05-21"
+    madeWith: 8.1.3
+    status: playable
+    archives:
+      - name: DivineHeel-1.0.0DEMO-pc.zip
+        size: 341054974
+        sha256: "2b3cb07b2a4a993d361f84b57140d60a93fcb27777ee44686f6bc21d8151f281"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 18% of it (2549 of 14147 statements) in 1.19
+        minutes. Coverage is 18%, under 90%; a whole script file was not reached:
+        Scripts/Animations/intro1animsingle.rpyc, Scripts/Map/eventinformation.rpyc,
+        Scripts/Map/functions/eventonmaparrival.rpyc. No person has played it through yet. The free
+        download is 1.0.0DEMO, F95zone lists v1.0.0."
