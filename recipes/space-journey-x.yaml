@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: space-journey-x
+title: Space Journey X (18+)
+developer: yv0751
+tags:
+  - male-protagonist
+  - management
+  - point-click
+  - sandbox
+  - turn-based-combat
+  - humor
+  - sci-fi
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - bdsm
+  - corruption
+  - exhibitionism
+  - handjob
+  - oral-sex
+  - sex-toys
+  - spanking
+  - trainer
+  - vaginal-sex
+  - voyeurism
+state: completed
+summary: Our human hero is hurled across space alongside an alien female deep space explorer, whose
+  ship he accidentally destroyed...
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE1Nzc2NDE2LmpwZw==/original/yspVby.jpg
+links:
+  itch: https://yv0751.itch.io/space-journey-x
+  f95: https://f95zone.to/threads/146723/
+saveDir: SpaceJourneyX-1670222929
+match:
+  - SpaceJourneyX-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "250_023"
+    date: "2026-09-09"
+    madeWith: 8.3.3
+    status: playable
+    archives:
+      - name: SpaceJourneyX-250_023-pc.zip
+        size: 2090562541
+        sha256: "c3532effc3956252544a0b1d1f75307b8a1bc3cfc4da8785064f9789591e6fe8"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0.5% of it (85 of 17069 statements) in 1.69
+        minutes. Coverage is 0.5%, under 90%; a whole script file was not reached:
+        400_support/410_tools_dialogue.rpyc, 500_navigator/550_sandbox.rpyc,
+        500_navigator/554_sandbox_surface.rpyc. No person has played it through yet. The free
+        download is 250_023, F95zone lists v2.50_023."
