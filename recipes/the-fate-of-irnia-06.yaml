@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: the-fate-of-irnia-06
+title: The Fate of Irnia
+developer: Winterlook
+tags:
+  - male-protagonist
+  - multiple-endings
+  - fantasy
+  - 2dcg
+content:
+  - anal-sex
+  - big-tits
+  - femaledomination
+  - footjob
+  - group-sex
+  - incest
+  - maledomination
+  - milf
+  - mind-control
+  - mobile-game
+  - monster-girl
+  - oral-sex
+  - pregnancy
+  - teasing
+  - transformation
+  - vaginal-sex
+state: completed
+summary: Each 12 years orcs attack your homeland and each time it has enough forces only to defend
+  but never to strike back. Your father was a hero of the last attack, who unfortunately passed away
+  from an unknown disease on your 17th birthday. He left you alone with your mother, your sister and
+  a gift box that you can open only when you come of age.
+nsfw: true
+art:
+  - kind: grid
+    source: renplay
+    url: https://covers.renplay.org/the-fate-of-irnia-06-6ece5b53ba.webp
+  - kind: wide
+    source: renplay
+    url: https://covers.renplay.org/the-fate-of-irnia-06-0a82282ec5.webp
+links:
+  f95: https://f95zone.to/threads/970/
+saveDir: TheFateofIrnia-1523829050
+match:
+  - TheFateofIrnia-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0c"
+    date: "2022-09-04"
+    madeWith: 7.4.11
+    status: playable
+    archives:
+      - name: TheFateofIrnia-1.0c-pc.zip
+        size: 499260135
+        sha256: "a3906fa8a5f552306d8c8b2a6b9fdc07c53a2b1f3aa4610c3be1f6d12fdc9b82"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 9.2% of it (1955 of 21144 statements) in 2.29
+        minutes. Coverage is 9.2%, under 90%; 7 Ren'Py errors with a traceback; the walk hit the
+        time cap; a whole script file was not reached: events/4p_mb_route.rpyc,
+        events/4p_romance_route.rpyc, events/beatrice_mb_route.rpyc. No person has played it through
+        yet. Made with Ren'Py 7, which runs on the Ren'Py 8 engine: Python 2 code in the game can
+        fail later, so a person should play well past the opening."
