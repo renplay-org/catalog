@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: prescriptionlove
+title: Prescription:LOVE
+developer: Livingslime
+tags:
+  - dating-sim
+  - multiple-endings
+  - horror
+  - romance
+content: []
+summary: "You may see the doctor now... Forever ♡"
+state: ongoing
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE4Mjc4NzgyLnBuZw==/original/XhpNgf.png
+links:
+  itch: https://livingslime.itch.io/prescriptionlove
+saveDir: PrescriptionLOVE
+match:
+  - PrescriptionLOVE-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2024-10-20"
+    date: "2024-10-20"
+    madeWith: 8.3.2
+    status: verified
+    archives:
+      - name: PrescriptionLOVE-pc.zip
+        size: 183894590
+        sha256: "af8d3a2afc4310c334c4790f2e6721825ff72656bda16bf01162a7f011f8a865"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated deep test on the lab's own Renplay: a walk through the script saw 100% of it
+        (955 of 955 statements) in 1 minutes, with no Ren'Py error. The main menu, a new game and a
+        save that loads again passed first. No person has played it through yet."
