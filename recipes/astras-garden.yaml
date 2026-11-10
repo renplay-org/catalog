@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: astras-garden
+title: Astra's Garden
+developer: NomnomNami
+tags:
+  - female-protagonist
+  - fantasy
+content: []
+state: ongoing
+summary: A healing game. let's grow together!
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzg3NzgxMTAucG5n/original/7j0Mcr.png
+links:
+  itch: https://nomnomnami.itch.io/astras-garden
+  steam: https://store.steampowered.com/app/4694850/
+saveDir: AstrasGarden-1637563443
+match:
+  - AstrasGarden-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.5.6"
+    date: "2025-02-23"
+    madeWith: 8.3.4
+    status: playable
+    archives:
+      - name: AstrasGarden-1.5.6-pc.zip
+        size: 73559584
+        sha256: "3cb0c59ce9374ffd0e6b3893631562246adfc29b51bd26f40ddece6bc4374cbd"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet."
