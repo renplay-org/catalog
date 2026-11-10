@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: beaumount-academy-after-class-confession
+title: "Beaumont Academy: After class confession"
+developer: Kitty Hikari Atelier
+tags:
+  - female-protagonist
+  - dating-sim
+  - romance
+content: []
+state: ongoing
+nsfw: false
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI4MjE5NDYzLnBuZw==/original/4L2Rwz.png
+links:
+  itch: https://kitty-hikari-atelier.itch.io/beaumount-academy-after-class-confession
+saveDir: BeaumountAcademy-1779221296
+match:
+  - beaumount-academy-after-class-confession-win-linux.zip
+  - BeaumountAcademy-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2026-07-03"
+    madeWith: 8.5.2
+    status: broken
+    archives:
+      - name: beaumount-academy-after-class-confession-win-linux.zip
+        size: 364456808
+        sha256: "215923d5533fc531849d56886aaa1737b3a9195a3f939a1bd6dad937ebb1af44"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: Exception: The specified attributes for vincent conflict: neutral_side_look, cansado"
