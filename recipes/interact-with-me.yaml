@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: interact-with-me
+title: Interact With Me!
+developer: ToMyself
+tags:
+  - horror
+content: []
+state: ongoing
+nsfw: false
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI5NDIzNjI2LnBuZw==/original/82Ilx%2F.png
+links:
+  itch: https://tomyself.itch.io/interact-with-me
+saveDir: ProjectMyr-1765496052
+match:
+  - InteractWithMe-0.5-win.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.5 (The Final Chapter)"
+    date: "2026-11-03"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: InteractWithMe-0.5-win.zip
+        size: 374581790
+        sha256: "de6842e04842888cc3b26ce3b6ea81cbbe9de60fa9b1f09c9cf2e1d846c3d2cb"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet."
