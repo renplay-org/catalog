@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: killer-chat-expanded
+title: Killer Chat! Expanded Edition
+developer: rosesrot
+tags:
+  - dating-sim
+  - rpg
+  - humor
+  - romance
+content: []
+state: ongoing
+summary: You're a writer that's been (mistakenly) invited to a serial killer server. Uh oh.
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIxNjQzODYxLnBuZw==/original/ClAsO3.png
+links:
+  itch: https://rosesrot.itch.io/killer-chat-expanded
+saveDir: KillerChat-DEMO-1725183518
+match:
+  - killer-chat-expanded-win-linux.zip
+  - KillerChat!_DEMO-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.2.6"
+    date: "2026-07-11"
+    madeWith: 8.4.2
+    status: playable
+    archives:
+      - name: killer-chat-expanded-win-linux.zip
+        size: 358886331
+        sha256: "42be39e57aea75ac2d06068a1b0c997682132ed9186bdd6aa75ed34deec7bec3"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 1.1% of it (19 of 1753 statements) in 1.11 minutes.
+        Coverage is 1.1%, under 90%; a whole script file was not reached: code/01
+        plugins/color_picker_examples.rpyc, code/01 plugins/easy_blink_extras.rpyc, code/01
+        plugins/text_tags/atl_text_tag.rpyc. No person has played it through yet."
