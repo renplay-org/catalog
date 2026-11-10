@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: shadow-over-blackmore
+title: The Shadow over Blackmore 0.5.2r [ Femdom / Futadom ]
+developer: darktoz
+tags:
+  - male-protagonist
+  - sandbox
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - bdsm
+  - big-ass
+  - big-tits
+  - cosplay
+  - femaledomination
+  - futa-trans
+  - graphic-violence
+  - humiliation
+  - milf
+  - mobile-game
+  - monster-girl
+  - ntr
+  - oral-sex
+  - sex-toys
+  - slave
+  - urination
+  - vaginal-sex
+state: ongoing
+summary: "I don't want to tell you, yet. If you are a fan of dark fantasy and occult themes like The
+  Ninth Gate, Vampire: The Masquerade, World of Darkness, witchcraft, Lovecraft and so on this is
+  for you. And if not...well, there will still be quite a lot of dominant women in the game."
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzkxNzQ0MjMucG5n/original/hXuo9q.png
+links:
+  itch: https://darktoz.itch.io/shadow-over-blackmore
+  f95: https://f95zone.to/threads/117216/
+saveDir: DarkNetwork-1626911496
+match:
+  - ShadowoverBlackmore-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.5.2r"
+    date: "2026-06-14"
+    madeWith: 8.5.2
+    status: playable
+    archives:
+      - name: ShadowoverBlackmore-0.5.2r-pc.zip
+        size: 2271990347
+        sha256: "433bbe81fc5abba13393d43555b52329c056bcc16f67bb891da29be5ad2e5645"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 3.8% of it (1339 of 35626 statements) in 2.42
+        minutes. Coverage is 3.8%, under 90%; the walk hit the time cap; a whole script file was not
+        reached: gallery.rpyc, memroom/memroom1/mrsce1.rpyc, memroom/memroom1/mrsce10.rpyc. No
+        person has played it through yet."
