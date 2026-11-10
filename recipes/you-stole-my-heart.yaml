@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: you-stole-my-heart
+title: You Stole my Heart!
+developer: Saltie
+tags:
+  - female-protagonist
+  - dating-sim
+  - romance
+content: []
+state: ongoing
+summary: A cat burglar broke into your home? Date him!
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI4OTI2NDQ4LnBuZw==/original/XtwGUW.png
+links:
+  itch: https://saltiepng.itch.io/you-stole-my-heart
+saveDir: YouStolemyHeart-1715793747
+match:
+  - You_Stole_my_Heart-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.5"
+    date: "2026-08-06"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: You_Stole_my_Heart-1.5-pc.zip
+        size: 286515466
+        sha256: "0365f6e7a5b55e85ea6358ac8a8466386b03eef0fca1d19aba5d02e3621ec713"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 72.4% of it (471 of 651 statements) in 2.32
+        minutes. Coverage is 72.4%, under 90%; the walk hit the time cap; a whole script file was
+        not reached: atl_text_tag.rpyc, text_kinetic.rpyc. No person has played it through yet."
