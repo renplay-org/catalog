@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: my-own-sweet-dionaea
+title: My Own Sweet Dionaea
+developer: Ossuario
+tags:
+  - dating-sim
+  - dystopian-setting
+  - horror
+  - romance
+  - sci-fi
+content: []
+state: ongoing
+summary: Created a plant hybrid and he may want to kiss or eat you.
+nsfw: false
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIzMzgzNTY0LmpwZw==/original/5Bsz%2Fm.jpg
+links:
+  itch: https://ossuario.itch.io/my-own-sweet-dionaea
+saveDir: MyOwnSweetDionaea-1758597381
+match:
+  - MyOwnSweetDionaea-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.01"
+    date: "2025-10-14"
+    madeWith: 8.4.2
+    status: verified
+    archives:
+      - name: MyOwnSweetDionaea-1.01-pc.zip
+        size: 136556139
+        sha256: "b4b7caa8bfb1c1af07ade18edc6bdb2dedccbaa963d57667460008dafccba995"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated deep test on the lab's own Renplay: a walk through the script saw 100% of it
+        (561 of 561 statements) in 1.34 minutes, with no Ren'Py error. The main menu, a new game and
+        a save that loads again passed first. No person has played it through yet."
