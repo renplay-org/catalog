@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: rickfinderrz-demo
+title: "RICKFINDERRZ: A Rick Sanchez Dating Sim"
+developer: VicArt Games
+tags:
+  - dating-sim
+  - romance
+content: []
+state: ongoing
+summary: You can date Rick, broh. Which one? All of them, obviously.
+nsfw: false
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI1NDc4MzU2LnBuZw==/original/s1Ofha.png
+links:
+  itch: https://vicartless.itch.io/rickfinderrz-demo
+saveDir: RICKFINDERRZDEMO-1755136588
+match:
+  - RICKFINDERRZ_DEMO-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2026-02-13"
+    madeWith: 8.3.2
+    status: playable
+    archives:
+      - name: RICKFINDERRZ_DEMO-1.0-pc.zip
+        size: 208663737
+        sha256: "de4f0f96ded9d0f399e1e0e99044cbb90cc2a398e0e56e8c01bb5036ca3a1a2d"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 10.7% of it (66 of 614 statements) in 2.08 minutes.
+        Coverage is 10.7%, under 90%; the walk hit the time cap; a whole script file was not
+        reached: credits.rpyc, custom_creator_screens.rpyc, rick_routes/c137_demo.rpyc. No person
+        has played it through yet."
