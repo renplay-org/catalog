@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: turning-the-page
+title: Turning the Page
+developer: Azienda
+tags:
+  - female-protagonist
+  - male-protagonist
+  - multiple-protagonist
+  - school-setting
+  - 2dcg
+  - animated
+content:
+  - ahegao
+  - anal-sex
+  - big-ass
+  - big-tits
+  - cheating
+  - corruption
+  - creampie
+  - groping
+  - handjob
+  - mobile-game
+  - ntr
+  - oral-sex
+  - pregnancy
+  - sex-toys
+  - teasing
+  - titfuck
+  - vaginal-sex
+state: completed
+summary: "For Felix and Sophie Page, two professors at Riverside College, things are going very
+  well. They have jobs they love, they are well respected and most importantly: they have each
+  other. In fact, their recent marriage has made it official."
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzEzMTgwMjI0LnBuZw==/original/d3GBBS.png
+links:
+  itch: https://azienda.itch.io/turning-the-page
+  f95: https://f95zone.to/threads/131246/
+saveDir: TurningthePage-1657097425
+match:
+  - TurningthePage-0.0.1-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2025-05-04"
+    date: "2025-05-04"
+    madeWith: 8.0.3
+    status: playable
+    archives:
+      - name: TurningthePage-0.0.1-pc.zip
+        size: 694154270
+        sha256: "0cf6fba9e31f9f9265eae6f4122aaf1ea42535c01f87d6d8dee3fc230834362f"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 36.5% of it (4154 of 11366 statements) in 1.7
+        minutes. Coverage is 36.5%, under 90%; a whole script file was not reached:
+        choices_recollection.rpyc, gallery_extra.rpyc, pc.rpyc. No person has played it through yet.
+        The free download is 2025-05-04, F95zone lists v1.0.0."
