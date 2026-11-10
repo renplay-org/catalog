@@ -1,0 +1,117 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: ravager
+title: Ravager
+developer: 4MinuteWarning
+tags:
+  - male-protagonist
+  - fantasy
+  - horror
+  - romance
+  - 2dcg
+  - animated
+  - voiced
+content:
+  - anal-sex
+  - bdsm
+  - bestiality
+  - big-ass
+  - big-tits
+  - corruption
+  - creampie
+  - femaledomination
+  - furry
+  - futa-trans
+  - gay
+  - graphic-violence
+  - groping
+  - group-sex
+  - harem
+  - humiliation
+  - incest
+  - lactation
+  - lesbian
+  - maledomination
+  - milf
+  - mind-control
+  - mobile-game
+  - monster
+  - monster-girl
+  - multiple-penetration
+  - oral-sex
+  - possession
+  - pregnancy
+  - sexual-harassment
+  - slave
+  - sleep-sex
+  - stripping
+  - tentacles
+  - titfuck
+  - transformation
+  - trap
+  - twins
+  - vaginal-sex
+  - virgin
+  - vore
+  - voyeurism
+state: ongoing
+summary: "We all know the story: Hero emerges from humble beginnings, slays the tyrannical dragon,
+  and ushers in a new era of peace and prosperity. But here, it's the other way around. Ravager is a
+  game where you play a young dragon, determined to reclaim their birthright."
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 54251
+    url: https://cdn2.steamgriddb.com/grid/a5b470a62bd3c02b2d103e2b8dc8d7fb.png
+    by: Fjorn
+    byUrl: https://www.steamgriddb.com/profile/76561198084627999
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIyOTk4MDExLnBuZw==/original/RzWjOs.png
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/689100/header.jpg
+  - kind: hero
+    source: sgdb
+    sgdb: 91422
+    url: https://cdn2.steamgriddb.com/hero/8a82a227ca0b0eec3d257fe840373ea7.png
+    by: Sephiroth983
+    byUrl: https://www.steamgriddb.com/profile/76561198006218423
+  - kind: logo
+    source: sgdb
+    sgdb: 96489
+    url: https://cdn2.steamgriddb.com/logo/f5d678d410334183d0df53d606c6729c.png
+    by: Sephiroth983
+    byUrl: https://www.steamgriddb.com/profile/76561198006218423
+links:
+  itch: https://4minutewarning.itch.io/ravager
+  f95: https://f95zone.to/threads/26476/
+  steam: https://store.steampowered.com/app/689100/
+saveDir: Rampager-1492958390
+match:
+  - ravager-win.zip
+  - Ravager-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "6.0.2a"
+    date: "2026-09-28"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: ravager-win.zip
+        size: 1371314615
+        sha256: "cc2ddabb58d17b51c8a774a154eb9edfef24f9c8fcc396751af84ebd6f55f6e9"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0.7% of it (442 of 60277 statements) in 2.35
+        minutes. Coverage is 0.7%, under 90%; the walk hit the time cap; a whole script file was not
+        reached: code/script/Act III/Captives/c3_captives.rpyc, code/script/Act
+        III/Captives/c3_captives_abbess.rpyc, code/script/Act III/Captives/c3_captives_drunk.rpyc.
+        No person has played it through yet. The free download is 6.0.2a, F95zone lists v6.0.2."
