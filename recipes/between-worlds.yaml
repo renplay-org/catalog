@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: between-worlds
+title: Between Worlds
+developer: Roleplayervn
+tags:
+  - male-protagonist
+  - fantasy
+  - romance
+  - 3dcg
+  - animated
+content:
+  - handjob
+  - harem
+  - masturbation
+  - milf
+  - mobile-game
+  - ntr
+  - oral-sex
+  - swinging
+  - teasing
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: Between Worlds is a magical and adventurous-filled fantasy themed visual novel where you
+  will assume the role of a male protagonist surrounded by an abundance of gorgeous and fascinating
+  female characters, each with their own unique personality and backstory. You will get to bud
+  relationships with them and drive the steer of your romance in any direction you desire. It also
+  have you embark on a journey where you meet different people and protect the world from an
+  unstoppable force.
+nsfw: true
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzEzMzUxMDk0LnBuZw==/original/9gzPLl.png
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3885950/library_hero.jpg
+links:
+  itch: https://roleplayervn.itch.io/between-worlds
+  f95: https://f95zone.to/threads/129383/
+  steam: https://store.steampowered.com/app/3885950/
+saveDir: BetweenWorlds-1679631324
+match:
+  - BetweenWorlds-0.1.5-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2023-10-14"
+    date: "2023-10-14"
+    madeWith: 8.1.2
+    status: playable
+    archives:
+      - name: BetweenWorlds-0.1.5-pc.zip
+        size: 955535916
+        sha256: "d27f21579ec7853f0322f3f894d14c158b59145a371765a2dd4c00d5b722121c"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0% of it (0 of 3849 statements) in 0.71 minutes.
+        Coverage is 0%, under 90%; the walk ended early (stuck before the main menu); a whole script
+        file was not reached: atl_text_tag.rpyc, chapters/scripts/scene1.rpyc,
+        chapters/scripts/scene10.rpyc. No person has played it through yet. The free download is
+        2023-10-14, F95zone lists v0.2.1 Full."
