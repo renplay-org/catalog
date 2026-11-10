@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: bloom
+title: Bloom [ALL ROUTES]
+developer: NightLight
+tags:
+  - dating-sim
+  - fantasy
+  - romance
+content: []
+state: ongoing
+summary: A Cozy Fantasy Dating Sim
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI2NjI0MDA1LnBuZw==/original/WyinNI.png
+links:
+  itch: https://nightlightwrks.itch.io/bloom
+saveDir: Bloom-1742274220
+match:
+  - Bloom-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.2"
+    date: "2026-11-02"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: Bloom-1.2-pc.zip
+        size: 315567739
+        sha256: "4451de31fe3fccaa87a25e81654817199387af2c4a1cde415ecdb58a5afb59f8"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 62.8% of it (4495 of 7162 statements) in 2.17
+        minutes. Coverage is 62.8%, under 90%; the walk hit the time cap; a whole script file was
+        not reached: Albion_after.rpyc, Caelan_CHP1.rpyc, Caelan_CHP2.rpyc. No person has played it
+        through yet."
