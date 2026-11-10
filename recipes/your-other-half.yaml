@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: your-other-half
+title: Your Other Half
+developer: miao
+tags:
+  - multiple-endings
+  - dating-sim
+  - romance
+content: []
+state: ongoing
+summary: A kidnapping plagues your relationship.
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI5NTA2OTcyLmdpZg==/original/BItiAI.gif
+links:
+  itch: https://miaomarue.itch.io/your-other-half
+saveDir: YourOtherHalf-1785853826
+match:
+  - your-other-half-win-64.zip
+  - YourOtherHalf-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.1"
+    date: "2026-09-29"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: your-other-half-win-64.zip
+        size: 226629715
+        sha256: "ddd2047757649b6dc7c65e204e3255f8fe4a9df7dc1f9b81cc38e819f8645a76"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 8.5% of it (82 of 967 statements) in 0.59 minutes.
+        Coverage is 8.5%, under 90%; a whole script file was not reached:
+        d1_scripts/d1_after_class.rpyc, d1_scripts/d1_meeting.rpyc,
+        d1_scripts/d1_newspapergame.rpyc. No person has played it through yet."
