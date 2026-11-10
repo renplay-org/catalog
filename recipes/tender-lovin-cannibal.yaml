@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: tender-lovin-cannibal
+title: Tender Lovin' Cannibal
+developer: Rae1347
+tags:
+  - dating-sim
+  - horror
+  - romance
+content: []
+state: ongoing
+summary: '"Did you know... I love you?"'
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzEwOTA4MjkyLnBuZw==/original/y9hXF8.png
+links:
+  itch: https://rae1347.itch.io/tender-lovin-cannibal
+saveDir: BVT-1670783350
+match:
+  - TenderLovin_Cannibal-*-pc.zip
+  - TenderLovin'Cannibal-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.3.2"
+    date: "2025-02-25"
+    madeWith: 8.1.1
+    status: playable
+    archives:
+      - name: TenderLovin_Cannibal-1.3.2-pc.zip
+        size: 958166848
+        sha256: "72f2414d501b23ac21edcfedc3279a525aed9822eb44b7bd2a3a528e602d7363"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 59.7% of it (1061 of 1777 statements) in 2.1
+        minutes. Coverage is 59.7%, under 90%; the walk hit the time cap; a whole script file was
+        not reached: PhoneTriviaWheel.rpyc, inventory.rpyc, phone_sample.rpyc. No person has played
+        it through yet."
