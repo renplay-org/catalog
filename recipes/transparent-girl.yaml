@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: transparent-girl
+title: Transparent Girl
+developer: VARIA
+tags:
+  - female-protagonist
+  - paranormal
+content: []
+state: ongoing
+summary: A bite-sized VN about a girl who's become transparent, and a girl who's becoming transparent
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIxMDI0NDQ2LnBuZw==/original/TRR%2BFX.png
+links:
+  itch: https://varia.itch.io/transparent-girl
+saveDir: transparentgirl-1744953347
+match:
+  - transparentgirl-pc.zip
+  - transparentgirl-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.22"
+    date: "2026-02-19"
+    madeWith: 8.5.0
+    status: verified
+    archives:
+      - name: transparentgirl-pc.zip
+        size: 137943826
+        sha256: "d7091dde934fe886389ac90dceabc02c41f95d71b8f359f30ed1d08efab76ac7"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated deep test on the lab's own Renplay: a walk through the script saw 100% of it
+        (52 of 52 statements) in 0.24 minutes, with no Ren'Py error. The main menu, a new game and a
+        save that loads again passed first. No person has played it through yet."
