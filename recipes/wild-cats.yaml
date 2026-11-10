@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: wild-cats
+title: Wild Cats
+developer: LopaPhi
+tags:
+  - male-protagonist
+  - romance
+  - school-setting
+  - 3dcg
+  - animated
+content:
+  - groping
+  - handjob
+  - mobile-game
+  - oral-sex
+  - pov
+  - teasing
+  - virgin
+state: ongoing
+summary: You are a highly anticipated up and coming volleyball star. Or rather, you were up until
+  you destroyed your shoulder and your prospects along with it by overworking yourself. Now you're
+  just a nobody who drowned your sorrows away with a series of poor life choices.
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 644625
+    url: https://cdn2.steamgriddb.com/grid/89ae5481a394d1dcc4deed06d1ea57b2.jpg
+    by: Ruthbit
+    byUrl: https://www.steamgriddb.com/profile/76561199081834194
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE2ODEyMTc3LnBuZw==/original/eyvuZ1.png
+  - kind: wide
+    source: sgdb
+    sgdb: 708842
+    url: https://cdn2.steamgriddb.com/grid/e78c6a085210f9df1b2f5d9fa9d8f65e.jpg
+    by: Ruthbit
+    byUrl: https://www.steamgriddb.com/profile/76561199081834194
+  - kind: hero
+    source: sgdb
+    sgdb: 149217
+    url: https://cdn2.steamgriddb.com/hero/5b211f98dd70b37652008e36886f2e14.jpg
+    by: Ruthbit
+    byUrl: https://www.steamgriddb.com/profile/76561199081834194
+  - kind: logo
+    source: sgdb
+    sgdb: 151995
+    url: https://cdn2.steamgriddb.com/logo/e929190abdd1f7a12d0ee229274b295d.png
+    by: Ruthbit
+    byUrl: https://www.steamgriddb.com/profile/76561199081834194
+links:
+  itch: https://lopaphi.itch.io/wild-cats
+  f95: https://f95zone.to/threads/215260/
+saveDir: WildCats-1712069508
+match:
+  - wild-cats-win-linux.zip
+  - WildCats-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.4"
+    date: "2026-10-21"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: wild-cats-win-linux.zip
+        size: 5372673424
+        sha256: "bb40c4af44f23d27142463b98791f3af43724f1ca8d8924ab7e3d1e5d5e8f6db"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 31.7% of it (6618 of 20880 statements) in 2.28
+        minutes. Coverage is 31.7%, under 90%; the walk hit the time cap; a whole script file was
+        not reached: script2.rpyc. No person has played it through yet."
