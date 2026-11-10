@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: minotaur-hotel-sfw
+title: "Minotaur Hotel: SFW Mode"
+developer: Minoh Workshop
+tags:
+  - management
+  - romance
+content:
+  - furry
+  - gay
+state: ongoing
+summary: His side of the story.
+nsfw: false
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzEzODQwNzk3LmdpZg==/original/x6FwLk.gif
+links:
+  itch: https://minoh.itch.io/minotaur-hotel-sfw
+saveDir: MinotaurHotel-1562462506
+match:
+  - MinotaurHotel-SFW-*-pc.zip
+  - MinotaurHotel-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.7"
+    date: "2023-10-27"
+    madeWith: 7.4.6
+    status: playable
+    archives:
+      - name: MinotaurHotel-SFW-0.7-pc.zip
+        size: 374799410
+        sha256: "6d861d69e259b80f005d0db5d8073815839e59ef7cf89c596e72c392e0e43331"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 8.3% of it (2887 of 34773 statements) in 2.17
+        minutes. Coverage is 8.3%, under 90%; the walk hit the time cap; a whole script file was not
+        reached: couple_scenes.rpyc, credits.rpyc, daily_events.rpyc. No person has played it
+        through yet. Made with Ren'Py 7, which runs on the Ren'Py 8 engine: Python 2 code in the
+        game can fail later, so a person should play well past the opening."
