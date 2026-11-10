@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: speared-by-heart
+title: Speared By Heart ♡ (Chapter 1.1 Out Now!)
+developer: Stealth
+tags:
+  - female-protagonist
+  - dating-sim
+  - fantasy
+  - horror
+  - romance
+content: []
+state: ongoing
+summary: A yandere warrior here to ̶k̶i̶d̶n̶a̶p̶ save you :)
+nsfw: false
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIzMDYwNzUwLnBuZw==/original/yC2vcY.png
+links:
+  itch: https://kittenstealth.itch.io/speared-by-heart
+saveDir: dark_elegance-1653677868
+match:
+  - speared_by_heart-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.1"
+    date: "2026-04-02"
+    madeWith: 8.3.2
+    status: playable
+    archives:
+      - name: speared_by_heart-1.1-pc.zip
+        size: 285031409
+        sha256: "dac4dede451f8c31ffc384ff67eaa5b0446cb8ce54ada90f3a4d22391d397e13"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 94.9% of it (841 of 886 statements) in 2.07
+        minutes. The walk hit the time cap. No person has played it through yet."
