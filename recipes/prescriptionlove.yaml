@@ -19,7 +19,7 @@ match:
 engine: renpy
 runtime: 8.5.3
 releases:
-  - version: ""
+  - version: "2024-10-20"
     date: "2024-10-20"
     madeWith: 8.3.2
     status: verified
