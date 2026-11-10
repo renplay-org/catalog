@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: edda-cafe
+title: EDDA Cafe
+developer: Mushroomallow
+tags:
+  - female-protagonist
+  - fantasy
+  - romance
+content: []
+state: ongoing
+summary: And when the coffee starts to drip, the magic begins...
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzExMzIwMTk4LnBuZw==/original/Ow2UOt.png
+links:
+  itch: https://mushroomallow.itch.io/edda-cafe
+saveDir: TimeCapsule-1612449825
+match:
+  - Edda_Cafe_webp-2.0-market.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2022-08-17"
+    date: "2022-08-17"
+    madeWith: 7.4.11
+    status: playable
+    archives:
+      - name: Edda_Cafe_webp-2.0-market.zip
+        size: 136975483
+        sha256: "94d63d4a1c3e8b1556c34306a1ac802837db57c2b06d690b985fe38fe3bc5017"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0.1% of it (1 of 947 statements) in 0.39 minutes.
+        Coverage is 0.1%, under 90%; a whole script file was not reached: part2.rpyc, part3.rpyc,
+        script.rpyc. No person has played it through yet. Made with Ren'Py 7, which runs on the
+        Ren'Py 8 engine: Python 2 code in the game can fail later, so a person should play well past
+        the opening."
