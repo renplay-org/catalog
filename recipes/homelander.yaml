@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: homelander
+title: Homelander
+developer: Jabbonk Games
+tags:
+  - male-protagonist
+  - fantasy
+  - romance
+  - 3dcg
+  - animated
+content:
+  - ahegao
+  - anal-sex
+  - creampie
+  - femaledomination
+  - futa-trans
+  - handjob
+  - harem
+  - incest
+  - masturbation
+  - milf
+  - oral-sex
+  - sleep-sex
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: In 'Homelander', you're a young man who lost his family at a very young age. One day, you
+  happen to save a young woman's life, and when her true identity is revealed, your destiny is
+  changed forever! Grow closer to your new family, discover the secrets of your past, master magical
+  abilities, and prepare to defend your Homeland.
+nsfw: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2353170/library_600x900_2x.jpg
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI3Mzc0NTY1LnBuZw==/original/3oxxjz.png
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2353170/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2353170/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2353170/logo.png
+links:
+  itch: https://jabbonk.itch.io/homelander
+  f95: https://f95zone.to/threads/114874/
+  steam: https://store.steampowered.com/app/2353170/
+saveDir: Homelander-1625714066
+match:
+  - Homelander-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "Ch.5 P2"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (Ch.5 P2). Not tested here, and no
+        archive yet: 0.03b from itch.io is the one that was tested."
+  - version: "0.03b"
+    date: "2022-12-18"
+    madeWith: 7.4.11
+    status: playable
+    archives:
+      - name: Homelander-0.03b-pc.zip
+        size: 2663852662
+        sha256: "71bf643ceae5ba8670a91cc96ed8c67e20e8f9a5601bd88ff2c693e12030ef5d"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 73.9% of it (7237 of 9799 statements) in 2.23
+        minutes. Coverage is 73.9%, under 90%; the walk hit the time cap. No person has played it
+        through yet. Made with Ren'Py 7, which runs on the Ren'Py 8 engine: Python 2 code in the
+        game can fail later, so a person should play well past the opening. The free download is
+        0.03b, F95zone lists Ch.5 P2."
