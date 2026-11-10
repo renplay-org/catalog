@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: dont-pick-up-stray-aliens
+title: Don't Pick Up Stray Aliens!
+developer: YoruBox
+tags:
+  - female-protagonist
+  - dating-sim
+  - romance
+content: []
+state: ongoing
+summary: Picking up a stray alien is basically the same like bringing a stray cat to home, right?
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI4MTY2NjM2LnBuZw==/original/xJIcbv.png
+links:
+  itch: https://yorubox.itch.io/dont-pick-up-stray-aliens
+saveDir: Stray Aliens-1779769661
+match:
+  - strayaliens-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2026-08-13"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: strayaliens-1.0-pc.zip
+        size: 194846113
+        sha256: "8a0cd632459f9a41944ce580a819e04317fc3e17272a87b8f2909f6abb226d22"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0.1% of it (1 of 1901 statements) in 0.66 minutes.
+        Coverage is 0.1%, under 90%; a whole script file was not reached: chapter1.rpyc,
+        chapter2.rpyc, chapter3.rpyc. No person has played it through yet."
