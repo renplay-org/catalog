@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: the-roommate
+title: The Roommate
+developer: togs
+tags:
+  - male-protagonist
+  - adventure
+  - dating-sim
+  - management
+  - 3dcg
+content:
+  - anal-sex
+  - bestiality
+  - big-tits
+  - corruption
+  - creampie
+  - groping
+  - group-sex
+  - harem
+  - lactation
+  - maledomination
+  - masturbation
+  - milf
+  - oral-sex
+  - pregnancy
+  - prostitution
+  - sex-toys
+  - spanking
+  - swinging
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: You get a big promotion and move to Seattle where a friend offers you the use of an
+  apartment. However, he'd previously told a young woman from your company that she could stay
+  there, and your arrival means she could end up homeless. But if you don't mind sharing, you'll get
+  to know the beautiful and enigmatic Kari.
+nsfw: true
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzU2NjE5MTAucG5n/original/7d%2FaLP.png
+links:
+  itch: https://togs.itch.io/the-roommate
+  f95: https://f95zone.to/threads/79594/
+saveDir: The_Roommate-1615256957
+match:
+  - the-roommate-win.zip
+  - The_Roommate-*-win.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "P2 v0.0.10"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (P2 v0.0.10). Not tested here, and no
+        archive yet: 0.7.2 from itch.io is the one that was tested."
+  - version: "0.7.2"
+    date: "2022-09-22"
+    madeWith: 7.4.10
+    status: playable
+    archives:
+      - name: the-roommate-win.zip
+        size: 944482989
+        sha256: "a5188be6f5fd19b2b41c0df59591ac4e47c4cd5f5747221776ef86d24b2add77"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 43.6% of it (4093 of 9383 statements) in 2.25
+        minutes. Coverage is 43.6%, under 90%; the walk hit the time cap; a whole script file was
+        not reached: ch31.rpyc, ch32.rpyc, ch33.rpyc. No person has played it through yet. Made with
+        Ren'Py 7, which runs on the Ren'Py 8 engine: Python 2 code in the game can fail later, so a
+        person should play well past the opening. The free download is 0.7.2, F95zone lists P2
+        v0.0.10."
