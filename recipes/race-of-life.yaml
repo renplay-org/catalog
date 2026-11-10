@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: race-of-life
+title: Race of Life
+developer: Underground Studio
+tags:
+  - male-protagonist
+  - dating-sim
+  - point-click
+  - humor
+  - romance
+  - school-setting
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - cheating
+  - cosplay
+  - creampie
+  - exhibitionism
+  - footjob
+  - groping
+  - group-sex
+  - handjob
+  - lesbian
+  - masturbation
+  - milf
+  - oral-sex
+  - pov
+  - sex-toys
+  - spanking
+  - titfuck
+  - vaginal-sex
+  - voyeurism
+state: ongoing
+summary: Meet Jake, a 30-something divorcee rebuilding his life. He’s smart, attractive and
+  confident, and he knows it. Meet smoking hot women, participate in illegal street races, win
+  money, and achieve your goal!
+nsfw: true
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE0ODM2MjY2LnBuZw==/original/hmmfTW.png
+links:
+  itch: https://underground-studio.itch.io/race-of-life
+  f95: https://f95zone.to/threads/130096/
+saveDir: RaceofLife-1646521544
+match:
+  - race-of-life-pc-episode-1.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2024-01-28"
+    date: "2024-01-28"
+    madeWith: 8.0.1
+    status: playable
+    archives:
+      - name: race-of-life-pc-episode-1.zip
+        size: 1282793621
+        sha256: "8db8306f478c11ef0b5cb26c0102a051af0c9b9b6d2c59b88eb3bc2da6350cfc"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 72.8% of it (3049 of 4189 statements) in 2.11
+        minutes. Coverage is 72.8%, under 90%; 17 Ren'Py errors with a traceback; the walk hit the
+        time cap; a whole script file was not reached: devtools/test_label.rpyc,
+        script/characters.rpyc, script/episode1/scene_7_part_2.rpyc. No person has played it through
+        yet. The free download is 2024-01-28, F95zone lists Act 2 Ep.4 Fix 4."
