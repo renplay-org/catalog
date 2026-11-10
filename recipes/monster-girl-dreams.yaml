@@ -1,0 +1,102 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: monster-girl-dreams
+title: Monster Girl Dreams
+developer: Threshold
+tags:
+  - male-protagonist
+  - adventure
+  - multiple-endings
+  - rpg
+  - text-based
+  - turn-based-combat
+  - fantasy
+  - romance
+  - 2dcg
+content:
+  - ahegao
+  - anal-sex
+  - bdsm
+  - big-ass
+  - big-tits
+  - creampie
+  - drugs
+  - femaledomination
+  - footjob
+  - groping
+  - group-sex
+  - harem
+  - lactation
+  - maledomination
+  - mind-control
+  - mobile-game
+  - monster-girl
+  - oral-sex
+  - prostitution
+  - sex-toys
+  - sleep-sex
+  - spanking
+  - titfuck
+  - transformation
+  - vaginal-sex
+state: ongoing
+summary: Monster Girl Dreams is a text based BFRPG made in Ren'Py. In Monster Girl Dreams you play
+  as a male adventurer, freshly graduated from the adventuring school, Adventum! Also defeat the
+  Demon Queen.
+nsfw: true
+free: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 594823
+    url: https://cdn2.steamgriddb.com/grid/50807fa9ed1006bc8cf6084f93daf055.png
+    by: VisualZest
+    byUrl: https://www.steamgriddb.com/profile/76561199816814717
+    adult: true
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE5MTcwNjMucG5n/original/QI9wDb.png
+  - kind: wide
+    source: sgdb
+    sgdb: 605930
+    url: https://cdn2.steamgriddb.com/grid/080a045b0907476bee3bc97f7a46f2c1.png
+    by: riefu24
+    byUrl: https://www.steamgriddb.com/profile/76561198274324627
+  - kind: hero
+    source: sgdb
+    sgdb: 141564
+    url: https://cdn2.steamgriddb.com/hero/3e2f4ad970b025006a6041c7ba190b26.png
+    by: VisualZest
+    byUrl: https://www.steamgriddb.com/profile/76561199816814717
+    adult: true
+  - kind: logo
+    source: sgdb
+    sgdb: 144159
+    url: https://cdn2.steamgriddb.com/logo/c8d41db1f13878006f4a327708831488.png
+    by: VisualZest
+    byUrl: https://www.steamgriddb.com/profile/76561199816814717
+    adult: true
+links:
+  itch: https://threshold.itch.io/monster-girl-dreams
+  f95: https://f95zone.to/threads/6491/
+saveDir: MonGirl-1496073722
+match:
+  - MonGirlDreams-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "Alpha-v28.1a"
+    date: "2026-09-02"
+    madeWith: 8.5.2
+    status: broken
+    archives:
+      - name: MonGirlDreams-Alpha-v28.1a-pc.zip
+        size: 879084663
+        sha256: "cf99bfe29a80e2c2017736a273ae0b63c609c1f1c4087736a47b95d130b9a0b8"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: FileNotFoundError: [Errno 44] No such file or directory: '//game/../Mods/'"
