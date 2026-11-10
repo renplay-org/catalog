@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: your-dry-delight
+title: Your Dry Delight
+developer: Argent Games
+tags:
+  - dating-sim
+  - romance
+content: []
+state: ongoing
+summary: 1920s-themed BL/yaoi visual novel
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/913010/library_600x900_2x.jpg
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1hZ2UvMjc1MTIwLzEzMzMyNTIuanBn/original/mKQiWx.jpg
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/913010/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/913010/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/913010/logo.png
+links:
+  itch: https://argent-games.itch.io/your-dry-delight
+  steam: https://store.steampowered.com/app/913010/
+saveDir: YourDryDelight-1530560143
+match:
+  - your-dry-delight-windows-release.zip
+  - YourDryDelight-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.9.8"
+    date: "2021-05-01"
+    madeWith: 7.4.4
+    status: broken
+    archives:
+      - name: your-dry-delight-windows-release.zip
+        size: 196004006
+        sha256: "2391d16fa6b522ac51de0f1d2594135ecc4d3faccc6d5276a6e0199a3b981970"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: TypeError: a bytes-like object is required, not 'str' Made with Ren'Py 7, which runs
+        on the Ren'Py 8 engine: Python 2 code in the game can fail later, so a person should play
+        well past the opening."
