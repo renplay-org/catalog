@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: remember
+title: Remember
+developer: Laucifer
+tags:
+  - dating-sim
+  - humor
+  - horror
+  - romance
+content: []
+state: ongoing
+summary: Has acabado en un bosque y no sabes por qué.
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1203240/library_600x900_2x.jpg
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI5NzE2MzMzLmdpZg==/original/CAEZBR.gif
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1203240/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1203240/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1203240/logo.png
+  - kind: icon
+    source: sgdb
+    sgdb: 24680
+    url: https://cdn2.steamgriddb.com/icon/9256f177e09e1f3f6f860a86373b3aad.png
+    by: Kam
+    byUrl: https://www.steamgriddb.com/profile/76561198296610889
+links:
+  itch: https://xlaucifer.itch.io/remember
+  steam: https://store.steampowered.com/app/1203240/
+saveDir: rememberprueba-1780046376
+match:
+  - Remember-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2026-09-30"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: Remember-1.0-pc.zip
+        size: 266434120
+        sha256: "28bba4b7dcbb2c1b3a29dfdf04b081c19d8c221cd8194258df1f26b77ce7353d"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 69.2% of it (454 of 656 statements) in 2.08
+        minutes. Coverage is 69.2%, under 90%; the walk hit the time cap; a whole script file was
+        not reached: capitulo_1.rpyc, capitulo_3.rpyc, kinetic_text_tags.rpyc. No person has played
+        it through yet."
