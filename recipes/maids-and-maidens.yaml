@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: maids-and-maidens
+title: Maids and Maidens
+developer: Raybae Games
+tags:
+  - male-protagonist
+  - dating-sim
+  - 3dcg
+  - animated
+content:
+  - big-ass
+  - big-tits
+  - cheating
+  - creampie
+  - group-sex
+  - handjob
+  - harem
+  - lactation
+  - maledomination
+  - milf
+  - mobile-game
+  - oral-sex
+  - pregnancy
+  - prostitution
+  - sex-toys
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: In Maids and Maidens, you play as a young, successful executive of a Tech company. You've
+  had plenty of one-night-stands and casual flings in the past but never really had a serious
+  relationship. Now that you just bought your dream house, and your dream promotion is just around
+  the corner, you can finally focus on your love life.
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 658869
+    url: https://cdn2.steamgriddb.com/grid/d77acaddbd84e561e7f8a867394b75a3.jpg
+    by: maisee
+    byUrl: https://www.steamgriddb.com/profile/76561199184752516
+    adult: true
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI3Mjk5MDQ4LmpwZw==/original/6DP0hp.jpg
+  - kind: wide
+    source: sgdb
+    sgdb: 658870
+    url: https://cdn2.steamgriddb.com/grid/997b8c2b78e04ab674fd5254d92f891b.jpg
+    by: maisee
+    byUrl: https://www.steamgriddb.com/profile/76561199184752516
+    adult: true
+  - kind: hero
+    source: sgdb
+    sgdb: 150856
+    url: https://cdn2.steamgriddb.com/hero/891ff99a80aa51ea7d525ec06d9bb0fb.jpg
+    by: maisee
+    byUrl: https://www.steamgriddb.com/profile/76561199184752516
+    adult: true
+  - kind: logo
+    source: sgdb
+    sgdb: 153545
+    url: https://cdn2.steamgriddb.com/logo/e6b1717806e5021c33096bdcdf30479e.png
+    by: maisee
+    byUrl: https://www.steamgriddb.com/profile/76561199184752516
+links:
+  itch: https://raybaegames.itch.io/maids-and-maidens
+  f95: https://f95zone.to/threads/59416/
+saveDir: MaidandMaidens-1590951173
+match:
+  - maids-and-maidens-win-linux.zip
+  - MaidandMaidens-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.13.0"
+    date: "2026-05-16"
+    madeWith: 7.5.3
+    status: playable
+    archives:
+      - name: maids-and-maidens-win-linux.zip
+        size: 5505355106
+        sha256: "669da93154081a358a480c14198ae263c5cae9ecc45db13e2d94be15dd1551c2"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet. Made with Ren'Py 7, which runs on the Ren'Py 8 engine: Python 2 code in the
+        game can fail later, so a person should play well past the opening."
