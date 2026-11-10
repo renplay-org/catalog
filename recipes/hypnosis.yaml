@@ -1,0 +1,94 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: hypnosis
+title: Hypnosis
+developer: Expanding Universe Games
+tags:
+  - male-protagonist
+  - multiple-endings
+  - humor
+  - romance
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - cheating
+  - cosplay
+  - creampie
+  - exhibitionism
+  - groping
+  - handjob
+  - harem
+  - lactation
+  - lesbian
+  - mind-control
+  - mobile-game
+  - oral-sex
+  - pov
+  - pregnancy
+  - spanking
+  - stripping
+  - teasing
+  - titfuck
+  - transformation
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: "You move in with your best friend and his family under one condition: That you don’t hook
+  up with your buddy’s cute little sister, Leah. Discover that your pocket watch can hypnotize Leah
+  and her classmates, causing physical changes."
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 398239
+    url: https://cdn2.steamgriddb.com/grid/38b92ac3b861e8a754d0131437fe56eb.png
+    by: Wkd Xeqtr
+    byUrl: https://www.steamgriddb.com/profile/76561198003442158
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzk5MzMzMDcuanBn/original/amXWc9.jpg
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/343430/header.jpg
+  - kind: logo
+    source: sgdb
+    sgdb: 101868
+    url: https://cdn2.steamgriddb.com/logo/8b3addd4b2aaea47d25ece6be251606f.png
+    by: Wkd Xeqtr
+    byUrl: https://www.steamgriddb.com/profile/76561198003442158
+links:
+  itch: https://expandinguniverse.itch.io/hypnosis
+  f95: https://f95zone.to/threads/38193/
+  steam: https://store.steampowered.com/app/343430/
+saveDir: Hypnosis-1568323028
+match:
+  - Hypnosis-v1.4.6c-Public-pc.zip
+  - Hypnosis-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "v1.5.1c-Public"
+    date: "2025-03-13"
+    madeWith: 7.4.10
+    status: playable
+    archives:
+      - name: Hypnosis-v1.4.6c-Public-pc.zip
+        size: 3262742853
+        sha256: "05bf5bd65d60c2eeed4c69552475fe011bcfcfedb800d630f6090132b82181e3"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 14.7% of it (9818 of 66813 statements) in 2.16
+        minutes. Coverage is 14.7%, under 90%; 6 Ren'Py errors with a traceback; the walk hit the
+        time cap; a whole script file was not reached: aPhone1080.rpyc, ep12.rpyc, ep13.rpyc. No
+        person has played it through yet. Made with Ren'Py 7, which runs on the Ren'Py 8 engine:
+        Python 2 code in the game can fail later, so a person should play well past the opening. The
+        free download is v1.5.1c-Public, F95zone lists v1.5.1c."
