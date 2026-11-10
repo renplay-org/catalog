@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: dreamland
+title: Dreamland
+developer: Dokiden
+tags:
+  - male-protagonist
+  - romance
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - footjob
+  - handjob
+  - lesbian
+  - maledomination
+  - masturbation
+  - oral-sex
+  - teasing
+  - vaginal-sex
+state: ongoing
+summary: Welcome to Dreamland! However, if you look close enough, you'll discover that Dreamland
+  also hides a dark and horrifying mystery which haunts you and your friends...
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 281250
+    url: https://cdn2.steamgriddb.com/grid/6e7947ee4fcfb3cb5534c8256bd689db.jpg
+    by: acörn
+    byUrl: https://www.steamgriddb.com/profile/76561197973673840
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE1Njk3MzEwLmpwZw==/original/a4Rt4o.jpg
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/498510/header.jpg
+links:
+  itch: https://dokiden.itch.io/dreamland
+  f95: https://f95zone.to/threads/135723/
+  steam: https://store.steampowered.com/app/498510/
+saveDir: DreamLand-1602084567
+match:
+  - Dreamland-Chapter1-pc.zip
+  - Dreamland-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.7.1p"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (v0.7.1p). Not tested here, and no
+        archive yet: v0.5.2i from itch.io is the one that was tested."
+  - version: "v0.5.2i"
+    date: "2025-12-01"
+    madeWith: 8.5.0
+    status: playable
+    archives:
+      - name: Dreamland-Chapter1-pc.zip
+        size: 801656136
+        sha256: "3c68d5d3ae8e26e969c9fe86805088f3026f86ea6e8bae04083c3e65444685be"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 5.9% of it (87 of 1471 statements) in 1.13 minutes.
+        Coverage is 5.9%, under 90%; 1 Ren'Py error with a traceback; a whole script file was not
+        reached: C1/scripts/advertisement.rpyc, C1/scripts/episode1_car1.rpyc,
+        C1/scripts/episode1_lake1.rpyc. No person has played it through yet. The free download is
+        v0.5.2i, F95zone lists v0.7.1p."
