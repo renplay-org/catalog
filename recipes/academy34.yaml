@@ -1,0 +1,101 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: academy34
+title: ACADEMY34
+developer: Young & Naughty
+tags:
+  - male-protagonist
+  - sandbox
+  - parody
+  - school-setting
+  - sci-fi
+  - 2dcg
+  - animated
+content:
+  - anal-sex
+  - bdsm
+  - big-ass
+  - big-tits
+  - creampie
+  - exhibitionism
+  - femaledomination
+  - footjob
+  - gay
+  - group-sex
+  - handjob
+  - harem
+  - milf
+  - mobile-game
+  - multiple-penetration
+  - oral-sex
+  - sex-toys
+  - titfuck
+  - trap
+  - vaginal-sex
+  - voyeurism
+state: ongoing
+summary: In “ACADEMY34” you are going to take on the role of a cadet, who has just enrolled at the
+  Academy, where young recruits are trained to become Overwatch agents.
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 458627
+    url: https://cdn2.steamgriddb.com/grid/598652cdc821d6aba096bcf8f30036e9.png
+    by: isasmissing
+    byUrl: https://www.steamgriddb.com/profile/76561198866795396
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzEyNjE4OTYyLnBuZw==/original/5c7bNy.png
+  - kind: wide
+    source: sgdb
+    sgdb: 487143
+    url: https://cdn2.steamgriddb.com/grid/33b0d2312bd59b5f5a90b679f05fbfe2.png
+    by: Starmanelia
+    byUrl: https://www.steamgriddb.com/profile/76561198055139252
+  - kind: hero
+    source: sgdb
+    sgdb: 66380
+    url: https://cdn2.steamgriddb.com/hero/fc0bb0c3efae3c8ff2cb8f4476d80bdc.jpg
+    by: Monkey Flip
+    byUrl: https://www.steamgriddb.com/profile/76561198856037919
+  - kind: logo
+    source: sgdb
+    sgdb: 70553
+    url: https://cdn2.steamgriddb.com/logo/e735f1bedab3114693267b1484660812.png
+    by: Monkey Flip
+    byUrl: https://www.steamgriddb.com/profile/76561198856037919
+  - kind: icon
+    source: sgdb
+    sgdb: 108696
+    url: https://cdn2.steamgriddb.com/icon/53ca1484d7c094d5233360cf1629f86e.png
+    by: playboy3
+    byUrl: https://www.steamgriddb.com/profile/76561198704087858
+links:
+  itch: https://young-and-naughty.itch.io/academy34
+  f95: https://f95zone.to/threads/8295/
+saveDir: ACADEMY34-v0.2.3
+match:
+  - ACADEMY34-*-win.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "v0.36.2.3"
+    date: "2026-10-20"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: ACADEMY34-v0.36.2.3-win.zip
+        size: 456100872
+        sha256: "b9d2d0a4893d026bba48bee8e176b08694fc5e8a03903af5c00528f2f5187019"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0% of it (11 of 47566 statements) in 2.23 minutes.
+        Coverage is 0%, under 90%; the walk hit the time cap; a whole script file was not reached:
+        helper/utility/interactions.rpyc, konami.rpyc, menu/contacts/contact.rpyc. No person has
+        played it through yet."
