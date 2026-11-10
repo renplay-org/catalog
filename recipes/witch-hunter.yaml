@@ -1,0 +1,106 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: witch-hunter
+title: Witch Hunter
+developer: Somka08
+tags:
+  - male-protagonist
+  - sandbox
+  - turn-based-combat
+  - fantasy
+  - parody
+  - 2dcg
+  - animated
+content:
+  - anal-sex
+  - blackmail
+  - corruption
+  - creampie
+  - drugs
+  - groping
+  - group-sex
+  - handjob
+  - incest
+  - interracial
+  - lesbian
+  - masturbation
+  - milf
+  - mind-control
+  - mobile-game
+  - monster
+  - monster-girl
+  - multiple-penetration
+  - oral-sex
+  - prostitution
+  - sex-toys
+  - sexual-harassment
+  - slave
+  - teasing
+  - tentacles
+  - titfuck
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: This Game will be a visual novel built on the RenPy engine with a variety of gameplay
+  elements, mini-games and multiple endings. The main character is Lord Cedrick acts disguised as
+  Rick Hoffman (local librarian).
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 100462
+    url: https://cdn2.steamgriddb.com/grid/c9a985119176bbb5e11e26c01b34fac2.png
+    by: Bloodhammer
+    byUrl: https://www.steamgriddb.com/profile/76561198003469940
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzY0MzM2MjUuanBn/original/Ld5Y1b.jpg
+  - kind: wide
+    source: sgdb
+    sgdb: 100463
+    url: https://cdn2.steamgriddb.com/grid/66207e82c85a5050ff71c4665b6c7709.png
+    by: Bloodhammer
+    byUrl: https://www.steamgriddb.com/profile/76561198003469940
+  - kind: hero
+    source: sgdb
+    sgdb: 17066
+    url: https://cdn2.steamgriddb.com/hero/88a8871c1d2ca3b035772f10bee42950.jpg
+    by: Bloodhammer
+    byUrl: https://www.steamgriddb.com/profile/76561198003469940
+  - kind: logo
+    source: sgdb
+    sgdb: 19369
+    url: https://cdn2.steamgriddb.com/logo/e5b0663c1dad4751e0ce728f4a6cf9b5.png
+    by: Bloodhammer
+    byUrl: https://www.steamgriddb.com/profile/76561198003469940
+  - kind: icon
+    source: sgdb
+    sgdb: 77410
+    url: https://cdn2.steamgriddb.com/icon/4a4b46d9c8c226bf71ddc294e21de772.png
+    by: Bloodhammer
+    byUrl: https://www.steamgriddb.com/profile/76561198003469940
+    adult: true
+links:
+  itch: https://somka08.itch.io/witch-hunter
+  f95: https://f95zone.to/threads/5691/
+saveDir: Witch_Hunter013-ft43d1
+match:
+  - witch-hunter-witch-hunter-0.27-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2026-07-31"
+    date: "2026-07-31"
+    status: broken
+    archives:
+      - name: witch-hunter-witch-hunter-0.27-pc.zip
+        size: 6539180097
+        sha256: "4c0b5f3ae7467625fd37e018fa95d7ace47b16efd228bf7f336ef3a7e22cc2b7"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: Tue Nov 10 14:06:59 2026"
