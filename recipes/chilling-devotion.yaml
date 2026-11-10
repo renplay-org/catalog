@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: chilling-devotion
+title: Chilling Devotion (Day 1-2)
+developer: Remina
+tags:
+  - dating-sim
+  - horror
+  - romance
+content: []
+state: ongoing
+summary: A winter getaway takes a dangerous turn
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE5MTkwODkwLmdpZg==/original/jljRpT.gif
+links:
+  itch: https://hereisremina.itch.io/chilling-devotion
+saveDir: ChillingDevotion
+match:
+  - ChillingDevotion-*-win.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "day2"
+    date: "2025-05-04"
+    madeWith: 8.3.4
+    status: playable
+    archives:
+      - name: ChillingDevotion-day2-win.zip
+        size: 190099824
+        sha256: "bacb4633626294e6eebc97fc3f85600d26177771183832d6a1b7ade635625633"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 42% of it (624 of 1484 statements) in 2.19 minutes.
+        Coverage is 42%, under 90%; the walk hit the time cap; a whole script file was not reached:
+        kinetic_text_tags.rpyc. No person has played it through yet."
