@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: between-humanity
+title: Between Humanity
+developer: DebatingPanda
+tags:
+  - male-protagonist
+  - romance
+  - 3dcg
+  - animated
+content:
+  - ahegao
+  - big-ass
+  - big-tits
+  - creampie
+  - handjob
+  - harem
+  - lesbian
+  - masturbation
+  - milf
+  - mobile-game
+  - monster-girl
+  - oral-sex
+  - pov
+  - teasing
+  - titfuck
+  - twins
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: Between Humanity takes you on a journey into a potential future that borders on dystopia.
+  Set just five years ahead, you, as the protagonist, were just an ordinary student until one day
+  you find yourself waking up in a hospital room. All memories of why you ended up there are blurred
+  in the depths of your mind.
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 610016
+    url: https://cdn2.steamgriddb.com/grid/595730908aaea24824016b0a7082e590.png
+    by: Jasmeralia
+    byUrl: https://www.steamgriddb.com/profile/76561198124815726
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIwNjQ4ODY4LnBuZw==/original/zqUQWn.png
+  - kind: wide
+    source: sgdb
+    sgdb: 634165
+    url: https://cdn2.steamgriddb.com/grid/376fdd169f951177374a14f773e69ecd.jpg
+    by: Ruthbit
+    byUrl: https://www.steamgriddb.com/profile/76561199081834194
+  - kind: hero
+    source: sgdb
+    sgdb: 144271
+    url: https://cdn2.steamgriddb.com/hero/13e1695f8e71bb88d3d8ae56e52ed6b4.png
+    by: Jasmeralia
+    byUrl: https://www.steamgriddb.com/profile/76561198124815726
+links:
+  itch: https://debatingpanda.itch.io/between-humanity
+  f95: https://f95zone.to/threads/177547/
+saveDir: BetweenHumanity-1679746291
+match:
+  - between-humanity-win-linux.zip
+  - Between-Humanity-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.4.3"
+    date: "2026-11-07"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: between-humanity-win-linux.zip
+        size: 3000720645
+        sha256: "ede6242e18766e77b0f2cf5b3b73162e0ed7d6ca459bdbd4a1de483c9b98bed4"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 40.6% of it (5243 of 12907 statements) in 2.13
+        minutes. Coverage is 40.6%, under 90%; the walk hit the time cap; a whole script file was
+        not reached: chapters/00/ch_00_02.rpyc, chapters/03/ch_03_05-Dinner.rpyc,
+        chapters/03/ch_03_06-Night.rpyc. No person has played it through yet."
