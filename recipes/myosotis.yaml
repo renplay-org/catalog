@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: myosotis
+title: Myosotis
+developer: Frogcake
+tags:
+  - multiple-endings
+  - paranormal
+  - horror
+  - romance
+content: []
+state: ongoing
+summary: My life is not yours to take.
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIwMzc2MDUzLnBuZw==/original/Q1QNWL.png
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3977140/library_hero.jpg
+  - kind: logo
+    source: sgdb
+    sgdb: 146101
+    url: https://cdn2.steamgriddb.com/logo/6404039c674469437973b2c0e5db33ef.png
+    by: District7424
+    byUrl: https://www.steamgriddb.com/profile/76561199885576423
+links:
+  itch: https://try-froggery.itch.io/myosotis
+  steam: https://store.steampowered.com/app/3977140/
+saveDir: myosotis-1737652380
+match:
+  - myosotis_25-03-31_v*-pc.zip
+  - myosotis-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0.1"
+    date: "2025-03-31"
+    madeWith: 8.3.6
+    status: playable
+    archives:
+      - name: myosotis_25-03-31_v1.0.1-pc.zip
+        size: 190176769
+        sha256: "4b3752f8c140c4bdaf3be7783e25ee6c341062a24880ca589ccdb8c1da278ee1"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 84.4% of it (1090 of 1292 statements) in 2.1
+        minutes. Coverage is 84.4%, under 90%; the walk hit the time cap; a whole script file was
+        not reached: gradient_examples.rpyc. No person has played it through yet."
