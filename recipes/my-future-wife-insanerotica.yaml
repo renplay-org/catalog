@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: my-future-wife-insanerotica
+title: My Future Wife (v1.1.0) [Complete] - InsanErotica
+developer: Corn Pop
+tags:
+  - female-protagonist
+  - male-protagonist
+  - multiple-protagonist
+  - romance
+  - sci-fi
+  - 3dcg
+  - animated
+content:
+  - big-ass
+  - big-tits
+  - blackmail
+  - cheating
+  - corruption
+  - creampie
+  - groping
+  - group-sex
+  - handjob
+  - harem
+  - interracial
+  - lesbian
+  - masturbation
+  - mobile-game
+  - multiple-penetration
+  - ntr
+  - oral-sex
+  - sexual-harassment
+  - sleep-sex
+  - swinging
+  - titfuck
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: completed
+summary: Do you believe in time travel? If you don't, let me tell you my story. Well, I was 18 years
+  old and I was in my last year in high school.
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIxMDAwNDIwLmpwZw==/original/ngbxca.jpg
+links:
+  itch: https://corn-pop.itch.io/my-future-wife-insanerotica
+  f95: https://f95zone.to/threads/33937/
+saveDir: MyFutureWife
+match:
+  - MFW-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.1.0 Steam"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (v1.1.0 Steam). Not tested here, and no
+        archive yet: Demo from itch.io is the one that was tested."
+  - version: "Demo"
+    date: "2025-05-19"
+    madeWith: 7.5.3
+    status: verified
+    archives:
+      - name: MFW-Demo-pc.zip
+        size: 121639007
+        sha256: "138d83f0990ff81e333b67d203d8cf36fea909eb121ab9cc5dba2de255f5a238"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated deep test on the lab's own Renplay: a walk through the script saw 99.6% of it
+        (453 of 455 statements) in 0.65 minutes, with no Ren'Py error. The main menu, a new game and
+        a save that loads again passed first. No person has played it through yet. Made with Ren'Py
+        7, which runs on the Ren'Py 8 engine: Python 2 code in the game can fail later, so a person
+        should play well past the opening. The free download is Demo, F95zone lists v1.1.0 Steam."
