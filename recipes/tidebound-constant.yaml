@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: tidebound-constant
+title: Tidebound Constant
+developer: Mooki !!
+tags:
+  - dating-sim
+  - multiple-endings
+  - fantasy
+  - horror
+  - romance
+content: []
+state: ongoing
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzMxODk3MDQxLnBuZw==/original/%2Fr7sk7.png
+links:
+  itch: https://mookichuu.itch.io/tidebound-constant
+saveDir: TideboundConstant-1775083294
+match:
+  - TideboundConstant-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2026-11-06"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: TideboundConstant-1.0-pc.zip
+        size: 178018840
+        sha256: "87261d629fdcdda417c24f7b85de168ee884349ca5e907052bd6ad27577bb628"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 71.5% of it (298 of 417 statements) in 2.17
+        minutes. Coverage is 71.5%, under 90%; the walk hit the time cap. No person has played it
+        through yet."
