@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: hostage-heart
+title: Hostage Heart
+developer: tenshideve
+tags:
+  - male-protagonist
+  - dating-sim
+  - romance
+content: []
+state: ongoing
+summary: A group of cute girls are robbing the bank where you work. Can you stop them?
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI5MDAxMzczLmpwZw==/original/8ndlES.jpg
+links:
+  itch: https://tenshistudios.itch.io/hostage-heart
+saveDir: HostageHeart-2079884452
+match:
+  - HostageHeart-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2.2"
+    date: "2026-11-02"
+    madeWith: 8.5.2
+    status: playable
+    archives:
+      - name: HostageHeart-2.2-pc.zip
+        size: 117422327
+        sha256: "b531692f096e62ef6915b750a86ce1fabb004068691ea2d271e590fa5f846eb0"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 1.1% of it (16 of 1420 statements) in 2.11 minutes.
+        Coverage is 1.1%, under 90%; the walk hit the time cap; a whole script file was not reached:
+        script/ending.rpyc, script/karina_route.rpyc, script/nuri_route.rpyc. No person has played
+        it through yet."
