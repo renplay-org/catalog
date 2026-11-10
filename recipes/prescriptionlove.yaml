@@ -2,8 +2,13 @@
 id: prescriptionlove
 title: Prescription:LOVE
 developer: Livingslime
-tags: []
+tags:
+  - dating-sim
+  - multiple-endings
+  - horror
+  - romance
 content: []
+summary: "You may see the doctor now... Forever ♡"
 state: ongoing
 nsfw: false
 free: true
