@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: take-over
+title: Take Over
+developer: MaratDuoDev
+tags:
+  - male-protagonist
+  - sandbox
+  - dystopian-setting
+  - 3dcg
+content:
+  - anal-sex
+  - corruption
+  - creampie
+  - gay
+  - groping
+  - group-sex
+  - handjob
+  - incest
+  - milf
+  - mind-control
+  - mobile-game
+  - multiple-penetration
+  - ntr
+  - oral-sex
+  - swinging
+  - transformation
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: Mind control the people in town, use them and their influence in your favor, or put them to
+  work to get resources and money, and finally take over. Gay and NTR content optional To test basic
+  transformations check the cheats section.
+nsfw: true
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1hZ2UvMjc0NjQyLzEzMzAwNzUuanBn/original/22NMsk.jpg
+links:
+  itch: https://maratduodev.itch.io/take-over
+  f95: https://f95zone.to/threads/10384/
+saveDir: TakeOver-1490054392
+match:
+  - TakeOver-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.102"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (v0.102). Not tested here, and no archive
+        yet: 0.98 from itch.io is the one that was tested."
+  - version: "0.98"
+    date: "2026-05-28"
+    madeWith: 8.4.1
+    status: playable
+    archives:
+      - name: TakeOver-0.98-pc.zip
+        size: 643574366
+        sha256: "7657b76272591fdb7dcd975183b5f45ad1970085cf1a5a6cbd402f77937f6dc3"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0.6% of it (322 of 51296 statements) in 2.44
+        minutes. Coverage is 0.6%, under 90%; the walk hit the time cap; a whole script file was not
+        reached: emma.rpyc, erika.rpyc, folk arc.rpyc. No person has played it through yet. The free
+        download is 0.98, F95zone lists v0.102."
