@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: that-new-teacher
+title: That New Teacher
+developer: RogueOne
+tags:
+  - male-protagonist
+  - humor
+  - romance
+  - school-setting
+  - 3dcg
+  - animated
+content:
+  - ahegao
+  - anal-sex
+  - big-ass
+  - big-tits
+  - blackmail
+  - cheating
+  - corruption
+  - creampie
+  - femaledomination
+  - footjob
+  - groping
+  - handjob
+  - harem
+  - incest
+  - lesbian
+  - maledomination
+  - masturbation
+  - milf
+  - mobile-game
+  - oral-sex
+  - pov
+  - sex-toys
+  - sexual-harassment
+  - spanking
+  - teasing
+  - titfuck
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: "You've just been hired at a prestigious and unconventional institute of higher learning,
+  known for its ground-breaking curriculum, radical pedagogical methods, and strict disciplinary
+  policies. Your new position is unlike any other: you are The Enforcer. As The Enforcer, you are
+  the sole authority responsible for administering discipline across the student body, with complete
+  discretion."
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIwODQ4NzkwLmdpZg==/original/XXtXWR.gif
+links:
+  itch: https://theerogueone.itch.io/that-new-teacher
+  f95: https://f95zone.to/threads/171128/
+saveDir: That_New_Teacher-1686938687
+match:
+  - that-new-teacher-win-linux.zip
+  - That_New_Teacher-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "v0.9.0"
+    date: "2026-07-17"
+    madeWith: 8.3.7
+    status: playable
+    archives:
+      - name: that-new-teacher-win-linux.zip
+        size: 4329505116
+        sha256: "a90a830f3b26a2cf78172f06e7e116352f64e63aea0068289e21829272352013"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0.2% of it (35 of 19908 statements) in 1.05
+        minutes. Coverage is 0.2%, under 90%; 1 Ren'Py error with a traceback; a whole script file
+        was not reached: Days/dayEight.rpyc, Days/dayFive.rpyc, Days/dayFour.rpyc. No person has
+        played it through yet."
