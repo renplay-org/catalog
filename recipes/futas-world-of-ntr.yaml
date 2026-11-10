@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: futas-world-of-ntr
+title: Futa's World Of NTR
+developer: ScarletGames
+tags:
+  - school-setting
+  - 3dcg
+  - animated
+content:
+  - ahegao
+  - big-ass
+  - big-tits
+  - cheating
+  - creampie
+  - futa-trans
+  - futa-trans-protagonist
+  - groping
+  - incest
+  - masturbation
+  - ntr
+  - oral-sex
+  - titfuck
+  - vaginal-sex
+state: ongoing
+summary: The plowing starts from Day 1!
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzEzMjgyMjgwLnBuZw==/original/L1Gl3C.png
+links:
+  itch: https://scarletgamesdev.itch.io/futas-world-of-ntr
+  f95: https://f95zone.to/threads/173314/
+saveDir: Futa'sWorldOfNTR-00000
+match:
+  - Futa_sWorldOfNTR-1.4.3a-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2026-10-20"
+    date: "2026-10-20"
+    madeWith: 8.1.1
+    status: playable
+    archives:
+      - name: Futa_sWorldOfNTR-1.4.3a-pc.zip
+        size: 2689167915
+        sha256: "c9096a88cf5eb4f4c73bd359da389a401fc1523f40838f1e0109823bc2007e36"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 60.4% of it (17271 of 28598 statements) in 2.12
+        minutes. Coverage is 60.4%, under 90%; the walk hit the time cap. No person has played it
+        through yet. The free download is 2026-10-20, F95zone lists v1.4.3a."
