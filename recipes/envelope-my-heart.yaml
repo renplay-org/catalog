@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: envelope-my-heart
+title: Envelope My Heart!
+developer: miao
+tags:
+  - romance
+content: []
+state: ongoing
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI4NTIwMDg4LmdpZg==/original/LaITPu.gif
+links:
+  itch: https://miaomarue.itch.io/envelope-my-heart
+saveDir: o2a22026-1783997670
+match:
+  - envelope-my-heart-win-64.zip
+  - EMH-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.2"
+    date: "2026-10-05"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: envelope-my-heart-win-64.zip
+        size: 231568281
+        sha256: "50b165f47d42ea63646e2a023e77f004153191fc91ad22bebb2ecd1fe137ad0f"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 54.2% of it (64 of 118 statements) in 0.92 minutes.
+        Coverage is 54.2%, under 90%. No person has played it through yet."
