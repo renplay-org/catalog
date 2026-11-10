@@ -1,0 +1,105 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: ravens-quest
+title: Raven's quest
+developer: PixelGames
+tags:
+  - female-protagonist
+  - adventure
+  - combat
+  - turn-based-combat
+  - fantasy
+  - 2dcg
+  - animated
+content:
+  - anal-sex
+  - bestiality
+  - bukkake
+  - corruption
+  - creampie
+  - exhibitionism
+  - femaledomination
+  - groping
+  - lesbian
+  - maledomination
+  - masturbation
+  - mobile-game
+  - monster
+  - oral-sex
+  - pregnancy
+  - prostitution
+  - sex-toys
+  - spanking
+  - tentacles
+  - titfuck
+  - vaginal-sex
+  - voyeurism
+state: completed
+summary: Raven is a witch, but this is the only thing she knows for sure. Everyone except a
+  mysterious Order. Help her investigate and explore the world in this RPG, defeating monsters, find
+  new events and customize Raven with lots and lots of different outfits!
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 237282
+    url: https://cdn2.steamgriddb.com/grid/8edb053c6121c4c58f047a6785bea890.jpg
+    by: bedbug1226
+    byUrl: https://www.steamgriddb.com/profile/76561197991065542
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzg1MjYzMzQucG5n/original/zu0b8U.png
+  - kind: wide
+    source: sgdb
+    sgdb: 237283
+    url: https://cdn2.steamgriddb.com/grid/6fb58014bf9f0ec04e1a3e94fa7cd298.png
+    by: bedbug1226
+    byUrl: https://www.steamgriddb.com/profile/76561197991065542
+  - kind: hero
+    source: sgdb
+    sgdb: 57866
+    url: https://cdn2.steamgriddb.com/hero/2b2f5860e9afda4487f342359136dcbd.jpg
+    by: bedbug1226
+    byUrl: https://www.steamgriddb.com/profile/76561197991065542
+  - kind: logo
+    source: sgdb
+    sgdb: 61562
+    url: https://cdn2.steamgriddb.com/logo/5b78c26cdb2f00fb6b9b4d05d481dc22.png
+    by: bedbug1226
+    byUrl: https://www.steamgriddb.com/profile/76561197991065542
+  - kind: icon
+    source: sgdb
+    sgdb: 21134
+    url: https://cdn2.steamgriddb.com/icon/520115043d9ba527a787577bd75930c8.png
+    by: Vy
+    byUrl: https://www.steamgriddb.com/profile/76561197962703117
+links:
+  itch: https://pixelgamesx.itch.io/ravens-quest
+  f95: https://f95zone.to/threads/19175/
+saveDir: UnknownAdventure-1519987907
+match:
+  - RavensQuest-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.4.0"
+    date: "2022-07-07"
+    madeWith: 7.4.8
+    status: playable
+    archives:
+      - name: RavensQuest-1.4.0-pc.zip
+        size: 253738615
+        sha256: "fd873cc7f817ddb3d12e2248e157a801ade4b5844889402286d3f24d4b25d56a"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 2.7% of it (443 of 16207 statements) in 2.26
+        minutes. Coverage is 2.7%, under 90%; the walk hit the time cap; a whole script file was not
+        reached: ashon_city.rpyc, ashon_city_events.rpyc, ashon_plains.rpyc. No person has played it
+        through yet. Made with Ren'Py 7, which runs on the Ren'Py 8 engine: Python 2 code in the
+        game can fail later, so a person should play well past the opening. The free download is
+        1.4.0, F95zone lists v1.4."
