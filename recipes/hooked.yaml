@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: hooked
+title: Hooked!
+developer: BlenderKnight
+tags:
+  - male-protagonist
+  - humor
+  - romance
+  - 3dcg
+  - animated
+content:
+  - big-ass
+  - big-tits
+  - groping
+  - group-sex
+  - handjob
+  - mobile-game
+  - oral-sex
+  - teasing
+  - titfuck
+  - vaginal-sex
+state: ongoing
+summary: They meet you, a clueless fisherman, who has no idea about his potential.
+nsfw: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3127360/library_600x900_2x.jpg
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE1MzkzOTU3LnBuZw==/original/zkyt8g.png
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3127360/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3127360/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3127360/logo.png
+links:
+  itch: https://blenderknight.itch.io/hooked
+  f95: https://f95zone.to/threads/200060/
+  steam: https://store.steampowered.com/app/3127360/
+saveDir: Hooked-saves
+match:
+  - Hooked-*-win.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.6.0"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (v0.6.0). Not tested here, and no archive
+        yet: 0.3.0 from itch.io is the one that was tested."
+  - version: "0.3.0"
+    date: "2026-07-27"
+    madeWith: 8.4.1
+    status: playable
+    archives:
+      - name: Hooked-0.3.0-win.zip
+        size: 492592060
+        sha256: "1d36662bcd4a77f87996cc20acffa351b548db0cf72eb98071324b5c8de8e229"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 79.9% of it (2274 of 2847 statements) in 2.22
+        minutes. Coverage is 79.9%, under 90%; the walk hit the time cap; a whole script file was
+        not reached: chapters/ch02/ch02-dreaming.rpyc. No person has played it through yet. The free
+        download is 0.3.0, F95zone lists v0.6.0."
