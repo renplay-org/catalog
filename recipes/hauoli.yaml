@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: hauoli
+title: Hau'oli
+developer: Night Fox Works
+tags:
+  - kinetic-novel
+content: []
+state: ongoing
+summary: A short story about finding Happiness
+nsfw: false
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIzMDc0NjA2LnBuZw==/original/1gC%2Fju.png
+links:
+  itch: https://night-fox-works.itch.io/hauoli
+saveDir: Hauoli-1754449423
+match:
+  - Hau_oli-*-pc.zip
+  - Hau'oli-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.1"
+    date: "2025-09-02"
+    madeWith: 8.4.0
+    status: playable
+    archives:
+      - name: Hau_oli-0.1-pc.zip
+        size: 94868422
+        sha256: "8262dd8970f3d40dcc62364e06ea69e09b42a6b8d7ceb5ec148d996d71922616"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 97.4% of it (953 of 978 statements) in 2.09
+        minutes. The walk hit the time cap. No person has played it through yet."
