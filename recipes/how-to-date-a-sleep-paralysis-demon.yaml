@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: how-to-date-a-sleep-paralysis-demon
+title: How to date a Sleep Paralysis Demon- Part 2
+developer: SFour
+tags:
+  - dating-sim
+  - horror
+content: []
+state: ongoing
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzMxOTQwMzQ1LnBuZw==/original/RVM1Tp.png
+links:
+  itch: https://sfour-s4.itch.io/how-to-date-a-sleep-paralysis-demon
+saveDir: H2DS-1771849794
+match:
+  - H2DS-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2026-11-09"
+    madeWith: 8.4.1
+    status: playable
+    archives:
+      - name: H2DS-1.0-pc.zip
+        size: 607804208
+        sha256: "ed7fca8a0e96447fbd4aa9663d2fa1eb1d3633b494a2b91ab03543ef35c6a18f"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 5.7% of it (115 of 2034 statements) in 2.14
+        minutes. Coverage is 5.7%, under 90%; the walk hit the time cap. No person has played it
+        through yet."
