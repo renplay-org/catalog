@@ -1,11 +1,44 @@
 # yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
 id: moonripple-lake
 title: Moonripple Lake
 developer: Banana Cream Games
 tags: [2dcg, adventure, ai-cg, animated, fantasy, horror, humor, male-protagonist, romance]
-content: [ahegao, anal-sex, big-ass, big-tits, cheating, corruption, creampie, exhibitionism, footjob, futa-trans, graphic-violence, groping, group-sex, internal-view, interracial, mobile-game, monster, multiple-penetration, oral-sex, pov, rape, sexual-harassment, spanking, swinging, teasing, trap, vaginal-sex]
+content:
+  [
+    ahegao,
+    anal-sex,
+    big-ass,
+    big-tits,
+    cheating,
+    corruption,
+    creampie,
+    exhibitionism,
+    footjob,
+    futa-trans,
+    graphic-violence,
+    groping,
+    group-sex,
+    internal-view,
+    interracial,
+    mobile-game,
+    monster,
+    multiple-penetration,
+    oral-sex,
+    pov,
+    rape,
+    sexual-harassment,
+    spanking,
+    swinging,
+    teasing,
+    trap,
+    vaginal-sex
+  ]
 state: ongoing
-summary: "Anon and Suzie are moving to Moonripple Lake. In the wake of his cratering crypto-gained net worth, Anon is selling their apartment and moving to Moonripple Lake to rent a house, so he might stave off the inevitable: having to get a job. In Moonripple Lake, Suzie and Anon will make new friends, bring in old ones, stumble onto mysteries, and go on adventures."
+summary: "Anon and Suzie are moving to Moonripple Lake. In the wake of his cratering crypto-gained
+  net worth, Anon is selling their apartment and moving to Moonripple Lake to rent a house, so he
+  might stave off the inevitable: having to get a job. In Moonripple Lake, Suzie and Anon will make
+  new friends, bring in old ones, stumble onto mysteries, and go on adventures."
 nsfw: true
 art:
   - kind: grid
@@ -50,6 +83,7 @@ links:
 saveDir: Moonripple_Lake-69420
 match:
   - Moonripple_Lake-*-pc.zip
+  - moonripple-lake-windows-linux.zip
 engine: renpy
 runtime: 8.5.3
 releases:
@@ -66,4 +100,26 @@ releases:
       date: "2026-11-03"
       renplay: 2.5.0
       browsers: [chromium]
-      notes: Needs Renplay 2.5.0, whose builds stand in for Python's ssl module and for threads (the in-game news feed imports ssl and starts a thread). Automated play from the start into free roam without errors; save and resume tested.
+      notes: Needs Renplay 2.5.0, whose builds stand in for Python's ssl module and for threads (the
+        in-game news feed imports ssl and starts a thread). Automated play from the start into free
+        roam without errors; save and resume tested.
+  - version: "Patreon(0.77)"
+    date: "2026-10-16"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: moonripple-lake-windows-linux.zip
+        size: 2485277946
+        sha256: "9f5e360c5dc7041f9654a0f0b621563cb9b8d0c84eb6d51cded0fcb8115506a2"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 9.4% of it (3181 of 33797 statements) in 2.87
+        minutes. Coverage is 9.4%, under 90%; the walk hit the time cap; a whole script file was not
+        reached: episodes/ep_5.rpyc, episodes/ep_6.rpyc, episodes/ep_7.rpyc. No person has played it
+        through yet. The free download is Patreon(0.77), F95zone lists v0.77."
