@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: getting-intimate
+title: Getting Intimate
+developer: mangoworks
+tags:
+  - male-protagonist
+  - dating-sim
+  - point-click
+  - humor
+  - romance
+  - 3dcg
+  - animated
+content:
+  - big-ass
+  - big-tits
+  - creampie
+  - footjob
+  - handjob
+  - milf
+  - oral-sex
+  - stripping
+  - teasing
+  - vaginal-sex
+state: ongoing
+summary: A young man makes efforts to get into college and fulfill the promise he made many years
+  ago. However, in the same year as the entrance exam, a sudden and tragic event leads him down a
+  different path. Four years later, having lost everything, he receives the opportunity to rebuild
+  his life.
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE5ODUzOTIwLnBuZw==/original/oBEw0V.png
+links:
+  itch: https://mango-works.itch.io/getting-intimate
+  f95: https://f95zone.to/threads/191163/
+saveDir: GettingIntimate
+match:
+  - getting-intimate-win.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2025-02-14"
+    date: "2025-02-14"
+    madeWith: 8.1.1
+    status: broken
+    archives:
+      - name: getting-intimate-win.zip
+        size: 1646156978
+        sha256: "1e55a169d8ec8798460e3f8e9d8f1b66a089060cdc6df2ecffa5339f1a1bd0d6"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: NameError: name 'metstella' is not defined. Did you mean: 'stella'?"
