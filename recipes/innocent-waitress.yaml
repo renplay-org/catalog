@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: innocent-waitress
+title: Life as an Innocent Waitress 0.4.2 (+18 NSFW)
+developer: Frisson Studios
+tags:
+  - female-protagonist
+  - point-click
+  - sandbox
+  - simulator
+  - 3dcg
+  - animated
+content:
+  - big-ass
+  - big-tits
+  - blackmail
+  - corruption
+  - exhibitionism
+  - groping
+  - incest
+  - maledomination
+  - masturbation
+  - mobile-game
+  - prostitution
+  - sexual-harassment
+  - stripping
+  - teasing
+  - virgin
+state: ongoing
+summary: Life as an Innocent Waitress - Stuck in a city full of pervs, and the only job I got is at
+  a lousy bar! In a dystopian present where the female population has drastically decreased, along
+  with their rights, you’ll play as Angelina (Angel), a girl who has been living under her
+  'Landlord’s' protection. However, a series of events will force Angel to find a job.
+nsfw: true
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIwMzIzMzMzLnBuZw==/original/21bT0E.png
+links:
+  itch: https://frisson-studios.itch.io/innocent-waitress
+  f95: https://f95zone.to/threads/248631/
+saveDir: LifeAsanInnocentWaitres
+match:
+  - LifeAsAnInnocentWaitress-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.4.2 BugFix"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (v0.4.2 BugFix). Not tested here, and no
+        archive yet: 0.2.2 from itch.io is the one that was tested."
+  - version: "0.2.2"
+    date: "2025-06-22"
+    madeWith: 8.0.3
+    status: playable
+    archives:
+      - name: LifeAsAnInnocentWaitress-0.2.2-pc.zip
+        size: 358335579
+        sha256: "7b4d18386d55773f1d42f0a999d52ac107236926bf4b3b635692527218aae85d"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 5.3% of it (499 of 9501 statements) in 2.1 minutes.
+        Coverage is 5.3%, under 90%; the walk hit the time cap; a whole script file was not reached:
+        2/Scripts/Eventos/AAAINFORMATION/PhrasesRandom.rpyc,
+        2/Scripts/Eventos/BAR/Events/Events/DropBeer.rpyc,
+        2/Scripts/Eventos/BAR/Events/Events/DropBeerImages.rpyc. No person has played it through
+        yet. The free download is 0.2.2, F95zone lists v0.4.2 BugFix."
