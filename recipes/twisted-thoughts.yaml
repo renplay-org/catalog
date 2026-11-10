@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: twisted-thoughts
+title: Twisted thoughts
+developer: Special Mind
+tags:
+  - male-protagonist
+  - dating-sim
+  - multiple-endings
+  - school-setting
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - cheating
+  - corruption
+  - creampie
+  - femaledomination
+  - futa-trans
+  - gay
+  - group-sex
+  - incest
+  - lesbian
+  - masturbation
+  - milf
+  - mind-control
+  - mobile-game
+  - multiple-penetration
+  - ntr
+  - oral-sex
+  - prostitution
+  - sex-toys
+  - slave
+  - swinging
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: As a young man living with his parents and sister, you lead an everyday life attending
+  school and socializing with friends. Despite being a virgin, your newfound abilities might offer
+  new opportunities. Add that the ethics of controlling another's mind moves the stakes even higher.
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIzODMwNzI0LmpwZw==/original/oGZQMd.jpg
+links:
+  itch: https://specialmind.itch.io/twisted-thoughts
+  f95: https://f95zone.to/threads/188539/
+saveDir: MindControl-1672250688
+match:
+  - Twisted-Thoughts-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.298"
+    date: "2026-10-21"
+    madeWith: 8.3.4
+    status: playable
+    archives:
+      - name: Twisted-Thoughts-0.298-pc.zip
+        size: 2303053588
+        sha256: "ca047a3c2a727b9e6fc0c34d0103d12b0843f42e86b28761c30bef26957fc237"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 2% of it (319 of 15673 statements) in 2.21 minutes.
+        Coverage is 2%, under 90%; the walk hit the time cap. No person has played it through yet.
+        The free download is 0.298, F95zone lists v0.3."
