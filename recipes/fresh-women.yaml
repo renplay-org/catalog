@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
 id: fresh-women
 title: FreshWomen - Season 1
 developer: OppaiMan
@@ -122,6 +123,12 @@ notes: The archive has an empty config.version; “Season 1” identifies the co
   confirmed numeric version. Save folder comes from game/scripts/game_data.rpy; Ren’Py version comes
   from game/script_version.txt.
 releases:
+  - version: "S3 100%"
+    status: untested
+    archives: []
+    verified:
+      notes: The developer's newest release as F95zone lists it (S3 100%), found by the lab's version
+        watcher. Not tested here, and no archive yet.
   - version: "Season 1"
     madeWith: 7.5.3
     status: playable
