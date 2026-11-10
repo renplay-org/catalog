@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: threads-of-you-beyond-the-bay
+title: "Threads of You: Beyond the Bay"
+developer: Lavendeer Studios
+tags:
+  - dating-sim
+  - multiple-endings
+  - romance
+content: []
+state: ongoing
+summary: A broken down car, 2 weeks in a hidden seaside town, and 7 men waiting to sweep you off your feet.
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2750770/library_600x900_2x.jpg
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE0MjI1Nzc4LnBuZw==/original/%2FGKqHi.png
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2750770/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2750770/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2750770/logo.png
+links:
+  itch: https://lavendeerstudios.itch.io/threads-of-you-beyond-the-bay
+  steam: https://store.steampowered.com/app/2750770/
+saveDir: ThreadsofYou-1687888657
+match:
+  - ThreadsofYou-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2.7"
+    date: "2025-10-04"
+    madeWith: 8.3.7
+    status: playable
+    archives:
+      - name: ThreadsofYou-2.7-pc.zip
+        size: 353021315
+        sha256: "fec4084e51fffd939c4ee5217b767c2f4ed21b4c5564b944170678fdfe0088e2"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0% of it (4 of 8320 statements) in 0.89 minutes.
+        Coverage is 0%, under 90%; a whole script file was not reached:
+        scripts/Backend/00auto-highlight.rpyc, scripts/Endings/demo_ED.rpyc,
+        scripts/Mechanics/day_transition.rpyc. No person has played it through yet."
