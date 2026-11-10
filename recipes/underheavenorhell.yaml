@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: underheavenorhell
+title: Under Heaven Or Hell
+developer: Moonlust Games
+tags:
+  - female-protagonist
+  - dating-sim
+  - romance
+content: []
+state: ongoing
+summary: A guardian angel, two devils, and one soul lost in Hell. What could go wrong?
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI4MTY4NDI4LnBuZw==/original/Khmt%2BF.png
+links:
+  itch: https://moonlustgames.itch.io/underheavenorhell
+saveDir: UnderHeavenOrHell-saves
+match:
+  - UnderHeavenOrHell Demo - win.zip
+  - UnderHeavenOrHellDemo-*-win.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.14b"
+    date: "2026-06-28"
+    madeWith: 8.3.7
+    status: playable
+    archives:
+      - name: UnderHeavenOrHell Demo - win.zip
+        size: 599875863
+        sha256: "872a5719dc422b6cc573bbc25821bc9845fd72581e79c2a0b068d57906a4b5c7"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 85.7% of it (857 of 1000 statements) in 2.09
+        minutes. Coverage is 85.7%, under 90%; the walk hit the time cap; a whole script file was
+        not reached: map.rpyc. No person has played it through yet."
