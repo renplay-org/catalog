@@ -1,0 +1,112 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: my-pig-princess
+title: My Pig Princess
+developer: CyanCapsule
+tags:
+  - male-protagonist
+  - adventure
+  - fantasy
+  - humor
+  - 2dcg
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - creampie
+  - femaledomination
+  - furry
+  - futa-trans
+  - groping
+  - group-sex
+  - lactation
+  - lesbian
+  - maledomination
+  - masturbation
+  - mobile-game
+  - monster
+  - monster-girl
+  - multiple-penetration
+  - oral-sex
+  - sex-toys
+  - spanking
+  - teasing
+  - titfuck
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: An 18+ Visual Novel taking place in a kingdom where the pig girl Emelie is the princess!
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 260115
+    url: https://cdn2.steamgriddb.com/grid/1983044e007f45e81a66a09c54eb63a4.png
+    by: oGk.spAz
+    byUrl: https://www.steamgriddb.com/profile/76561197976610403
+    adult: true
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE1MTgyMDI5LnBuZw==/original/g2viTp.png
+  - kind: wide
+    source: sgdb
+    sgdb: 260116
+    url: https://cdn2.steamgriddb.com/grid/35cbf95fae2af01ba8a40439b4b25e12.png
+    by: oGk.spAz
+    byUrl: https://www.steamgriddb.com/profile/76561197976610403
+    adult: true
+  - kind: hero
+    source: sgdb
+    sgdb: 62810
+    url: https://cdn2.steamgriddb.com/hero/e02d94cf99a7776592273d5e52876169.png
+    by: oGk.spAz
+    byUrl: https://www.steamgriddb.com/profile/76561197976610403
+    adult: true
+  - kind: logo
+    source: sgdb
+    sgdb: 66778
+    url: https://cdn2.steamgriddb.com/logo/85153144817f7683d85f0e6a1bbd4fa2.png
+    by: oGk.spAz
+    byUrl: https://www.steamgriddb.com/profile/76561197976610403
+  - kind: icon
+    source: sgdb
+    sgdb: 23374
+    url: https://cdn2.steamgriddb.com/icon/ddcd0c0f094cd80726fd6d6567a1a01b.png
+    by: oGk.spAz
+    byUrl: https://www.steamgriddb.com/profile/76561197976610403
+links:
+  itch: https://cyancapsule.itch.io/my-pig-princess
+  f95: https://f95zone.to/threads/105032/
+saveDir: MyPigPrincess-1630801825
+match:
+  - MyPigPrincess-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.10.1"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (v0.10.1). Not tested here, and no
+        archive yet: 0.3.0 from itch.io is the one that was tested."
+  - version: "0.3.0"
+    date: "2024-02-28"
+    madeWith: 8.2.0
+    status: playable
+    archives:
+      - name: MyPigPrincess-0.3.0-pc.zip
+        size: 1136067825
+        sha256: "06e8c2e3c54f4051e4127a0b1598f87ee9994f25ef15f2a9c4f9e8c131790f66"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 22.3% of it (964 of 4328 statements) in 2.27
+        minutes. Coverage is 22.3%, under 90%; 15 Ren'Py errors with a traceback; the walk hit the
+        time cap; a whole script file was not reached: Script/Chapter2/2-Chapter 2 Bath.rpyc,
+        Script/Chapter2/3-Chapter 2,5 Script.rpyc, Script/Chapter3/Chapter3 Script.rpyc. No person
+        has played it through yet. The free download is 0.3.0, F95zone lists v0.10.1."
