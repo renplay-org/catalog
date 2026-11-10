@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: the-fixer
+title: The Fixer (NSFW)
+developer: Sam_Tail
+tags:
+  - female-protagonist
+  - sandbox
+  - 2dcg
+content:
+  - anal-sex
+  - big-tits
+  - creampie
+  - exhibitionism
+  - groping
+  - handjob
+  - humiliation
+  - lesbian
+  - mobile-game
+  - multiple-penetration
+  - oral-sex
+  - pregnancy
+  - prostitution
+  - sexual-harassment
+  - slave
+  - spanking
+  - transformation
+  - vaginal-sex
+  - virgin
+state: ongoing
+summary: You take the role of the protagonist, Samantha who is a Fixer. In order to solve her
+  employer’s problems she has to face different challenges such as investigating industrial
+  sabotage, diplomacy between factions and tracking down troublemakers. But she needs somehow to
+  carry on with her everyday life while dealing with her missions.
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzc4ODI2OTYucG5n/original/xdYVa7.png
+links:
+  itch: https://sam-tail.itch.io/the-fixer
+  f95: https://f95zone.to/threads/66244/
+saveDir: TheFixer-1582640956
+match:
+  - TheFixer-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.3.6.04"
+    date: "2026-06-24"
+    madeWith: 7.5.3
+    status: broken
+    archives:
+      - name: TheFixer-0.3.6.04-pc.zip
+        size: 264872835
+        sha256: "633b632b337412dd6a313e40f8a6ae4aa9a1233336623cf080cb1f401280a6d6"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: KeyError: '2' Made with Ren'Py 7, which runs on the Ren'Py 8 engine: Python 2 code in
+        the game can fail later, so a person should play well past the opening."
