@@ -1,0 +1,99 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: companion-of-darkness
+title: Companion of darkness
+developer: Berkili4
+tags:
+  - male-protagonist
+  - romance
+  - superpowers
+  - 3dcg
+  - animated
+content:
+  - ahegao
+  - big-ass
+  - big-tits
+  - creampie
+  - exhibitionism
+  - femaledomination
+  - footjob
+  - graphic-violence
+  - handjob
+  - harem
+  - maledomination
+  - masturbation
+  - mobile-game
+  - monster-girl
+  - oral-sex
+  - pregnancy
+  - prostitution
+  - sex-toys
+  - teasing
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: 3 years after a tragic incident, you return to your hometown. Just before you reach your
+  destination, you watch as two supernatural forces pit their strength against each other in a fight
+  to the death. It seems that you have been discovered and effortlessly overwhelmed, but instead of
+  dying you wake up in your bed as if nothing had happened.
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 627788
+    url: https://cdn2.steamgriddb.com/grid/118cb2c8d9c208d789b231e603dee4bd.jpg
+    by: Ruthbit
+    byUrl: https://www.steamgriddb.com/profile/76561199081834194
+    adult: true
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzEyMjI0MTkxLnBuZw==/original/j8vR%2FJ.png
+  - kind: wide
+    source: sgdb
+    sgdb: 627808
+    url: https://cdn2.steamgriddb.com/grid/7c6bb864e611d6bed360443570045afa.jpg
+    by: Ruthbit
+    byUrl: https://www.steamgriddb.com/profile/76561199081834194
+    adult: true
+  - kind: hero
+    source: sgdb
+    sgdb: 146950
+    url: https://cdn2.steamgriddb.com/hero/5452845ecd6bc1c9c3f53d162e3934b8.jpg
+    by: Ruthbit
+    byUrl: https://www.steamgriddb.com/profile/76561199081834194
+  - kind: logo
+    source: sgdb
+    sgdb: 149767
+    url: https://cdn2.steamgriddb.com/logo/a0acfc0ccb5149ab113986e018503d11.png
+    by: Ruthbit
+    byUrl: https://www.steamgriddb.com/profile/76561199081834194
+links:
+  itch: https://berkili4.itch.io/companion-of-darkness
+  f95: https://f95zone.to/threads/154533/
+saveDir: CompanionofDarkness-1670674895
+match:
+  - companion-of-darkness-win2.zip
+  - CompanionofDarkness-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "Season2Chapter12_5"
+    date: "2026-07-28"
+    madeWith: 8.2.1
+    status: playable
+    archives:
+      - name: companion-of-darkness-win2.zip
+        size: 4607470479
+        sha256: "048e0cabdeb8fd305569b2a0d608329688c56f9a9b0622829e7bb4324413ba1f"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0.1% of it (9 of 11263 statements) in 0.18 minutes.
+        Coverage is 0.1%, under 90%; a whole script file was not reached:
+        assets/gallery/gallery.rpyc, kinetic_text_tags.rpyc. No person has played it through yet.
+        The free download is Season2Chapter12_5, F95zone lists S2 Ch.12.5."
