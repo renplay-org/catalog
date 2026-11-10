@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
 id: fresh-women-julia-in-japan
 title: FreshWomen - Julia in Japan
 developer: OppaiMan
@@ -71,6 +72,12 @@ notes: Standalone prequel DLC listed with Season 1 and 2 in the shared F95 threa
   scripts contain local persistent awards, gallery and gacha data but no MultiPersistent or
   cross-game save importer; continuesFrom is omitted.
 releases:
+  - version: "S3 100%"
+    status: untested
+    archives: []
+    verified:
+      notes: The developer's newest release as F95zone lists it (S3 100%), found by the lab's version
+        watcher. Not tested here, and no archive yet.
   - version: "Gacha Update"
     madeWith: 8.4.1
     status: playable
