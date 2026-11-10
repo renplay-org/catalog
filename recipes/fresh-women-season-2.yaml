@@ -115,6 +115,12 @@ notes: Loads Season 1 saves to retain choices, as the developer confirms in the 
   numeric version, save folder and original Ren’Py version could not be confirmed because it is no
   longer local.
 releases:
+  - version: "S3 100%"
+    status: untested
+    archives: []
+    verified:
+      notes: The developer's newest release as F95zone lists it (S3 100%), found by the lab's version
+        watcher. Not tested here, and no archive yet.
   - version: "Season 2"
     status: playable
     archives:
