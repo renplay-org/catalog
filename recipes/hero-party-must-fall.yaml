@@ -1,0 +1,126 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: hero-party-must-fall
+title: Hero Party Must Fall
+developer: nitrolith
+tags:
+  - male-protagonist
+  - 2d-game
+  - romance
+  - 2dcg
+  - animated
+content:
+  - ahegao
+  - anal-sex
+  - bdsm
+  - big-ass
+  - big-tits
+  - blackmail
+  - cheating
+  - corruption
+  - creampie
+  - exhibitionism
+  - femaledomination
+  - footjob
+  - gay
+  - groping
+  - group-sex
+  - handjob
+  - harem
+  - humiliation
+  - internal-view
+  - interracial
+  - lactation
+  - lesbian
+  - maledomination
+  - masturbation
+  - milf
+  - monster-girl
+  - multiple-penetration
+  - oral-sex
+  - pregnancy
+  - sex-toys
+  - sexual-harassment
+  - sissification
+  - spanking
+  - swinging
+  - teasing
+  - titfuck
+  - trainer
+  - trap
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: The evil demon hordes have risen once again led by the Demon King and so the Hero and his
+  allies are trying to thwart their advances. You play as such ally, but you have a big secret.
+  You've been sent by the Demon King as a spy in order to destroy the Hero's party from within.
+nsfw: true
+free: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 502787
+    url: https://cdn2.steamgriddb.com/grid/cbae71872088441fded0a305dd902354.png
+    by: cdburk
+    byUrl: https://www.steamgriddb.com/profile/76561197996128943
+    adult: true
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzExNjE4NDg2LnBuZw==/original/ACK1z4.png
+  - kind: wide
+    source: sgdb
+    sgdb: 502789
+    url: https://cdn2.steamgriddb.com/grid/066c148732a193d87478e6b8f000e249.png
+    by: cdburk
+    byUrl: https://www.steamgriddb.com/profile/76561197996128943
+    adult: true
+  - kind: hero
+    source: sgdb
+    sgdb: 135071
+    url: https://cdn2.steamgriddb.com/hero/a50f30b9863e7151951ef98550cf32f4.png
+    by: cdburk
+    byUrl: https://www.steamgriddb.com/profile/76561197996128943
+    adult: true
+  - kind: logo
+    source: sgdb
+    sgdb: 137762
+    url: https://cdn2.steamgriddb.com/logo/06aa593692892c1a21b4c83ad4c5e493.png
+    by: cdburk
+    byUrl: https://www.steamgriddb.com/profile/76561197996128943
+links:
+  itch: https://nitrolith.itch.io/hero-party-must-fall
+  f95: https://f95zone.to/threads/100153/
+saveDir: HeroVN-1627225608
+match:
+  - HeroPartyMustFall-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.6.2 Playtest"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (v0.6.2 Playtest). Not tested here, and
+        no archive yet: 0.4.7-Bugfixes-2 from itch.io is the one that was tested."
+  - version: "0.4.7-Bugfixes-2"
+    date: "2023-09-09"
+    madeWith: 7.3.5
+    status: playable
+    archives:
+      - name: HeroPartyMustFall-0.4.7-Bugfixes-2-pc.zip
+        size: 964165709
+        sha256: "61cfbb8ba99d7f5f9c528fab77c081daf73ded57ad52c390044b88ba00d5fb1f"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 3.1% of it (1351 of 43204 statements) in 2.13
+        minutes. Coverage is 3.1%, under 90%; 1 Ren'Py error with a traceback; the walk hit the time
+        cap; a whole script file was not reached: npcs/fan.rpyc, npcs/knight.rpyc, npcs/milf.rpyc.
+        No person has played it through yet. Made with Ren'Py 7, which runs on the Ren'Py 8 engine:
+        Python 2 code in the game can fail later, so a person should play well past the opening. The
+        free download is 0.4.7-Bugfixes-2, F95zone lists v0.6.2 Playtest."
