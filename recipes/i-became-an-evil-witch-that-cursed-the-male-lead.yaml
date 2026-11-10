@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: i-became-an-evil-witch-that-cursed-the-male-lead
+title: I Became an Evil Witch that Cursed the Male Lead
+developer: fluuen
+tags:
+  - dating-sim
+  - multiple-endings
+  - horror
+  - romance
+content: []
+state: ongoing
+summary: Isekai'd into a dark fairy tale?!
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI3NTI1MTE2LmdpZg==/original/6XPHPJ.gif
+links:
+  itch: https://fluuen.itch.io/i-became-an-evil-witch-that-cursed-the-male-lead
+saveDir: IBecameanEvilWitchthatCursedtheMaleLead-1772703303
+match:
+  - IBecameanEvilWitchthatCursedtheMaleLead-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.21"
+    date: "2026-08-29"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: IBecameanEvilWitchthatCursedtheMaleLead-1.21-pc.zip
+        size: 243195296
+        sha256: "ee1cec4ac6cf6d11f1c9f6dcef88eb7aa58ce4010d6c4209c33f413c56606dbf"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0.3% of it (11 of 3305 statements) in 0.6 minutes.
+        Coverage is 0.3%, under 90%; a whole script file was not reached: day2.rpyc. No person has
+        played it through yet."
