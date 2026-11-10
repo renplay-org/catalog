@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: parasite-in-love
+title: Parasite in Love
+developer: Night Asobu
+tags:
+  - female-protagonist
+  - horror
+  - romance
+content: []
+state: ongoing
+summary: A biological romance horror visual novel
+nsfw: false
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2490330/library_600x900_2x.jpg
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzEwMDI0MDYxLmdpZg==/original/%2F4G6X9.gif
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2490330/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2490330/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2490330/logo.png
+links:
+  itch: https://night-asobu.itch.io/parasite-in-love
+  steam: https://store.steampowered.com/app/2490330/
+saveDir: ParasiteinLove-1663035136
+match:
+  - ParasiteinLove-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.34"
+    date: "2023-10-24"
+    status: playable
+    archives:
+      - name: ParasiteinLove-1.34-pc.zip
+        size: 314909563
+        sha256: "5f3924488974ef33069121935512258e2ce6fff07bd2ca11c6cc03038cf65694"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 93.1% of it (647 of 695 statements) in 1.77
+        minutes. A whole script file was not reached: wave_shader.rpyc. No person has played it
+        through yet."
