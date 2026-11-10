@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: murmur
+title: MurMur 0.7 (18+)
+developer: Devil's Dad
+tags:
+  - male-protagonist
+  - romance
+  - school-setting
+  - superpowers
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - corruption
+  - cosplay
+  - creampie
+  - femaledomination
+  - footjob
+  - groping
+  - handjob
+  - harem
+  - incest
+  - masturbation
+  - mobile-game
+  - oral-sex
+  - pov
+  - spanking
+  - teasing
+  - titfuck
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: In this game, you'll be playing as a 29-year-old guy who gets involved in unexpected
+  mystical events. His life gets turned on its head and he has to survive in the new world he's
+  found himself in. But it's not as grim as it seems at first glance.
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIxMTU3OTkzLmpwZw==/original/wqkAeB.jpg
+links:
+  itch: https://devilsdad.itch.io/murmur
+  f95: https://f95zone.to/threads/41403/
+saveDir: MurMur-1569062779
+match:
+  - MurMur-*-pc-compressed.zip
+  - MurMur-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.7"
+    date: "2025-05-08"
+    madeWith: 8.3.7
+    status: playable
+    archives:
+      - name: MurMur-0.7-pc-compressed.zip
+        size: 1504522307
+        sha256: "cf25d51666c8cd393c46b06ebb44ec4b9b338afe39f0a2c7e70bfde85341602b"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0% of it (2 of 20835 statements) in 0.79 minutes.
+        Coverage is 0%, under 90%; a whole script file was not reached: DD.rpyc, ch1p1.rpyc,
+        ch1p2.rpyc. No person has played it through yet."
