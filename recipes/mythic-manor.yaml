@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: mythic-manor
+title: Mythic Manor (NSFW)
+developer: Jikei
+tags:
+  - male-protagonist
+  - sandbox
+  - romance
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - creampie
+  - exhibitionism
+  - femaledomination
+  - footjob
+  - futa-trans
+  - groping
+  - group-sex
+  - handjob
+  - harem
+  - lactation
+  - lesbian
+  - maledomination
+  - masturbation
+  - milf
+  - mind-control
+  - mobile-game
+  - monster-girl
+  - oral-sex
+  - pregnancy
+  - sex-toys
+  - sleep-sex
+  - stripping
+  - teasing
+  - titfuck
+  - transformation
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: abandoned
+summary: Delve deep into your fantasies and experience the day-to-day life of sharing a manor with
+  five gorgeous “mythic girls”. Spend time and build relationships with the characters you like in
+  currently over 70 unique character events plus special hidden events! The game is developed with
+  Ren'Py solely by me, Jikei.
+nsfw: true
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE4NDg3MjQucG5n/original/PMaRiw.png
+links:
+  itch: https://jikei.itch.io/mythic-manor
+  f95: https://f95zone.to/threads/9201/
+saveDir: Test-1490227962
+match:
+  - MythicManor-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.22"
+    date: "2024-11-12"
+    madeWith: 8.3.2
+    status: broken
+    archives:
+      - name: MythicManor-0.22-pc.zip
+        size: 4450108340
+        sha256: "b342a8e056ed12e1af8927c6019e7eaa8ee74ec88e3f35fb700ed9021020d704"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: Tue Nov 10 14:08:48 2026"
