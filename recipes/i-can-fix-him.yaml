@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: i-can-fix-him
+title: I Can Fix Him!
+developer: Meowdy Nio
+tags:
+  - dating-sim
+  - multiple-endings
+  - humor
+content: []
+state: ongoing
+summary: Will you fix him or make him worse?
+nsfw: false
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI1NzUwODYzLnBuZw==/original/oHU4lx.png
+links:
+  itch: https://meowdy-nio.itch.io/i-can-fix-him
+saveDir: ICanFixHim-1771182543
+match:
+  - i-can-fix-him-win-linux.zip
+  - ICanFixHim-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2026-02-26"
+    madeWith: 8.5.1
+    status: playable
+    archives:
+      - name: i-can-fix-him-win-linux.zip
+        size: 74832817
+        sha256: "5bbea09f3e03b0d551d842bc0310fe168cf8ec77a9b8e7ae1b34b568a063ec3e"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 3% of it (19 of 631 statements) in 0.76 minutes.
+        Coverage is 3%, under 90%; a whole script file was not reached: actions.rpyc, days.rpyc,
+        endings.rpyc. No person has played it through yet."
