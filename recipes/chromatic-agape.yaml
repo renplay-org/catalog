@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: chromatic-agape
+title: Chromatic Agape
+developer: Deniz G. Lerosi
+tags:
+  - dating-sim
+  - fantasy
+  - horror
+  - romance
+content: []
+state: ongoing
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE1NTg0ODYwLnBuZw==/original/xkW42X.png
+links:
+  itch: https://deniz-g-lerosi.itch.io/chromatic-agape
+saveDir: transitiontest-1710767579
+match:
+  - chromaticagapedemo-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.1"
+    date: "2025-07-30"
+    madeWith: 8.4.1
+    status: broken
+    archives:
+      - name: chromaticagapedemo-0.1-pc.zip
+        size: 547224045
+        sha256: "b3e17e1011d5b61d30547a13d6b581e7db29505af565b01cd8c3cd030214b304"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: renpy.gl2.gl2shader.ShaderError: ERROR: 0:25: 'offset' : Loop index cannot be
+        initialized with non-constant expression"
