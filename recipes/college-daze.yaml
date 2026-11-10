@@ -21,6 +21,12 @@ match:
   - College_Daze_-_*_-_All_Files.zip
 engine: html
 releases:
+  - version: "0.540b Bugfix"
+    status: untested
+    archives: []
+    verified:
+      notes: The developer's newest release as F95zone lists it (v0.540b Bugfix), found by the lab's
+        version watcher. Not tested here, and no archive yet.
   - version: "0.510b"
     madeWith: 2.36.1
     status: verified
