@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: i-tried-to-summon-the-perfect-boyfriend-and-messed-up
+title: HELP! I Tried to Summon the Perfect Boyfriend and Messed Up so I Summoned a Demon Instead!?!?
+developer: AKA Space
+tags:
+  - dating-sim
+  - horror
+  - romance
+content: []
+state: ongoing
+summary: You aimed for a boyfriend. You got a demon. Good luck!
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIxOTc5MTE5LmpwZw==/original/mQKNFj.jpg
+links:
+  itch: https://junekazoo.itch.io/i-tried-to-summon-the-perfect-boyfriend-and-messed-up
+  steam: https://store.steampowered.com/app/5023930/
+saveDir: DemonLoveGame-1749488561
+match:
+  - DemonLoveGame-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2026-11-02"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: DemonLoveGame-1.0-pc.zip
+        size: 242413822
+        sha256: "bca362a8db47c803e7e0004070137844a50144f22d4757ef6d0fb1319025abd6"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 99.2% of it (528 of 532 statements) in 2.15
+        minutes. The walk hit the time cap. No person has played it through yet."
