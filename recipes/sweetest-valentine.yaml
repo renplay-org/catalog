@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: sweetest-valentine
+title: Sweetest Valentine
+developer: sylvan
+tags:
+  - female-protagonist
+  - multiple-endings
+  - horror
+  - romance
+content: []
+state: ongoing
+summary: Spend your Valentine's Day with the boy of your choosing... except there's blood involved.
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzcyMjE4OTIucG5n/original/g0e2og.png
+links:
+  itch: https://syllphana.itch.io/sweetest-valentine
+saveDir: SweetestValentine-1631464030
+match:
+  - SweetestValentine-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.7.4"
+    date: "2026-03-12"
+    madeWith: 8.5.2
+    status: verified
+    archives:
+      - name: SweetestValentine-1.7.4-pc.zip
+        size: 290969136
+        sha256: "baa442f1be613254a3d9b5610fd9bd1c7625d2e67c00c6ca62890719ca74a487"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated deep test on the lab's own Renplay: a walk through the script saw 100% of it
+        (2002 of 2002 statements) in 1.99 minutes, with no Ren'Py error. The main menu, a new game
+        and a save that loads again passed first. No person has played it through yet."
