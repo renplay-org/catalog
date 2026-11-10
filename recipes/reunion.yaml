@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: reunion
+title: Reunion
+developer: Karabinek
+tags:
+  - male-protagonist
+  - romance
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - blackmail
+  - corruption
+  - creampie
+  - graphic-violence
+  - group-sex
+  - harem
+  - incest
+  - lesbian
+  - maledomination
+  - masturbation
+  - milf
+  - mobile-game
+  - oral-sex
+  - pregnancy
+  - sex-toys
+  - slave
+  - spanking
+  - vaginal-sex
+state: ongoing
+summary: You play as a 27-year-old man returning to his hometown after nearly ten years away. What
+  begins as a short visit quickly turns into something much bigger as he reconnects with women from
+  his past, meets new ones, and gradually builds an ever-growing Harem around him. Each woman has
+  her own personality, history, relationship with the MC, and place within the wider story.
+nsfw: true
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI4OTM2MjQ1LnBuZw==/original/KTVDb9.png
+links:
+  itch: https://karabinek.itch.io/reunion
+  f95: https://f95zone.to/threads/52669/
+  steam: https://store.steampowered.com/app/4719760/
+saveDir: Reunion-1554845636
+match:
+  - reunion-windows-linux.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2026-07-30"
+    date: "2026-07-30"
+    madeWith: 7.3.5
+    status: playable
+    archives:
+      - name: reunion-windows-linux.zip
+        size: 9848922391
+        sha256: "8dca03c8de79551cb2132495836c25190c77992aa11b19e3680e3a26acb5d13a"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0% of it (2 of 52204 statements) in 0.78 minutes.
+        Coverage is 0%, under 90%; a whole script file was not reached: chapter_select.rpyc,
+        day_01.rpyc, day_02.rpyc. No person has played it through yet. Made with Ren'Py 7, which
+        runs on the Ren'Py 8 engine: Python 2 code in the game can fail later, so a person should
+        play well past the opening. The free download is 2026-07-30, F95zone lists v0.90."
