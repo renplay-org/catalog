@@ -2,8 +2,12 @@
 id: error143
 title: ERROR143
 developer: Jenny Vi Pham
-tags: []
-content: []
+tags:
+  - dating-sim
+  - romance
+content:
+  - gay
+summary: "A fully voiced bickering-and-bantering rivals-to-lovers visual novel <3"
 state: ongoing
 nsfw: false
 free: true
@@ -35,4 +39,4 @@ releases:
       browsers:
         - chromium
       notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
-        error: Tue Nov 10 00:11:30 2026"
+        error: Exception: Imagebutton does not have a idle image. (auto='gui/phone/desktop/carrd-%s.png')."
