@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: lost-in-limbo
+title: Lost in Limbo
+developer: Ravenstar Games
+tags:
+  - dating-sim
+  - fantasy
+  - horror
+  - romance
+content: []
+state: ongoing
+summary: Will love be the key to your freedom, or the first chapter of your downfall?
+nsfw: false
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE0MjIxOTAzLmpwZw==/original/T5Dvp%2B.jpg
+links:
+  itch: https://ravenstar-games.itch.io/lost-in-limbo
+saveDir: LostinLimboDemo
+match:
+  - LostinLimboDemo-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2.0.4"
+    date: "2026-05-12"
+    madeWith: 8.4.2
+    status: playable
+    archives:
+      - name: LostinLimboDemo-2.0.4-pc.zip
+        size: 763711878
+        sha256: "d4dbbee282f022be0fec192906f01b25abfef6b2a60b0796bfdb024d708fce06"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet."
