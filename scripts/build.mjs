@@ -170,6 +170,7 @@ writeFileSync(
   `/*
   Access-Control-Allow-Origin: *
   X-Content-Type-Options: nosniff
+  X-Robots-Tag: noindex
 /index.v4.json
   Cache-Control: public, max-age=300
 /index.v4.sfw.json
@@ -190,14 +191,52 @@ writeFileSync(
   Cache-Control: public, max-age=86400
 `,
 )
+// What a person sees who opens catalog.renplay.org in a browser: what this address is, and where to go.
+// Search engines are kept away from this host (robots.txt, X-Robots-Tag): the website lists the games.
+const listedCount = games.filter((g) => g.releases?.[0]?.status !== 'broken').length
+writeFileSync(join(dist, 'robots.txt'), 'User-agent: *\nDisallow: /\n')
 writeFileSync(
   join(dist, 'index.html'),
   `<!doctype html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Renplay catalog</title>
+<meta name="description" content="The catalog Renplay installs read: recipes for the games Renplay plays.">
 <meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="0; url=https://renplay.org/catalog">
-<p>This is where Renplay reads its catalog. The games are listed at <a href="https://renplay.org/catalog">renplay.org/catalog</a>.</p>
+<meta name="theme-color" content="#0a0a0f">
+<link rel="icon" href="https://renplay.org/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://renplay.org/logo.png">
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0a0a0f; color: #e8e6ef; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 34rem; padding: 32px 24px; }
+  .brand { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; font-weight: 700; font-size: 20px; }
+  .brand img { width: 40px; height: 40px; }
+  h1 { font-size: 28px; line-height: 1.25; margin: 28px 0 12px; }
+  p { color: #b6b2c4; margin: 0 0 16px; }
+  ul { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 10px; }
+  a { color: #ff7ab8; }
+  li a { display: block; padding: 14px 16px; border: 1px solid rgb(255 255 255 / .1); border-radius: 14px; background: rgb(255 255 255 / .03); text-decoration: none; color: #e8e6ef; }
+  li a span { display: block; color: #8f8aa3; font-size: 14px; }
+  li a:hover, li a:focus-visible { border-color: #ff7ab8; }
+</style>
+</head>
+<body>
+<main>
+  <a class="brand" href="https://renplay.org"><img src="https://renplay.org/logo.svg" alt="" width="40" height="40">Renplay</a>
+  <h1>The catalog Renplay reads</h1>
+  <p>Every Renplay installation reads its list of games from here: ${listedCount} games with their art, the downloads they play from and how to build them for the web. People browse the games on the website.</p>
+  <ul>
+    <li><a href="https://renplay.org/catalog">Browse the games<span>renplay.org/catalog</span></a></li>
+    <li><a href="https://github.com/renplay-org/catalog">The recipes<span>Where each game's recipe is kept, and how to add a game</span></a></li>
+    <li><a href="https://docs.renplay.org/catalog/">How the catalog works<span>docs.renplay.org</span></a></li>
+    <li><a href="/index.v4.json">The index<span>What Renplay reads, as JSON</span></a></li>
+  </ul>
+</main>
+</body>
+</html>
 `,
 )
 console.log(`Built ${games.length} recipes`)
