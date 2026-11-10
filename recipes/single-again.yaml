@@ -1,0 +1,101 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: single-again
+title: Single Again
+developer: clever name games
+tags:
+  - male-protagonist
+  - romance
+  - 3dcg
+  - animated
+content:
+  - ahegao
+  - anal-sex
+  - cheating
+  - corruption
+  - creampie
+  - footjob
+  - groping
+  - group-sex
+  - harem
+  - incest
+  - lesbian
+  - maledomination
+  - masturbation
+  - oral-sex
+  - sex-toys
+  - swinging
+  - teasing
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: In Single again you play the role of Frank, a widower and soon to be divorcee. The story
+  begins with Frank moving back to the Loft he used to share with his first wife. A place he never
+  wanted to go back to after her untimely death.
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 402059
+    url: https://cdn2.steamgriddb.com/grid/b24c80accd199fb1af257424880615fc.png
+    by: Tir.Toran
+    byUrl: https://www.steamgriddb.com/profile/76561198034109792
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzMwMzA5MzguanBn/original/XqzPt5.jpg
+  - kind: wide
+    source: sgdb
+    sgdb: 402053
+    url: https://cdn2.steamgriddb.com/grid/6d2b5e4bfc70e73e4613d92bff2484ae.png
+    by: Tir.Toran
+    byUrl: https://www.steamgriddb.com/profile/76561198034109792
+  - kind: hero
+    source: sgdb
+    sgdb: 97182
+    url: https://cdn2.steamgriddb.com/hero/63fc6a665cb25a060d613c0ea0fbc2f3.png
+    by: Tir.Toran
+    byUrl: https://www.steamgriddb.com/profile/76561198034109792
+    adult: true
+  - kind: logo
+    source: sgdb
+    sgdb: 102983
+    url: https://cdn2.steamgriddb.com/logo/174181cc5765a4a1a85a2d7602ba9ca5.png
+    by: Tir.Toran
+    byUrl: https://www.steamgriddb.com/profile/76561198034109792
+links:
+  itch: https://clever-name-games.itch.io/single-again
+  f95: https://f95zone.to/threads/46941/
+saveDir: SingleAgain-Save
+match:
+  - SingleAgain-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.27.2"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (v1.27.2). Not tested here, and no
+        archive yet: 0.13 from itch.io is the one that was tested."
+  - version: "0.13"
+    date: "2021-08-25"
+    madeWith: 7.3.5
+    status: playable
+    archives:
+      - name: SingleAgain-0.13-pc.zip
+        size: 4291172207
+        sha256: "b5efd404dcb7f24b1a52ada32c33336201736608465fc07468097af2174eb225"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 23.4% of it (7669 of 32719 statements) in 2.12
+        minutes. Coverage is 23.4%, under 90%; the walk hit the time cap; a whole script file was
+        not reached: script 0.07.rpyc, script 0.08.rpyc, script 0.09.rpyc. No person has played it
+        through yet. Made with Ren'Py 7, which runs on the Ren'Py 8 engine: Python 2 code in the
+        game can fail later, so a person should play well past the opening. The free download is
+        0.13, F95zone lists v1.27.2."
