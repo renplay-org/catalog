@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: first-kiss-at-a-spooky-soiree
+title: First Kiss at a Spooky Soiree
+developer: NomnomNami
+tags:
+  - multiple-endings
+  - fantasy
+  - romance
+content: []
+state: ongoing
+summary: A light halloween-themed romance story
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 101658
+    url: https://cdn2.steamgriddb.com/grid/15755a406edacfe95ef093ee53a262a7.png
+    by: IrritatedGoat
+    byUrl: https://www.steamgriddb.com/profile/76561197968231289
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1hZ2UvOTIwMDIvNDM2NTQ2LmdpZg==/original/AlExRN.gif
+  - kind: hero
+    source: sgdb
+    sgdb: 65723
+    url: https://cdn2.steamgriddb.com/hero/fff24dd2b8100fa948dd2f913023ca7c.png
+    by: billymoon
+    byUrl: https://www.steamgriddb.com/profile/76561198048905528
+  - kind: logo
+    source: sgdb
+    sgdb: 113626
+    url: https://cdn2.steamgriddb.com/logo/c456cd280cff4ed4d5e89d847effd8db.png
+    by: ReturnOfTheMari
+    byUrl: https://www.steamgriddb.com/profile/76561198799298995
+links:
+  itch: https://nomnomnami.itch.io/first-kiss-at-a-spooky-soiree
+saveDir: spookysoiree-1473096855
+match:
+  - spookysoiree-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.9.2"
+    date: "2026-01-20"
+    madeWith: 8.5.2
+    status: playable
+    archives:
+      - name: spookysoiree-1.9.2-pc.zip
+        size: 88226893
+        sha256: "8999c4bd406dbd153c2efb6302f27605c3a92be47ee54093cb63112df1769113"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 69% of it (617 of 894 statements) in 2.18 minutes.
+        Coverage is 69%, under 90%; the walk hit the time cap. No person has played it through yet."
