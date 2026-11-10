@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: halfway-house
+title: Halfway House EP1-EP11
+developer: Az
+tags:
+  - male-protagonist
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-tits
+  - corruption
+  - creampie
+  - drugs
+  - femaledomination
+  - graphic-violence
+  - groping
+  - handjob
+  - lesbian
+  - masturbation
+  - milf
+  - mobile-game
+  - oral-sex
+  - prostitution
+  - sexual-harassment
+  - teasing
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: You're a nineteen year old dude who just spent four years in juvenile detention. Today's
+  the day of your release. But you're still under a six month probation period, so you can't do
+  whatever the heck you want just yet.
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI3NzU4NzEwLnBuZw==/original/xJfxwZ.png
+links:
+  itch: https://azrd79.itch.io/halfway-house
+  f95: https://f95zone.to/threads/33607/
+saveDir: Halfway House-Steam-Demo
+match:
+  - linux.zip
+  - Halfway_House_Demo-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "Ep.11 v3"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (Ep.11 v3). Not tested here, and no
+        archive yet: DEMO from itch.io is the one that was tested."
+  - version: "DEMO"
+    date: "2026-05-28"
+    madeWith: 8.3.7
+    status: playable
+    archives:
+      - name: linux.zip
+        size: 522761698
+        sha256: "8296192f867425f7686afa6ca99c62c81b7abf6a916c332c9541317cc2e1b547"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 80.1% of it (2307 of 2881 statements) in 2.13
+        minutes. Coverage is 80.1%, under 90%; the walk hit the time cap; a whole script file was
+        not reached: scripts/alt_cam.rpyc, scripts/music_test.rpyc. No person has played it through
+        yet. The free download is DEMO, F95zone lists Ep.11 v3."
