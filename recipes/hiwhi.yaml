@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: hiwhi
+title: Home Is Where He Is (DAY 2 AVAILABLE)
+developer: echobat
+tags:
+  - horror
+  - romance
+content: []
+state: ongoing
+summary: A twisted romance in a decaying house.
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI3NjgyOTk5LnBuZw==/original/3Iylzo.png
+links:
+  itch: https://echo0bat.itch.io/hiwhi
+saveDir: Homeiswhereheis-1769894528
+match:
+  - HIWHI-*-win.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2.0"
+    date: "2026-09-21"
+    madeWith: 8.5.2
+    status: playable
+    archives:
+      - name: HIWHI-2.0-win.zip
+        size: 269556053
+        sha256: "ccc9cfa7db8233a84970ff534025f613e6c0a5a00986fe92b65ecf3ebc730dc3"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 3.7% of it (67 of 1795 statements) in 2.17 minutes.
+        Coverage is 3.7%, under 90%; the walk hit the time cap; a whole script file was not reached:
+        kinetic_text_tags.rpyc. No person has played it through yet."
