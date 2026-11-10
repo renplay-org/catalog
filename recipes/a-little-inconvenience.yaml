@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: a-little-inconvenience
+title: A Little Inconvenience
+developer: HusbandoGoddess
+tags:
+  - dating-sim
+  - horror
+  - romance
+content: []
+state: ongoing
+summary: Every roadblock to you is just a little inconvenience...
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIwMDQ4MzYxLmpwZw==/original/TIeF4m.jpg
+links:
+  itch: https://husbandogoddess.itch.io/a-little-inconvenience
+saveDir: ALittleInconvenience-1707748306
+match:
+  - ALittleInconvenience-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.54"
+    date: "2026-10-18"
+    madeWith: 8.5.2
+    status: playable
+    archives:
+      - name: ALittleInconvenience-0.54-pc.zip
+        size: 237782832
+        sha256: "af12aee8cfce642086afabe27381cb1abfec420dad7b00da16f6d1a3013dbf6d"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 87.9% of it (560 of 637 statements) in 0.89
+        minutes. Coverage is 87.9%, under 90%; a whole script file was not reached:
+        backend/00auto-highlight.rpyc, backend/focus_bars.rpyc. No person has played it through
+        yet."
