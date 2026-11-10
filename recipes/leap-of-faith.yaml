@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: leap-of-faith
+title: Leap of Faith
+developer: DriftyGames
+tags:
+  - male-protagonist
+  - multiple-endings
+  - point-click
+  - humor
+  - romance
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - cheating
+  - creampie
+  - exhibitionism
+  - groping
+  - handjob
+  - lesbian
+  - masturbation
+  - oral-sex
+  - pregnancy
+  - vaginal-sex
+state: completed
+summary: You awake one day, realizing there's much more to life than it currently offers you. Having
+  spent 2 years sulking over lost love, you finally move forward to pursue a different life. Which,
+  through choices and opportunities, will lead you down a path you never thought possible.
+nsfw: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1768640/library_600x900_2x.jpg
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzUyMDU1NjQucG5n/original/N64Ozw.png
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1768640/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1768640/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1768640/logo.png
+  - kind: icon
+    source: sgdb
+    sgdb: 85416
+    url: https://cdn2.steamgriddb.com/icon/dd11b4f3efd4b7e53d3e21857a4b8b51.png
+    by: LutzPS
+    byUrl: https://www.steamgriddb.com/profile/76561197978629721
+links:
+  itch: https://driftygames.itch.io/leap-of-faith
+  f95: https://f95zone.to/threads/48734/
+  steam: https://store.steampowered.com/app/1768640/
+saveDir: LeapofFaith-1574721269-steam
+match:
+  - LeapofFaith-1.0.1c-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2022-09-11"
+    date: "2022-09-11"
+    madeWith: 8.0.2
+    status: broken
+    archives:
+      - name: LeapofFaith-1.0.1c-pc.zip
+        size: 3217029337
+        sha256: "310560fb82924406752647fd628beea1242ee4b3bcd4282037a94ae731830853"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: RuntimeError: can't start new thread"
