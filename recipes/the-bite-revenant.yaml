@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: the-bite-revenant
+title: "The Bite: Revenant"
+developer: madmate.games
+tags:
+  - male-protagonist
+  - sandbox
+  - fantasy
+  - paranormal
+  - romance
+  - 3dcg
+  - animated
+content:
+  - big-tits
+  - creampie
+  - futa-trans
+  - handjob
+  - harem
+  - lesbian
+  - maledomination
+  - masturbation
+  - milf
+  - monster-girl
+  - oral-sex
+  - stripping
+  - teasing
+  - vaginal-sex
+  - voyeurism
+state: ongoing
+summary: Thrust into the darkness of vampire underworld, our protagonist needs to adapt fast to the
+  decadent and depraved ways of the vampiric aristocracy. With some luck and a bit of help from a
+  mysterious stranger he manages to survive the initial encounter with powerful individuals, but to
+  truly prosper he needs to quickly familiarize himself with this world's ever-present scheming and
+  high stake political games... At first ignored or used as a pawn, he realizes that to prosper he
+  needs to chose his actions and allegiances carefully.
+nsfw: true
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzk5NDQ5NzgucG5n/original/ySPx4B.png
+links:
+  itch: https://madmategames.itch.io/the-bite-revenant
+  f95: https://f95zone.to/threads/85276/
+saveDir: TheBite-1597297363
+match:
+  - the-bite-revenant-win-linux.zip
+  - TheBite-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "Revenant"
+    date: "2025-03-07"
+    madeWith: 7.4.11
+    status: broken
+    archives:
+      - name: the-bite-revenant-win-linux.zip
+        size: 1611532502
+        sha256: "d2c78c599576c54ebdf7423e25aad4fb0e77b6a6f927ff9cd9b2ebd86f47d7ca"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: Tue Nov 10 22:30:53 2026 Made with Ren'Py 7, which runs on the Ren'Py 8 engine:
+        Python 2 code in the game can fail later, so a person should play well past the opening."
