@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: just-kiss-him-already
+title: Just Kiss Him Already!
+developer: Ekkoberry
+tags:
+  - romance
+content:
+  - gay
+state: ongoing
+summary: Help two cute boys get together!
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzk5MjcxNjUucG5n/original/yx5FOM.png
+links:
+  itch: https://ekkoberry.itch.io/just-kiss-him-already
+saveDir: JustKissHimAlready-1656756080
+match:
+  - JustKissHimAlready-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.9.4"
+    date: "2023-12-31"
+    status: playable
+    archives:
+      - name: JustKissHimAlready-0.9.4-pc.zip
+        size: 67352008
+        sha256: "a75b0e20020e74f679ba3777f0aa741919fad3d64738b1d74f607db73981a2d7"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 61.8% of it (1397 of 2260 statements) in 2.2
+        minutes. Coverage is 61.8%, under 90%; the walk hit the time cap; a whole script file was
+        not reached: arley.rpyc. No person has played it through yet."
