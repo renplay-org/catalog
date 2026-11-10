@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: inversed
+title: Inversed
+developer: Tymedust Games
+tags:
+  - fantasy
+  - horror
+content: []
+state: ongoing
+summary: Dead eyes see white lies.
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3175910/library_600x900_2x.jpg
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE2OTE3OTYyLmdpZg==/original/aw4RW4.gif
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3175910/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3175910/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/3175910/logo.png
+links:
+  itch: https://tymedust.itch.io/inversed
+  steam: https://store.steampowered.com/app/3175910/
+saveDir: O2A2-1717182029
+match:
+  - inversed-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2024-07-14"
+    madeWith: 8.2.3
+    status: playable
+    archives:
+      - name: inversed-1.0-pc.zip
+        size: 86686568
+        sha256: "524deeb9169db27a8493f109b41f199bb053d3ba495e48f1bc9af99df3b100f4"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 16.5% of it (139 of 844 statements) in 1.61
+        minutes. Coverage is 16.5%, under 90%. No person has played it through yet."
