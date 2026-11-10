@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: contract-demon
+title: Contract Demon
+developer: NomnomNami
+tags:
+  - female-protagonist
+  - kinetic-novel
+  - fantasy
+  - romance
+content:
+  - lesbian
+state: ongoing
+summary: An angel summons a demon. they fall in love.
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE5NzQ5NTMucG5n/original/7xNdwN.png
+links:
+  itch: https://nomnomnami.itch.io/contract-demon
+saveDir: contractdemon-1551508869
+match:
+  - contractdemon-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2.2.7"
+    date: "2024-02-27"
+    madeWith: 8.2.0
+    status: verified
+    archives:
+      - name: contractdemon-2.2.7-pc.zip
+        size: 84098513
+        sha256: "174ee799d011887b82ac000b4c85e1427a281011d1134c096882017e6b7346bd"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated deep test on the lab's own Renplay: a walk through the script saw 100% of it
+        (638 of 638 statements) in 0.26 minutes, with no Ren'Py error. The main menu, a new game and
+        a save that loads again passed first. No person has played it through yet."
