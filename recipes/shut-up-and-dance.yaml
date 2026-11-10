@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: shut-up-and-dance
+title: Shut Up and Dance
+developer: Boring Games
+tags:
+  - male-protagonist
+  - multiple-endings
+  - romance
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - bdsm
+  - big-ass
+  - big-tits
+  - cheating
+  - corruption
+  - creampie
+  - footjob
+  - group-sex
+  - handjob
+  - harem
+  - incest
+  - interracial
+  - lesbian
+  - maledomination
+  - masturbation
+  - milf
+  - mind-control
+  - multiple-penetration
+  - oral-sex
+  - spanking
+  - swinging
+  - titfuck
+  - vaginal-sex
+state: ongoing
+summary: "\"Shut Up and Dance\" is the story of a young man's life taking a turn for the worse and
+  everything going downhill instantly. A beloved person dies under suspicious circumstances, and in
+  the blink of an eye, the life you're used to is gone - a cozy home, not having to worry about
+  money or food on the table, paying for your academic studies. Your carefree life - everything gone
+  in a heartbeat."
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzQ2NjkwNDAucG5n/original/BErNVt.png
+links:
+  itch: https://boring-games.itch.io/shut-up-and-dance
+  f95: https://f95zone.to/threads/20072/
+saveDir: ShutUpAndDance-BoringGames
+match:
+  - ShutUpAndDanceSpecial-Ep1-Ep11-SE-ver.1.6-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "Ep.1-11 v1.6 SE"
+    date: "2026-05-31"
+    madeWith: 8.1.3
+    status: playable
+    archives:
+      - name: ShutUpAndDanceSpecial-Ep1-Ep11-SE-ver.1.6-pc.zip
+        size: 12129717515
+        sha256: "d84ab616a94e3f2a1a4e1ec2399c6417c5249bea6ce017df0e88224f2964b34e"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0.7% of it (368 of 54465 statements) in 2.35
+        minutes. Coverage is 0.7%, under 90%; the walk hit the time cap; a whole script file was not
+        reached: galleryscenes.rpyc, galleryscenes_ep10ch1.rpyc, galleryscenes_ep10ch2.rpyc. No
+        person has played it through yet."
