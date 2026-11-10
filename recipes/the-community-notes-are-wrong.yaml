@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: the-community-notes-are-wrong
+title: The Community Notes Are Wrong
+developer: tenshideve
+tags:
+  - female-protagonist
+  - multiple-endings
+  - dating-sim
+  - romance
+content:
+  - lesbian
+state: ongoing
+summary: A singer faces biphobia and cyberbullying for kissing a man.
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzMwNDM5OTc3LnBuZw==/original/7GN%2B69.png
+links:
+  itch: https://tenshistudios.itch.io/the-community-notes-are-wrong
+  steam: https://store.steampowered.com/app/5083880/
+saveDir: TheCommunityNotesAreWrong-1772111429
+match:
+  - TheCommunityNotesAreWrong-*-win.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2026-10-23"
+    madeWith: 8.5.2
+    status: playable
+    archives:
+      - name: TheCommunityNotesAreWrong-1.0-win.zip
+        size: 321880435
+        sha256: "73b1cd102eda69e62e1e2120ef1b829f3b6e9d462b87ad1949151fdbe30e0e9d"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 3.7% of it (215 of 5844 statements) in 2.18
+        minutes. Coverage is 3.7%, under 90%; the walk hit the time cap; a whole script file was not
+        reached: cheri.rpyc, full/cheri_ch2.rpyc, full/cheri_ch3.rpyc. No person has played it
+        through yet."
