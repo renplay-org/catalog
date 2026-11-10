@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: error143
+title: ERROR143
+developer: Jenny Vi Pham
+tags: []
+content: []
+state: ongoing
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI5MjEzNTUzLnBuZw==/original/qnTlWS.png
+links:
+  itch: https://jennyvipham.itch.io/error143
+saveDir: HackMe-1649909750
+match:
+  - linux_ error143 base game.zip
+  - Error143-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.8"
+    date: "2026-06-30"
+    madeWith: 8.5.2
+    status: broken
+    archives:
+      - name: linux_ error143 base game.zip
+        size: 3822092020
+        sha256: "e0b28668ab06e7044e6ea2ae1376e61a30388e5cf87cb355fed23e8037c18b36"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: Tue Nov 10 00:11:30 2026"
