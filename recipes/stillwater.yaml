@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: stillwater
+title: Stillwater
+developer: Studio Clump
+tags:
+  - horror
+content: []
+state: ongoing
+summary: Private Investigator Hugo Laurent, gets reeled into a murky mystery entangled in lies,
+  secrets, and a family curse.
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2133930/library_600x900_2x.jpg
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzcxMDA5MTIuZ2lm/original/IochNk.gif
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2133930/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2133930/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2133930/logo.png
+links:
+  itch: https://studioclump.itch.io/stillwater
+  steam: https://store.steampowered.com/app/2133930/
+saveDir: Stillwater-2012132023
+match:
+  - Stillwater-*-win.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2.0"
+    date: "2023-12-13"
+    madeWith: 8.1.3
+    status: playable
+    archives:
+      - name: Stillwater-2.0-win.zip
+        size: 480421848
+        sha256: "b75c546819d854ff984d92942de68d50ffd88e0bba9cbedc1817cd4ab5bde28d"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 45% of it (633 of 1407 statements) in 1.07 minutes.
+        Coverage is 45%, under 90%; a whole script file was not reached:
+        assets/kinetic_text_tags.rpyc, assets/wave_renderer.rpyc, scripts/sc10_haunting.rpyc. No
+        person has played it through yet."
