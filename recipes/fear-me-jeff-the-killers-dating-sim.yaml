@@ -2,8 +2,11 @@
 id: fear-me-jeff-the-killers-dating-sim
 title: Fear Me [Jeff the Killer's Dating Sim]
 developer: Neesa
-tags: []
+tags:
+  - dating-sim
+  - horror
 content: []
+summary: "Jeff the killer is coming for you."
 state: ongoing
 nsfw: false
 free: true
