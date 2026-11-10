@@ -1,0 +1,107 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: my-best-deal
+title: My Best Deal
+developer: Pirot King
+tags:
+  - male-protagonist
+  - paranormal
+  - school-setting
+  - superpowers
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - blackmail
+  - corruption
+  - creampie
+  - drugs
+  - exhibitionism
+  - femaledomination
+  - footjob
+  - group-sex
+  - handjob
+  - incest
+  - interracial
+  - lesbian
+  - maledomination
+  - milf
+  - mind-control
+  - oral-sex
+  - sex-toys
+  - spanking
+  - swinging
+  - teasing
+  - titfuck
+  - twins
+  - urination
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: After saving a girl from certain death, a young man finds himself in heaven where he cuts a
+  deal with the goddess of love.
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 679542
+    url: https://cdn2.steamgriddb.com/grid/9e7dc6c74eaca71c6beaf15ac8e8e821.png
+    by: NonKurow
+    byUrl: https://www.steamgriddb.com/profile/76561198117204077
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzEyMDQwNDI4LnBuZw==/original/MomGzX.png
+  - kind: wide
+    source: sgdb
+    sgdb: 679534
+    url: https://cdn2.steamgriddb.com/grid/d7b72661b3154fc6851dea63ee08bde9.png
+    by: NonKurow
+    byUrl: https://www.steamgriddb.com/profile/76561198117204077
+    adult: true
+  - kind: hero
+    source: sgdb
+    sgdb: 153826
+    url: https://cdn2.steamgriddb.com/hero/4950d9cf6261c4687c401134156861b5.png
+    by: NonKurow
+    byUrl: https://www.steamgriddb.com/profile/76561198117204077
+    adult: true
+  - kind: logo
+    source: sgdb
+    sgdb: 156266
+    url: https://cdn2.steamgriddb.com/logo/cef60fb3402e7f05cc78d98d8f801aec.png
+    by: NonKurow
+    byUrl: https://www.steamgriddb.com/profile/76561198117204077
+links:
+  itch: https://pirot-king.itch.io/my-best-deal
+  f95: https://f95zone.to/threads/37164/
+saveDir: Divinedeal-1567421410
+match:
+  - my-best-deal-win-linux.zip
+  - My_Best_Deal-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "4.8"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (v4.8). Not tested here, and no archive
+        yet: 4.4 from itch.io is the one that was tested."
+  - version: "4.4"
+    date: "2026-01-08"
+    status: playable
+    archives:
+      - name: my-best-deal-win-linux.zip
+        size: 5835975605
+        sha256: "956b68f76775fddb79992b778569a0a715940fb49251576ef2c44ebcc7c589d5"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet. The free download is 4.4, F95zone lists v4.8."
