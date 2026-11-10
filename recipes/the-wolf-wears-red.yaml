@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: the-wolf-wears-red
+title: The Wolf Wears Red
+developer: fluuen
+tags:
+  - female-protagonist
+  - dating-sim
+  - multiple-endings
+  - horror
+  - romance
+content: []
+state: ongoing
+summary: In these woods, only the hungriest survive...
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIyODEyNDgyLnBuZw==/original/Z%2FQu6I.png
+links:
+  itch: https://fluuen.itch.io/the-wolf-wears-red
+saveDir: TheWolfWearsRed-1755578322
+match:
+  - TheWolfWearsRed-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.2"
+    date: "2026-06-11"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: TheWolfWearsRed-1.2-pc.zip
+        size: 110439524
+        sha256: "8607f61b5beed6c68677f9d36849cf5516c87f69ab0569403a183d2c9491ab53"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 86.6% of it (1269 of 1465 statements) in 2.08
+        minutes. Coverage is 86.6%, under 90%; the walk hit the time cap. No person has played it
+        through yet."
