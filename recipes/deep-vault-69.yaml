@@ -1,0 +1,112 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: deep-vault-69
+title: DEEP VAULT 69
+developer: bohohon
+tags:
+  - male-protagonist
+  - point-click
+  - rpg
+  - sandbox
+  - turn-based-combat
+  - dystopian-setting
+  - humor
+  - parody
+  - sci-fi
+  - 2dcg
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - creampie
+  - footjob
+  - futa-trans
+  - futa-trans-protagonist
+  - group-sex
+  - handjob
+  - harem
+  - internal-view
+  - interracial
+  - lesbian
+  - masturbation
+  - mobile-game
+  - oral-sex
+  - sex-toys
+  - spanking
+  - teasing
+  - vaginal-sex
+  - voyeurism
+state: ongoing
+summary: Might I say, you're looking fit as a fiddle! And this is not surprising, because you are
+  one of the survivors in a comfortable vault! But it's time to get to the surface to explore the
+  world.
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 246615
+    url: https://cdn2.steamgriddb.com/grid/e9a9bbbe1a745f41dbe40a240d7686d4.jpg
+    by: bedbug1226
+    byUrl: https://www.steamgriddb.com/profile/76561197991065542
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzMxODUxMTQ0LmpwZw==/original/hqFPZs.jpg
+  - kind: wide
+    source: sgdb
+    sgdb: 246616
+    url: https://cdn2.steamgriddb.com/grid/479f5a0938477c06e08babbad91e18e3.png
+    by: bedbug1226
+    byUrl: https://www.steamgriddb.com/profile/76561197991065542
+  - kind: hero
+    source: sgdb
+    sgdb: 59713
+    url: https://cdn2.steamgriddb.com/hero/ce39354dbe4fbfb2c8cf605fb177be5e.jpg
+    by: bedbug1226
+    byUrl: https://www.steamgriddb.com/profile/76561197991065542
+  - kind: logo
+    source: sgdb
+    sgdb: 63575
+    url: https://cdn2.steamgriddb.com/logo/a945b8df1138a3ea68b392d844133db7.png
+    by: bedbug1226
+    byUrl: https://www.steamgriddb.com/profile/76561197991065542
+  - kind: icon
+    source: sgdb
+    sgdb: 119363
+    url: https://cdn2.steamgriddb.com/icon/3ede8da8c294b33a3bdbf0437172ce4a.png
+    by: RedThunder Viko
+    byUrl: https://www.steamgriddb.com/profile/76561198883718122
+links:
+  itch: https://bohohon.itch.io/deep-vault-69
+  f95: https://f95zone.to/threads/126327/
+saveDir: Deep_Vault-1613587365
+match:
+  - DEEP_VAULT_69-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.7.9"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (v0.7.9). Not tested here, and no archive
+        yet: 0.7.7 from itch.io is the one that was tested."
+  - version: "0.7.7"
+    date: "2026-11-04"
+    madeWith: 8.5.2
+    status: playable
+    archives:
+      - name: DEEP_VAULT_69-0.7.7-pc.zip
+        size: 930180827
+        sha256: "95ec7a0cec385db97c6982169357e0eb93469dc09d490b605a62d3847403ff50"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 1.3% of it (392 of 30712 statements) in 2.51
+        minutes. Coverage is 1.3%, under 90%; the walk hit the time cap; a whole script file was not
+        reached: g_script/core/clear_minigame.rpyc, g_script/core/core_mary_sand_task.rpyc,
+        g_script/core/events/m_quest/m_q_10.rpyc. No person has played it through yet. The free
+        download is 0.7.7, F95zone lists v0.7.9."
