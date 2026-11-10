@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: teach-me-how-to-love
+title: Teach me how to love!
+developer: Rossaredflyn Rougehatten
+tags:
+  - fantasy
+content: []
+state: ongoing
+summary: You summoned an incubus to help earn your crush's love… but he gives you a life lesson instead.
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIyNzg1NDUzLmpwZw==/original/EqjWZn.jpg
+links:
+  itch: https://rossaredflyn.itch.io/teach-me-how-to-love
+saveDir: Teachmehowtolove-1752754680
+match:
+  - Teachmehowtolove-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2025-07-17"
+    madeWith: 8.4.0
+    status: verified
+    archives:
+      - name: Teachmehowtolove-1.0-pc.zip
+        size: 80288876
+        sha256: "8e597246157fd5757d52bd745d8043d4bf366d0fff89aab9b56c00feb48b21e0"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated deep test on the lab's own Renplay: a walk through the script saw 100% of it
+        (119 of 119 statements) in 0.37 minutes, with no Ren'Py error. The main menu, a new game and
+        a save that loads again passed first. No person has played it through yet."
