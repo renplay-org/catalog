@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: my-sweet-pets-demo
+title: MY SWEET PETS
+developer: Nonala
+tags:
+  - dating-sim
+  - horror
+  - romance
+content: []
+state: ongoing
+summary: A mysterious package, an unusual pet, and a love story that’s anything but ordinary. ♡
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzMxMzA5OTU3LmpwZw==/original/78xzEF.jpg
+links:
+  itch: https://nonala.itch.io/my-sweet-pets-demo
+saveDir: mysweetpets-1792154196
+match:
+  - mysweetpets-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2026-10-26"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: mysweetpets-1.0-pc.zip
+        size: 502145440
+        sha256: "df43524d715167e5c8be6ae23efb60183df64602a63c2e16df45cd381a64e53c"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 95.2% of it (559 of 587 statements) in 1.12
+        minutes. A whole script file was not reached: screens.rpyc. No person has played it through
+        yet."
