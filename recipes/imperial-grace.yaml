@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: imperial-grace
+title: Imperial Grace
+developer: Synstoria
+tags:
+  - female-protagonist
+  - dating-sim
+  - management
+  - romance
+content: []
+state: ongoing
+summary: Play as the new Empress of Calidya through an otome game / visual novel rife with romance,
+  ambition and deceit.
+nsfw: false
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzQ5NDYxOTcucG5n/original/%2F7OSCL.png
+links:
+  itch: https://synstoria.itch.io/imperial-grace
+saveDir: ImperialGrace-Demo-1671818013
+match:
+  - Imperial_Grace_demo-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "3.1.0"
+    date: "2025-11-18"
+    madeWith: 8.3.7
+    status: playable
+    archives:
+      - name: Imperial_Grace_demo-3.1.0-pc.zip
+        size: 206001263
+        sha256: "23d4b6aaf7f178edbd66a1803c3f1906f18b25b19cfbf756701775dcd585cabc"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 45.7% of it (817 of 1788 statements) in 2.11
+        minutes. Coverage is 45.7%, under 90%; the walk hit the time cap; a whole script file was
+        not reached: optional files/outline_shader.rpyc, optional files/zoom_vp_examples.rpyc,
+        petitions/demo/academie.rpyc. No person has played it through yet."
