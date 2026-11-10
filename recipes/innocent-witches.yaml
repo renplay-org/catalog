@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
 id: innocent-witches
 title: Innocent Witches
 developer: Sad Crab Company
@@ -84,7 +85,32 @@ match:
   - Innocent_Witches-*-pc.zip
 engine: renpy
 runtime: 8.6.0
+build:
+  patches:
+    - path: game/zz_renplay_scan.rpy
+      file: zz_renplay_scan.rpy
 releases:
+  - version: "2026-10-17"
+    date: "2026-10-17"
+    madeWith: 8.6.0
+    status: playable
+    archives:
+      - name: Innocent_Witches-0-11-7-beta-fix1-pc.zip
+        size: 2451978020
+        sha256: "705d367b716967ad6895f5dd8dbca710d68fbae31819a008e794106d0a8344cc"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0% of it (0 of 60361 statements) in 1.88 minutes.
+        Coverage is 0%, under 90%; the walk ended early (stuck before the main menu); a whole script
+        file was not reached: 01early_code/15.rpyc, 01early_code/17.rpyc, 01early_code/20.rpyc. No
+        person has played it through yet. The free download is 2026-10-17, F95zone lists v0.12.2B
+        Fix1."
   - version: "0.12.2B Fix1"
     status: untested
     archives: []
