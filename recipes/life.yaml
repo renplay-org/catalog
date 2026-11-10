@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: life
+title: Making a Mark
+developer: Fasder
+tags:
+  - male-protagonist
+  - point-click
+  - sandbox
+  - romance
+  - sci-fi
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - creampie
+  - exhibitionism
+  - handjob
+  - incest
+  - lesbian
+  - masturbation
+  - oral-sex
+  - pov
+  - sex-toys
+  - sleep-sex
+  - titfuck
+  - twins
+  - urination
+  - vaginal-sex
+  - voyeurism
+state: completed
+summary: Making a Mark aka Life is about Mark, a young man who studies computer science and
+  struggles to fit into a world of unlikely relationships, romance and technology. Interact and
+  build your relationship with various characters to unfold his story, one piece at a time.
+  Previously known as 'Life'
+nsfw: true
+links:
+  f95: https://f95zone.to/threads/6941/
+saveDir: Life1-1497482271
+match:
+  - Making-a-Mark-v*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.18.00"
+    date: "2022-07-15"
+    madeWith: 7.3.5
+    status: broken
+    archives:
+      - name: Making-a-Mark-v0.18.00-pc.zip
+        size: 3062120364
+        sha256: "5f9d2c8a67a47cfbae839dbf535988781dc3922956129e985a3b741c87710fd3"
+        platform: pc
+    verified:
+      date: "2026-11-10"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: Tue Nov 10 14:52:13 2026 Made with Ren'Py 7, which runs on the Ren'Py 8 engine:
+        Python 2 code in the game can fail later, so a person should play well past the opening."
