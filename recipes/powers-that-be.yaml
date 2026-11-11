@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: powers-that-be
+title: Powers That Be
+developer: Burst Out Games
+tags:
+  - male-protagonist
+  - humor
+  - parody
+  - romance
+  - superpowers
+  - 3dcg
+  - animated
+content:
+  - corruption
+  - creampie
+  - dilf
+  - graphic-violence
+  - groping
+  - harem
+  - incest
+  - internal-view
+  - lesbian
+  - masturbation
+  - mobile-game
+  - oral-sex
+  - pov
+  - vaginal-sex
+  - voyeurism
+state: ongoing
+summary: When a young girl has the ultimate power over your emotions… do you want to resist? A
+  successful middle-aged man takes a break from work to take care of his shy goddaughter who, for
+  unknown reasons, is developing empathic powers that can influence emotions. This is a
+  story-driven, slow-build game encompassing themes with sci-fi and philosophical elements set
+  against a real world background, as well as some irreverent humor sprinkled in for good measure.
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIwMDQ4MTY4LnBuZw==/original/la%2Fpsq.png
+links:
+  itch: https://burst-out-games.itch.io/powers-that-be
+  f95: https://f95zone.to/threads/62594/
+saveDir: PowersThatBe-1589372138
+match:
+  - PowersThatBe-chp24-pc-Compressed.zip
+  - PowersThatBe-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "Ch. 25 Training Full"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (Ch. 25 Training Full). Not tested here,
+        and no archive yet: v0.6.8 from itch.io is the one that was tested."
+  - version: "v0.6.8"
+    date: "2024-10-12"
+    madeWith: 7.4.10
+    status: playable
+    archives:
+      - name: PowersThatBe-chp24-pc-Compressed.zip
+        size: 467498743
+        sha256: "309c55eef450b36fea2c45720ad306389c9d2fa98c585fec5f692d3cc03b4488"
+        platform: pc
+    verified:
+      date: "2026-11-11"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0.1% of it (14 of 11930 statements) in 0.68
+        minutes. Coverage is 0.1%, under 90%; a whole script file was not reached:
+        scripts/story/chapter01.rpyc, scripts/story/chapter02.rpyc, scripts/story/chapter03.rpyc. No
+        person has played it through yet. Made with Ren'Py 7, which runs on the Ren'Py 8 engine:
+        Python 2 code in the game can fail later, so a person should play well past the opening. The
+        free download is v0.6.8, F95zone lists Ch. 25 Training Full."
