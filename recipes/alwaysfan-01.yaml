@@ -1,0 +1,106 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: alwaysfan-01
+title: AlwaysFan
+developer: Atemx Games
+tags:
+  - male-protagonist
+  - dating-sim
+  - multiple-endings
+  - romance
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - blackmail
+  - corruption
+  - creampie
+  - drugs
+  - exhibitionism
+  - groping
+  - group-sex
+  - handjob
+  - harem
+  - lactation
+  - lesbian
+  - maledomination
+  - milf
+  - oral-sex
+  - pregnancy
+  - prostitution
+  - sex-toys
+  - stripping
+  - swinging
+  - teasing
+  - titfuck
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: completed
+summary: Together with Emilie — a young albino woman and childhood friend in a similar situation.
+  Will you be able to overcome these hardships? What kind of relationships will you build with
+  Emilie and the other girls you meet along the way?
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 508207
+    url: https://cdn2.steamgriddb.com/grid/5107fc8553449efc6c06984e788d7ab2.png
+    by: cdburk
+    byUrl: https://www.steamgriddb.com/profile/76561197996128943
+    adult: true
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI1NzU1NDUzLmpwZw==/original/0CyRhR.jpg
+  - kind: wide
+    source: sgdb
+    sgdb: 508213
+    url: https://cdn2.steamgriddb.com/grid/b4450379c05605dc5695ad65b2fc9058.png
+    by: cdburk
+    byUrl: https://www.steamgriddb.com/profile/76561197996128943
+    adult: true
+  - kind: hero
+    source: sgdb
+    sgdb: 122617
+    url: https://cdn2.steamgriddb.com/hero/f2ac9263bd006f52914164e775e0a8e6.png
+    by: cdburk
+    byUrl: https://www.steamgriddb.com/profile/76561197996128943
+    adult: true
+  - kind: logo
+    source: sgdb
+    sgdb: 127237
+    url: https://cdn2.steamgriddb.com/logo/5e7806d96212ab1d9912e4315c62f2b8.png
+    by: cdburk
+    byUrl: https://www.steamgriddb.com/profile/76561197996128943
+links:
+  itch: https://atemx-games.itch.io/alwaysfan-01
+  f95: https://f95zone.to/threads/112027/
+saveDir: AlwaysFan-1639857665
+match:
+  - alwaysfan-01-win-linux.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2025-08-05"
+    date: "2025-08-05"
+    madeWith: 7.4.11
+    status: playable
+    archives:
+      - name: alwaysfan-01-win-linux.zip
+        size: 11687479515
+        sha256: "4e108ab0847008c5472bf9d52a8dcd0d5d1de4f32c8c8b132fa344cbcfcccaab"
+        platform: pc
+    verified:
+      date: "2026-11-11"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0% of it (23 of 49497 statements) in 0.39 minutes.
+        Coverage is 0%, under 90%; 1 Ren'Py error with a traceback; a whole script file was not
+        reached: Marcus_office.rpyc, computer.rpyc, endings.rpyc. No person has played it through
+        yet. Made with Ren'Py 7, which runs on the Ren'Py 8 engine: Python 2 code in the game can
+        fail later, so a person should play well past the opening. The free download is 2025-08-05,
+        F95zone lists v1.0.1."
