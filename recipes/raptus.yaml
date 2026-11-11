@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: raptus
+title: Raptus - Ep.10 Part 6
+developer: RedStarStudios
+tags:
+  - male-protagonist
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - bestiality
+  - big-ass
+  - corruption
+  - creampie
+  - graphic-violence
+  - group-sex
+  - incest
+  - maledomination
+  - masturbation
+  - milf
+  - mobile-game
+  - necrophilia
+  - oral-sex
+  - sex-toys
+  - sexual-harassment
+  - slave
+  - swinging
+  - vaginal-sex
+state: abandoned
+summary: A young boy has been locked for several years in a mental health facility because of his
+  illness and the crimes he committed as a kid, finally free to return to his past life he can't
+  wait to fulfil his desires and let out all the anger and hate he built up in these years.
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzExOTIyNDg5LmpwZw==/original/Vui9MG.jpg
+links:
+  itch: https://redstarstudios.itch.io/raptus
+  f95: https://f95zone.to/threads/63041/
+saveDir: Project_Homeless-1596853728
+match:
+  - Raptus_EP10P6_V1.0_PC.zip
+  - Raptus_RedStarStudios-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "Ep.10 P6 v1.0"
+    status: untested
+    archives: []
+    verified:
+      notes: "The developer's newest release as F95zone lists it (Ep.10 P6 v1.0). Not tested here, and no
+        archive yet: EP10_Part_6_v1.0 from itch.io is the one that was tested."
+  - version: "EP10_Part_6_v1.0"
+    date: "2025-12-11"
+    madeWith: 8.0.3
+    status: playable
+    archives:
+      - name: Raptus_EP10P6_V1.0_PC.zip
+        size: 3600732006
+        sha256: "970b4a6264947eb9ee193b74ea302eafd1358774fb0cf4aa355f43fed9f36bdd"
+        platform: pc
+    verified:
+      date: "2026-11-11"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 10.7% of it (2332 of 21799 statements) in 2.12
+        minutes. Coverage is 10.7%, under 90%; the walk hit the time cap; a whole script file was
+        not reached: scripts/atl_text_tag.rpyc, scripts/d10.rpyc, scripts/d3.rpyc. No person has
+        played it through yet. The free download is EP10_Part_6_v1.0, F95zone lists Ep.10 P6 v1.0."
