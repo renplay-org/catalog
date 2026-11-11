@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: my-maid-dream-of-electric-sheep
+title: My Maid Dreams of Electric Sheep
+developer: dodonga
+tags:
+  - male-protagonist
+  - management
+  - sandbox
+  - dystopian-setting
+  - romance
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-tits
+  - creampie
+  - groping
+  - handjob
+  - maledomination
+  - mobile-game
+  - oral-sex
+  - titfuck
+  - vaginal-sex
+state: ongoing
+summary: In a world where feelings are considered a malady, a man decides to end himself and writes
+  a bizarre yet simple bucket list.
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 698539
+    url: https://cdn2.steamgriddb.com/grid/3fd58a1038dc4ac1c40a6f37013b80aa.png
+    by: PpCrusader
+    byUrl: https://www.steamgriddb.com/profile/76561198419772853
+    adult: true
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI1Mzg2MDMxLnBuZw==/original/1T5gKe.png
+  - kind: wide
+    source: sgdb
+    sgdb: 698548
+    url: https://cdn2.steamgriddb.com/grid/73a653cc7788b9a1407fc666a94a1a0c.png
+    by: PpCrusader
+    byUrl: https://www.steamgriddb.com/profile/76561198419772853
+    adult: true
+  - kind: hero
+    source: sgdb
+    sgdb: 127892
+    url: https://cdn2.steamgriddb.com/hero/f1152cb11202d723b2d5376371772def.png
+    by: Beep_Boop
+    byUrl: https://www.steamgriddb.com/profile/76561198062720178
+  - kind: logo
+    source: sgdb
+    sgdb: 159188
+    url: https://cdn2.steamgriddb.com/logo/f2776457e73e3e70a85011d6142a1524.png
+    by: PpCrusader
+    byUrl: https://www.steamgriddb.com/profile/76561198419772853
+links:
+  itch: https://dodonga.itch.io/my-maid-dream-of-electric-sheep
+  f95: https://f95zone.to/threads/127494/
+saveDir: ElectricSheep-1683388155
+match:
+  - my-maid-dream-of-electric-sheep-win-linux.zip
+  - ElectricSheep-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.8.10"
+    date: "2025-12-31"
+    madeWith: 8.3.4
+    status: broken
+    archives:
+      - name: my-maid-dream-of-electric-sheep-win-linux.zip
+        size: 1851970165
+        sha256: "6bc175d831e224e624d420f0bccbe45daa3ed361d07072a45e6d6dba9894eada"
+        platform: pc
+    verified:
+      date: "2026-11-11"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: Exception: Possible infinite loop."
