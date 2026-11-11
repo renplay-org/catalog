@@ -49,6 +49,12 @@ match:
 engine: renpy
 runtime: 8.5.3
 releases:
+  - version: "0.9350"
+    status: untested
+    archives: []
+    verified:
+      notes: The developer's newest release as F95zone lists it (v0.9350), found by the lab's version
+        watcher. Not tested here, and no archive yet.
   - version: "Revenant"
     date: "2025-03-07"
     madeWith: 7.4.11
