@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: adventurer-trainer
+title: Adventurer Trainer
+developer: PastryIRL
+tags:
+  - male-protagonist
+  - dating-sim
+  - rpg
+  - sandbox
+  - turn-based-combat
+  - fantasy
+  - horror
+  - humor
+  - parody
+  - romance
+content:
+  - ahegao
+  - big-ass
+  - big-tits
+  - creampie
+  - exhibitionism
+  - groping
+  - handjob
+  - harem
+  - milf
+  - mobile-game
+  - oral-sex
+  - prostitution
+  - teasing
+  - titfuck
+  - twins
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: You will meet familiar characters, embark on exhilarating adventures, solve mysteries and more!
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 235920
+    url: https://cdn2.steamgriddb.com/grid/4ed2f0822a6077917d623f103851b32c.jpg
+    by: bedbug1226
+    byUrl: https://www.steamgriddb.com/profile/76561197991065542
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzc4OTc0NTUuanBn/original/3ozvsZ.jpg
+  - kind: wide
+    source: sgdb
+    sgdb: 235921
+    url: https://cdn2.steamgriddb.com/grid/e550e8025ae16c4c01169330135f3831.png
+    by: bedbug1226
+    byUrl: https://www.steamgriddb.com/profile/76561197991065542
+  - kind: hero
+    source: sgdb
+    sgdb: 57421
+    url: https://cdn2.steamgriddb.com/hero/b0d3ad5d1f82ac0417e4e6483b766d6c.jpg
+    by: bedbug1226
+    byUrl: https://www.steamgriddb.com/profile/76561197991065542
+  - kind: logo
+    source: sgdb
+    sgdb: 69427
+    url: https://cdn2.steamgriddb.com/logo/887cfa94114d15ac7b27ddf87fdd913a.png
+    by: bedbug1226
+    byUrl: https://www.steamgriddb.com/profile/76561197991065542
+links:
+  itch: https://pastryirl.itch.io/adventurer-trainer
+  f95: https://f95zone.to/threads/101740/
+saveDir: adventurer_trainer-1581224595
+match:
+  - adventurer-trainer-win-linux.zip
+  - adventurer_trainer-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.2.3c"
+    date: "2026-06-27"
+    madeWith: 8.1.2
+    status: broken
+    archives:
+      - name: adventurer-trainer-win-linux.zip
+        size: 2171542310
+        sha256: "0e560f18ddf7fe3db30d44c0d0aa4a26e0ba9f32cc563b595c66883849ed0a2f"
+        platform: pc
+    verified:
+      date: "2026-11-11"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: \e[97mValueError\e[0m: \e[0mtoo many values to unpack (expected 2)\e[0m"
