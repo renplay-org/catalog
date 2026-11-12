@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: childrenofmorn
+title: Covenant of Morn
+developer: 395games
+tags:
+  - male-protagonist
+  - adventure
+  - dating-sim
+  - point-click
+  - sandbox
+  - fantasy
+  - 3dcg
+  - animated
+content:
+  - big-ass
+  - creampie
+  - exhibitionism
+  - femaledomination
+  - footjob
+  - graphic-violence
+  - handjob
+  - harem
+  - lesbian
+  - maledomination
+  - mind-control
+  - mobile-game
+  - monster-girl
+  - oral-sex
+  - teasing
+  - vaginal-sex
+state: abandoned
+summary: You are resurrected by a white-haired witch that offers you a deal. Her blood to keep you
+  alive, in return for helping her with an important mission. A mission to murder her very own
+  sister.
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 520014
+    url: https://cdn2.steamgriddb.com/grid/37c1600e162ee6676ae7dbe1517982b1.jpg
+    by: Javyxs
+    byUrl: https://www.steamgriddb.com/profile/76561199728927413
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE3MDUxNzQ3LmpwZw==/original/5XU0ie.jpg
+  - kind: wide
+    source: sgdb
+    sgdb: 520019
+    url: https://cdn2.steamgriddb.com/grid/942064659c20974eb06ba9f522332501.jpg
+    by: Javyxs
+    byUrl: https://www.steamgriddb.com/profile/76561199728927413
+  - kind: hero
+    source: sgdb
+    sgdb: 148476
+    url: https://cdn2.steamgriddb.com/hero/52ff42e2ec7dfb67293e4c05a936dd50.jpg
+    by: Ruthbit
+    byUrl: https://www.steamgriddb.com/profile/76561199081834194
+  - kind: logo
+    source: sgdb
+    sgdb: 129368
+    url: https://cdn2.steamgriddb.com/logo/452b449795eef1250ee8f1f68d2ff7cd.png
+    by: Javyxs
+    byUrl: https://www.steamgriddb.com/profile/76561199728927413
+links:
+  itch: https://395games.itch.io/childrenofmorn
+  f95: https://f95zone.to/threads/156149/
+saveDir: ChildrenofMorn-1675250244
+match:
+  - CovenantOfMorn-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "0.5.1"
+    date: "2025-02-13"
+    madeWith: 8.2.1
+    status: broken
+    archives:
+      - name: CovenantOfMorn-0.5.1-pc.zip
+        size: 1995542231
+        sha256: "7f0004deef4d52e7696e52fdfb908013e59e1608cb86ecefa2e762d7eb3f6f0d"
+        platform: pc
+    verified:
+      date: "2026-11-12"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: Thu Nov 12 07:30:51 2026"
