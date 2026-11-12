@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: offcuts
+title: Offcuts
+developer: stencilbits
+tags:
+  - male-protagonist
+  - romance
+  - school-setting
+  - 3dcg
+content:
+  - anal-sex
+  - mobile-game
+  - oral-sex
+  - vaginal-sex
+  - virgin
+state: abandoned
+summary: While adapting to his new life he encounters both new people and old acquaintances he
+  previously had to leave behind. How the story progresses and ends will be up to you, the player.
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1hZ2UvMjU2OTMxLzEyMzEyNzEuanBn/original/oO%2BxQO.jpg
+links:
+  itch: https://stencilbits.itch.io/offcuts
+  f95: https://f95zone.to/threads/12879/
+saveDir: Offcuts-0.1
+match:
+  - Offcuts-0.3.1-win.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "2019-08-15"
+    date: "2019-08-15"
+    madeWith: 7.1.3
+    status: broken
+    archives:
+      - name: Offcuts-0.3.1-win.zip
+        size: 314004285
+        sha256: "60ff7cd5735761818945f49f92258fcff8c9d6ca14bde4f83ac07a9ec8d2ba70"
+        platform: pc
+    verified:
+      date: "2026-11-12"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: KeyError: 'shader' Made with Ren'Py 7, which runs on the Ren'Py 8 engine: Python 2
+        code in the game can fail later, so a person should play well past the opening."
