@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: big-bad-dogs
+title: Big Bad Dogs
+developer: spar0w
+tags:
+  - female-protagonist
+  - dating-sim
+  - horror
+  - romance
+content: []
+state: ongoing
+summary: Obedient. Wild. Possessive. What kind of dog are you feeding ?
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzIyMTY5MDQxLmdpZg==/original/FqFEf8.gif
+links:
+  itch: https://spar0w.itch.io/bigbaddogs
+saveDir: we-1739386725
+match:
+  - bigbaddogs-windows.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2026-07-02"
+    madeWith: 8.3.7
+    status: playable
+    archives:
+      - name: bigbaddogs-windows.zip
+        size: 1302732041
+        sha256: "424a74673f052706466bb9370db4c44a12fd6e3cc9aa9e4ac55b1d9af5a949d1"
+        platform: pc
+    verified:
+      date: "2026-11-12"
+      renplay: 4.10.0
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 7% of it (2572 of 36894 statements) in 2.15
+        minutes. Coverage is 7%, under 90%; the walk hit the time cap. No person has played it
+        through yet."
