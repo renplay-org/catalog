@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: university-of-problems
+title: University of Problems
+developer: DreamNow
+tags:
+  - male-protagonist
+  - humor
+  - romance
+  - school-setting
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - bdsm
+  - big-ass
+  - big-tits
+  - cheating
+  - corruption
+  - creampie
+  - exhibitionism
+  - femaledomination
+  - footjob
+  - groping
+  - handjob
+  - interracial
+  - maledomination
+  - milf
+  - mobile-game
+  - oral-sex
+  - pov
+  - sex-toys
+  - teasing
+  - titfuck
+  - urination
+  - vaginal-sex
+  - voyeurism
+state: ongoing
+summary: Student life is perhaps the most vivid, colorful, and memorable period of life for many of
+  us. "University of Problems" is just about it. An ordinary guy from an ordinary family
+  unexpectedly enters one of the best universities in the country.
+nsfw: true
+links:
+  f95: https://f95zone.to/threads/65957/
+saveDir: University of Problems
+match:
+  - University_of_Problems-1.9.5-Extended-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.9.5 Ext"
+    date: "2026-09-30"
+    madeWith: 8.3.0
+    status: broken
+    archives:
+      - name: University_of_Problems-1.9.5-Extended-pc.zip
+        size: 15817810512
+        sha256: "2253c63843f58a56ed077d1669777b954bf3d79ca190fefe33a409b310e8b622"
+        platform: pc
+    verified:
+      date: "2026-11-12"
+      renplay: 4.10.0
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: Exception: Possible infinite loop."
