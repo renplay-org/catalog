@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: the-slugman-chromodoris-willani
+title: "The Slugman: Chromodoris Willani"
+developer: PURPXLITY STUDIO
+tags:
+  - dating-sim
+  - horror
+  - romance
+  - paranormal
+content: []
+state: ongoing
+summary: Will you trust your Slugmonster friend?
+nsfw: false
+free: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzI3MTAwODQ3LnBuZw==/original/klCk%2F3.png
+links:
+  itch: https://purpxlity-studio.itch.io/the-slugman-chromodoris-willani
+saveDir: Sluggertest-1763271302
+match:
+  - TheSlugman-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.1"
+    date: "2026-05-13"
+    madeWith: 8.5.2
+    status: playable
+    archives:
+      - name: TheSlugman-1.1-pc.zip
+        size: 749233357
+        sha256: "f03362e3657e76983697b83d095662163db917281e80f40c8e60437d81886dc6"
+        platform: pc
+    verified:
+      date: "2026-11-12"
+      renplay: 4.10.0
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 95.9% of it (1043 of 1088 statements) in 1.38
+        minutes. A whole script file was not reached: kinetic_text_tags.rpyc. No person has played
+        it through yet."
