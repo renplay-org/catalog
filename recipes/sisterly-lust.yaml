@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: sisterly-lust
+title: Sisterly Lust
+developer: Perverteer
+tags:
+  - male-protagonist
+  - romance
+  - 3dcg
+content:
+  - anal-sex
+  - blackmail
+  - cheating
+  - corruption
+  - creampie
+  - exhibitionism
+  - groping
+  - group-sex
+  - handjob
+  - harem
+  - incest
+  - interracial
+  - lesbian
+  - maledomination
+  - masturbation
+  - milf
+  - mobile-game
+  - multiple-penetration
+  - oral-sex
+  - pregnancy
+  - sex-toys
+  - sleep-sex
+  - spanking
+  - swinging
+  - urination
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: completed
+summary: Until recently you've lived in a different part of the country with your father. Your
+  parents divorced when you were very little and the family was ripped apart after a fierce custody
+  battle. Your mother took her three daughters home, while your father moved away with you.
+nsfw: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1224160/library_600x900_2x.jpg
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1224160/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1224160/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1224160/logo.png
+links:
+  f95: https://f95zone.to/threads/6547/
+  steam: https://store.steampowered.com/app/1224160/
+saveDir: SisterlyLove-1502799947
+match:
+  - Sisterly_Lust-1.2.5-market-GoG.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.2.5 Extra"
+    date: "2026-02-11"
+    madeWith: 8.3.3
+    status: broken
+    archives:
+      - name: Sisterly_Lust-1.2.5-market-GoG.zip
+        size: 2492767776
+        sha256: "435606d76cac801a7e42aacfff1f07e2d180cd5ab23912f6094f718e142f7b9f"
+        platform: pc
+    verified:
+      date: "2026-11-12"
+      renplay: 4.10.0
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: OSError: [Errno 138] emscripten does not support processes."
