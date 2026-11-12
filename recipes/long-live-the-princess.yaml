@@ -1,0 +1,94 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: long-live-the-princess
+title: Long Live the Princess
+developer: Belle
+tags:
+  - male-protagonist
+  - adventure
+  - sandbox
+  - fantasy
+  - humor
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - cheating
+  - corruption
+  - creampie
+  - exhibitionism
+  - groping
+  - group-sex
+  - handjob
+  - incest
+  - interracial
+  - lesbian
+  - masturbation
+  - mind-control
+  - mobile-game
+  - ntr
+  - oral-sex
+  - pregnancy
+  - sleep-sex
+  - teasing
+  - titfuck
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: completed
+summary: His daughter, Princess Selena, is set to take the crown. But something is wrong. Murder,
+  backstabbing, and visions of extinction threaten to bring ruin to all that is good.
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 436131
+    url: https://cdn2.steamgriddb.com/grid/66489164585b67ec78b0403385423c25.png
+    by: kurosettopon
+    byUrl: https://www.steamgriddb.com/profile/76561198011759642
+  - kind: wide
+    source: sgdb
+    sgdb: 507247
+    url: https://cdn2.steamgriddb.com/grid/a49b36acccbb39fe4342d1e70ac43042.png
+    by: cdburk
+    byUrl: https://www.steamgriddb.com/profile/76561197996128943
+  - kind: hero
+    source: sgdb
+    sgdb: 104951
+    url: https://cdn2.steamgriddb.com/hero/72c4aada93d8cb5a924319a90869b92d.png
+    by: kurosettopon
+    byUrl: https://www.steamgriddb.com/profile/76561198011759642
+  - kind: logo
+    source: sgdb
+    sgdb: 110744
+    url: https://cdn2.steamgriddb.com/logo/2cf56dde48418a64f487a5e84792c010.png
+    by: kurosettopon
+    byUrl: https://www.steamgriddb.com/profile/76561198011759642
+links:
+  f95: https://f95zone.to/threads/5259/
+saveDir: LongLiveThePrincess-1502893156
+match:
+  - LongLiveThePrincess-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0.1"
+    date: "2023-03-26"
+    madeWith: 7.4.11
+    status: playable
+    archives:
+      - name: LongLiveThePrincess-1.0.1-pc.zip
+        size: 1397779954
+        sha256: "3a8246306c14e756ff1fb47ab0e3ab609adab0d2fd215542a95549c826c89a58"
+        platform: pc
+    verified:
+      date: "2026-11-12"
+      renplay: 4.10.0
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 2.3% of it (799 of 35105 statements) in 2.2
+        minutes. Coverage is 2.3%, under 90%; 7 Ren'Py errors with a traceback; the walk hit the
+        time cap; a whole script file was not reached: epilogue.rpyc, erato.rpyc, feycourt.rpyc. No
+        person has played it through yet. Made with Ren'Py 7, which runs on the Ren'Py 8 engine:
+        Python 2 code in the game can fail later, so a person should play well past the opening."
