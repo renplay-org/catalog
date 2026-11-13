@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: personal-trainer
+title: Personal Trainer
+developer: Domiek
+tags:
+  - male-protagonist
+  - sandbox
+  - humor
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - cheating
+  - corruption
+  - creampie
+  - femaledomination
+  - futa-trans
+  - group-sex
+  - harem
+  - incest
+  - interracial
+  - lesbian
+  - maledomination
+  - milf
+  - mobile-game
+  - oral-sex
+  - pregnancy
+  - spanking
+  - teasing
+  - titfuck
+  - trap
+  - vaginal-sex
+  - voyeurism
+state: completed
+summary: You come home to find your fiancée in bed with another man. This event sparks a downward
+  spiral which eventually leads to you losing your job and the life you've created. Fortunately, the
+  generosity of your beautiful cousin (Sophie) provides you refuge in another city.
+nsfw: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2385140/library_600x900_2x.jpg
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2385140/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2385140/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2385140/logo.png
+links:
+  f95: https://f95zone.to/threads/14093/
+  steam: https://store.steampowered.com/app/2385140/
+saveDir: PersonalTrainerRE-1687591058
+match:
+  - Personal Trainer RE v*-WLM.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.1.3"
+    date: "2025-12-12"
+    madeWith: 8.0.3
+    status: playable
+    archives:
+      - name: Personal Trainer RE v1.1.3-WLM.zip
+        size: 1132395459
+        sha256: "8fc1b1b29d4df4de1b37bf85483633ad23433bc8fadde6d6f554a10e6cbe58e3"
+        platform: pc
+    verified:
+      date: "2026-11-13"
+      renplay: 4.11.0
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 1.1% of it (181 of 16498 statements) in 2.11
+        minutes. Coverage is 1.1%, under 90%; the walk hit the time cap; a whole script file was not
+        reached: chars/alex/events_alex.rpyc, chars/amy/events_amy.rpyc,
+        chars/daisy/events_daisy.rpyc. No person has played it through yet."
