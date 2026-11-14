@@ -93,6 +93,23 @@ releases:
     verified:
       notes: "The developer's newest release as F95zone lists it (v0.999999 P2). Not tested here, and no
         archive yet: 0.999999(part1)b from itch.io is the one that was tested."
+  - version: "0.999999(part2c)"
+    date: "2026-11-14"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: superhuman-win.zip
+        size: 4815121836
+        sha256: "dc89c30cb3da1d2c5abd73e11e1cc1341410a3aaa48a189b2ef4156714c9a4b1"
+        platform: pc
+    verified:
+      date: "2026-11-14"
+      renplay: 4.11.0
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet. The free download is 0.999999(part2c), F95zone lists v0.999999 P2."
   - version: "0.999999(part1)b"
     date: "2026-09-16"
     madeWith: 8.0.3
