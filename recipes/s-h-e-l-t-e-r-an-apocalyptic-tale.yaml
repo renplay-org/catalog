@@ -1,0 +1,89 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: s-h-e-l-t-e-r-an-apocalyptic-tale
+title: S.H.E.L.T.E.R. - An Apocalyptic Tale
+developer: Winterlook
+tags:
+  - male-protagonist
+  - adventure
+  - sandbox
+  - dystopian-setting
+  - romance
+  - sci-fi
+  - 2dcg
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - corruption
+  - creampie
+  - drugs
+  - footjob
+  - futa-trans
+  - group-sex
+  - handjob
+  - harem
+  - incest
+  - lactation
+  - lesbian
+  - masturbation
+  - mobile-game
+  - monster-girl
+  - oral-sex
+  - pregnancy
+  - sex-toys
+  - spanking
+  - tentacles
+  - titfuck
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: completed
+summary: The day everyone feared, the day everyone hoped would never come, arrived in the form of a
+  nuclear cloud. The government shelters, built to save and protect the lives of its citizens soon
+  crumbled from overpopulation and lack of food. With no other choice, many tried to find another
+  life by returning to the surface.
+nsfw: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1394100/library_600x900_2x.jpg
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1394100/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1394100/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1394100/logo.png
+links:
+  f95: https://f95zone.to/threads/24888/
+  steam: https://store.steampowered.com/app/1394100/
+saveDir: Shelter-1546004563
+match:
+  - Shelter-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2021-11-12"
+    madeWith: 7.3.5
+    status: playable
+    archives:
+      - name: Shelter-1.0-pc.zip
+        size: 1257251407
+        sha256: "93e63f91790e22ce7d9b65d21348859b7d04a134f7bb3d6da9a00a68bc2edd29"
+        platform: pc
+    verified:
+      date: "2026-11-15"
+      renplay: 4.11.0
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 4.8% of it (953 of 19938 statements) in 2.11
+        minutes. Coverage is 4.8%, under 90%; the walk hit the time cap; a whole script file was not
+        reached: events/android/android_intro.rpyc, events/android/android_job.rpyc,
+        events/android/android_pregnancy.rpyc. No person has played it through yet. Made with Ren'Py
+        7, which runs on the Ren'Py 8 engine: Python 2 code in the game can fail later, so a person
+        should play well past the opening."
