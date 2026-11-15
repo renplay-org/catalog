@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: parental-love
+title: Parental Love
+developer: Luxee
+tags:
+  - male-protagonist
+  - combat
+  - romance
+  - 3dcg
+content:
+  - ahegao
+  - anal-sex
+  - cheating
+  - corruption
+  - creampie
+  - gay
+  - graphic-violence
+  - group-sex
+  - handjob
+  - harem
+  - incest
+  - lesbian
+  - masturbation
+  - milf
+  - mobile-game
+  - oral-sex
+  - pregnancy
+  - trap
+  - urination
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: completed
+summary: In Parental love, you take on the role of a father of two who had a falling out with his
+  wife Emily. You were a cocaine addict, you were a bad father, sharing only brief moments of
+  happiness with your children between your inebriated and sober states, your children and Emily you
+  now long for those happy times they shared with you. A while after your second daughter Ada, was
+  born, Emily thought it best you two get a divorce.
+nsfw: true
+art:
+  - kind: grid
+    source: renplay
+    url: https://covers.renplay.org/parental-love-e00dc18c0d.webp
+  - kind: wide
+    source: renplay
+    url: https://covers.renplay.org/parental-love-0a95beb0c9.webp
+links:
+  f95: https://f95zone.to/threads/3222/
+saveDir: ParentalLoveFinal-1492770962
+match:
+  - ParentalLove-version*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.1"
+    date: "2022-05-26"
+    madeWith: 7.4.11
+    status: playable
+    archives:
+      - name: ParentalLove-version1.1-pc.zip
+        size: 2008950073
+        sha256: "ca6946cac9466b163d74f0e6381c60240c8f00234877ba383342f172240eb36c"
+        platform: pc
+    verified:
+      date: "2026-11-15"
+      renplay: 4.11.0
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0% of it (0 of 18531 statements) in 0.97 minutes.
+        Coverage is 0%, under 90%; the walk ended early (stuck before the main menu); a whole script
+        file was not reached: achievements.rpyc, gallery.rpyc, screens.rpyc. No person has played it
+        through yet. Made with Ren'Py 7, which runs on the Ren'Py 8 engine: Python 2 code in the
+        game can fail later, so a person should play well past the opening."
