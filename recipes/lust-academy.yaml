@@ -1,0 +1,96 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: lust-academy
+title: Lust Academy
+developer: Bear in the Night
+tags:
+  - male-protagonist
+  - management
+  - point-click
+  - puzzle
+  - sandbox
+  - fantasy
+  - humor
+  - parody
+  - romance
+  - school-setting
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - creampie
+  - femaledomination
+  - futa-trans
+  - gay
+  - groping
+  - group-sex
+  - handjob
+  - harem
+  - humiliation
+  - incest
+  - interracial
+  - lesbian
+  - masturbation
+  - milf
+  - mind-control
+  - mobile-game
+  - monster
+  - monster-girl
+  - multiple-penetration
+  - oral-sex
+  - pov
+  - sex-toys
+  - sexual-harassment
+  - sleep-sex
+  - stripping
+  - swinging
+  - teasing
+  - titfuck
+  - twins
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: completed
+summary: You play as a normal 18 y.o. guy who’s life is about to change forever! You’ll find out
+  about the whole world full of magic and adventure that awaits you at Cordale - the oldest academy
+  of magic and wizardry in the New World.
+nsfw: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1846920/library_600x900_2x.jpg
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1846920/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1846920/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1846920/logo.png
+links:
+  f95: https://f95zone.to/threads/69272/
+  steam: https://store.steampowered.com/app/1846920/
+saveDir: LustAcademy-1651126410
+match:
+  - Lust-Academy-2-1.12.1d-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "S4 v4.10.2a DLCs"
+    date: "2023-09-28"
+    madeWith: 7.5.1
+    status: broken
+    archives:
+      - name: Lust-Academy-2-1.12.1d-pc.zip
+        size: 4160554446
+        sha256: "479b181e533dec6ea83ffe26466f8037da1ecc74a811b906ce0bb328b1b11780"
+        platform: pc
+    verified:
+      date: "2026-11-15"
+      renplay: 4.12.0
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: TypeError: can't concat str to bytes Made with Ren'Py 7, which runs on the Ren'Py 8
+        engine: Python 2 code in the game can fail later, so a person should play well past the
+        opening."
