@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: anna-exciting-affection
+title: Anna Exciting Affection
+developer: DeepSleep
+tags:
+  - female-protagonist
+  - point-click
+  - sandbox
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-ass
+  - blackmail
+  - cheating
+  - corruption
+  - creampie
+  - exhibitionism
+  - footjob
+  - groping
+  - group-sex
+  - handjob
+  - interracial
+  - lesbian
+  - multiple-penetration
+  - oral-sex
+  - prostitution
+  - spanking
+  - stripping
+  - teasing
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: You will be playing the role of "Anna" and making decisions in her life as she will
+  discover herself through the journey. There will be a main storyline with different outcomes
+  depending on your choices, as well as lots of side quests.
+nsfw: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2208910/library_600x900_2x.jpg
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2208910/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2208910/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/2208910/logo.png
+links:
+  f95: https://f95zone.to/threads/2689/
+  steam: https://store.steampowered.com/app/2208910/
+saveDir: ShortNovelAnnasVirginity-1677482926
+match:
+  - anna_the_first_time_PC.rar
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "Ch.3 Ep.1 Beta"
+    date: "2023-03-20"
+    madeWith: 8.0.3
+    status: playable
+    archives:
+      - name: anna_the_first_time_PC.rar
+        size: 256211627
+        sha256: "f1b112d05cefbd9387cec44e1bdef6941a39dc76018338c54d383c7292826d79"
+        platform: pc
+    verified:
+      date: "2026-11-16"
+      renplay: 4.12.0
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 99% of it (803 of 811 statements) in 2.18 minutes.
+        The walk hit the time cap. No person has played it through yet."
