@@ -1,0 +1,96 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: rogue-like-evolution
+title: "Rogue-like: Evolution"
+developer: Oni
+tags:
+  - female-protagonist
+  - male-protagonist
+  - sandbox
+  - parody
+  - romance
+  - school-setting
+  - superpowers
+  - 2dcg
+  - animated
+content:
+  - anal-sex
+  - big-tits
+  - bukkake
+  - corruption
+  - creampie
+  - exhibitionism
+  - footjob
+  - groping
+  - group-sex
+  - handjob
+  - harem
+  - interracial
+  - lesbian
+  - maledomination
+  - masturbation
+  - milf
+  - oral-sex
+  - pov
+  - spanking
+  - stripping
+  - titfuck
+  - trainer
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: ongoing
+summary: You are a new Mutant who has the ability to be immune to all other Mutant powers including
+  the girl with the deadly touch Rogue. She's intrigued and susceptible to your influence so you can
+  either play nice and show her the love she's been missing or train her to be your lap dog.
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 126141
+    url: https://cdn2.steamgriddb.com/grid/67442cbeff9520f49ba83442f4a9de5c.png
+    by: beatmeatgosleep
+    byUrl: https://www.steamgriddb.com/profile/76561199121418727
+  - kind: wide
+    source: sgdb
+    sgdb: 126143
+    url: https://cdn2.steamgriddb.com/grid/6c947a224730c54ba2175ce4f8ca0966.png
+    by: beatmeatgosleep
+    byUrl: https://www.steamgriddb.com/profile/76561199121418727
+  - kind: hero
+    source: sgdb
+    sgdb: 28657
+    url: https://cdn2.steamgriddb.com/hero/e4b6786bef5f306479ebdcc6fec136b3.png
+    by: beatmeatgosleep
+    byUrl: https://www.steamgriddb.com/profile/76561199121418727
+  - kind: logo
+    source: sgdb
+    sgdb: 31967
+    url: https://cdn2.steamgriddb.com/logo/7ffa844678e10a4551300dedcbabb52d.png
+    by: beatmeatgosleep
+    byUrl: https://www.steamgriddb.com/profile/76561199121418727
+links:
+  f95: https://f95zone.to/threads/14/
+saveDir: Rogue-Like
+match:
+  - Rogue-Like-*-win.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.74c"
+    date: "2026-09-08"
+    madeWith: 6.99.13
+    status: broken
+    archives:
+      - name: Rogue-Like-1.74c-win.zip
+        size: 318835736
+        sha256: "47c9317f14d52000cf4d336e4481bb6d02c981add54f72d2bd7991902538226d"
+        platform: pc
+    verified:
+      date: "2026-11-17"
+      renplay: 4.12.0
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: NameError: name 'StageRight' is not defined Made with Ren'Py 6, which runs on the
+        Ren'Py 8 engine: Python 2 code in the game can fail later, so a person should play well past
+        the opening."
