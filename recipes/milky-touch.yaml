@@ -1,0 +1,101 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: milky-touch
+title: Milky Touch
+developer: Studio Kuma
+tags:
+  - male-protagonist
+  - romance
+  - school-setting
+  - 2dcg
+  - animated
+  - voiced
+content:
+  - anal-sex
+  - blackmail
+  - cheating
+  - creampie
+  - femaledomination
+  - footjob
+  - groping
+  - group-sex
+  - handjob
+  - incest
+  - lactation
+  - lesbian
+  - masturbation
+  - milf
+  - mobile-game
+  - multiple-penetration
+  - oral-sex
+  - sexual-harassment
+  - sleep-sex
+  - teasing
+  - vaginal-sex
+  - voyeurism
+state: completed
+summary: Welcome to Milky Town. Yesterday, you were just another young man about to start your first
+  day at a private university. However, today everything is about to change.
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 405720
+    url: https://cdn2.steamgriddb.com/grid/998648601aa05cbdd5e6b7746dc5770c.png
+    by: imgfylalbm
+    byUrl: https://www.steamgriddb.com/profile/76561198148893697
+    adult: true
+  - kind: wide
+    source: sgdb
+    sgdb: 405724
+    url: https://cdn2.steamgriddb.com/grid/917539d446b35cfc4879ad8db808f484.png
+    by: imgfylalbm
+    byUrl: https://www.steamgriddb.com/profile/76561198148893697
+    adult: true
+  - kind: hero
+    source: sgdb
+    sgdb: 98113
+    url: https://cdn2.steamgriddb.com/hero/076fea007d19592983b2da7f5c2d3631.png
+    by: imgfylalbm
+    byUrl: https://www.steamgriddb.com/profile/76561198148893697
+    adult: true
+  - kind: logo
+    source: sgdb
+    sgdb: 103904
+    url: https://cdn2.steamgriddb.com/logo/aeb628bde170cc23573f0b2c50674e20.png
+    by: imgfylalbm
+    byUrl: https://www.steamgriddb.com/profile/76561198148893697
+  - kind: icon
+    source: sgdb
+    sgdb: 50070
+    url: https://cdn2.steamgriddb.com/icon/cb306aab7cdb746c2996f02a7b7d1ce4.png
+    by: imgfylalbm
+    byUrl: https://www.steamgriddb.com/profile/76561198148893697
+links:
+  f95: https://f95zone.to/threads/28224/
+saveDir: MilkyTouch-1571046750
+match:
+  - MilkyTouch-*e.Official-pc.7z
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "Final"
+    date: "2021-12-23"
+    madeWith: 7.4.4
+    status: playable
+    archives:
+      - name: MilkyTouch-Finale.Official-pc.7z
+        size: 2247182105
+        sha256: "37d8bc42587ae2037d481aba3cea4193164718fd9991bbefacfe85a6a246d16a"
+        platform: pc
+    verified:
+      date: "2026-11-17"
+      renplay: 4.13.0
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0% of it (1 of 18840 statements) in 0.38 minutes.
+        Coverage is 0%, under 90%; 1 Ren'Py error with a traceback; a whole script file was not
+        reached: chaptertitle.rpyc, minigame.rpyc, script_day1.rpyc. No person has played it through
+        yet. Made with Ren'Py 7, which runs on the Ren'Py 8 engine: Python 2 code in the game can
+        fail later, so a person should play well past the opening."
