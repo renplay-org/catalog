@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: away-from-home
+title: Away from Home
+developer: vatosgames
+tags:
+  - male-protagonist
+  - romance
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - cheating
+  - creampie
+  - footjob
+  - groping
+  - group-sex
+  - handjob
+  - harem
+  - incest
+  - interracial
+  - masturbation
+  - milf
+  - mobile-game
+  - oral-sex
+  - pregnancy
+  - teasing
+  - titfuck
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: completed
+summary: Your father is an ex-cop. One day he tells you and your maid have to go to Eva's house
+  which is approximately 2500 km away, without giving any reason. Eva is an old acquaintance of your
+  family.
+nsfw: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1631980/library_600x900_2x.jpg
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1631980/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1631980/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1631980/logo.png
+links:
+  f95: https://f95zone.to/threads/29666/
+  steam: https://store.steampowered.com/app/1631980/
+saveDir: AwayFromHome-saves
+match:
+  - AwayFromHome-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "Final"
+    date: "2026-10-10"
+    madeWith: 8.3.7
+    status: playable
+    archives:
+      - name: AwayFromHome-Final-pc.zip
+        size: 3956624265
+        sha256: "dfaa3066067f12aef1775e72b5f6b25300c852bc48867f90f807abb71ade441c"
+        platform: pc
+    verified:
+      date: "2026-11-17"
+      renplay: 4.13.0
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 0% of it (0 of 37208 statements) in 0.63 minutes.
+        Coverage is 0%, under 90%; the walk ended early (stuck before the main menu); a whole script
+        file was not reached: memories.rpyc, script.rpyc. No person has played it through yet."
