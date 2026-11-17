@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: solvalley-school
+title: Solvalley School
+developer: TK8000
+tags:
+  - male-protagonist
+  - multiple-endings
+  - sandbox
+  - humor
+  - school-setting
+  - 3dcg
+  - animated
+content:
+  - ahegao
+  - anal-sex
+  - big-ass
+  - big-tits
+  - bukkake
+  - cheating
+  - corruption
+  - cosplay
+  - creampie
+  - exhibitionism
+  - footjob
+  - groping
+  - group-sex
+  - handjob
+  - harem
+  - incest
+  - interracial
+  - lesbian
+  - masturbation
+  - milf
+  - multiple-penetration
+  - oral-sex
+  - pregnancy
+  - prostitution
+  - sex-toys
+  - spanking
+  - stripping
+  - swinging
+  - teasing
+  - titfuck
+  - vaginal-sex
+  - virgin
+  - voyeurism
+state: completed
+summary: Solvalley School is a mix of Dating Sim and Visual Novel. It deals with the adventures of
+  Alex, a young student at local school. It is up to the player to develop Alex's abilities to try
+  and win as many girls as possible.
+nsfw: true
+art:
+  - kind: grid
+    source: renplay
+    url: https://covers.renplay.org/solvalley-school-270bf6fdd0.webp
+  - kind: wide
+    source: renplay
+    url: https://covers.renplay.org/solvalley-school-437f6df2e6.webp
+links:
+  f95: https://f95zone.to/threads/3368/
+saveDir: SolvalleyChristmasSpecial2023-1702526231
+match:
+  - SolvalleyChristmasSpecial2023-1.0-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "5.0.0"
+    date: "2023-12-22"
+    madeWith: 8.1.3
+    status: playable
+    archives:
+      - name: SolvalleyChristmasSpecial2023-1.0-pc.zip
+        size: 582441262
+        sha256: "e099995debf1b5ca5b7dc104bcd5574d7fcb18d8726db2f94159e295f9c4792f"
+        platform: pc
+    verified:
+      date: "2026-11-17"
+      renplay: 4.13.0
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 19.6% of it (380 of 1942 statements) in 2.18
+        minutes. Coverage is 19.6%, under 90%; the walk hit the time cap. No person has played it
+        through yet."
