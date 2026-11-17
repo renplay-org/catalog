@@ -1,8 +1,15 @@
 # Contributing recipes
 
-Thanks for adding games! A recipe tells Renplay which download of a game works in the browser and
-how to build it. **Never add game files**: recipes point to the official download, and players get
-the game from there.
+Thanks for helping the catalog grow. A recipe tells Renplay which download of a game works in the browser
+and how to build it. **Never add game files**: recipes point to the official download, and players get
+the game from there. You can [browse what is in the catalog](https://renplay.org/catalog) first.
+
+## Ask for a game
+
+Not ready to write a recipe? [Request the game](https://renplay.org/catalog/request) or a newer version of
+one that is listed. Requests are public issues, and a bot checks each one against the catalog and the game's
+page. Link the developer's own page, never a download mirror. If a listed game does not work for you,
+[report it](https://github.com/renplay-org/catalog/issues/new/choose) and say which version you tried.
 
 ## Add a game
 
@@ -17,9 +24,10 @@ the game from there.
 5. Add the developer, `links` (at least the official page), `tags` and `nsfw`, and set `status`:
    - `verified`: plays through without problems
    - `playable`: works, with issues you describe in `verified.notes`
-   - `broken`: does not work; say why in `verified.notes`, so nobody has to find out again
+   - `broken`: does not work. Say why in `verified.notes`, so nobody has to find out again
 6. Add the art (below). A game needs at least one grid or one hero.
-7. Save the recipe as `recipes/<id>.yaml`, run `npm ci && npm run build`, and open a pull request.
+7. Save the recipe as `recipes/<id>.yaml`, run `npm ci && npm run build`, and open a pull request titled like
+   `Add <Game> (<version>, <status>)`. One game or one change goes in each pull request.
 
 `recipes/_template.yaml` explains every field. Keep its first line, which points editors such as VS
 Code (with the YAML extension) at the schema, so they check the recipe as you type.
