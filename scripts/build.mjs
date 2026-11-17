@@ -171,6 +171,16 @@ writeFileSync(
   Access-Control-Allow-Origin: *
   X-Content-Type-Options: nosniff
   X-Robots-Tag: noindex
+/
+  ! X-Robots-Tag
+/index.html
+  ! X-Robots-Tag
+/favicon.ico
+  ! X-Robots-Tag
+/favicon.svg
+  ! X-Robots-Tag
+/apple-touch-icon.png
+  ! X-Robots-Tag
 /index.v4.json
   Cache-Control: public, max-age=300
 /index.v4.sfw.json
@@ -192,9 +202,11 @@ writeFileSync(
 `,
 )
 // What a person sees who opens catalog.renplay.org in a browser: what this address is, and where to go.
-// Search engines are kept away from this host (robots.txt, X-Robots-Tag): the website lists the games.
+// Search engines may read the whole host: this page and its icons can be listed, with Renplay's icon beside them,
+// and every other file says noindex in its headers, which a crawler can only read if robots.txt lets it in.
 const listedCount = games.filter((g) => g.releases?.[0]?.status !== 'broken').length
-writeFileSync(join(dist, 'robots.txt'), 'User-agent: *\nDisallow: /\n')
+writeFileSync(join(dist, 'robots.txt'), 'User-agent: *\nAllow: /\n')
+for (const icon of ['favicon.ico', 'favicon.svg', 'apple-touch-icon.png']) cpSync(join('assets', icon), join(dist, icon))
 writeFileSync(
   join(dist, 'index.html'),
   `<!doctype html>
@@ -204,28 +216,30 @@ writeFileSync(
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Renplay catalog</title>
 <meta name="description" content="The catalog Renplay installs read: recipes for the games Renplay plays.">
-<meta name="robots" content="noindex">
+<link rel="canonical" href="https://catalog.renplay.org/">
 <meta name="theme-color" content="#0a0a0f">
-<link rel="icon" href="https://renplay.org/logo.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="https://renplay.org/logo.png">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>
   :root { color-scheme: dark; }
   body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0a0a0f; color: #e8e6ef; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
   main { max-width: 34rem; padding: 32px 24px; }
   .brand { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; font-weight: 700; font-size: 20px; }
   .brand img { width: 40px; height: 40px; }
-  h1 { font-size: 28px; line-height: 1.25; margin: 28px 0 12px; }
+  h1 { font: 700 30px/1.2 Fraunces, Georgia, "Times New Roman", serif; letter-spacing: -0.01em; margin: 28px 0 12px; }
   p { color: #b6b2c4; margin: 0 0 16px; }
   ul { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 10px; }
   a { color: #ff7ab8; }
-  li a { display: block; padding: 14px 16px; border: 1px solid rgb(255 255 255 / .1); border-radius: 14px; background: rgb(255 255 255 / .03); text-decoration: none; color: #e8e6ef; }
-  li a span { display: block; color: #8f8aa3; font-size: 14px; }
-  li a:hover, li a:focus-visible { border-color: #ff7ab8; }
+  ul { gap: 0; border-top: 1px solid rgb(255 255 255 / .22); }
+  li a { display: block; padding: 14px 2px; border-bottom: 1px solid rgb(255 255 255 / .12); text-decoration: none; color: #e8e6ef; }
+  li a span { display: block; color: #8f8aa3; font: 13px/1.5 "JetBrains Mono", ui-monospace, Menlo, monospace; }
+  li a:hover, li a:focus-visible { color: #fff; box-shadow: inset 0 -1px 0 #ffc58a; }
 </style>
 </head>
 <body>
 <main>
-  <a class="brand" href="https://renplay.org"><img src="https://renplay.org/logo.svg" alt="" width="40" height="40">Renplay</a>
+  <a class="brand" href="https://renplay.org"><img src="/favicon.svg" alt="" width="40" height="40">Renplay</a>
   <h1>The catalog Renplay reads</h1>
   <p>Every Renplay installation reads its list of games from here: ${listedCount} games with their art, the downloads they play from and how to build them for the web. People browse the games on the website.</p>
   <ul>
