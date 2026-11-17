@@ -170,40 +170,38 @@ writeFileSync(
   `/*
   Access-Control-Allow-Origin: *
   X-Content-Type-Options: nosniff
-  X-Robots-Tag: noindex
-/
-  ! X-Robots-Tag
-/index.html
-  ! X-Robots-Tag
-/favicon.ico
-  ! X-Robots-Tag
-/favicon.svg
-  ! X-Robots-Tag
-/apple-touch-icon.png
-  ! X-Robots-Tag
 /index.v4.json
   Cache-Control: public, max-age=300
+  X-Robots-Tag: noindex
 /index.v4.sfw.json
   Cache-Control: public, max-age=300
+  X-Robots-Tag: noindex
 /index.v3.json
   Cache-Control: public, max-age=300
+  X-Robots-Tag: noindex
 /index.v3.sfw.json
   Cache-Control: public, max-age=300
+  X-Robots-Tag: noindex
 /index.json
   Cache-Control: public, max-age=300
+  X-Robots-Tag: noindex
 /recipe.schema.json
   Cache-Control: public, max-age=3600
+  X-Robots-Tag: noindex
 /tags.json
   Cache-Control: public, max-age=3600
+  X-Robots-Tag: noindex
 /covers/*
   Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex
 /patches/*
   Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex
 `,
 )
 // What a person sees who opens catalog.renplay.org in a browser: what this address is, and where to go.
 // Search engines may read the whole host: this page and its icons can be listed, with Renplay's icon beside them,
-// and every other file says noindex in its headers, which a crawler can only read if robots.txt lets it in.
+// and every other file names noindex in its own headers, which a crawler can only read if robots.txt lets it in.
 const listedCount = games.filter((g) => g.releases?.[0]?.status !== 'broken').length
 writeFileSync(join(dist, 'robots.txt'), 'User-agent: *\nAllow: /\n')
 for (const icon of ['favicon.ico', 'favicon.svg', 'apple-touch-icon.png']) cpSync(join('assets', icon), join(dist, icon))
