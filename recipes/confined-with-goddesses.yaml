@@ -1,0 +1,103 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: confined-with-goddesses
+title: Confined with Goddesses
+developer: ERONIVERSE
+tags:
+  - male-protagonist
+  - sandbox
+  - school-setting
+  - 2dcg
+  - 3dcg
+  - animated
+  - voiced
+content:
+  - ahegao
+  - anal-sex
+  - big-ass
+  - big-tits
+  - cosplay
+  - creampie
+  - femaledomination
+  - footjob
+  - groping
+  - group-sex
+  - handjob
+  - harem
+  - incest
+  - lesbian
+  - maledomination
+  - masturbation
+  - milf
+  - mobile-game
+  - oral-sex
+  - sex-toys
+  - spanking
+  - teasing
+  - titfuck
+  - vaginal-sex
+  - voyeurism
+state: completed
+summary: The mc has a girlfriend, but isn't thinking about cheating. Even tho' he knows they're able
+  to get him hard very easily, they all already are in couple so...
+nsfw: true
+art:
+  - kind: grid
+    source: sgdb
+    sgdb: 565413
+    url: https://cdn2.steamgriddb.com/grid/01e43d31a37bf23ec0ad17a806804dc5.png
+    by: Wolfy_Bigods
+    byUrl: https://www.steamgriddb.com/profile/76561198062108034
+    adult: true
+  - kind: wide
+    source: sgdb
+    sgdb: 345490
+    url: https://cdn2.steamgriddb.com/grid/9c20200c574bd803a17dac2ffac328e6.png
+    by: kannalolicutie
+    byUrl: https://www.steamgriddb.com/profile/76561198834060489
+    adult: true
+  - kind: hero
+    source: sgdb
+    sgdb: 66122
+    url: https://cdn2.steamgriddb.com/hero/f1b5068feb72933a681eb3dc8f040ad3.jpg
+    by: Monkey Flip
+    byUrl: https://www.steamgriddb.com/profile/76561198856037919
+  - kind: logo
+    source: sgdb
+    sgdb: 70276
+    url: https://cdn2.steamgriddb.com/logo/997f60c2cc5cce78cbb12fadf17e1102.png
+    by: Monkey Flip
+    byUrl: https://www.steamgriddb.com/profile/76561198856037919
+  - kind: icon
+    source: sgdb
+    sgdb: 39441
+    url: https://cdn2.steamgriddb.com/icon/b6dec570bf4ae60b985b8ae59d4e8b40.png
+    by: Tir.Toran
+    byUrl: https://www.steamgriddb.com/profile/76561198034109792
+links:
+  f95: https://f95zone.to/threads/60506/
+saveDir: Confinedwithgoddesses
+match:
+  - Confined_with_goddesses-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.1.3"
+    date: "2026-06-15"
+    madeWith: 8.1.3
+    status: playable
+    archives:
+      - name: Confined_with_goddesses-1.1.3-pc.zip
+        size: 443574061
+        sha256: "6968864ead935e9d14079fcc917e73e6495483059ac99a0677aff1002b57517e"
+        platform: pc
+    verified:
+      date: "2026-11-17"
+      renplay: 4.13.0
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 7.2% of it (982 of 13607 statements) in 2.31
+        minutes. Coverage is 7.2%, under 90%; the walk hit the time cap; a whole script file was not
+        reached: Dreams/animreplaylabels.rpyc, Dreams/dreams.rpyc, Scenes/dev/028/028animdev.rpyc.
+        No person has played it through yet."
