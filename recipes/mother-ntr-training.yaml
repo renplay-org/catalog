@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: mother-ntr-training
+title: Mother NTR Training
+developer: signsun66
+tags:
+  - male-protagonist
+  - multiple-endings
+  - school-setting
+  - 2dcg
+  - animated
+content:
+  - ahegao
+  - anal-sex
+  - bdsm
+  - big-ass
+  - big-tits
+  - blackmail
+  - corruption
+  - cosplay
+  - creampie
+  - drugs
+  - graphic-violence
+  - group-sex
+  - humiliation
+  - incest
+  - interracial
+  - lactation
+  - maledomination
+  - masturbation
+  - milf
+  - mind-control
+  - multiple-penetration
+  - ntr
+  - oral-sex
+  - pov
+  - sex-toys
+  - slave
+  - sleep-sex
+  - spanking
+  - stripping
+  - teasing
+  - titfuck
+  - urination
+  - vaginal-sex
+  - voyeurism
+state: ongoing
+summary: You play as James, an 18 years old high school student with gruesome childhood trauma where
+  you see your father die in front of your eyes in a planned robbery. Since then you keep getting
+  bullied by your friends because you look weak and vulnerable.
+nsfw: true
+art:
+  - kind: grid
+    source: itch
+    url: https://img.itch.zone/aW1nLzE5MTU4OTI3LnBuZw==/original/0lqsDs.png
+links:
+  itch: https://signsun66.itch.io/mother-ntr-training
+  f95: https://f95zone.to/threads/140783/
+saveDir: MNTRTSpecial-1669828007
+match:
+  - Mother_NTR_Training-Fix-Special-Halloween2023-Fix2-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "Ep.12"
+    date: "2023-11-01"
+    madeWith: 8.0.3
+    status: playable
+    archives:
+      - name: Mother_NTR_Training-Fix-Special-Halloween2023-Fix2-pc.zip
+        size: 429377500
+        sha256: "da399490b1f01c7c087119f32ae2a41dbd3b474a2fe88f13179713107e73bed0"
+        platform: pc
+    verified:
+      date: "2026-11-11"
+      renplay: 4.6.3
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 1 minute of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 22.8% of it (632 of 2771 statements) in 0.38
+        minutes. Coverage is 22.8%, under 90%; a whole script file was not reached:
+        script/Episode5a.rpyc, script/Episode5b.rpyc, script/Episode5c.rpyc. No person has played it
+        through yet."
