@@ -79,6 +79,26 @@ match:
 engine: renpy
 runtime: 8.5.3
 releases:
+  - version: "v0.37.1.2"
+    date: "2026-10-20"
+    madeWith: 8.5.3
+    status: playable
+    archives:
+      - name: ACADEMY34-v0.37.1.2-win.zip
+        size: 458439255
+        sha256: "f872208ae7cb5706f72e71ef091d285a71f15a9dead9708b3b0691b414aa2555"
+        platform: pc
+    verified:
+      date: "2026-11-18"
+      renplay: 4.13.0
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not verify
+        it: a walk through the script saw 0% of it (11 of 47980 statements) in 2.61 minutes. Coverage
+        is 0%, under 90%; the walk hit the time cap; a whole script file was not reached:
+        helper/utility/interactions.rpyc, konami.rpyc, menu/contacts/contact.rpyc. No person has
+        played it through yet. The free download is v0.37.1.2, F95zone lists v0.36.2.3."
   - version: "v0.36.2.3"
     date: "2026-10-20"
     madeWith: 8.5.3
