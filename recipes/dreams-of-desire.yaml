@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: dreams-of-desire
+title: Dreams of Desire
+developer: Lewdlab
+tags:
+  - male-protagonist
+  - multiple-endings
+  - sandbox
+  - horror
+  - paranormal
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - bdsm
+  - big-ass
+  - big-tits
+  - cheating
+  - corruption
+  - creampie
+  - footjob
+  - group-sex
+  - handjob
+  - harem
+  - incest
+  - interracial
+  - lesbian
+  - masturbation
+  - milf
+  - mind-control
+  - mobile-game
+  - monster
+  - multiple-penetration
+  - oral-sex
+  - pregnancy
+  - sex-toys
+  - sleep-sex
+  - spanking
+  - stripping
+  - titfuck
+  - vaginal-sex
+  - voyeurism
+state: completed
+summary: You play as a male protagonist. Due to unfortunate circumstances, it looks like he is
+  forced to go to a military academy. Our hero however, has other ideas.
+nsfw: true
+art:
+  - kind: grid
+    source: renplay
+    url: https://covers.renplay.org/dreams-of-desire-e88762c329.webp
+  - kind: wide
+    source: renplay
+    url: https://covers.renplay.org/dreams-of-desire-bff32d1302.webp
+links:
+  f95: https://f95zone.to/threads/1904/
+saveDir: DreamsofDesire
+match:
+  - Dreams.of.Desire.Definitive.Edition.v1.0.3.MULTi5-GOG.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0.3 GOG DE"
+    date: "2023-12-14"
+    status: playable
+    archives:
+      - name: Dreams.of.Desire.Definitive.Edition.v1.0.3.MULTi5-GOG.zip
+        size: 5638202243
+        sha256: "fafb3c0d222279780e2a9ce053edc6570ae9d566b2a03dc7b67aa7ef659f0340"
+        platform: pc
+    verified:
+      date: "2026-11-18"
+      renplay: 4.13.0
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. A deep test did not
+        verify it: a walk through the script saw 5.5% of it (1362 of 24882 statements) in 2.34
+        minutes. Coverage is 5.5%, under 90%; 6 Ren'Py errors with a traceback; the walk hit the
+        time cap; a whole script file was not reached: data/rooms/abys_bedroom.rpyc,
+        data/rooms/abys_kitchen.rpyc, data/rooms/abys_living_room.rpyc. No person has played it
+        through yet."
