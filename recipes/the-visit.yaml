@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=https://catalog.renplay.org/recipe.schema.json
+id: the-visit
+title: The Visit
+developer: Stiglet
+tags:
+  - male-protagonist
+  - multiple-endings
+  - 3dcg
+  - animated
+content:
+  - anal-sex
+  - big-ass
+  - big-tits
+  - cheating
+  - creampie
+  - footjob
+  - group-sex
+  - harem
+  - incest
+  - lesbian
+  - maledomination
+  - masturbation
+  - milf
+  - mobile-game
+  - oral-sex
+  - pregnancy
+  - sex-toys
+  - spanking
+  - titfuck
+  - vaginal-sex
+  - voyeurism
+state: completed
+summary: A story about a young man who returns to the home he grew up in after being away at
+  college, only to find things are now very different.
+nsfw: true
+art:
+  - kind: grid
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1934590/library_600x900_2x.jpg
+  - kind: wide
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1934590/header.jpg
+  - kind: hero
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1934590/library_hero.jpg
+  - kind: logo
+    source: steam
+    url: https://cdn.cloudflare.steamstatic.com/steam/apps/1934590/logo.png
+links:
+  f95: https://f95zone.to/threads/10361/
+  steam: https://store.steampowered.com/app/1934590/
+saveDir: TheVisit-1517242170
+match:
+  - TheVisit-*-pc.zip
+engine: renpy
+runtime: 8.5.3
+releases:
+  - version: "1.0"
+    date: "2020-12-09"
+    madeWith: 7.3.5
+    status: playable
+    archives:
+      - name: TheVisit-1.0-pc.zip
+        size: 3265454807
+        sha256: "661f34190fff055036dd4e865848b650ea873a8c34edac6426218313dcf45488"
+        platform: pc
+    verified:
+      date: "2026-11-20"
+      renplay: 4.14.0
+      browsers:
+        - chromium
+      notes: "An automated test on the lab's own Renplay: the main menu, a new game, about 2 minutes of
+        play without an error, and a save that loads again in a fresh page. No person has played it
+        through yet. Made with Ren'Py 7, which runs on the Ren'Py 8 engine: Python 2 code in the
+        game can fail later, so a person should play well past the opening."
