@@ -47,6 +47,12 @@ links:
   f95: https://f95zone.to/threads/286946/
 engine: html
 releases:
+  - version: "0.5.5"
+    status: untested
+    archives: []
+    verified:
+      notes: The developer's newest release as F95zone lists it (v0.5.5), found by the lab's version
+        watcher. Not tested here, and no archive yet.
   - version: "0.5.4"
     status: playable
     archives:
