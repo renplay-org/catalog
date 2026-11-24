@@ -24,6 +24,22 @@ match:
 engine: renpy
 runtime: 8.5.3
 releases:
+  - version: "2.0"
+    date: "2026-11-24"
+    madeWith: 8.6.1
+    status: broken
+    archives:
+      - name: your-other-half-win-64.zip
+        size: 404751443
+        sha256: "a51af9119a6aa2036cf4daac33896b14b30f23394257ce9ad3bdede1b85dceb1"
+        platform: pc
+    verified:
+      date: "2026-11-24"
+      renplay: 4.14.0
+      browsers:
+        - chromium
+      notes: "Broken. The automated test on the lab's own Renplay found it failing, with Ren'Py's own
+        error: TypeError: eval() arg 1 must be a string, bytes or code object"
   - version: "1.1"
     date: "2026-09-29"
     madeWith: 8.5.3
