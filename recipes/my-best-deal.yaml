@@ -83,6 +83,12 @@ match:
 engine: renpy
 runtime: 8.5.3
 releases:
+  - version: "4.9"
+    status: untested
+    archives: []
+    verified:
+      notes: The developer's newest release as F95zone lists it (v4.9), found by the lab's version
+        watcher. Not tested here, and no archive yet.
   - version: "4.8"
     status: untested
     archives: []
